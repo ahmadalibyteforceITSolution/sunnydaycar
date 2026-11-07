@@ -148,13 +148,12 @@
             Services & Programs
           </router-link>
 
-          <router-link 
-            to="/appointment" 
-            class="px-3 py-2 rounded-xl text-sm font-semibold transition-all duration-200 whitespace-nowrap"
-            :class="$route.path === '/appointment' ? 'text-rose-700 bg-[#FFE6EA]/30 font-bold border border-[#FFE6EA]/50' : 'text-brand-navy hover:text-rose-600 hover:bg-gray-50'"
+          <button 
+            @click="isAppointmentModalOpen = true" 
+            class="px-3 py-2 rounded-xl text-sm font-semibold transition-all duration-200 whitespace-nowrap text-brand-navy hover:text-rose-600 hover:bg-gray-50 cursor-pointer"
           >
             Appointment
-          </router-link>
+          </button>
 
           <router-link 
             to="/contact" 
@@ -175,13 +174,13 @@
             <span>Call Us</span>
           </a>
 
-          <router-link 
-            to="/appointment"
-            class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] shadow-sm transition-all duration-300 transform hover:-translate-y-0.5 whitespace-nowrap"
+          <button 
+            @click="isAppointmentModalOpen = true"
+            class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] shadow-sm transition-all duration-300 transform hover:-translate-y-0.5 whitespace-nowrap cursor-pointer"
           >
             <Calendar class="w-4 h-4 text-brand-navy" />
             <span>Book a Tour</span>
-          </router-link>
+          </button>
         </div>
 
         <!-- Mobile Quick Call & Toggle Button -->
@@ -241,14 +240,12 @@
           >
             Services & Programs
           </router-link>
-          <router-link 
-            @click="mobileMenuOpen = false"
-            to="/appointment" 
-            class="block px-4 py-2.5 rounded-lg text-sm font-semibold"
-            :class="$route.path === '/appointment' ? 'text-rose-700 bg-[#FFE6EA]/30 font-bold' : 'text-brand-navy hover:bg-gray-50'"
+          <button 
+            @click="mobileMenuOpen = false; isAppointmentModalOpen = true" 
+            class="w-full text-left block px-4 py-2.5 rounded-lg text-sm font-semibold text-brand-navy hover:bg-gray-50 cursor-pointer"
           >
             Book Appointment / Tour
-          </router-link>
+          </button>
           <router-link 
             @click="mobileMenuOpen = false"
             to="/contact" 
@@ -259,13 +256,12 @@
           </router-link>
 
           <div class="pt-3 border-t border-gray-100 flex flex-col gap-2">
-            <router-link 
-              @click="mobileMenuOpen = false"
-              to="/appointment"
-              class="w-full text-center py-2.5 rounded-full text-brand-navy font-bold bg-[#FFE6EA] hover:bg-[#FFD6DF] text-sm shadow"
+            <button 
+              @click="mobileMenuOpen = false; isAppointmentModalOpen = true"
+              class="w-full text-center py-2.5 rounded-full text-brand-navy font-bold bg-[#FFE6EA] hover:bg-[#FFD6DF] text-sm shadow cursor-pointer"
             >
               Book a Tour Now
-            </router-link>
+            </button>
             <a 
               href="tel:+17036061557"
               class="w-full text-center py-2.5 rounded-full text-brand-navy font-bold border border-gray-300 text-sm flex items-center justify-center gap-2"
@@ -277,6 +273,12 @@
         </div>
       </transition>
     </nav>
+
+    <!-- Global Appointment Booking Modal triggered from Header -->
+    <AppointmentModal 
+      :is-open="isAppointmentModalOpen" 
+      @close="isAppointmentModalOpen = false" 
+    />
   </header>
 </template>
 
@@ -284,6 +286,8 @@
 import { ref } from 'vue'
 import { Phone, Mail, MapPin, Clock, Calendar, Menu, X, Award, Sun, Baby, Utensils, Apple, Trees, Camera } from 'lucide-vue-next'
 import SocialIcons from './SocialIcons.vue'
+import AppointmentModal from './AppointmentModal.vue'
 
 const mobileMenuOpen = ref(false)
+const isAppointmentModalOpen = ref(false)
 </script>
