@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://ahmadalibyteforceitsolution.github.io/sunnydaycar/sitemap.xml
+Sitemap: https://sunnyskiesdaycare.com/sitemap.xml
