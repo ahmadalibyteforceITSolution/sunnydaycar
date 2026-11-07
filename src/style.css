@@ -19,11 +19,11 @@
   background: #f1f5f9;
 }
 ::-webkit-scrollbar-thumb {
-  background: #00BDE0;
+  background: #FFE6EA;
   border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #0A3366;
+  background: #FFD6DF;
 }
 
 /* Continuous Marquee Animation */
@@ -69,7 +69,7 @@
 }
 
 .gradient-text-brand {
-  background: linear-gradient(135deg, #0A3366 0%, #00BDE0 100%);
+  background: linear-gradient(135deg, #E06D85 0%, #F59E0B 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

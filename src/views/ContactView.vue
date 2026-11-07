@@ -3,16 +3,17 @@
     <!-- Header Banner -->
     <div class="max-w-7xl mx-auto px-4 sm:px-8 mb-16">
       <div class="bg-gradient-to-r from-brand-navy-dark via-brand-navy to-brand-navy rounded-3xl p-8 sm:p-14 text-white relative overflow-hidden shadow-xl">
-        <div class="absolute -right-10 -bottom-10 w-80 h-80 bg-brand-cyan/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -right-10 -bottom-10 w-80 h-80 bg-[#FFE6EA]/20 rounded-full blur-3xl pointer-events-none"></div>
         <div class="relative z-10 max-w-3xl space-y-4">
-          <div class="inline-flex items-center gap-2 bg-brand-cyan/20 border border-brand-cyan/40 px-3.5 py-1 rounded-full text-xs font-semibold text-brand-cyan">
-            <span>📍</span> Get in Touch
+          <div class="inline-flex items-center gap-2 bg-[#FFE6EA]/20 border border-[#FFE6EA]/40 px-3.5 py-1 rounded-full text-xs font-semibold text-[#FFE6EA]">
+            <MapPin class="w-3.5 h-3.5 inline text-amber-400" />
+            <span>Get in Touch • Lorton, VA</span>
           </div>
           <h1 class="text-3xl sm:text-5xl font-extrabold font-heading tracking-tight leading-tight">
             Contact Sunny Skies Daycare
           </h1>
           <p class="text-base sm:text-lg text-gray-200 leading-relaxed font-normal">
-            Have questions about enrollment, pricing, or our daily routine? We're here to help every step of the way.
+            Have questions about enrollment, pricing, our active CACFP / WIC food program, or our daily routine? We're here to help every step of the way.
           </p>
         </div>
       </div>
@@ -26,90 +27,87 @@
         <!-- Phone Card -->
         <a 
           href="tel:+17036061557"
-          class="bg-white p-7 rounded-2xl border border-gray-100 shadow-sm hover:shadow-card hover:border-brand-cyan/40 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between group"
+          class="bg-white p-7 rounded-2xl border border-gray-100 shadow-sm hover:shadow-card hover:border-[#FFE6EA] transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between group"
         >
           <div>
-            <div class="w-12 h-12 rounded-xl bg-brand-cyan-light text-brand-navy group-hover:bg-brand-cyan group-hover:text-white transition-colors flex items-center justify-center mb-4">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
+            <div class="w-12 h-12 rounded-xl bg-[#FFE6EA] text-rose-700 group-hover:bg-[#FFD6DF] group-hover:text-brand-navy transition-colors flex items-center justify-center mb-4">
+              <Phone class="w-6 h-6" />
             </div>
             <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Call or Text</span>
-            <h3 class="text-lg font-bold font-heading text-brand-navy group-hover:text-brand-cyan transition-colors mt-0.5">
+            <h3 class="text-lg font-bold font-heading text-brand-navy group-hover:text-rose-700 transition-colors mt-0.5">
               +1 (703) 606-1557
             </h3>
             <p class="text-xs text-brand-slate mt-2 leading-relaxed">
-              Available 6:30 AM – 5:30 PM for enrollment inquiries and quick questions.
+              Available 6:00 AM – 6:00 PM for enrollment inquiries, infant care questions, and quick updates.
             </p>
           </div>
-          <span class="mt-4 text-xs font-bold text-brand-cyan flex items-center gap-1">
+          <span class="mt-4 text-xs font-bold text-rose-700 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
             <span>Tap to Call</span>
-            <span>→</span>
+            <ArrowRight class="w-3.5 h-3.5" />
           </span>
         </a>
 
         <!-- Email Card -->
         <a 
           href="mailto:sunnyskiescare@gmail.com"
-          class="bg-white p-7 rounded-2xl border border-gray-100 shadow-sm hover:shadow-card hover:border-brand-cyan/40 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between group"
+          class="bg-white p-7 rounded-2xl border border-gray-100 shadow-sm hover:shadow-card hover:border-amber-200 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between group"
         >
           <div>
-            <div class="w-12 h-12 rounded-xl bg-brand-yellow-light text-brand-navy group-hover:bg-brand-yellow group-hover:text-white transition-colors flex items-center justify-center mb-4">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
+            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 group-hover:bg-amber-100 group-hover:text-amber-800 transition-colors flex items-center justify-center mb-4">
+              <Mail class="w-6 h-6" />
             </div>
             <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Email Inquiries</span>
-            <h3 class="text-base font-bold font-heading text-brand-navy group-hover:text-brand-cyan transition-colors mt-0.5 break-all">
+            <h3 class="text-base font-bold font-heading text-brand-navy group-hover:text-amber-700 transition-colors mt-0.5 break-all">
               sunnyskiescare@gmail.com
             </h3>
             <p class="text-xs text-brand-slate mt-2 leading-relaxed">
-              Send us registration questions, documents, or schedule notes anytime.
+              Send registration questions, registration documents, or schedule notes anytime.
             </p>
           </div>
-          <span class="mt-4 text-xs font-bold text-brand-cyan flex items-center gap-1">
+          <span class="mt-4 text-xs font-bold text-amber-600 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
             <span>Send Email</span>
-            <span>→</span>
+            <ArrowRight class="w-3.5 h-3.5" />
           </span>
         </a>
 
         <!-- Location Card -->
         <div class="bg-white p-7 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-brand-pink-light text-brand-pink flex items-center justify-center mb-4">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
+            <div class="w-12 h-12 rounded-xl bg-[#FFE6EA] text-rose-700 flex items-center justify-center mb-4">
+              <MapPin class="w-6 h-6" />
             </div>
             <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Location</span>
             <h3 class="text-lg font-bold font-heading text-brand-navy mt-0.5">
               Lorton, VA
             </h3>
             <p class="text-xs text-brand-slate mt-2 leading-relaxed">
-              Convenient Northern Virginia location with fast access to major commuter routes and quiet residential peace.
+              Convenient Northern Virginia location near I-95 & Route 1 with quiet residential surroundings and fenced play yard.
             </p>
           </div>
-          <span class="mt-4 text-xs font-semibold text-gray-400">Fairfax County, Virginia</span>
+          <span class="mt-4 text-xs font-semibold text-gray-500 flex items-center gap-1">
+            <Check class="w-3.5 h-3.5 text-emerald-600" />
+            <span>Fairfax County, Virginia</span>
+          </span>
         </div>
 
         <!-- Hours Card -->
         <div class="bg-white p-7 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between">
           <div>
             <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
-              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+              <Clock class="w-6 h-6" />
             </div>
             <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Operating Hours</span>
             <h3 class="text-lg font-bold font-heading text-brand-navy mt-0.5">
-              6:30 AM – 5:30 PM
+              6:00 AM – 6:00 PM
             </h3>
             <p class="text-xs text-brand-slate mt-2 leading-relaxed">
-              Monday through Friday.<br />Weekends and evening tours available upon advance appointment.
+              Monday through Friday.<br />Evening & weekend tour appointments available upon request.
             </p>
           </div>
-          <span class="mt-4 text-xs font-semibold text-emerald-600">Open 5 Days a Week</span>
+          <span class="mt-4 text-xs font-semibold text-emerald-600 flex items-center gap-1">
+            <Check class="w-3.5 h-3.5 text-emerald-600" />
+            <span>Open Mon – Fri (12 Hours/Day)</span>
+          </span>
         </div>
 
       </div>
@@ -120,12 +118,12 @@
         <!-- Contact Form Column -->
         <div class="lg:col-span-7">
           <div class="bg-white rounded-3xl p-8 sm:p-10 border border-gray-100 shadow-sm">
-            <span class="text-xs font-bold text-brand-cyan uppercase tracking-wider">Send a Message</span>
+            <span class="text-xs font-bold text-rose-700 uppercase tracking-wider">Send a Message</span>
             <h2 class="text-2xl sm:text-3xl font-bold font-heading text-brand-navy mt-1 mb-2">
               How Can We Help You?
             </h2>
             <p class="text-xs sm:text-sm text-brand-slate mb-8">
-              Fill out the form below and we will get back to you within 24 hours.
+              Fill out the form below and we will get back to you promptly within 24 hours.
             </p>
 
             <form @submit.prevent="sendMessage" class="space-y-4">
@@ -137,7 +135,7 @@
                     required 
                     v-model="contactForm.name"
                     placeholder="Full name"
-                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-cyan/40 text-sm"
+                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm"
                   />
                 </div>
 
@@ -148,7 +146,7 @@
                     required 
                     v-model="contactForm.phone"
                     placeholder="Phone number"
-                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-cyan/40 text-sm"
+                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm"
                   />
                 </div>
               </div>
@@ -160,7 +158,7 @@
                   required 
                   v-model="contactForm.email"
                   placeholder="name@example.com"
-                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-cyan/40 text-sm"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm"
                 />
               </div>
 
@@ -169,8 +167,8 @@
                 <input 
                   type="text" 
                   v-model="contactForm.subject"
-                  placeholder="e.g. Infant enrollment availability"
-                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-cyan/40 text-sm"
+                  placeholder="e.g. Infant enrollment availability (6am - 6pm)"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm"
                 />
               </div>
 
@@ -180,21 +178,22 @@
                   rows="4" 
                   required 
                   v-model="contactForm.message"
-                  placeholder="Write your questions or notes here..."
-                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-brand-cyan/40 text-sm"
+                  placeholder="Write your questions, your child's age (up to 14 years), or schedule preferences..."
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm"
                 ></textarea>
               </div>
 
               <button 
                 type="submit"
-                class="w-full py-3.5 rounded-full text-sm font-bold text-white bg-brand-navy hover:bg-brand-cyan transition-colors shadow-md flex items-center justify-center gap-2"
+                class="w-full py-3.5 rounded-full text-sm font-bold text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] transition-all shadow-sm flex items-center justify-center gap-2"
               >
                 <span>Send Message</span>
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                <Send class="w-4 h-4 text-brand-navy" />
               </button>
 
-              <div v-if="sentSuccess" class="p-4 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-800 text-xs font-semibold text-center">
-                ✓ Message received! We will reply to you at {{ contactForm.email }} shortly.
+              <div v-if="sentSuccess" class="p-4 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-800 text-xs font-semibold text-center flex items-center justify-center gap-2">
+                <Check class="w-4 h-4 text-emerald-600" />
+                <span>Message received! We will reply to you at {{ contactForm.email }} shortly.</span>
               </div>
             </form>
           </div>
@@ -210,8 +209,9 @@
                 <h3 class="font-bold font-heading text-base text-brand-navy">Location: Lorton, VA</h3>
                 <p class="text-xs text-brand-slate">Fairfax County, Northern Virginia</p>
               </div>
-              <span class="text-xs bg-brand-cyan-light text-brand-navy font-bold px-2.5 py-1 rounded-full">
-                Open in Maps
+              <span class="text-xs bg-[#FFE6EA] text-rose-800 font-bold px-2.5 py-1 rounded-full border border-[#FFD6DF] flex items-center gap-1">
+                <MapPin class="w-3 h-3 text-rose-700" />
+                <span>Open in Maps</span>
               </span>
             </div>
 
@@ -245,13 +245,13 @@
                 href="https://www.instagram.com/sunnyskiesdaycare_/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 transition-all text-xs font-semibold"
+                class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-[#FFE6EA] hover:text-brand-navy transition-all text-xs font-semibold group"
               >
                 <div class="flex items-center gap-2.5">
                   <span class="text-lg">📸</span>
                   <span>Instagram: @sunnyskiesdaycare_</span>
                 </div>
-                <span>→</span>
+                <ArrowRight class="w-4 h-4 text-gray-400 group-hover:text-brand-navy group-hover:translate-x-1 transition-transform" />
               </a>
 
               <!-- TikTok -->
@@ -259,13 +259,13 @@
                 href="https://www.tiktok.com/@sunnyskiesdaycare?_r=1&_t=ZP-9BCknDf7uPv"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-brand-cyan hover:text-brand-navy transition-all text-xs font-semibold"
+                class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-[#FFE6EA] hover:text-brand-navy transition-all text-xs font-semibold group"
               >
                 <div class="flex items-center gap-2.5">
                   <span class="text-lg">🎵</span>
                   <span>TikTok: @sunnyskiesdaycare</span>
                 </div>
-                <span>→</span>
+                <ArrowRight class="w-4 h-4 text-gray-400 group-hover:text-brand-navy group-hover:translate-x-1 transition-transform" />
               </a>
 
               <!-- Facebook -->
@@ -273,13 +273,13 @@
                 href="https://www.facebook.com/share/1DrwMMXzaZ/?mibextid=wwXIfr"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-[#1877F2] transition-all text-xs font-semibold"
+                class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-[#1877F2] transition-all text-xs font-semibold group"
               >
                 <div class="flex items-center gap-2.5">
                   <span class="text-lg">👍</span>
                   <span>Facebook: Sunny Skies Daycare</span>
                 </div>
-                <span>→</span>
+                <ArrowRight class="w-4 h-4 text-gray-400 group-hover:text-white group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
           </div>
@@ -291,7 +291,7 @@
       <!-- FAQ Section -->
       <div class="bg-white rounded-3xl p-8 sm:p-12 border border-gray-100 shadow-sm space-y-8">
         <div class="text-center max-w-2xl mx-auto">
-          <span class="text-xs font-bold text-brand-cyan uppercase tracking-wider">Common Questions</span>
+          <span class="text-xs font-bold text-rose-700 uppercase tracking-wider">Common Questions</span>
           <h2 class="text-3xl font-bold font-heading text-brand-navy mt-1">
             Frequently Asked Questions
           </h2>
@@ -304,17 +304,17 @@
           <div 
             v-for="(faq, idx) in faqs" 
             :key="idx"
-            class="border border-gray-100 rounded-2xl overflow-hidden transition-colors"
-            :class="openFaq === idx ? 'bg-brand-cyan-soft/40 border-brand-cyan/30' : 'bg-[#FCFDFF]'"
+            class="border rounded-2xl overflow-hidden transition-colors"
+            :class="openFaq === idx ? 'bg-[#FFE6EA]/30 border-[#FFD6DF]' : 'bg-[#FCFDFF] border-gray-100'"
           >
             <button 
               @click="openFaq = openFaq === idx ? null : idx"
               class="w-full text-left p-5 flex items-center justify-between font-bold font-heading text-sm sm:text-base text-brand-navy focus:outline-none"
             >
               <span>{{ faq.q }}</span>
-              <span class="text-brand-cyan text-lg ml-4">{{ openFaq === idx ? '−' : '+' }}</span>
+              <span class="text-rose-700 text-lg ml-4 font-extrabold">{{ openFaq === idx ? '−' : '+' }}</span>
             </button>
-            <div v-show="openFaq === idx" class="px-5 pb-5 text-xs sm:text-sm text-brand-slate leading-relaxed border-t border-gray-100/60 pt-3">
+            <div v-show="openFaq === idx" class="px-5 pb-5 text-xs sm:text-sm text-brand-slate leading-relaxed border-t border-[#FFD6DF]/60 pt-3">
               {{ faq.a }}
             </div>
           </div>
@@ -327,6 +327,7 @@
 
 <script setup>
 import { ref } from 'vue'
+import { Phone, Mail, MapPin, Clock, Send, ArrowRight, Check } from 'lucide-vue-next'
 
 const sentSuccess = ref(false)
 const openFaq = ref(0)
@@ -346,7 +347,7 @@ const sendMessage = () => {
 const faqs = [
   {
     q: 'What age groups do you accept?',
-    a: 'Sunny Skies Daycare welcomes children from Newborn through 15 years old. We have dedicated programs for Infants, Toddlers, Preschoolers (Pre-K readiness), and Before/After-School care with homework tutoring.'
+    a: 'Sunny Skies Daycare welcomes children from Newborn through 14 years old. We have dedicated programs for Infants, Toddlers, Preschoolers (Pre-K readiness), and Before & After-School care (Ages 5–14) with homework tutoring.'
   },
   {
     q: 'What certifications does the caregiver hold?',
@@ -354,11 +355,11 @@ const faqs = [
   },
   {
     q: 'What are your operating hours?',
-    a: 'We are open Monday through Friday from 6:30 AM to 5:30 PM. We also offer flexible schedules and weekend tour visits by appointment.'
+    a: 'We are open Monday through Friday from 6:00 AM to 6:00 PM (12 continuous hours daily to accommodate working parents). We also offer flexible schedules and tour visits by appointment.'
   },
   {
-    q: 'Are meals and snacks provided?',
-    a: 'Yes! We provide nutritious breakfast, balanced hot lunches, and fresh afternoon snacks with daily fruits (apples, bananas, grapes), vegetables, and milk. We are strictly allergy-conscious and peanut-aware.'
+    q: 'Are meals and snacks provided under CACFP / WIC?',
+    a: 'Yes! We are an active participant in the CACFP (Child and Adult Care Food Program) and WIC nutritional programs. We provide wholesome breakfasts, hot balanced lunches, and nutritious afternoon snacks featuring daily fresh fruits, vegetables, whole grains, and milk, fully adhering to USDA dietary guidelines.'
   },
   {
     q: 'How do I schedule a tour or register?',
