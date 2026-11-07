@@ -206,22 +206,22 @@
                     Thank you <strong class="text-brand-navy">{{ lastSentInfo?.name }}</strong>! Your inquiry is being sent to <strong class="text-brand-navy">sunnyskiescare@gmail.com</strong> and WhatsApp (<strong class="text-brand-navy">+1 703 606-1557</strong>). Form fields have been cleared.
                   </p>
                   
-                  <div class="pt-1 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+                  <div class="pt-2 space-y-2.5">
                     <a 
                       :href="whatsappUrl" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      class="flex-1 px-4 py-2.5 rounded-full text-xs font-bold text-white bg-[#25D366] hover:bg-[#20ba5a] shadow-sm flex items-center justify-center gap-2 transition-all"
+                      class="w-full py-3.5 px-6 rounded-2xl font-bold text-sm text-white bg-[#25D366] hover:bg-[#20ba5a] shadow-md shadow-emerald-500/20 transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
                     >
-                      <IconWhatsApp class="w-4 h-4 fill-current" />
+                      <IconWhatsApp class="w-5 h-5 fill-current shrink-0" />
                       <span>Chat on WhatsApp (+1 703 606-1557)</span>
                     </a>
                     <a 
                       :href="mailtoUrl"
-                      class="px-4 py-2.5 rounded-full text-xs font-bold text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] flex items-center justify-center gap-2 transition-all"
+                      class="w-full py-3 px-6 rounded-2xl font-bold text-sm text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] shadow-sm transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
                     >
-                      <Mail class="w-3.5 h-3.5 text-brand-navy" />
-                      <span>Email sunnyskiescare@gmail.com</span>
+                      <Mail class="w-4 h-4 text-rose-700 shrink-0" />
+                      <span>Email: sunnyskiescare@gmail.com</span>
                     </a>
                   </div>
                 </div>

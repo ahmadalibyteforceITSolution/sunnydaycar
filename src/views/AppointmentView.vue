@@ -273,28 +273,33 @@
           Our provider will contact you shortly at <strong>{{ submittedInfo?.phone }}</strong> or <strong>{{ submittedInfo?.email }}</strong> to confirm.
         </p>
 
-        <div class="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
+        <div class="pt-4 space-y-3 max-w-md mx-auto">
+          <!-- Primary Action: WhatsApp -->
           <a 
             :href="whatsappUrl" 
             target="_blank" 
             rel="noopener noreferrer"
-            class="px-5 py-3 rounded-full text-xs font-bold text-white bg-[#25D366] hover:bg-[#20ba5a] shadow-sm flex items-center justify-center gap-2 transition-all"
+            class="w-full py-3.5 px-6 rounded-2xl font-bold text-sm text-white bg-[#25D366] hover:bg-[#20ba5a] shadow-lg shadow-emerald-500/20 transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
           >
-            <IconWhatsApp class="w-4 h-4 fill-current" />
+            <IconWhatsApp class="w-5 h-5 fill-current shrink-0" />
             <span>Chat on WhatsApp (+1 703 606-1557)</span>
           </a>
+
+          <!-- Secondary Action: Email -->
           <a 
             :href="emailUrl"
-            class="px-5 py-3 rounded-full text-xs font-bold text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] transition-colors border border-[#FFD6DF] flex items-center justify-center gap-2"
+            class="w-full py-3 px-6 rounded-2xl font-bold text-sm text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] shadow-sm transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
           >
-            <Mail class="w-3.5 h-3.5 text-brand-navy" />
-            <span>Email sunnyskiescare@gmail.com</span>
+            <Mail class="w-4 h-4 text-rose-700 shrink-0" />
+            <span>Email: sunnyskiescare@gmail.com</span>
           </a>
+
+          <!-- Tertiary: Close Button -->
           <button 
             @click="isSubmitted = false"
-            class="px-5 py-3 rounded-full text-xs font-bold text-brand-navy bg-gray-100 hover:bg-gray-200 transition-colors"
+            class="w-full py-2.5 px-6 rounded-xl font-semibold text-xs text-slate-500 hover:text-brand-navy hover:bg-gray-100 transition-colors cursor-pointer"
           >
-            Done
+            Done & Close
           </button>
         </div>
       </div>
