@@ -28,12 +28,24 @@
     <a 
       href="https://www.facebook.com/share/1DrwMMXzaZ/?mibextid=wwXIfr" 
       target="_blank" 
-      rel="noopener noreferrer"
+      rel="noopener noreferrer" 
       title="Follow Sunny Skies Daycare on Facebook"
       class="w-8 h-8 rounded-full bg-white/10 hover:bg-[#1877F2] flex items-center justify-center text-white transition-all duration-300 transform hover:scale-110 shadow-sm"
       aria-label="Facebook"
     >
       <Facebook class="w-4 h-4" />
+    </a>
+
+    <!-- Official WhatsApp Icon Vue Component -->
+    <a 
+      href="https://wa.me/17036061557" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      title="Chat with Sunny Skies Daycare on WhatsApp"
+      class="w-8 h-8 rounded-full bg-white/10 hover:bg-[#25D366] flex items-center justify-center text-white transition-all duration-300 transform hover:scale-110 shadow-sm"
+      aria-label="WhatsApp"
+    >
+      <IconWhatsApp class="w-4 h-4 fill-current" />
     </a>
   </div>
 </template>
@@ -41,4 +53,5 @@
 <script setup>
 import { Instagram, Facebook } from 'lucide-vue-next'
 import IconTikTok from './icons/IconTikTok.vue'
+import IconWhatsApp from './icons/IconWhatsApp.vue'
 </script>

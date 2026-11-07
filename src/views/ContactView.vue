@@ -185,16 +185,47 @@
 
               <button 
                 type="submit"
-                class="w-full py-3.5 rounded-full text-sm font-bold text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] transition-all shadow-sm flex items-center justify-center gap-2"
+                class="w-full py-3.5 rounded-full text-sm font-bold text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] transition-all shadow-sm flex items-center justify-center gap-2 cursor-pointer"
               >
                 <span>Send Message</span>
                 <Send class="w-4 h-4 text-brand-navy" />
               </button>
 
-              <div v-if="sentSuccess" class="p-4 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-800 text-xs font-semibold text-center flex items-center justify-center gap-2">
-                <Check class="w-4 h-4 text-emerald-600" />
-                <span>Message received! We will reply to you at {{ contactForm.email }} shortly.</span>
-              </div>
+              <!-- Success Alert & Direct Action Card -->
+              <transition
+                enter-active-class="transition duration-300 ease-out"
+                enter-from-class="opacity-0 translate-y-2"
+                enter-to-class="opacity-100 translate-y-0"
+              >
+                <div v-if="sentSuccess" class="p-5 bg-[#FCFDFF] border-2 border-emerald-500/40 rounded-2xl shadow-md space-y-3">
+                  <div class="flex items-center gap-2 text-emerald-700 font-bold text-sm">
+                    <Check class="w-5 h-5 text-emerald-600 shrink-0" />
+                    <span>Message Sent! Opening WhatsApp & Forwarding to Email.</span>
+                  </div>
+                  <p class="text-xs text-brand-slate leading-relaxed">
+                    Thank you <strong class="text-brand-navy">{{ lastSentInfo?.name }}</strong>! Your inquiry is being sent to <strong class="text-brand-navy">sunnyskiescare@gmail.com</strong> and WhatsApp (<strong class="text-brand-navy">+1 703 606-1557</strong>). Form fields have been cleared.
+                  </p>
+                  
+                  <div class="pt-1 flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5">
+                    <a 
+                      :href="whatsappUrl" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      class="flex-1 px-4 py-2.5 rounded-full text-xs font-bold text-white bg-[#25D366] hover:bg-[#20ba5a] shadow-sm flex items-center justify-center gap-2 transition-all"
+                    >
+                      <IconWhatsApp class="w-4 h-4 fill-current" />
+                      <span>Chat on WhatsApp (+1 703 606-1557)</span>
+                    </a>
+                    <a 
+                      :href="mailtoUrl"
+                      class="px-4 py-2.5 rounded-full text-xs font-bold text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] flex items-center justify-center gap-2 transition-all"
+                    >
+                      <Mail class="w-3.5 h-3.5 text-brand-navy" />
+                      <span>Email sunnyskiescare@gmail.com</span>
+                    </a>
+                  </div>
+                </div>
+              </transition>
             </form>
           </div>
         </div>
@@ -248,7 +279,7 @@
                 class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-[#FFE6EA] hover:text-brand-navy transition-all text-xs font-semibold group"
               >
                 <div class="flex items-center gap-2.5">
-                  <span class="text-lg">📸</span>
+                  <Instagram class="w-4 h-4 text-rose-300 group-hover:text-rose-700" />
                   <span>Instagram: @sunnyskiesdaycare_</span>
                 </div>
                 <ArrowRight class="w-4 h-4 text-gray-400 group-hover:text-brand-navy group-hover:translate-x-1 transition-transform" />
@@ -262,7 +293,7 @@
                 class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-[#FFE6EA] hover:text-brand-navy transition-all text-xs font-semibold group"
               >
                 <div class="flex items-center gap-2.5">
-                  <span class="text-lg">🎵</span>
+                  <IconTikTok class="w-4 h-4 fill-current text-white group-hover:text-brand-navy" />
                   <span>TikTok: @sunnyskiesdaycare</span>
                 </div>
                 <ArrowRight class="w-4 h-4 text-gray-400 group-hover:text-brand-navy group-hover:translate-x-1 transition-transform" />
@@ -276,7 +307,7 @@
                 class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-[#1877F2] transition-all text-xs font-semibold group"
               >
                 <div class="flex items-center gap-2.5">
-                  <span class="text-lg">👍</span>
+                  <Facebook class="w-4 h-4 text-blue-300 group-hover:text-white" />
                   <span>Facebook: Sunny Skies Daycare</span>
                 </div>
                 <ArrowRight class="w-4 h-4 text-gray-400 group-hover:text-white group-hover:translate-x-1 transition-transform" />
@@ -328,9 +359,13 @@
 <script setup>
 import { ref } from 'vue'
 import { Phone, Mail, MapPin, Clock, Send, ArrowRight, Check } from 'lucide-vue-next'
+import IconWhatsApp from '../components/icons/IconWhatsApp.vue'
 
 const sentSuccess = ref(false)
 const openFaq = ref(0)
+const lastSentInfo = ref(null)
+const whatsappUrl = ref('')
+const mailtoUrl = ref('')
 
 const contactForm = ref({
   name: '',
@@ -341,7 +376,48 @@ const contactForm = ref({
 })
 
 const sendMessage = () => {
+  const name = contactForm.value.name.trim()
+  const phone = contactForm.value.phone.trim()
+  const email = contactForm.value.email.trim()
+  const subject = contactForm.value.subject.trim() || 'New Daycare Inquiry'
+  const message = contactForm.value.message.trim()
+
+  // Save submitted details for confirmation display
+  lastSentInfo.value = { name, phone, email, subject, message }
+
+  // Build formatted text for WhatsApp
+  const waText = `*Sunny Skies Daycare Inquiry*\n\n` +
+    `👤 *Parent Name:* ${name}\n` +
+    `📞 *Phone:* ${phone}\n` +
+    `✉️ *Email:* ${email}\n` +
+    `📋 *Subject:* ${subject}\n\n` +
+    `💬 *Message:*\n${message}`
+
+  const waLink = `https://wa.me/17036061557?text=${encodeURIComponent(waText)}`
+  whatsappUrl.value = waLink
+
+  // Build mailto link to sunnyskiescare@gmail.com
+  const emailSubject = `Daycare Inquiry from ${name}: ${subject}`
+  const emailBody = `Parent Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}\n\n---\nSent via Sunny Skies Daycare Website`
+  const mailLink = `mailto:sunnyskiescare@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`
+  mailtoUrl.value = mailLink
+
+  // Set sent success flag
   sentSuccess.value = true
+
+  // Empty all form fields ("after send messgae filed is empty")
+  contactForm.value = {
+    name: '',
+    phone: '',
+    email: '',
+    subject: '',
+    message: ''
+  }
+
+  // Redirect / open WhatsApp in a new tab
+  if (typeof window !== 'undefined') {
+    window.open(waLink, '_blank')
+  }
 }
 
 const faqs = [

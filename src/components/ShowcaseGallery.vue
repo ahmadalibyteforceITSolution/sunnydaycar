@@ -6,11 +6,11 @@
         v-for="cat in categories" 
         :key="cat.id"
         @click="activeCategory = cat.id"
-        class="px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200"
+        class="px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2"
         :class="activeCategory === cat.id ? 'bg-[#FFE6EA] text-rose-800 border border-[#FFD6DF] shadow-sm font-bold' : 'bg-white text-brand-slate hover:bg-[#FFE6EA]/30 hover:text-rose-700 border border-gray-200'"
       >
-        <span>{{ cat.icon }}</span>
-        <span class="ml-1.5">{{ cat.label }}</span>
+        <component :is="cat.icon" class="w-4 h-4 text-rose-700 shrink-0" />
+        <span>{{ cat.label }}</span>
       </button>
     </div>
 
@@ -107,14 +107,14 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import { ZoomIn, X } from 'lucide-vue-next'
+import { ZoomIn, X, Sparkles, BookOpen, Palette, Puzzle, Apple } from 'lucide-vue-next'
 
 const categories = [
-  { id: 'all', label: 'All Activities', icon: '🌟' },
-  { id: 'learning', label: 'Early Literacy & Numbers', icon: '📚' },
-  { id: 'art', label: 'Creative Arts & Sensory', icon: '🎨' },
-  { id: 'play', label: 'Play & Puzzles', icon: '🧩' },
-  { id: 'meals', label: 'Nutritious Meals', icon: '🍎' }
+  { id: 'all', label: 'All Activities', icon: Sparkles },
+  { id: 'learning', label: 'Early Literacy & Numbers', icon: BookOpen },
+  { id: 'art', label: 'Creative Arts & Sensory', icon: Palette },
+  { id: 'play', label: 'Play & Puzzles', icon: Puzzle },
+  { id: 'meals', label: 'Nutritious Meals', icon: Apple }
 ]
 
 const activeCategory = ref('all')

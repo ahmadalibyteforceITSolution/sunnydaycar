@@ -105,11 +105,11 @@
                   class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm bg-white transition-all text-brand-navy"
                 >
                   <option value="" disabled>Select an age program</option>
-                  <option value="Infant / Newborn (0-12 Months)">🍼 Infant / Newborn Care (0 - 12 Months)</option>
-                  <option value="Toddler Discovery (1-3 Years)">🧸 Toddler Discovery & Sensory Play (1 - 3 Years)</option>
-                  <option value="Preschool / Pre-K Readiness (3-5 Years)">📚 Preschool & Kindergarten Readiness (3 - 5 Years)</option>
-                  <option value="Before & After-School (5-14 Years)">🎒 School-Age Care & Homework Club (5 - 14 Years)</option>
-                  <option value="Flexible / Part-Time Care">☀️ Flexible / Part-Time Schedule</option>
+                  <option value="Infant / Newborn (0-12 Months)">Infant / Newborn Care (0 - 12 Months)</option>
+                  <option value="Toddler Discovery (1-3 Years)">Toddler Discovery & Sensory Play (1 - 3 Years)</option>
+                  <option value="Preschool / Pre-K Readiness (3-5 Years)">Preschool & Kindergarten Readiness (3 - 5 Years)</option>
+                  <option value="Before & After-School (5-14 Years)">School-Age Care & Homework Club (5 - 14 Years)</option>
+                  <option value="Flexible / Part-Time Care">Flexible / Part-Time Schedule</option>
                 </select>
               </div>
 
@@ -198,11 +198,20 @@
               </a>
             </div>
             <div class="pt-2 text-xs text-gray-300 font-semibold flex flex-wrap items-center gap-2">
-              <span>📍 Lorton, VA</span>
+              <span class="inline-flex items-center gap-1">
+                <MapPin class="w-3.5 h-3.5 text-[#FFE6EA]" />
+                <span>Lorton, VA</span>
+              </span>
               <span>•</span>
-              <span class="bg-white/10 px-2 py-0.5 rounded-full">⏰ 6:00 AM – 6:00 PM (Mon-Fri)</span>
+              <span class="bg-white/10 px-2.5 py-0.5 rounded-full inline-flex items-center gap-1">
+                <Clock class="w-3.5 h-3.5 text-amber-400" />
+                <span>6:00 AM – 6:00 PM (Mon-Fri)</span>
+              </span>
               <span>•</span>
-              <span class="bg-[#FFE6EA]/20 text-[#FFE6EA] px-2 py-0.5 rounded-full">🥗 CACFP / WIC Active</span>
+              <span class="bg-[#FFE6EA]/20 text-[#FFE6EA] px-2.5 py-0.5 rounded-full inline-flex items-center gap-1">
+                <Utensils class="w-3.5 h-3.5 text-[#FFE6EA]" />
+                <span>CACFP / WIC Active</span>
+              </span>
             </div>
           </div>
 
@@ -251,31 +260,41 @@
       class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm"
     >
       <div class="bg-white rounded-3xl max-w-lg w-full p-8 text-center shadow-2xl border border-gray-100 space-y-5 animate-scale-up">
-        <div class="w-16 h-16 rounded-full bg-[#FFE6EA] text-rose-700 flex items-center justify-center mx-auto text-3xl">
-          ☀️
+        <div class="w-16 h-16 rounded-full bg-[#FFE6EA] text-amber-500 flex items-center justify-center mx-auto shadow-inner">
+          <Sun class="w-8 h-8 text-amber-500" />
         </div>
         <h3 class="text-2xl font-bold font-heading text-brand-navy">
           Tour Request Received!
         </h3>
         <p class="text-sm text-brand-slate leading-relaxed">
-          Thank you, <strong class="text-brand-navy">{{ form.parentName }}</strong>! We have received your tour request for <strong class="text-brand-navy">{{ form.childDetails }}</strong> on <strong class="text-rose-700">{{ form.preferredDate }}</strong> at <strong class="text-rose-700">{{ form.preferredTime }}</strong>.
+          Thank you, <strong class="text-brand-navy">{{ submittedInfo?.parentName }}</strong>! We have received your tour request for <strong class="text-brand-navy">{{ submittedInfo?.childDetails }}</strong> on <strong class="text-rose-700">{{ submittedInfo?.preferredDate }}</strong> at <strong class="text-rose-700">{{ submittedInfo?.preferredTime }}</strong>.
         </p>
         <p class="text-xs text-gray-500">
-          Our provider will contact you shortly at <strong>{{ form.phone }}</strong> or <strong>{{ form.email }}</strong> to confirm.
+          Our provider will contact you shortly at <strong>{{ submittedInfo?.phone }}</strong> or <strong>{{ submittedInfo?.email }}</strong> to confirm.
         </p>
 
-        <div class="pt-3 flex flex-col sm:flex-row items-center justify-center gap-3">
+        <div class="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
           <a 
-            :href="`mailto:sunnyskiescare@gmail.com?subject=Tour Request for ${encodeURIComponent(form.childDetails)}&body=Parent: ${encodeURIComponent(form.parentName)}%0D%0APhone: ${encodeURIComponent(form.phone)}%0D%0AProgram: ${encodeURIComponent(form.program)}%0D%0ADate: ${encodeURIComponent(form.preferredDate)}%0D%0ATime: ${encodeURIComponent(form.preferredTime)}%0D%0ANotes: ${encodeURIComponent(form.notes)}`"
-            class="w-full sm:w-auto px-6 py-2.5 rounded-full text-xs font-bold text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] transition-colors border border-[#FFD6DF]"
+            :href="whatsappUrl" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="px-5 py-3 rounded-full text-xs font-bold text-white bg-[#25D366] hover:bg-[#20ba5a] shadow-sm flex items-center justify-center gap-2 transition-all"
           >
-            Send Direct Email Backup
+            <IconWhatsApp class="w-4 h-4 fill-current" />
+            <span>Chat on WhatsApp (+1 703 606-1557)</span>
+          </a>
+          <a 
+            :href="emailUrl"
+            class="px-5 py-3 rounded-full text-xs font-bold text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] transition-colors border border-[#FFD6DF] flex items-center justify-center gap-2"
+          >
+            <Mail class="w-3.5 h-3.5 text-brand-navy" />
+            <span>Email sunnyskiescare@gmail.com</span>
           </a>
           <button 
-            @click="isSubmitted = false; resetForm()"
-            class="w-full sm:w-auto px-6 py-2.5 rounded-full text-xs font-bold text-brand-navy bg-gray-100 hover:bg-gray-200 transition-colors"
+            @click="isSubmitted = false"
+            class="px-5 py-3 rounded-full text-xs font-bold text-brand-navy bg-gray-100 hover:bg-gray-200 transition-colors"
           >
-            Close
+            Done
           </button>
         </div>
       </div>
@@ -285,9 +304,13 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import { Calendar, Phone, ArrowRight } from 'lucide-vue-next'
+import { Calendar, Phone, ArrowRight, MapPin, Clock, Utensils, Sun, Mail } from 'lucide-vue-next'
+import IconWhatsApp from '../components/icons/IconWhatsApp.vue'
 
 const isSubmitted = ref(false)
+const submittedInfo = ref(null)
+const whatsappUrl = ref('')
+const emailUrl = ref('')
 
 const form = ref({
   parentName: '',
@@ -305,10 +328,6 @@ const minDate = computed(() => {
   return today.toISOString().split('T')[0]
 })
 
-const submitAppointment = () => {
-  isSubmitted.value = true
-}
-
 const resetForm = () => {
   form.value = {
     parentName: '',
@@ -319,6 +338,40 @@ const resetForm = () => {
     preferredDate: '',
     preferredTime: '',
     notes: ''
+  }
+}
+
+const submitAppointment = () => {
+  // Capture submitted info before emptying fields
+  submittedInfo.value = { ...form.value }
+
+  // Build WhatsApp Message
+  const waText = `*Sunny Skies Daycare Tour Booking Request*\n\n` +
+    `👤 *Parent Name:* ${form.value.parentName}\n` +
+    `📞 *Phone:* ${form.value.phone}\n` +
+    `✉️ *Email:* ${form.value.email}\n` +
+    `👶 *Child:* ${form.value.childDetails}\n` +
+    `🎒 *Program:* ${form.value.program || 'Not specified'}\n` +
+    `📅 *Preferred Date:* ${form.value.preferredDate}\n` +
+    `⏰ *Preferred Time:* ${form.value.preferredTime}\n` +
+    `📝 *Special Notes:* ${form.value.notes || 'None'}`
+
+  whatsappUrl.value = `https://wa.me/17036061557?text=${encodeURIComponent(waText)}`
+
+  // Build Email to sunnyskiescare@gmail.com
+  const mailSubject = `Tour Booking: ${form.value.childDetails} (${form.value.preferredDate} at ${form.value.preferredTime})`
+  const mailBody = `Parent Name: ${form.value.parentName}\nPhone: ${form.value.phone}\nEmail: ${form.value.email}\nChild Details: ${form.value.childDetails}\nProgram: ${form.value.program}\nPreferred Date: ${form.value.preferredDate}\nPreferred Time: ${form.value.preferredTime}\nNotes: ${form.value.notes}\n\nSent via Sunny Skies Daycare Website`
+  emailUrl.value = `mailto:sunnyskiescare@gmail.com?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`
+
+  // Reset form fields immediately so inputs are empty
+  resetForm()
+
+  // Open modal
+  isSubmitted.value = true
+
+  // Redirect / open WhatsApp in a new tab
+  if (typeof window !== 'undefined') {
+    window.open(whatsappUrl.value, '_blank')
   }
 }
 </script>

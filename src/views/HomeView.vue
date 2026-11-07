@@ -16,8 +16,9 @@
             <!-- Location & Credential Pill -->
             <div class="hero-badge inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-brand-pink/30">
               <span class="flex h-2.5 w-2.5 rounded-full bg-brand-pink animate-ping"></span>
-              <span class="text-xs font-bold text-brand-navy">
-                ☀️ Based in Lorton, VA • CDA Certified • Active CACFP / WIC Food Program
+              <span class="text-xs font-bold text-brand-navy flex items-center gap-1.5">
+                <Sun class="w-3.5 h-3.5 text-amber-500 shrink-0" />
+                <span>Based in Lorton, VA • CDA Certified • Active CACFP / WIC Food Program</span>
               </span>
             </div>
 
@@ -56,7 +57,7 @@
 
               <div class="bg-white p-3 rounded-2xl border border-pink-100 shadow-sm flex items-center gap-3 col-span-2 sm:col-span-1">
                 <div class="w-9 h-9 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center shrink-0">
-                  <span class="text-base">🥗</span>
+                  <Utensils class="w-4 h-4 text-amber-500" />
                 </div>
                 <div class="text-left">
                   <span class="block text-[10px] text-amber-500 uppercase font-bold">Food Program</span>
@@ -162,12 +163,12 @@
 
                 <!-- Floating Interactive Badges -->
                 <div class="absolute -top-4 -right-4 bg-white px-3.5 py-1.5 rounded-full shadow-lg border border-brand-yellow/50 flex items-center gap-1.5 animate-float">
-                  <span class="text-sm">⭐</span>
+                  <Award class="w-4 h-4 text-amber-500" />
                   <span class="text-xs font-bold text-brand-navy">CDA Certified</span>
                 </div>
 
-                <div class="absolute -bottom-4 -left-4 bg-white px-3.5 py-1.5 rounded-full shadow-lg border border-brand-cyan/50 flex items-center gap-1.5 animate-float-delayed">
-                  <span class="text-sm">🏡</span>
+                <div class="absolute -bottom-4 -left-4 bg-white px-3.5 py-1.5 rounded-full shadow-lg border border-[#FFD6DF] flex items-center gap-1.5 animate-float-delayed">
+                  <MapPin class="w-4 h-4 text-rose-700" />
                   <span class="text-xs font-bold text-brand-navy">Lorton, VA</span>
                 </div>
 
@@ -342,7 +343,9 @@
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div class="bg-[#FCFDFF] p-7 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
             <div>
-              <div class="flex text-amber-400 mb-3 text-sm">★★★★★</div>
+              <div class="flex items-center gap-1 text-amber-400 mb-3">
+                <Star v-for="i in 5" :key="i" class="w-4 h-4 fill-amber-400 text-amber-400" />
+              </div>
               <p class="text-xs sm:text-sm text-brand-slate italic leading-relaxed">
                 "Finding Sunny Skies Daycare was the biggest blessing for our family. Our daughter has blossomed socially and loves reading Animal Alphabet Adventures. The provider is so loving, attentive, and CPR certified."
               </p>
@@ -360,7 +363,9 @@
 
           <div class="bg-[#FCFDFF] p-7 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
             <div>
-              <div class="flex text-amber-400 mb-3 text-sm">★★★★★</div>
+              <div class="flex items-center gap-1 text-amber-400 mb-3">
+                <Star v-for="i in 5" :key="i" class="w-4 h-4 fill-amber-400 text-amber-400" />
+              </div>
               <p class="text-xs sm:text-sm text-brand-slate italic leading-relaxed">
                 "The 6:00 AM hours are a lifesaver for my commute into DC. Plus, knowing my son gets active CACFP / WIC approved nutritious meals and safe outdoor playtime gives me complete peace of mind while at work."
               </p>
@@ -378,7 +383,9 @@
 
           <div class="bg-[#FCFDFF] p-7 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
             <div>
-              <div class="flex text-amber-400 mb-3 text-sm">★★★★★</div>
+              <div class="flex items-center gap-1 text-amber-400 mb-3">
+                <Star v-for="i in 5" :key="i" class="w-4 h-4 fill-amber-400 text-amber-400" />
+              </div>
               <p class="text-xs sm:text-sm text-brand-slate italic leading-relaxed">
                 "A true home away from home. Clean, cheerful, organized, and genuinely caring. The CDA credentials show in how each activity is purposeful and fun. We couldn't ask for better childcare!"
               </p>
@@ -401,8 +408,9 @@
     <section class="py-16 sm:py-20 bg-gradient-to-r from-[#0F172A] via-[#1E293B] to-[#0F172A] text-white relative shadow-2xl border-t border-gray-800 overflow-hidden">
       <div class="absolute -right-10 -bottom-10 w-96 h-96 bg-[#FFE6EA]/10 rounded-full blur-3xl pointer-events-none"></div>
       <div class="max-w-5xl mx-auto px-4 sm:px-8 text-center space-y-6 relative z-10">
-        <div class="inline-block bg-[#FFE6EA]/20 border border-[#FFE6EA]/30 px-4 py-1.5 rounded-full text-xs font-bold text-[#FFE6EA]">
-          🌟 Newborn to 14 Years • Active CACFP / WIC Program • 6:00 AM – 6:00 PM
+        <div class="inline-flex items-center gap-2 bg-[#FFE6EA]/20 border border-[#FFE6EA]/30 px-4 py-1.5 rounded-full text-xs font-bold text-[#FFE6EA]">
+          <Sparkles class="w-3.5 h-3.5 text-amber-300" />
+          <span>Newborn to 14 Years • Active CACFP / WIC Program • 6:00 AM – 6:00 PM</span>
         </div>
         <h2 class="text-3xl sm:text-5xl font-extrabold font-heading tracking-tight leading-tight">
           Ready to Give Your Child a Sunny, Caring Future?
@@ -437,7 +445,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import gsap from 'gsap'
-import { Clock, Users, ArrowRight, Phone, Sparkles, Palette, ShieldCheck, Apple, Trees, Calendar } from 'lucide-vue-next'
+import { Clock, Users, ArrowRight, Phone, Sparkles, Palette, ShieldCheck, Apple, Trees, Calendar, Utensils, Award, MapPin, Sun, Star } from 'lucide-vue-next'
 import SocialIcons from '../components/SocialIcons.vue'
 import ShowcaseGallery from '../components/ShowcaseGallery.vue'
 

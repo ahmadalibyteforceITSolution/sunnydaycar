@@ -10,12 +10,14 @@
             <span>Welcome to Sunny Skies Daycare in Lorton, VA!</span>
           </span>
           <span class="text-rose-300">•</span>
-          <span class="bg-[#FFE6EA]/35 text-[#9F1239] border border-[#FFE6EA] font-bold px-2 py-0.5 rounded-full">
-            👶 Ages: Newborn – 14 Years Welcomed
+          <span class="bg-[#FFE6EA]/35 text-[#9F1239] border border-[#FFE6EA] font-bold px-2 py-0.5 rounded-full inline-flex items-center gap-1">
+            <Baby class="w-3.5 h-3.5 text-[#9F1239]" />
+            <span>Ages: Newborn – 14 Years Welcomed</span>
           </span>
           <span class="text-rose-300">•</span>
-          <span class="bg-amber-100 text-amber-900 border border-amber-300 font-bold px-2 py-0.5 rounded-full">
-            🥗 Active CACFP / WIC Food Program Participant
+          <span class="bg-amber-100 text-amber-900 border border-amber-300 font-bold px-2 py-0.5 rounded-full inline-flex items-center gap-1">
+            <Utensils class="w-3.5 h-3.5 text-amber-800" />
+            <span>Active CACFP / WIC Food Program Participant</span>
           </span>
           <span class="text-rose-300">•</span>
           <span class="text-slate-700 font-semibold flex items-center gap-1">
@@ -24,25 +26,28 @@
           </span>
           <span class="text-rose-300">•</span>
           <span class="bg-[#FFE6EA]/35 text-[#9F1239] border border-[#FFE6EA] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
-            <Clock class="w-3.5 h-3.5 inline text-[#E06D85]" />
+            <Clock class="w-3.5 h-3.5 inline text-[#C2415D]" />
             <span>Hours: Monday – Friday 6:00 AM – 6:00 PM</span>
           </span>
           <span class="text-rose-300">•</span>
           <a href="tel:+17036061557" class="text-rose-700 hover:underline font-extrabold flex items-center gap-1">
-            <Phone class="w-3 h-3 inline text-[#E06D85]" />
+            <Phone class="w-3 h-3 inline text-[#C2415D]" />
             <span>Direct Call: +1 (703) 606-1557</span>
           </a>
           <span class="text-rose-300">•</span>
-          <span class="text-slate-700 font-semibold">
-            🍎 Nutritious Homemade Meals & Daily Fresh Fruits (CACFP / WIC)
+          <span class="text-slate-700 font-semibold inline-flex items-center gap-1">
+            <Apple class="w-3.5 h-3.5 text-rose-600 inline" />
+            <span>Nutritious Homemade Meals & Daily Fresh Fruits (CACFP / WIC)</span>
           </span>
           <span class="text-rose-300">•</span>
-          <span class="text-amber-800 font-semibold">
-            🛝 Safe Fenced Outdoor Play Yard & Story Time
+          <span class="text-amber-800 font-semibold inline-flex items-center gap-1">
+            <Trees class="w-3.5 h-3.5 text-emerald-600 inline" />
+            <span>Safe Fenced Outdoor Play Yard & Story Time</span>
           </span>
           <span class="text-rose-300">•</span>
-          <span class="text-slate-700 font-semibold">
-            📸 Follow us on Instagram @sunnyskiesdaycare_ & TikTok!
+          <span class="text-slate-700 font-semibold inline-flex items-center gap-1">
+            <Camera class="w-3.5 h-3.5 text-rose-500 inline" />
+            <span>Follow us on Instagram @sunnyskiesdaycare_ & TikTok!</span>
           </span>
           <span class="text-rose-300">•</span>
         </div>
@@ -79,10 +84,12 @@
         <!-- Right Social Icons, CACFP Badge & CDA Badge (One crisp line) -->
         <div class="flex items-center gap-2 sm:gap-3 shrink-0">
           <span class="hidden lg:inline-flex items-center gap-1 bg-[#FFE6EA]/20 text-[#FFE6EA] border border-[#FFE6EA]/40 px-2 py-0.5 rounded text-[10px] font-bold tracking-wide shrink-0">
-            🥗 CACFP / WIC Active
+            <Utensils class="w-3 h-3 text-[#FFE6EA]" />
+            <span>CACFP / WIC Active</span>
           </span>
           <span class="hidden sm:inline-flex items-center gap-1 bg-brand-yellow/15 text-brand-yellow border border-brand-yellow/40 px-2 py-0.5 rounded text-[10px] font-bold tracking-wide shrink-0">
-            ✓ CDA Certified
+            <Award class="w-3 h-3 text-brand-yellow" />
+            <span>CDA Certified</span>
           </span>
           <span class="hidden md:inline text-[11px] text-[#FFE6EA] font-semibold ml-1">Follow Us:</span>
           <SocialIcons />
@@ -177,15 +184,26 @@
           </router-link>
         </div>
 
-        <!-- Mobile Toggle Button (Lucide Vue) -->
-        <button 
-          @click="mobileMenuOpen = !mobileMenuOpen" 
-          class="lg:hidden p-2 rounded-xl text-brand-navy hover:bg-gray-100 transition-colors focus:outline-none"
-          aria-label="Toggle menu"
-        >
-          <Menu v-if="!mobileMenuOpen" class="w-6 h-6" />
-          <X v-else class="w-6 h-6" />
-        </button>
+        <!-- Mobile Quick Call & Toggle Button -->
+        <div class="lg:hidden flex items-center gap-2">
+          <a 
+            href="tel:+17036061557"
+            class="flex items-center gap-1.5 bg-[#FFE6EA] hover:bg-[#FFD6DF] text-rose-900 border border-[#FFD6DF] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm"
+            title="Call Sunny Skies Daycare"
+          >
+            <Phone class="w-3.5 h-3.5 text-rose-700 animate-pulse" />
+            <span>Call Us</span>
+          </a>
+
+          <button 
+            @click="mobileMenuOpen = !mobileMenuOpen" 
+            class="p-2 rounded-xl text-brand-navy hover:bg-gray-100 transition-colors focus:outline-none"
+            aria-label="Toggle menu"
+          >
+            <Menu v-if="!mobileMenuOpen" class="w-6 h-6" />
+            <X v-else class="w-6 h-6" />
+          </button>
+        </div>
 
       </div>
 
@@ -264,7 +282,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import { Phone, Mail, MapPin, Clock, Calendar, Menu, X, Award, Sun } from 'lucide-vue-next'
+import { Phone, Mail, MapPin, Clock, Calendar, Menu, X, Award, Sun, Baby, Utensils, Apple, Trees, Camera } from 'lucide-vue-next'
 import SocialIcons from './SocialIcons.vue'
 
 const mobileMenuOpen = ref(false)

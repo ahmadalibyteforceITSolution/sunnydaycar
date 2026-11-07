@@ -6,8 +6,8 @@
       <div class="bg-gradient-to-r from-[#1E293B] via-[#0F172A] to-[#1E293B] p-6 sm:p-8 rounded-3xl border border-[#FFE6EA]/30 shadow-2xl mb-14 flex flex-col lg:flex-row items-center justify-between gap-6 text-white relative overflow-hidden">
         <div class="absolute -right-8 -bottom-8 w-60 h-60 bg-[#FFE6EA]/10 rounded-full blur-2xl pointer-events-none"></div>
         <div class="flex items-center gap-4 text-center lg:text-left relative z-10">
-          <div class="w-14 h-14 rounded-2xl bg-[#FFE6EA]/15 flex items-center justify-center shrink-0 border border-[#FFE6EA]/30 text-3xl shadow-inner">
-            ☀️
+          <div class="w-14 h-14 rounded-2xl bg-[#FFE6EA]/15 flex items-center justify-center shrink-0 border border-[#FFE6EA]/30 shadow-inner">
+            <Sun class="w-8 h-8 text-brand-yellow" />
           </div>
           <div>
             <h3 class="text-xl sm:text-2xl font-bold font-heading text-white">
@@ -202,6 +202,6 @@
 </template>
 
 <script setup>
-import { Phone, Mail, MapPin, Clock, Calendar, Check, ChevronRight, Award } from 'lucide-vue-next'
+import { Phone, Mail, MapPin, Clock, Calendar, Check, ChevronRight, Award, Sun } from 'lucide-vue-next'
 import SocialIcons from './SocialIcons.vue'
 </script>

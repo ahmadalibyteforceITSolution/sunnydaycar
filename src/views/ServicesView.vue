@@ -34,8 +34,9 @@
               </div>
             </div>
             <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
-              <div class="inline-flex items-center gap-2 bg-[#FFE6EA] text-rose-900 border border-[#FFD6DF] px-3 py-1 rounded-full text-xs font-bold">
-                🍼 Newborn to 12 Months
+              <div class="inline-flex items-center gap-1.5 bg-[#FFE6EA] text-rose-900 border border-[#FFD6DF] px-3 py-1 rounded-full text-xs font-bold">
+                <Baby class="w-3.5 h-3.5 text-rose-700" />
+                <span>Newborn to 12 Months</span>
               </div>
               <h2 class="text-2xl sm:text-3xl font-bold font-heading text-brand-navy">
                 Tender Infant & Newborn Care
@@ -57,8 +58,9 @@
         <div class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7 space-y-4">
-              <div class="inline-flex items-center gap-2 bg-amber-50 text-amber-900 border border-amber-300 px-3 py-1 rounded-full text-xs font-bold">
-                🧸 Ages 1 – 3 Years
+              <div class="inline-flex items-center gap-1.5 bg-amber-50 text-amber-900 border border-amber-300 px-3 py-1 rounded-full text-xs font-bold">
+                <Sparkles class="w-3.5 h-3.5 text-amber-600" />
+                <span>Ages 1 – 3 Years</span>
               </div>
               <h2 class="text-2xl sm:text-3xl font-bold font-heading text-brand-navy">
                 Toddler Discovery, Puzzles & Sensory Play
@@ -90,8 +92,9 @@
               </div>
             </div>
             <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
-              <div class="inline-flex items-center gap-2 bg-[#FFE6EA] text-rose-900 border border-[#FFD6DF] px-3 py-1 rounded-full text-xs font-bold">
-                📚 Ages 3 – 5 Years
+              <div class="inline-flex items-center gap-1.5 bg-[#FFE6EA] text-rose-900 border border-[#FFD6DF] px-3 py-1 rounded-full text-xs font-bold">
+                <BookOpen class="w-3.5 h-3.5 text-rose-700" />
+                <span>Ages 3 – 5 Years</span>
               </div>
               <h2 class="text-2xl sm:text-3xl font-bold font-heading text-brand-navy">
                 Preschool & Kindergarten Readiness
@@ -113,8 +116,9 @@
         <div class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7 space-y-4">
-              <div class="inline-flex items-center gap-2 bg-purple-50 text-purple-900 border border-purple-200 px-3 py-1 rounded-full text-xs font-bold">
-                🎒 Ages 5 – 14 Years
+              <div class="inline-flex items-center gap-1.5 bg-purple-50 text-purple-900 border border-purple-200 px-3 py-1 rounded-full text-xs font-bold">
+                <School class="w-3.5 h-3.5 text-purple-700" />
+                <span>Ages 5 – 14 Years</span>
               </div>
               <h2 class="text-2xl sm:text-3xl font-bold font-heading text-brand-navy">
                 Before & After-School Care & Homework Club
@@ -146,8 +150,9 @@
               </div>
             </div>
             <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
-              <div class="inline-flex items-center gap-2 bg-amber-50 text-amber-900 border border-amber-300 px-3 py-1 rounded-full text-xs font-bold">
-                🥗 Active CACFP / WIC Food Program
+              <div class="inline-flex items-center gap-1.5 bg-amber-50 text-amber-900 border border-amber-300 px-3 py-1 rounded-full text-xs font-bold">
+                <Utensils class="w-3.5 h-3.5 text-amber-700" />
+                <span>Active CACFP / WIC Food Program</span>
               </div>
               <h2 class="text-2xl sm:text-3xl font-bold font-heading text-brand-navy">
                 Active CACFP / WIC Food Program & Healthy Homemade Meals
@@ -169,8 +174,9 @@
         <div class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7 space-y-4">
-              <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-900 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold">
-                🌳 Fresh Air & Gross Motor Fun
+              <div class="inline-flex items-center gap-1.5 bg-emerald-50 text-emerald-900 border border-emerald-200 px-3 py-1 rounded-full text-xs font-bold">
+                <Trees class="w-3.5 h-3.5 text-emerald-700" />
+                <span>Fresh Air & Gross Motor Fun</span>
               </div>
               <h2 class="text-2xl sm:text-3xl font-bold font-heading text-brand-navy">
                 Outdoor Play Yard & Neighborhood Nature Walks
@@ -303,5 +309,5 @@
 </template>
 
 <script setup>
-import { Check, Sparkles, Calendar, Phone } from 'lucide-vue-next'
+import { Check, Sparkles, Calendar, Phone, Baby, BookOpen, School, Utensils, Trees } from 'lucide-vue-next'
 </script>
