@@ -111,7 +111,7 @@ router.afterEach((to) => {
   }
   if (!to.params.slug) {
     const cleanPath = to.path === '/' ? '' : to.path
-    canonicalLink.setAttribute('href', `https://sunnyskiesdaycarecenter.com${cleanPath}`)
+    canonicalLink.setAttribute('href', `https://www.sunnyskiesydaycarecenter.com${cleanPath}`)
   }
 })
 

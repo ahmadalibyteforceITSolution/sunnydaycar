@@ -263,7 +263,7 @@ function updateMetadata() {
     canonicalLink.setAttribute('rel', 'canonical')
     document.head.appendChild(canonicalLink)
   }
-  canonicalLink.setAttribute('href', `https://sunnyskiesdaycarecenter.com/blog/${blog.value.slug}`)
+  canonicalLink.setAttribute('href', `https://www.sunnyskiesydaycarecenter.com/blog/${blog.value.slug}`)
 
   // 4. JSON-LD BlogPosting Structured Data
   let scriptTag = document.querySelector('#blog-jsonld')
@@ -278,7 +278,7 @@ function updateMetadata() {
     '@type': 'BlogPosting',
     'headline': blog.value.title,
     'description': blog.value.metaDescription,
-    'image': `https://sunnyskiesdaycarecenter.com${blog.value.image}`,
+    'image': `https://www.sunnyskiesydaycarecenter.com${blog.value.image}`,
     'datePublished': blog.value.date,
     'dateModified': blog.value.date,
     'author': {
@@ -301,12 +301,12 @@ function updateMetadata() {
       'name': 'Sunny Skies Daycare',
       'logo': {
         '@type': 'ImageObject',
-        'url': 'https://sunnyskiesdaycarecenter.com/images/logo.png'
+        'url': 'https://www.sunnyskiesydaycarecenter.com/logo.png'
       }
     },
     'mainEntityOfPage': {
       '@type': 'WebPage',
-      '@id': `https://sunnyskiesdaycarecenter.com/blog/${blog.value.slug}`
+      '@id': `https://www.sunnyskiesydaycarecenter.com/blog/${blog.value.slug}`
     }
   }
   scriptTag.textContent = JSON.stringify(structuredData)

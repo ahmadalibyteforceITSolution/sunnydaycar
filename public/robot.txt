@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Canonical XML Sitemap
+Sitemap: https://www.sunnyskiesydaycarecenter.com/sitemap.xml
