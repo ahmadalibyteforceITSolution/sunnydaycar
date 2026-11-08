@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
+# Canonical XML Sitemap
 Sitemap: https://sunnyskiesdaycarecenter.com/sitemap.xml
-Sitemap: https://sunnyskiesdaycare.com/sitemap.xml

@@ -6,7 +6,10 @@
       target="_blank" 
       rel="noopener noreferrer"
       title="Follow Sunny Skies Daycare on Instagram"
-      class="w-8 h-8 rounded-full bg-white/10 hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] flex items-center justify-center text-white transition-all duration-300 transform hover:scale-110 shadow-sm"
+      :class="variant === 'dark' 
+        ? 'w-8 h-8 rounded-full bg-white/10 text-white hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] border border-white/10' 
+        : 'w-8 h-8 rounded-full bg-white text-[#E1306C] border border-gray-200 shadow-sm hover:bg-gradient-to-tr hover:from-[#f09433] hover:via-[#dc2743] hover:to-[#bc1888] hover:text-white hover:border-transparent'"
+      class="flex items-center justify-center transition-all duration-300 transform hover:scale-110"
       aria-label="Instagram"
     >
       <Instagram class="w-4 h-4" />
@@ -18,7 +21,10 @@
       target="_blank" 
       rel="noopener noreferrer"
       title="Follow Sunny Skies Daycare on TikTok"
-      class="w-8 h-8 rounded-full bg-white/10 hover:bg-black flex items-center justify-center text-white hover:text-brand-yellow transition-all duration-300 transform hover:scale-110 shadow-sm"
+      :class="variant === 'dark' 
+        ? 'w-8 h-8 rounded-full bg-white/10 text-white hover:bg-black hover:text-brand-yellow border border-white/10' 
+        : 'w-8 h-8 rounded-full bg-white text-slate-800 border border-gray-200 shadow-sm hover:bg-black hover:text-white hover:border-transparent'"
+      class="flex items-center justify-center transition-all duration-300 transform hover:scale-110"
       aria-label="TikTok"
     >
       <IconTikTok class="w-4 h-4 fill-current" />
@@ -30,7 +36,10 @@
       target="_blank" 
       rel="noopener noreferrer" 
       title="Follow Sunny Skies Daycare on Facebook"
-      class="w-8 h-8 rounded-full bg-white/10 hover:bg-[#1877F2] flex items-center justify-center text-white transition-all duration-300 transform hover:scale-110 shadow-sm"
+      :class="variant === 'dark' 
+        ? 'w-8 h-8 rounded-full bg-white/10 text-white hover:bg-[#1877F2] border border-white/10' 
+        : 'w-8 h-8 rounded-full bg-white text-[#1877F2] border border-gray-200 shadow-sm hover:bg-[#1877F2] hover:text-white hover:border-transparent'"
+      class="flex items-center justify-center transition-all duration-300 transform hover:scale-110"
       aria-label="Facebook"
     >
       <Facebook class="w-4 h-4" />
@@ -42,7 +51,10 @@
       target="_blank" 
       rel="noopener noreferrer" 
       title="Chat with Sunny Skies Daycare on WhatsApp"
-      class="w-8 h-8 rounded-full bg-white/10 hover:bg-[#25D366] flex items-center justify-center text-white transition-all duration-300 transform hover:scale-110 shadow-sm"
+      :class="variant === 'dark' 
+        ? 'w-8 h-8 rounded-full bg-white/10 text-white hover:bg-[#25D366] border border-white/10' 
+        : 'w-8 h-8 rounded-full bg-white text-[#25D366] border border-gray-200 shadow-sm hover:bg-[#25D366] hover:text-white hover:border-transparent'"
+      class="flex items-center justify-center transition-all duration-300 transform hover:scale-110"
       aria-label="WhatsApp"
     >
       <IconWhatsApp class="w-4 h-4 fill-current" />
@@ -54,4 +66,11 @@
 import { Instagram, Facebook } from 'lucide-vue-next'
 import IconTikTok from './icons/IconTikTok.vue'
 import IconWhatsApp from './icons/IconWhatsApp.vue'
+
+defineProps({
+  variant: {
+    type: String,
+    default: 'light'
+  }
+})
 </script>

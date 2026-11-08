@@ -1,77 +1,81 @@
 <template>
-  <header class="sticky top-0 z-50 w-full shadow-sm bg-white">
+  <header class="sticky top-0 z-50 w-full shadow-sm bg-white overflow-x-hidden">
     <!-- 1. Smooth Continuous Moving Announcement Ticker (Left to Right / Continuous Marquee) -->
-    <div class="bg-gradient-to-r from-[#FFF0F3] via-white to-[#FEF3C7] text-slate-700 text-[11px] py-2 border-b border-[#FFE6EA]/60 overflow-hidden relative select-none shadow-sm">
+    <div class="ticker-wrap bg-gradient-to-r from-[#ECF5FB] via-white to-[#E0F7FA] text-[#0A3366] text-[11px] py-2 border-b border-[#00BDE0]/20 select-none shadow-sm">
       <div class="animate-marquee whitespace-nowrap flex items-center">
         <!-- Sequence Repeated for Seamless Infinite Loop -->
-        <div v-for="i in 2" :key="i" class="flex items-center gap-8 px-4 font-medium text-slate-700">
+        <div v-for="i in 2" :key="i" class="flex items-center gap-8 px-4 font-medium text-[#0A3366]">
           <span class="flex items-center gap-1.5 text-amber-600 font-extrabold tracking-wide">
             <Sun class="w-3.5 h-3.5 text-amber-500 shrink-0 inline" />
             <span>Welcome to Sunny Skies Daycare in Lorton, VA!</span>
           </span>
-          <span class="text-rose-300">•</span>
-          <span class="bg-[#FFE6EA]/35 text-[#9F1239] border border-[#FFE6EA] font-bold px-2 py-0.5 rounded-full inline-flex items-center gap-1">
-            <Baby class="w-3.5 h-3.5 text-[#9F1239]" />
-            <span>Ages: Newborn – 14 Years Welcomed</span>
+          <span class="text-[#00BDE0] font-bold">•</span>
+          <span class="bg-[#00BDE0] text-white font-extrabold px-2.5 py-0.5 rounded-full inline-flex items-center gap-1 shadow-sm">
+            <span>NOW ACCEPTING SUMMER & FALL ENROLLMENT!</span>
           </span>
-          <span class="text-rose-300">•</span>
-          <span class="bg-amber-100 text-amber-900 border border-amber-300 font-bold px-2 py-0.5 rounded-full inline-flex items-center gap-1">
+          <span class="text-[#00BDE0] font-bold">•</span>
+          <span class="bg-[#CCF2F9] text-[#0A3366] border border-[#00BDE0]/30 font-bold px-2.5 py-0.5 rounded-full inline-flex items-center gap-1">
+            <Baby class="w-3.5 h-3.5 text-[#0A3366]" />
+            <span>Ages: Newborn – 15 Years Welcomed</span>
+          </span>
+          <span class="text-[#00BDE0] font-bold">•</span>
+          <span class="bg-amber-100 text-amber-900 border border-amber-300 font-bold px-2.5 py-0.5 rounded-full inline-flex items-center gap-1">
             <Utensils class="w-3.5 h-3.5 text-amber-800" />
             <span>Active CACFP / WIC Food Program Participant</span>
           </span>
-          <span class="text-rose-300">•</span>
-          <span class="text-slate-700 font-semibold flex items-center gap-1">
+          <span class="text-[#00BDE0] font-bold">•</span>
+          <span class="text-[#0A3366] font-semibold flex items-center gap-1">
             <Award class="w-3.5 h-3.5 text-amber-500 inline" />
             <span>CDA Certified & CPR / First Aid Provider</span>
           </span>
-          <span class="text-rose-300">•</span>
-          <span class="bg-[#FFE6EA]/35 text-[#9F1239] border border-[#FFE6EA] font-bold px-2 py-0.5 rounded-full flex items-center gap-1">
-            <Clock class="w-3.5 h-3.5 inline text-[#C2415D]" />
+          <span class="text-[#00BDE0] font-bold">•</span>
+          <span class="bg-[#CCF2F9] text-[#0A3366] border border-[#00BDE0]/30 font-bold px-2.5 py-0.5 rounded-full flex items-center gap-1">
+            <Clock class="w-3.5 h-3.5 inline text-[#00BDE0]" />
             <span>Hours: Monday – Friday 6:00 AM – 6:00 PM</span>
           </span>
-          <span class="text-rose-300">•</span>
-          <a href="tel:+17036061557" class="text-rose-700 hover:underline font-extrabold flex items-center gap-1">
-            <Phone class="w-3 h-3 inline text-[#C2415D]" />
+          <span class="text-[#00BDE0] font-bold">•</span>
+          <a href="tel:+17036061557" class="text-[#00BDE0] hover:text-[#00A1BE] font-extrabold flex items-center gap-1">
+            <Phone class="w-3 h-3 inline text-[#00BDE0]" />
             <span>Direct Call: +1 (703) 606-1557</span>
           </a>
-          <span class="text-rose-300">•</span>
-          <span class="text-slate-700 font-semibold inline-flex items-center gap-1">
-            <Apple class="w-3.5 h-3.5 text-rose-600 inline" />
+          <span class="text-[#00BDE0] font-bold">•</span>
+          <span class="text-[#566593] font-semibold inline-flex items-center gap-1">
+            <Apple class="w-3.5 h-3.5 text-emerald-600 inline" />
             <span>Nutritious Homemade Meals & Daily Fresh Fruits (CACFP / WIC)</span>
           </span>
-          <span class="text-rose-300">•</span>
-          <span class="text-amber-800 font-semibold inline-flex items-center gap-1">
+          <span class="text-[#00BDE0] font-bold">•</span>
+          <span class="text-[#0A3366] font-semibold inline-flex items-center gap-1">
             <Trees class="w-3.5 h-3.5 text-emerald-600 inline" />
             <span>Safe Fenced Outdoor Play Yard & Story Time</span>
           </span>
-          <span class="text-rose-300">•</span>
-          <span class="text-slate-700 font-semibold inline-flex items-center gap-1">
-            <Camera class="w-3.5 h-3.5 text-rose-500 inline" />
+          <span class="text-[#00BDE0] font-bold">•</span>
+          <span class="text-[#566593] font-semibold inline-flex items-center gap-1">
+            <Camera class="w-3.5 h-3.5 text-[#00BDE0] inline" />
             <span>Follow us on Instagram @sunnyskiesdaycare_ & TikTok!</span>
           </span>
-          <span class="text-rose-300">•</span>
+          <span class="text-[#00BDE0] font-bold">•</span>
         </div>
       </div>
     </div>
 
-    <!-- 2. Clean Top Contact & Social Bar in One Crisp Line -->
-    <div class="bg-[#0F172A] text-white text-xs py-2 px-4 sm:px-8 border-b border-gray-800">
+    <!-- 2. Clean Top Contact & Social Bar in One Crisp Line (Midnight Dark Navy #031B4E) -->
+    <div class="bg-[#031B4E] text-white text-xs py-2 px-4 sm:px-8 border-b border-[#0A3366] w-full overflow-hidden">
       <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
         
-        <!-- Left Contact Items (Single line with Lucide Vue icons) -->
-        <div class="flex items-center gap-5 sm:gap-6 text-gray-300 text-[11px] sm:text-xs overflow-x-auto no-scrollbar whitespace-nowrap">
-          <a href="tel:+17036061557" class="flex items-center gap-1.5 text-white hover:text-[#FFE6EA] transition-colors font-semibold group shrink-0">
-            <Phone class="w-3.5 h-3.5 text-[#FFE6EA] group-hover:scale-110 transition-transform" />
+        <!-- Left Contact Items -->
+        <div class="flex items-center gap-4 sm:gap-6 text-gray-200 text-[11px] sm:text-xs whitespace-nowrap shrink-0">
+          <a href="tel:+17036061557" class="flex items-center gap-1.5 text-white hover:text-[#00BDE0] transition-colors font-semibold group shrink-0">
+            <Phone class="w-3.5 h-3.5 text-[#00BDE0] group-hover:scale-110 transition-transform" />
             <span>+1 (703) 606-1557</span>
           </a>
 
-          <a href="mailto:sunnyskiescare@gmail.com" class="hidden sm:flex items-center gap-1.5 hover:text-[#FFE6EA] transition-colors shrink-0">
-            <Mail class="w-3.5 h-3.5 text-brand-yellow" />
+          <a href="mailto:sunnyskiescare@gmail.com" class="hidden sm:flex items-center gap-1.5 hover:text-[#00BDE0] transition-colors shrink-0">
+            <Mail class="w-3.5 h-3.5 text-[#00BDE0]" />
             <span>sunnyskiescare@gmail.com</span>
           </a>
 
           <span class="hidden md:flex items-center gap-1.5 text-gray-300 shrink-0">
-            <MapPin class="w-3.5 h-3.5 text-[#FFE6EA]" />
+            <MapPin class="w-3.5 h-3.5 text-[#00BDE0]" />
             <span>Lorton, VA</span>
           </span>
 
@@ -81,18 +85,18 @@
           </span>
         </div>
 
-        <!-- Right Social Icons, CACFP Badge & CDA Badge (One crisp line) -->
+        <!-- Right Social Icons, CACFP Badge & CDA Badge -->
         <div class="flex items-center gap-2 sm:gap-3 shrink-0">
-          <span class="hidden lg:inline-flex items-center gap-1 bg-[#FFE6EA]/20 text-[#FFE6EA] border border-[#FFE6EA]/40 px-2 py-0.5 rounded text-[10px] font-bold tracking-wide shrink-0">
-            <Utensils class="w-3 h-3 text-[#FFE6EA]" />
+          <span class="hidden lg:inline-flex items-center gap-1 bg-[#00BDE0]/20 text-[#00BDE0] border border-[#00BDE0]/40 px-2.5 py-0.5 rounded text-[10px] font-bold tracking-wide shrink-0">
+            <Utensils class="w-3 h-3 text-[#00BDE0]" />
             <span>CACFP / WIC Active</span>
           </span>
-          <span class="hidden sm:inline-flex items-center gap-1 bg-brand-yellow/15 text-brand-yellow border border-brand-yellow/40 px-2 py-0.5 rounded text-[10px] font-bold tracking-wide shrink-0">
+          <span class="hidden sm:inline-flex items-center gap-1 bg-brand-yellow/15 text-brand-yellow border border-brand-yellow/40 px-2.5 py-0.5 rounded text-[10px] font-bold tracking-wide shrink-0">
             <Award class="w-3 h-3 text-brand-yellow" />
             <span>CDA Certified</span>
           </span>
-          <span class="hidden md:inline text-[11px] text-[#FFE6EA] font-semibold ml-1">Follow Us:</span>
-          <SocialIcons />
+          <span class="hidden md:inline text-[11px] text-gray-300 font-semibold ml-1">Follow Us:</span>
+          <SocialIcons variant="dark" />
         </div>
 
       </div>
@@ -104,19 +108,19 @@
         
         <!-- Left: Logo & Title (Strict Single-Line) -->
         <router-link to="/" class="flex items-center gap-3 shrink-0 group">
-          <div class="relative w-12 h-12 rounded-full overflow-hidden shadow border-2 border-brand-yellow group-hover:scale-105 transition-transform duration-300 shrink-0">
+          <div class="relative w-11 h-11 rounded-full overflow-hidden shadow border-2 border-brand-yellow group-hover:scale-105 transition-transform duration-300 shrink-0">
             <img src="/logo.png" alt="Sunny Skies Daycare" class="w-full h-full object-cover" />
           </div>
           <div class="flex flex-col whitespace-nowrap">
             <div class="flex items-center gap-2">
-              <span class="text-xl sm:text-2xl font-bold font-heading text-brand-navy tracking-tight group-hover:text-rose-500 transition-colors">
+              <span class="text-xl sm:text-2xl font-bold font-heading text-[#0A3366] tracking-tight group-hover:text-[#00BDE0] transition-colors">
                 Sunny Skies
               </span>
-              <span class="text-[11px] bg-[#FFE6EA]/35 text-rose-900 font-bold px-2 py-0.5 rounded-full border border-[#FFE6EA]">
+              <span class="text-[11px] bg-[#CCF2F9] text-[#0A3366] font-bold px-2 py-0.5 rounded-full border border-[#00BDE0]/30">
                 Daycare
               </span>
             </div>
-            <span class="text-[11px] text-brand-slate font-medium hidden sm:block whitespace-nowrap">
+            <span class="text-[11px] text-[#566593] font-medium hidden 2xl:block whitespace-nowrap">
               A Warm, Nurturing Home-Based Daycare in Lorton, VA
             </span>
           </div>
@@ -127,7 +131,7 @@
           <router-link 
             to="/" 
             class="px-3 py-2 rounded-xl text-sm font-semibold transition-all duration-200 whitespace-nowrap"
-            :class="$route.path === '/' ? 'text-rose-700 bg-[#FFE6EA]/30 font-bold border border-[#FFE6EA]/50' : 'text-brand-navy hover:text-rose-600 hover:bg-gray-50'"
+            :class="$route.path === '/' ? 'text-[#00BDE0] bg-[#ECF5FB] font-bold border border-[#00BDE0]/30 shadow-sm' : 'text-[#0A3366] hover:text-[#00BDE0] hover:bg-[#ECF5FB]'"
           >
             Home
           </router-link>
@@ -135,22 +139,30 @@
           <router-link 
             to="/about" 
             class="px-3 py-2 rounded-xl text-sm font-semibold transition-all duration-200 whitespace-nowrap"
-            :class="$route.path === '/about' ? 'text-rose-700 bg-[#FFE6EA]/30 font-bold border border-[#FFE6EA]/50' : 'text-brand-navy hover:text-rose-600 hover:bg-gray-50'"
+            :class="$route.path === '/about' ? 'text-[#00BDE0] bg-[#ECF5FB] font-bold border border-[#00BDE0]/30 shadow-sm' : 'text-[#0A3366] hover:text-[#00BDE0] hover:bg-[#ECF5FB]'"
           >
-            About Us
+            About
           </router-link>
 
           <router-link 
             to="/services" 
             class="px-3 py-2 rounded-xl text-sm font-semibold transition-all duration-200 whitespace-nowrap"
-            :class="$route.path === '/services' ? 'text-rose-700 bg-[#FFE6EA]/30 font-bold border border-[#FFE6EA]/50' : 'text-brand-navy hover:text-rose-600 hover:bg-gray-50'"
+            :class="$route.path === '/services' ? 'text-[#00BDE0] bg-[#ECF5FB] font-bold border border-[#00BDE0]/30 shadow-sm' : 'text-[#0A3366] hover:text-[#00BDE0] hover:bg-[#ECF5FB]'"
           >
-            Services & Programs
+            Programs
+          </router-link>
+
+          <router-link 
+            to="/blog" 
+            class="px-3 py-2 rounded-xl text-sm font-semibold transition-all duration-200 whitespace-nowrap"
+            :class="$route.path.startsWith('/blog') ? 'text-[#00BDE0] bg-[#ECF5FB] font-bold border border-[#00BDE0]/30 shadow-sm' : 'text-[#0A3366] hover:text-[#00BDE0] hover:bg-[#ECF5FB]'"
+          >
+            Blog
           </router-link>
 
           <button 
             @click="isAppointmentModalOpen = true" 
-            class="px-3 py-2 rounded-xl text-sm font-semibold transition-all duration-200 whitespace-nowrap text-brand-navy hover:text-rose-600 hover:bg-gray-50 cursor-pointer"
+            class="px-3 py-2 rounded-xl text-sm font-semibold transition-all duration-200 whitespace-nowrap text-[#0A3366] hover:text-[#00BDE0] hover:bg-[#ECF5FB] cursor-pointer"
           >
             Appointment
           </button>
@@ -158,9 +170,9 @@
           <router-link 
             to="/contact" 
             class="px-3 py-2 rounded-xl text-sm font-semibold transition-all duration-200 whitespace-nowrap"
-            :class="$route.path === '/contact' ? 'text-rose-700 bg-[#FFE6EA]/30 font-bold border border-[#FFE6EA]/50' : 'text-brand-navy hover:text-rose-600 hover:bg-gray-50'"
+            :class="$route.path === '/contact' ? 'text-[#00BDE0] bg-[#ECF5FB] font-bold border border-[#00BDE0]/30 shadow-sm' : 'text-[#0A3366] hover:text-[#00BDE0] hover:bg-[#ECF5FB]'"
           >
-            Contact Us
+            Contact
           </router-link>
         </div>
 
@@ -168,35 +180,41 @@
         <div class="hidden sm:flex items-center gap-2.5 shrink-0">
           <a 
             href="tel:+17036061557"
-            class="flex items-center gap-1.5 text-brand-navy hover:text-rose-600 text-xs sm:text-sm font-bold px-3.5 py-2.5 rounded-full border border-gray-200 hover:border-[#FFE6EA] transition-colors whitespace-nowrap"
+            class="flex items-center gap-2 bg-[#ECF5FB] hover:bg-[#CCF2F9] text-[#0A3366] hover:text-[#00BDE0] border-2 border-[#00BDE0]/40 hover:border-[#00BDE0] px-3.5 py-2 rounded-full text-xs sm:text-sm font-bold shadow-sm transition-all duration-200 group whitespace-nowrap"
+            title="Call Sunny Skies Daycare: +1 (703) 606-1557"
           >
-            <Phone class="w-3.5 h-3.5 text-[#E06D85]" />
-            <span>Call Us</span>
+            <span class="w-6 h-6 rounded-full bg-[#00BDE0] text-white flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+              <Phone class="w-3 h-3 animate-pulse" />
+            </span>
+            <span class="hidden 2xl:inline">Call: (703) 606-1557</span>
+            <span class="2xl:hidden">Call Us</span>
           </a>
 
           <button 
             @click="isAppointmentModalOpen = true"
-            class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full text-xs sm:text-sm font-bold text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] shadow-sm transition-all duration-300 transform hover:-translate-y-0.5 whitespace-nowrap cursor-pointer"
+            class="inline-flex items-center justify-center gap-1.5 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full text-xs sm:text-sm font-bold text-white bg-[#00BDE0] hover:bg-[#00A1BE] shadow-md shadow-[#00BDE0]/25 transition-all duration-300 transform hover:-translate-y-0.5 whitespace-nowrap cursor-pointer"
           >
-            <Calendar class="w-4 h-4 text-brand-navy" />
+            <Calendar class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
             <span>Book a Tour</span>
           </button>
         </div>
 
         <!-- Mobile Quick Call & Toggle Button -->
-        <div class="lg:hidden flex items-center gap-2">
+        <div class="lg:hidden flex items-center gap-2 shrink-0">
           <a 
             href="tel:+17036061557"
-            class="flex items-center gap-1.5 bg-[#FFE6EA] hover:bg-[#FFD6DF] text-rose-900 border border-[#FFD6DF] px-3 py-1.5 rounded-full text-xs font-bold shadow-sm"
-            title="Call Sunny Skies Daycare"
+            class="flex items-center gap-1.5 bg-[#0A3366] hover:bg-[#031B4E] text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-md border border-[#00BDE0]/50 active:scale-95 transition-all"
+            title="Call Sunny Skies Daycare: +1 (703) 606-1557"
           >
-            <Phone class="w-3.5 h-3.5 text-rose-700 animate-pulse" />
-            <span>Call Us</span>
+            <span class="w-5 h-5 rounded-full bg-[#00BDE0] text-white flex items-center justify-center shrink-0">
+              <Phone class="w-3 h-3 animate-pulse" />
+            </span>
+            <span class="text-[11px] sm:text-xs">Call Us</span>
           </a>
 
           <button 
             @click="mobileMenuOpen = !mobileMenuOpen" 
-            class="p-2 rounded-xl text-brand-navy hover:bg-gray-100 transition-colors focus:outline-none"
+            class="p-2 rounded-xl text-[#0A3366] hover:bg-gray-100 transition-colors focus:outline-none"
             aria-label="Toggle menu"
           >
             <Menu v-if="!mobileMenuOpen" class="w-6 h-6" />
@@ -220,7 +238,7 @@
             @click="mobileMenuOpen = false"
             to="/" 
             class="block px-4 py-2.5 rounded-lg text-sm font-semibold"
-            :class="$route.path === '/' ? 'text-rose-700 bg-[#FFE6EA]/30 font-bold' : 'text-brand-navy hover:bg-gray-50'"
+            :class="$route.path === '/' ? 'text-[#00BDE0] bg-[#ECF5FB] font-bold' : 'text-[#0A3366] hover:bg-gray-50'"
           >
             Home
           </router-link>
@@ -228,7 +246,7 @@
             @click="mobileMenuOpen = false"
             to="/about" 
             class="block px-4 py-2.5 rounded-lg text-sm font-semibold"
-            :class="$route.path === '/about' ? 'text-rose-700 bg-[#FFE6EA]/30 font-bold' : 'text-brand-navy hover:bg-gray-50'"
+            :class="$route.path === '/about' ? 'text-[#00BDE0] bg-[#ECF5FB] font-bold' : 'text-[#0A3366] hover:bg-gray-50'"
           >
             About Us
           </router-link>
@@ -236,13 +254,21 @@
             @click="mobileMenuOpen = false"
             to="/services" 
             class="block px-4 py-2.5 rounded-lg text-sm font-semibold"
-            :class="$route.path === '/services' ? 'text-rose-700 bg-[#FFE6EA]/30 font-bold' : 'text-brand-navy hover:bg-gray-50'"
+            :class="$route.path === '/services' ? 'text-[#00BDE0] bg-[#ECF5FB] font-bold' : 'text-[#0A3366] hover:bg-gray-50'"
           >
             Services & Programs
           </router-link>
+          <router-link 
+            @click="mobileMenuOpen = false"
+            to="/blog" 
+            class="block px-4 py-2.5 rounded-lg text-sm font-semibold"
+            :class="$route.path.startsWith('/blog') ? 'text-[#00BDE0] bg-[#ECF5FB] font-bold' : 'text-[#0A3366] hover:bg-gray-50'"
+          >
+            Guides & Blog (30 Articles)
+          </router-link>
           <button 
             @click="mobileMenuOpen = false; isAppointmentModalOpen = true" 
-            class="w-full text-left block px-4 py-2.5 rounded-lg text-sm font-semibold text-brand-navy hover:bg-gray-50 cursor-pointer"
+            class="w-full text-left block px-4 py-2.5 rounded-lg text-sm font-semibold text-[#0A3366] hover:bg-gray-50 cursor-pointer"
           >
             Book Appointment / Tour
           </button>
@@ -250,7 +276,7 @@
             @click="mobileMenuOpen = false"
             to="/contact" 
             class="block px-4 py-2.5 rounded-lg text-sm font-semibold"
-            :class="$route.path === '/contact' ? 'text-rose-700 bg-[#FFE6EA]/30 font-bold' : 'text-brand-navy hover:bg-gray-50'"
+            :class="$route.path === '/contact' ? 'text-[#00BDE0] bg-[#ECF5FB] font-bold' : 'text-[#0A3366] hover:bg-gray-50'"
           >
             Contact Us
           </router-link>
@@ -258,15 +284,15 @@
           <div class="pt-3 border-t border-gray-100 flex flex-col gap-2">
             <button 
               @click="mobileMenuOpen = false; isAppointmentModalOpen = true"
-              class="w-full text-center py-2.5 rounded-full text-brand-navy font-bold bg-[#FFE6EA] hover:bg-[#FFD6DF] text-sm shadow cursor-pointer"
+              class="w-full text-center py-2.5 rounded-full text-white font-bold bg-[#00BDE0] hover:bg-[#00A1BE] text-sm shadow cursor-pointer"
             >
               Book a Tour Now
             </button>
             <a 
               href="tel:+17036061557"
-              class="w-full text-center py-2.5 rounded-full text-brand-navy font-bold border border-gray-300 text-sm flex items-center justify-center gap-2"
+              class="w-full text-center py-2.5 rounded-full text-[#0A3366] font-bold border border-[#0A3366]/30 text-sm flex items-center justify-center gap-2 hover:bg-[#ECF5FB]"
             >
-              <Phone class="w-4 h-4 text-[#E06D85]" />
+              <Phone class="w-4 h-4 text-[#00BDE0]" />
               <span>Call: +1 (703) 606-1557</span>
             </a>
           </div>

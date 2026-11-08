@@ -25,16 +25,16 @@
           </button>
 
           <!-- Modal Header -->
-          <div class="p-6 sm:p-8 bg-gradient-to-br from-[#FFF5F7] via-white to-[#FEF3C7] border-b border-[#FFE6EA] rounded-t-3xl">
-            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FFE6EA] text-rose-800 text-xs font-bold border border-[#FFD6DF] mb-2">
-              <Calendar class="w-3.5 h-3.5 text-rose-700" />
+          <div class="p-6 sm:p-8 bg-gradient-to-br from-[#ECF5FB] via-white to-[#E0F7FA] border-b border-[#00BDE0]/20 rounded-t-3xl">
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#CCF2F9] text-[#0A3366] text-xs font-bold border border-[#00BDE0]/30 mb-2">
+              <Calendar class="w-3.5 h-3.5 text-[#00BDE0]" />
               <span>Schedule a Daycare Visit</span>
             </div>
-            <h3 class="text-2xl sm:text-3xl font-bold font-heading text-brand-navy">
+            <h3 class="text-2xl sm:text-3xl font-bold font-heading text-[#0A3366]">
               Book Your Free Tour
             </h3>
-            <p class="text-xs sm:text-sm text-brand-slate mt-1.5 leading-relaxed">
-              Visit Sunny Skies Daycare in Lorton, VA. Mon – Fri 6:00 AM – 6:00 PM • Newborn to 14 Years • Active CACFP / WIC Food Program.
+            <p class="text-xs sm:text-sm text-[#566593] mt-1.5 leading-relaxed font-medium">
+              Visit Sunny Skies Daycare in Lorton, VA. Mon – Fri 6:00 AM – 6:00 PM • Newborn to 15 Years • Active CACFP / WIC Food Program.
             </p>
           </div>
 
@@ -43,17 +43,17 @@
             
             <!-- Success Confirmation Screen -->
             <div v-if="isSubmitted" class="text-center py-4 space-y-4">
-              <div class="w-16 h-16 rounded-full bg-[#FFE6EA] text-rose-700 flex items-center justify-center mx-auto shadow-inner border border-[#FFD6DF]">
-                <Sun class="w-8 h-8 text-amber-500 animate-spin-slow" />
+              <div class="w-16 h-16 rounded-full bg-[#CCF2F9] text-[#00BDE0] flex items-center justify-center mx-auto shadow-inner border border-[#00BDE0]/30">
+                <Sun class="w-8 h-8 text-brand-yellow animate-spin-slow" />
               </div>
-              <h4 class="text-2xl font-bold font-heading text-brand-navy">
+              <h4 class="text-2xl font-bold font-heading text-[#0A3366]">
                 Tour Request Received!
               </h4>
-              <p class="text-xs sm:text-sm text-brand-slate leading-relaxed">
-                Thank you, <strong class="text-brand-navy">{{ submittedInfo?.parentName }}</strong>! Your tour request for <strong class="text-brand-navy">{{ submittedInfo?.childDetails }}</strong> on <strong class="text-rose-700">{{ submittedInfo?.preferredDate }}</strong> at <strong class="text-rose-700">{{ submittedInfo?.preferredTime }}</strong> has been prepared.
+              <p class="text-xs sm:text-sm text-[#566593] leading-relaxed">
+                Thank you, <strong class="text-[#0A3366]">{{ submittedInfo?.parentName }}</strong>! Your tour request for <strong class="text-[#0A3366]">{{ submittedInfo?.childDetails }}</strong> on <strong class="text-[#00BDE0] font-bold">{{ submittedInfo?.preferredDate }}</strong> at <strong class="text-[#00BDE0] font-bold">{{ submittedInfo?.preferredTime }}</strong> has been prepared.
               </p>
-              <p class="text-xs text-brand-slate">
-                Sent to <strong class="text-brand-navy">sunnyskiescare@gmail.com</strong> and WhatsApp (<strong class="text-brand-navy">+1 703 606-1557</strong>). Form fields have been cleared.
+              <p class="text-xs text-[#566593]">
+                Sent to <strong class="text-[#0A3366]">sunnyskiescare@gmail.com</strong> and WhatsApp (<strong class="text-[#0A3366]">+1 703 606-1557</strong>). Form fields have been cleared.
               </p>
 
               <div class="pt-4 space-y-3 max-w-md mx-auto">
@@ -71,16 +71,16 @@
                 <!-- Secondary Action: Email -->
                 <a 
                   :href="emailUrl"
-                  class="w-full py-3 px-6 rounded-2xl font-bold text-sm text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] shadow-sm transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
+                  class="w-full py-3 px-6 rounded-2xl font-bold text-sm text-[#0A3366] bg-[#ECF5FB] hover:bg-[#CCF2F9] border border-[#00BDE0]/30 shadow-sm transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
                 >
-                  <Mail class="w-4 h-4 text-rose-700 shrink-0" />
+                  <Mail class="w-4 h-4 text-[#00BDE0] shrink-0" />
                   <span>Email: sunnyskiescare@gmail.com</span>
                 </a>
 
                 <!-- Tertiary: Close Button -->
                 <button 
                   @click="closeModal"
-                  class="w-full py-2.5 px-6 rounded-xl font-semibold text-xs text-slate-500 hover:text-brand-navy hover:bg-gray-100 transition-colors cursor-pointer"
+                  class="w-full py-2.5 px-6 rounded-xl font-semibold text-xs text-[#566593] hover:text-[#0A3366] hover:bg-gray-100 transition-colors cursor-pointer"
                 >
                   Done & Close
                 </button>
@@ -93,28 +93,28 @@
               <!-- Parent Name & Phone -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-1.5">
-                    Parent / Guardian Name <span class="text-rose-600">*</span>
+                  <label class="block text-xs font-bold text-[#0A3366] uppercase tracking-wider mb-1.5">
+                    Parent / Guardian Name <span class="text-[#00BDE0]">*</span>
                   </label>
                   <input 
                     type="text" 
                     required 
                     v-model="form.parentName"
                     placeholder="e.g. Jennifer Smith"
-                    class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm text-brand-navy"
+                    class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/30 focus:border-[#00BDE0] text-sm text-[#0A3366]"
                   />
                 </div>
 
                 <div>
-                  <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-1.5">
-                    Phone Number <span class="text-rose-600">*</span>
+                  <label class="block text-xs font-bold text-[#0A3366] uppercase tracking-wider mb-1.5">
+                    Phone Number <span class="text-[#00BDE0]">*</span>
                   </label>
                   <input 
                     type="tel" 
                     required 
                     v-model="form.phone"
                     placeholder="e.g. (703) 000-0000"
-                    class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm text-brand-navy"
+                    class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/30 focus:border-[#00BDE0] text-sm text-[#0A3366]"
                   />
                 </div>
               </div>
@@ -122,47 +122,47 @@
               <!-- Email & Child Details -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-1.5">
-                    Email Address <span class="text-rose-600">*</span>
+                  <label class="block text-xs font-bold text-[#0A3366] uppercase tracking-wider mb-1.5">
+                    Email Address <span class="text-[#00BDE0]">*</span>
                   </label>
                   <input 
                     type="email" 
                     required 
                     v-model="form.email"
                     placeholder="parent@example.com"
-                    class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm text-brand-navy"
+                    class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/30 focus:border-[#00BDE0] text-sm text-[#0A3366]"
                   />
                 </div>
 
                 <div>
-                  <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-1.5">
-                    Child's Name & Age <span class="text-rose-600">*</span>
+                  <label class="block text-xs font-bold text-[#0A3366] uppercase tracking-wider mb-1.5">
+                    Child's Name & Age <span class="text-[#00BDE0]">*</span>
                   </label>
                   <input 
                     type="text" 
                     required 
                     v-model="form.childDetails"
                     placeholder="e.g. Leo (18 months)"
-                    class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm text-brand-navy"
+                    class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/30 focus:border-[#00BDE0] text-sm text-[#0A3366]"
                   />
                 </div>
               </div>
 
               <!-- Program Selection -->
               <div>
-                <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-1.5">
-                  Program of Interest <span class="text-rose-600">*</span>
+                <label class="block text-xs font-bold text-[#0A3366] uppercase tracking-wider mb-1.5">
+                  Program of Interest <span class="text-[#00BDE0]">*</span>
                 </label>
                 <select 
                   required 
                   v-model="form.program"
-                  class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm bg-white text-brand-navy"
+                  class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/30 focus:border-[#00BDE0] text-sm bg-white text-[#0A3366]"
                 >
                   <option value="" disabled>Select a program</option>
                   <option value="Infant & Newborn Care (0-12 Mo)">Infant & Newborn Care (0–12 Mo)</option>
                   <option value="Toddler Discovery & Puzzles (1-3 Yr)">Toddler Discovery & Puzzles (1–3 Yr)</option>
                   <option value="Preschool Readiness & Circle Time (3-5 Yr)">Preschool Readiness & Circle Time (3–5 Yr)</option>
-                  <option value="After-School Care & Tutoring (5-14 Yr)">After-School Care & Tutoring (5–14 Yr)</option>
+                  <option value="After-School Care & Tutoring (5-15 Yr)">After-School Care & Tutoring (5–15 Yr)</option>
                   <option value="Full-Day Comprehensive Care (6am - 6pm)">Full-Day Care (6:00 AM – 6:00 PM)</option>
                 </select>
               </div>
@@ -170,26 +170,26 @@
               <!-- Date & Time Slot Grid -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-1.5">
-                    Preferred Tour Date <span class="text-rose-600">*</span>
+                  <label class="block text-xs font-bold text-[#0A3366] uppercase tracking-wider mb-1.5">
+                    Preferred Tour Date <span class="text-[#00BDE0]">*</span>
                   </label>
                   <input 
                     type="date" 
                     required 
                     v-model="form.preferredDate"
                     :min="minDate"
-                    class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm text-brand-navy"
+                    class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/30 focus:border-[#00BDE0] text-sm text-[#0A3366]"
                   />
                 </div>
 
                 <div>
-                  <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-1.5">
-                    Preferred Time Slot <span class="text-rose-600">*</span>
+                  <label class="block text-xs font-bold text-[#0A3366] uppercase tracking-wider mb-1.5">
+                    Preferred Time Slot <span class="text-[#00BDE0]">*</span>
                   </label>
                   <select 
                     required 
                     v-model="form.preferredTime"
-                    class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm bg-white text-brand-navy"
+                    class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/30 focus:border-[#00BDE0] text-sm bg-white text-[#0A3366]"
                   >
                     <option value="" disabled>Select convenient time (6am - 6pm)</option>
                     <option value="6:30 AM - Early Morning Drop-in">6:30 AM – Early Morning Drop-in</option>
@@ -204,30 +204,30 @@
 
               <!-- Special Questions / Dietary Preferences -->
               <div>
-                <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-1.5">
+                <label class="block text-xs font-bold text-[#0A3366] uppercase tracking-wider mb-1.5">
                   Special Notes or Questions (Optional)
                 </label>
                 <textarea 
                   rows="2" 
                   v-model="form.notes"
                   placeholder="CACFP dietary preferences, allergies, questions, or desired start date..."
-                  class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm text-brand-navy"
+                  class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/30 focus:border-[#00BDE0] text-sm text-[#0A3366]"
                 ></textarea>
               </div>
 
               <!-- Submit Button -->
               <button 
                 type="submit"
-                class="w-full py-3.5 rounded-full text-sm font-bold text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] shadow-md transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer"
+                class="w-full py-3.5 rounded-full text-sm font-bold text-white bg-[#00BDE0] hover:bg-[#00A1BE] shadow-md shadow-[#00BDE0]/25 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
               >
                 <span>Confirm & Request Tour Booking</span>
-                <ArrowRight class="w-4 h-4 text-brand-navy" />
+                <ArrowRight class="w-4 h-4 text-white" />
               </button>
 
               <div class="text-center pt-1">
-                <span class="text-[11px] text-gray-500 flex items-center justify-center gap-1.5">
-                  <Phone class="w-3 h-3 text-rose-700" />
-                  <span>Prefer to call directly? <a href="tel:+17036061557" class="text-rose-700 font-bold hover:underline">+1 (703) 606-1557</a></span>
+                <span class="text-[11px] text-[#566593] flex items-center justify-center gap-1.5">
+                  <Phone class="w-3 h-3 text-[#00BDE0]" />
+                  <span>Prefer to call directly? <a href="tel:+17036061557" class="text-[#00BDE0] font-bold hover:underline">+1 (703) 606-1557</a></span>
                 </span>
               </div>
             </form>

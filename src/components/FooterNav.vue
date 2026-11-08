@@ -1,12 +1,12 @@
 <template>
-  <footer class="bg-[#0F172A] text-gray-300 pt-16 pb-8 border-t-4 border-[#FFE6EA]">
+  <footer class="bg-[#031B4E] text-gray-300 pt-16 pb-8 border-t-4 border-[#00BDE0]">
     <div class="max-w-7xl mx-auto px-4 sm:px-8">
       
       <!-- Top Callout Banner -->
-      <div class="bg-gradient-to-r from-[#1E293B] via-[#0F172A] to-[#1E293B] p-6 sm:p-8 rounded-3xl border border-[#FFE6EA]/30 shadow-2xl mb-14 flex flex-col lg:flex-row items-center justify-between gap-6 text-white relative overflow-hidden">
-        <div class="absolute -right-8 -bottom-8 w-60 h-60 bg-[#FFE6EA]/10 rounded-full blur-2xl pointer-events-none"></div>
+      <div class="bg-gradient-to-r from-[#0A3366] via-[#031B4E] to-[#0A3366] p-6 sm:p-8 rounded-3xl border border-[#00BDE0]/30 shadow-2xl mb-14 flex flex-col lg:flex-row items-center justify-between gap-6 text-white relative overflow-hidden">
+        <div class="absolute -right-8 -bottom-8 w-60 h-60 bg-[#00BDE0]/10 rounded-full blur-2xl pointer-events-none"></div>
         <div class="flex items-center gap-4 text-center lg:text-left relative z-10">
-          <div class="w-14 h-14 rounded-2xl bg-[#FFE6EA]/15 flex items-center justify-center shrink-0 border border-[#FFE6EA]/30 shadow-inner">
+          <div class="w-14 h-14 rounded-2xl bg-[#00BDE0]/15 flex items-center justify-center shrink-0 border border-[#00BDE0]/30 shadow-inner">
             <Sun class="w-8 h-8 text-brand-yellow" />
           </div>
           <div>
@@ -14,7 +14,7 @@
               Looking for Loving, CDA Certified Childcare in Lorton, VA?
             </h3>
             <p class="text-xs sm:text-sm text-gray-300 font-medium mt-1">
-              Newborn to 14 Years • Hours: 6:00 AM – 6:00 PM • Active CACFP / WIC Food Program & Fenced Play
+              Newborn to 15 Years • Hours: 6:00 AM – 6:00 PM • Active CACFP / WIC Food Program & Fenced Play
             </p>
           </div>
         </div>
@@ -22,16 +22,16 @@
         <div class="flex flex-wrap items-center gap-3 relative z-10">
           <router-link 
             to="/appointment"
-            class="px-6 py-3 rounded-full font-bold text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 text-sm flex items-center gap-2"
+            class="px-6 py-3 rounded-full font-bold text-white bg-[#00BDE0] hover:bg-[#00A1BE] shadow-lg shadow-[#00BDE0]/25 transition-all duration-300 transform hover:-translate-y-0.5 text-sm flex items-center gap-2"
           >
-            <Calendar class="w-4 h-4 text-brand-navy" />
+            <Calendar class="w-4 h-4 text-white" />
             <span>Schedule a Free Tour</span>
           </router-link>
           <a 
             href="tel:+17036061557"
-            class="px-5 py-3 rounded-full font-bold text-white border border-[#FFE6EA]/40 hover:bg-[#FFE6EA]/15 transition-colors text-sm flex items-center gap-2"
+            class="px-5 py-3 rounded-full font-bold text-white border border-[#00BDE0]/40 hover:bg-[#00BDE0]/15 transition-colors text-sm flex items-center gap-2"
           >
-            <Phone class="w-4 h-4 text-[#FFE6EA]" />
+            <Phone class="w-4 h-4 text-[#00BDE0]" />
             <span>+1 (703) 606-1557</span>
           </a>
         </div>
@@ -48,7 +48,7 @@
             </div>
             <div>
               <span class="text-xl font-bold font-heading text-white tracking-tight">Sunny Skies</span>
-              <span class="block text-xs text-[#FFE6EA] font-medium">Daycare • Lorton, VA</span>
+              <span class="block text-xs text-[#00BDE0] font-medium">Daycare • Lorton, VA</span>
             </div>
           </div>
 
@@ -64,44 +64,50 @@
           <!-- Official Social Icons Component -->
           <div class="pt-2">
             <span class="block text-xs text-gray-400 mb-2 font-medium">Follow Our Daily Moments:</span>
-            <SocialIcons />
+            <SocialIcons variant="dark" />
           </div>
         </div>
 
         <!-- Column 2: Navigation Links -->
         <div>
           <h4 class="text-white font-bold font-heading text-base tracking-wide mb-4 flex items-center gap-2">
-            <span class="w-2.5 h-2.5 rounded-full bg-[#FFE6EA]"></span>
+            <span class="w-2.5 h-2.5 rounded-full bg-[#00BDE0]"></span>
             Quick Navigation
           </h4>
           <ul class="space-y-3 text-xs sm:text-sm">
             <li>
-              <router-link to="/" class="hover:text-[#FFE6EA] transition-colors flex items-center gap-2 group">
-                <ChevronRight class="w-3.5 h-3.5 text-[#FFE6EA] group-hover:translate-x-0.5 transition-transform" />
+              <router-link to="/" class="hover:text-[#00BDE0] transition-colors flex items-center gap-2 group">
+                <ChevronRight class="w-3.5 h-3.5 text-[#00BDE0] group-hover:translate-x-0.5 transition-transform" />
                 <span>Home</span>
               </router-link>
             </li>
             <li>
-              <router-link to="/about" class="hover:text-[#FFE6EA] transition-colors flex items-center gap-2 group">
-                <ChevronRight class="w-3.5 h-3.5 text-[#FFE6EA] group-hover:translate-x-0.5 transition-transform" />
+              <router-link to="/about" class="hover:text-[#00BDE0] transition-colors flex items-center gap-2 group">
+                <ChevronRight class="w-3.5 h-3.5 text-[#00BDE0] group-hover:translate-x-0.5 transition-transform" />
                 <span>About Our Daycare</span>
               </router-link>
             </li>
             <li>
-              <router-link to="/services" class="hover:text-[#FFE6EA] transition-colors flex items-center gap-2 group">
-                <ChevronRight class="w-3.5 h-3.5 text-[#FFE6EA] group-hover:translate-x-0.5 transition-transform" />
+              <router-link to="/services" class="hover:text-[#00BDE0] transition-colors flex items-center gap-2 group">
+                <ChevronRight class="w-3.5 h-3.5 text-[#00BDE0] group-hover:translate-x-0.5 transition-transform" />
                 <span>Programs & Services</span>
               </router-link>
             </li>
             <li>
-              <router-link to="/appointment" class="hover:text-[#FFE6EA] transition-colors flex items-center gap-2 group">
-                <ChevronRight class="w-3.5 h-3.5 text-[#FFE6EA] group-hover:translate-x-0.5 transition-transform" />
+              <router-link to="/appointment" class="hover:text-[#00BDE0] transition-colors flex items-center gap-2 group">
+                <ChevronRight class="w-3.5 h-3.5 text-[#00BDE0] group-hover:translate-x-0.5 transition-transform" />
                 <span>Book a Tour / Visit</span>
               </router-link>
             </li>
             <li>
-              <router-link to="/contact" class="hover:text-[#FFE6EA] transition-colors flex items-center gap-2 group">
-                <ChevronRight class="w-3.5 h-3.5 text-[#FFE6EA] group-hover:translate-x-0.5 transition-transform" />
+              <router-link to="/blog" class="hover:text-[#00BDE0] transition-colors flex items-center gap-2 group">
+                <ChevronRight class="w-3.5 h-3.5 text-[#00BDE0] group-hover:translate-x-0.5 transition-transform" />
+                <span>Childcare Guides & Blog (30 Posts)</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/contact" class="hover:text-[#00BDE0] transition-colors flex items-center gap-2 group">
+                <ChevronRight class="w-3.5 h-3.5 text-[#00BDE0] group-hover:translate-x-0.5 transition-transform" />
                 <span>Contact Information</span>
               </router-link>
             </li>
@@ -115,32 +121,32 @@
             Programs & Care
           </h4>
           <ul class="space-y-3 text-xs sm:text-sm">
-            <li class="flex items-center gap-2 text-gray-300 hover:text-[#FFE6EA] transition-colors">
-              <Check class="w-4 h-4 text-[#FFE6EA] shrink-0" />
+            <li class="flex items-center gap-2 text-gray-300 hover:text-[#00BDE0] transition-colors">
+              <Check class="w-4 h-4 text-[#00BDE0] shrink-0" />
               <span>Infant & Newborn Care (0–12 Mo)</span>
             </li>
-            <li class="flex items-center gap-2 text-gray-300 hover:text-[#FFE6EA] transition-colors">
+            <li class="flex items-center gap-2 text-gray-300 hover:text-[#00BDE0] transition-colors">
               <Check class="w-4 h-4 text-brand-yellow shrink-0" />
               <span>Toddler Discovery & Puzzles (1–3 Yr)</span>
             </li>
-            <li class="flex items-center gap-2 text-gray-300 hover:text-[#FFE6EA] transition-colors">
-              <Check class="w-4 h-4 text-[#FFE6EA] shrink-0" />
+            <li class="flex items-center gap-2 text-gray-300 hover:text-[#00BDE0] transition-colors">
+              <Check class="w-4 h-4 text-[#00BDE0] shrink-0" />
               <span>Preschool & Pre-K Readiness (3–5 Yr)</span>
             </li>
-            <li class="flex items-center gap-2 text-gray-300 hover:text-[#FFE6EA] transition-colors">
+            <li class="flex items-center gap-2 text-gray-300 hover:text-[#00BDE0] transition-colors">
               <Check class="w-4 h-4 text-amber-300 shrink-0" />
-              <span>After-School Care & Tutoring (5–14 Yr)</span>
+              <span>After-School Care & Tutoring (5–15 Yr)</span>
             </li>
             <li class="flex items-center gap-2 text-gray-300 hover:text-brand-yellow transition-colors">
               <Check class="w-4 h-4 text-amber-400 shrink-0" />
               <span class="font-bold text-amber-300">Active CACFP / WIC Food Program</span>
             </li>
-            <li class="flex items-center gap-2 text-gray-300 hover:text-[#FFE6EA] transition-colors">
+            <li class="flex items-center gap-2 text-gray-300 hover:text-[#00BDE0] transition-colors">
               <Check class="w-4 h-4 text-emerald-400 shrink-0" />
               <span>Nutritious Meals & Fresh Fruit Plates</span>
             </li>
-            <li class="flex items-center gap-2 text-gray-300 hover:text-[#FFE6EA] transition-colors">
-              <Check class="w-4 h-4 text-[#FFE6EA] shrink-0" />
+            <li class="flex items-center gap-2 text-gray-300 hover:text-[#00BDE0] transition-colors">
+              <Check class="w-4 h-4 text-[#00BDE0] shrink-0" />
               <span>Fenced Outdoor Yard & Nature Walks</span>
             </li>
           </ul>
@@ -154,12 +160,12 @@
           </h4>
           <ul class="space-y-3.5 text-xs sm:text-sm">
             <li class="flex items-start gap-2.5">
-              <MapPin class="w-4 h-4 text-[#FFE6EA] shrink-0 mt-0.5" />
+              <MapPin class="w-4 h-4 text-[#00BDE0] shrink-0 mt-0.5" />
               <span>Based in <strong>Lorton, VA</strong></span>
             </li>
 
             <li class="flex items-start gap-2.5">
-              <Phone class="w-4 h-4 text-[#FFE6EA] shrink-0 mt-0.5" />
+              <Phone class="w-4 h-4 text-[#00BDE0] shrink-0 mt-0.5" />
               <a href="tel:+17036061557" class="hover:text-brand-yellow transition-colors font-semibold">
                 +1 (703) 606-1557
               </a>

@@ -1,14 +1,14 @@
 <template>
   <div class="py-12 bg-[#FCFDFF]">
-    <!-- Header Banner (Executive Navy & Soft Blush Pink / Gold) -->
+    <!-- Header Banner (Navy & Cyan / Amber) -->
     <div class="max-w-7xl mx-auto px-4 sm:px-8 mb-16">
       <div class="bg-gradient-to-r from-[#0F172A] via-[#1E293B] to-[#0F172A] rounded-3xl p-8 sm:p-14 text-white relative overflow-hidden shadow-2xl border border-gray-800">
-        <div class="absolute -right-10 -bottom-10 w-80 h-80 bg-[#FFE6EA]/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -right-10 -bottom-10 w-80 h-80 bg-[#00BDE0]/15 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute -left-10 -top-10 w-80 h-80 bg-amber-400/10 rounded-full blur-3xl pointer-events-none"></div>
         <div class="relative z-10 max-w-3xl space-y-4">
-          <div class="inline-flex items-center gap-2 bg-[#FFE6EA]/20 border border-[#FFE6EA]/40 px-3.5 py-1 rounded-full text-xs font-bold text-[#FFE6EA]">
+          <div class="inline-flex items-center gap-2 bg-[#00BDE0]/20 border border-[#00BDE0]/40 px-3.5 py-1 rounded-full text-xs font-bold text-[#CCF2F9]">
             <Sparkles class="w-3.5 h-3.5 text-amber-400 inline" />
-            <span>Programs For Ages Newborn – 14 Years</span>
+            <span>Programs For Ages Newborn – 15 Years</span>
           </div>
           <h1 class="text-3xl sm:text-5xl font-extrabold font-heading tracking-tight leading-tight text-white">
             Our Daycare Programs & Services
@@ -34,8 +34,8 @@
               </div>
             </div>
             <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
-              <div class="inline-flex items-center gap-1.5 bg-[#FFE6EA] text-rose-900 border border-[#FFD6DF] px-3 py-1 rounded-full text-xs font-bold">
-                <Baby class="w-3.5 h-3.5 text-rose-700" />
+              <div class="inline-flex items-center gap-1.5 bg-[#CCF2F9] text-[#0A3366] border border-[#00BDE0]/30 px-3 py-1 rounded-full text-xs font-bold">
+                <Baby class="w-3.5 h-3.5 text-[#00BDE0]" />
                 <span>Newborn to 12 Months</span>
               </div>
               <h2 class="text-2xl sm:text-3xl font-bold font-heading text-brand-navy">
@@ -92,8 +92,8 @@
               </div>
             </div>
             <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
-              <div class="inline-flex items-center gap-1.5 bg-[#FFE6EA] text-rose-900 border border-[#FFD6DF] px-3 py-1 rounded-full text-xs font-bold">
-                <BookOpen class="w-3.5 h-3.5 text-rose-700" />
+              <div class="inline-flex items-center gap-1.5 bg-[#CCF2F9] text-[#0A3366] border border-[#00BDE0]/30 px-3 py-1 rounded-full text-xs font-bold">
+                <BookOpen class="w-3.5 h-3.5 text-[#00BDE0]" />
                 <span>Ages 3 – 5 Years</span>
               </div>
               <h2 class="text-2xl sm:text-3xl font-bold font-heading text-brand-navy">
@@ -112,19 +112,19 @@
           </div>
         </div>
 
-        <!-- 4. School-Age & Homework Support (Up to 14 Years) -->
+        <!-- 4. School-Age & Homework Support (Up to 15 Years) -->
         <div class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-7 space-y-4">
               <div class="inline-flex items-center gap-1.5 bg-purple-50 text-purple-900 border border-purple-200 px-3 py-1 rounded-full text-xs font-bold">
                 <School class="w-3.5 h-3.5 text-purple-700" />
-                <span>Ages 5 – 14 Years</span>
+                <span>Ages 5 – 15 Years</span>
               </div>
               <h2 class="text-2xl sm:text-3xl font-bold font-heading text-brand-navy">
                 Before & After-School Care & Homework Club
               </h2>
               <p class="text-sm text-brand-slate leading-relaxed">
-                A safe, supervised haven for older children and youth up to 14 years. We provide quiet study tables, dedicated homework guidance, wholesome afternoon snacks, educational board games like UNO, and outdoor sports.
+                A safe, supervised haven for older children and youth up to 15 years. We provide quiet study tables, dedicated homework guidance, wholesome afternoon snacks, educational board games like UNO, and outdoor sports.
               </p>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 text-xs text-brand-navy font-semibold">
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-purple-600 shrink-0" /> <span>Dedicated homework help & reading time</span></div>
@@ -204,7 +204,7 @@
       <!-- Daily Routine Schedule Table -->
       <div class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
         <div>
-          <span class="text-xs font-bold text-rose-700 uppercase tracking-wider">Predictable, Loving Rhythm</span>
+          <span class="text-xs font-bold text-[#00BDE0] uppercase tracking-wider">Predictable, Loving Rhythm</span>
           <h3 class="text-2xl sm:text-3xl font-bold font-heading text-brand-navy mt-1">
             Our Typical Daily Schedule (6:00 AM – 6:00 PM)
           </h3>
@@ -224,7 +224,7 @@
             </thead>
             <tbody class="divide-y divide-gray-100">
               <tr>
-                <td class="p-4 font-bold text-rose-700">6:00 AM – 8:00 AM</td>
+                <td class="p-4 font-bold text-[#00BDE0]">6:00 AM – 8:00 AM</td>
                 <td class="p-4 text-brand-navy">Early Drop-off, Calm Welcome & Free Exploration</td>
                 <td class="p-4 text-gray-500 hidden sm:table-cell">Gentle transition from home, quiet morning play</td>
               </tr>
@@ -260,7 +260,7 @@
               </tr>
               <tr class="bg-gray-50/50">
                 <td class="p-4 font-bold text-brand-navy">2:30 PM – 3:30 PM</td>
-                <td class="p-4 text-brand-navy">Afternoon Snack & School-Age Arrival / Homework Club (5–14 Yr)</td>
+                <td class="p-4 text-brand-navy">Afternoon Snack & School-Age Arrival / Homework Club (5–15 Yr)</td>
                 <td class="p-4 text-gray-500 hidden sm:table-cell">Quiet homework tutoring & tutoring assistance</td>
               </tr>
               <tr>
@@ -269,7 +269,7 @@
                 <td class="p-4 text-gray-500 hidden sm:table-cell">Creativity, imagination & sensory expression</td>
               </tr>
               <tr class="bg-gray-50/50">
-                <td class="p-4 font-bold text-rose-700">4:45 PM – 6:00 PM</td>
+                <td class="p-4 font-bold text-[#00BDE0]">4:45 PM – 6:00 PM</td>
                 <td class="p-4 text-brand-navy font-semibold">Story Time Circle, Daily Debrief & Parent Pick-up</td>
                 <td class="p-4 text-gray-500 hidden sm:table-cell">Calm wind-down and happy reunion with parents</td>
               </tr>
@@ -289,16 +289,16 @@
         <div class="pt-2 flex flex-wrap items-center justify-center gap-4">
           <router-link 
             to="/appointment" 
-            class="px-7 py-3.5 rounded-full font-bold text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] transition-all shadow-md flex items-center gap-2"
+            class="px-7 py-3.5 rounded-full font-bold text-white bg-[#00BDE0] hover:bg-[#00A1BE] border border-[#00BDE0] transition-all shadow-md flex items-center gap-2"
           >
-            <Calendar class="w-4 h-4 text-brand-navy" />
+            <Calendar class="w-4 h-4 text-white" />
             <span>Book an Appointment</span>
           </router-link>
           <a 
             href="tel:+17036061557" 
-            class="px-6 py-3.5 rounded-full font-bold text-brand-navy border border-gray-300 hover:bg-[#FFE6EA] transition-colors flex items-center gap-2"
+            class="px-6 py-3.5 rounded-full font-bold text-brand-navy border border-gray-300 hover:bg-[#ECF5FB] transition-colors flex items-center gap-2"
           >
-            <Phone class="w-4 h-4 text-rose-700" />
+            <Phone class="w-4 h-4 text-[#00BDE0]" />
             <span>Call +1 (703) 606-1557</span>
           </a>
         </div>

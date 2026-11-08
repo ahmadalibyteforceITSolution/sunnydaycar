@@ -3,9 +3,9 @@
     <!-- Header Banner -->
     <div class="max-w-7xl mx-auto px-4 sm:px-8 mb-16">
       <div class="bg-gradient-to-r from-brand-navy-dark via-brand-navy to-brand-navy rounded-3xl p-8 sm:p-14 text-white relative overflow-hidden shadow-xl">
-        <div class="absolute -right-10 -bottom-10 w-80 h-80 bg-[#FFE6EA]/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -right-10 -bottom-10 w-80 h-80 bg-[#00BDE0]/15 rounded-full blur-3xl pointer-events-none"></div>
         <div class="relative z-10 max-w-3xl space-y-4">
-          <div class="inline-flex items-center gap-2 bg-[#FFE6EA]/20 border border-[#FFE6EA]/40 px-3.5 py-1 rounded-full text-xs font-semibold text-[#FFE6EA]">
+          <div class="inline-flex items-center gap-2 bg-white/10 border border-[#00BDE0]/40 px-3.5 py-1 rounded-full text-xs font-semibold text-[#CCF2F9]">
             <Calendar class="w-3.5 h-3.5 inline text-amber-400" />
             <span>Schedule a Visit • Lorton, VA</span>
           </div>
@@ -27,7 +27,7 @@
           <div class="bg-white rounded-3xl p-8 sm:p-10 border border-gray-100 shadow-card">
             
             <div class="mb-8">
-              <span class="text-xs font-bold text-rose-700 uppercase tracking-wider">Fast & Easy</span>
+              <span class="text-xs font-bold text-[#00BDE0] uppercase tracking-wider">Fast & Easy</span>
               <h2 class="text-2xl sm:text-3xl font-bold font-heading text-brand-navy mt-1">
                 Schedule Your In-Person Visit
               </h2>
@@ -41,27 +41,27 @@
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-2">
-                    Parent / Guardian Full Name <span class="text-rose-600">*</span>
+                    Parent / Guardian Full Name <span class="text-[#00BDE0]">*</span>
                   </label>
                   <input 
                     type="text" 
                     required 
                     v-model="form.parentName"
                     placeholder="e.g. Sarah Johnson"
-                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm transition-all"
+                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/20 focus:border-[#00BDE0] text-sm transition-all"
                   />
                 </div>
 
                 <div>
                   <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-2">
-                    Phone Number <span class="text-rose-600">*</span>
+                    Phone Number <span class="text-[#00BDE0]">*</span>
                   </label>
                   <input 
                     type="tel" 
                     required 
                     v-model="form.phone"
                     placeholder="e.g. (703) 555-0123"
-                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm transition-all"
+                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/20 focus:border-[#00BDE0] text-sm transition-all"
                   />
                 </div>
               </div>
@@ -69,27 +69,27 @@
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-2">
-                    Email Address <span class="text-rose-600">*</span>
+                    Email Address <span class="text-[#00BDE0]">*</span>
                   </label>
                   <input 
                     type="email" 
                     required 
                     v-model="form.email"
                     placeholder="e.g. sarah@example.com"
-                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm transition-all"
+                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/20 focus:border-[#00BDE0] text-sm transition-all"
                   />
                 </div>
 
                 <div>
                   <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-2">
-                    Child's Age & Name <span class="text-rose-600">*</span>
+                    Child's Age & Name <span class="text-[#00BDE0]">*</span>
                   </label>
                   <input 
                     type="text" 
                     required 
                     v-model="form.childDetails"
                     placeholder="e.g. Emma (2 years old)"
-                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm transition-all"
+                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/20 focus:border-[#00BDE0] text-sm transition-all"
                   />
                 </div>
               </div>
@@ -97,18 +97,18 @@
               <!-- Program Choice -->
               <div>
                 <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-2">
-                  Program of Interest <span class="text-rose-600">*</span>
+                  Program of Interest <span class="text-[#00BDE0]">*</span>
                 </label>
                 <select 
                   required 
                   v-model="form.program"
-                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm bg-white transition-all text-brand-navy"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/20 focus:border-[#00BDE0] text-sm bg-white transition-all text-brand-navy"
                 >
                   <option value="" disabled>Select an age program</option>
                   <option value="Infant / Newborn (0-12 Months)">Infant / Newborn Care (0 - 12 Months)</option>
                   <option value="Toddler Discovery (1-3 Years)">Toddler Discovery & Sensory Play (1 - 3 Years)</option>
                   <option value="Preschool / Pre-K Readiness (3-5 Years)">Preschool & Kindergarten Readiness (3 - 5 Years)</option>
-                  <option value="Before & After-School (5-14 Years)">School-Age Care & Homework Club (5 - 14 Years)</option>
+                  <option value="Before & After-School (5-15 Years)">School-Age Care & Homework Club (5 - 15 Years)</option>
                   <option value="Flexible / Part-Time Care">Flexible / Part-Time Schedule</option>
                 </select>
               </div>
@@ -117,25 +117,25 @@
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-2">
-                    Preferred Tour Date <span class="text-rose-600">*</span>
+                    Preferred Tour Date <span class="text-[#00BDE0]">*</span>
                   </label>
                   <input 
                     type="date" 
                     required 
                     v-model="form.preferredDate"
                     :min="minDate"
-                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm transition-all text-brand-navy"
+                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/20 focus:border-[#00BDE0] text-sm transition-all text-brand-navy"
                   />
                 </div>
 
                 <div>
                   <label class="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-2">
-                    Preferred Time Slot <span class="text-rose-600">*</span>
+                    Preferred Time Slot <span class="text-[#00BDE0]">*</span>
                   </label>
                   <select 
                     required 
                     v-model="form.preferredTime"
-                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm bg-white transition-all text-brand-navy"
+                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/20 focus:border-[#00BDE0] text-sm bg-white transition-all text-brand-navy"
                   >
                     <option value="" disabled>Select a convenient time (6:00 AM – 6:00 PM)</option>
                     <option value="6:30 AM - Early Morning Drop-in">6:30 AM – Early Morning Drop-in</option>
@@ -157,17 +157,17 @@
                   rows="3" 
                   v-model="form.notes"
                   placeholder="Tell us about your child's personality, CACFP dietary preferences or allergies, nap habits, or desired start date..."
-                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm transition-all"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/20 focus:border-[#00BDE0] text-sm transition-all"
                 ></textarea>
               </div>
 
               <!-- Submit Button -->
               <button 
                 type="submit"
-                class="w-full py-4 rounded-full text-base font-bold text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] shadow-md transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-2"
+                class="w-full py-4 rounded-full text-base font-bold text-white bg-[#00BDE0] hover:bg-[#00A1BE] border border-[#00BDE0] shadow-md transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-2"
               >
                 <span>Confirm & Request Tour Booking</span>
-                <ArrowRight class="w-4 h-4 text-brand-navy" />
+                <ArrowRight class="w-4 h-4 text-white" />
               </button>
 
             </form>
@@ -179,9 +179,9 @@
         <div class="lg:col-span-5 space-y-6">
           
           <!-- Direct Helpline Card -->
-          <div class="bg-gradient-to-br from-brand-navy-dark via-brand-navy to-brand-navy text-white rounded-3xl p-8 border border-[#FFE6EA]/30 shadow-lg space-y-4 relative overflow-hidden">
-            <div class="absolute -right-8 -bottom-8 w-48 h-48 bg-[#FFE6EA]/10 rounded-full blur-2xl pointer-events-none"></div>
-            <span class="text-xs font-bold text-amber-300 uppercase tracking-wider">Prefer to call right now?</span>
+          <div class="bg-gradient-to-br from-brand-navy-dark via-brand-navy to-brand-navy text-white rounded-3xl p-8 border border-[#00BDE0]/30 shadow-lg space-y-4 relative overflow-hidden">
+            <div class="absolute -right-8 -bottom-8 w-48 h-48 bg-[#00BDE0]/10 rounded-full blur-2xl pointer-events-none"></div>
+            <span class="text-xs font-bold text-[#00BDE0] uppercase tracking-wider">Prefer to call right now?</span>
             <h3 class="text-2xl font-bold font-heading">
               Call Direct for Same-Day Tour Availability
             </h3>
@@ -191,15 +191,15 @@
             <div class="pt-2">
               <a 
                 href="tel:+17036061557"
-                class="inline-flex items-center gap-3 bg-[#FFE6EA] hover:bg-[#FFD6DF] text-brand-navy px-6 py-3.5 rounded-full font-bold text-base transition-colors shadow-md border border-[#FFD6DF]"
+                class="inline-flex items-center gap-3 bg-[#00BDE0] hover:bg-[#00A1BE] text-white px-6 py-3.5 rounded-full font-bold text-base transition-colors shadow-md border border-[#00BDE0]"
               >
-                <Phone class="w-4 h-4 text-rose-700" />
+                <Phone class="w-4 h-4 text-white" />
                 <span>+1 (703) 606-1557</span>
               </a>
             </div>
             <div class="pt-2 text-xs text-gray-300 font-semibold flex flex-wrap items-center gap-2">
               <span class="inline-flex items-center gap-1">
-                <MapPin class="w-3.5 h-3.5 text-[#FFE6EA]" />
+                <MapPin class="w-3.5 h-3.5 text-[#00BDE0]" />
                 <span>Lorton, VA</span>
               </span>
               <span>•</span>
@@ -208,8 +208,8 @@
                 <span>6:00 AM – 6:00 PM (Mon-Fri)</span>
               </span>
               <span>•</span>
-              <span class="bg-[#FFE6EA]/20 text-[#FFE6EA] px-2.5 py-0.5 rounded-full inline-flex items-center gap-1">
-                <Utensils class="w-3.5 h-3.5 text-[#FFE6EA]" />
+              <span class="bg-[#CCF2F9]/20 text-[#CCF2F9] px-2.5 py-0.5 rounded-full inline-flex items-center gap-1">
+                <Utensils class="w-3.5 h-3.5 text-[#00BDE0]" />
                 <span>CACFP / WIC Active</span>
               </span>
             </div>
@@ -222,7 +222,7 @@
             </h3>
             <ul class="space-y-3 text-xs sm:text-sm text-brand-slate">
               <li class="flex items-start gap-2.5">
-                <span class="w-5 h-5 rounded-full bg-[#FFE6EA] text-rose-800 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">1</span>
+                <span class="w-5 h-5 rounded-full bg-[#CCF2F9] text-[#0A3366] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">1</span>
                 <span><strong>Meet Our CDA Certified Provider</strong> and learn about our gentle care philosophy and safety training.</span>
               </li>
               <li class="flex items-start gap-2.5">
@@ -230,7 +230,7 @@
                 <span><strong>Explore Learning & Play Areas:</strong> See the alphabet wall, reading nook, sensory tables, and sanitized toy zones.</span>
               </li>
               <li class="flex items-start gap-2.5">
-                <span class="w-5 h-5 rounded-full bg-[#FFE6EA] text-rose-800 flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">3</span>
+                <span class="w-5 h-5 rounded-full bg-[#CCF2F9] text-[#0A3366] flex items-center justify-center font-bold text-xs shrink-0 mt-0.5">3</span>
                 <span><strong>Check Out the Fenced Play Yard:</strong> Inspect our safe outdoor active play equipment and green yard.</span>
               </li>
               <li class="flex items-start gap-2.5">
@@ -245,7 +245,7 @@
             <img src="/images/gallery/classroom-playroom.jpg" alt="Sunny Skies Daycare Learning Room" class="w-full h-56 object-cover" />
             <div class="p-4 bg-white text-xs font-semibold text-brand-navy flex items-center justify-between">
               <span>Sunny Skies Daycare Learning Room</span>
-              <span class="text-rose-700 font-bold">Lorton, VA</span>
+              <span class="text-[#00BDE0] font-bold">Lorton, VA</span>
             </div>
           </div>
 
@@ -260,14 +260,14 @@
       class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm"
     >
       <div class="bg-white rounded-3xl max-w-lg w-full p-8 text-center shadow-2xl border border-gray-100 space-y-5 animate-scale-up">
-        <div class="w-16 h-16 rounded-full bg-[#FFE6EA] text-amber-500 flex items-center justify-center mx-auto shadow-inner">
-          <Sun class="w-8 h-8 text-amber-500" />
+        <div class="w-16 h-16 rounded-full bg-[#CCF2F9] text-[#00BDE0] flex items-center justify-center mx-auto shadow-inner">
+          <Sun class="w-8 h-8 text-[#00BDE0]" />
         </div>
         <h3 class="text-2xl font-bold font-heading text-brand-navy">
           Tour Request Received!
         </h3>
         <p class="text-sm text-brand-slate leading-relaxed">
-          Thank you, <strong class="text-brand-navy">{{ submittedInfo?.parentName }}</strong>! We have received your tour request for <strong class="text-brand-navy">{{ submittedInfo?.childDetails }}</strong> on <strong class="text-rose-700">{{ submittedInfo?.preferredDate }}</strong> at <strong class="text-rose-700">{{ submittedInfo?.preferredTime }}</strong>.
+          Thank you, <strong class="text-brand-navy">{{ submittedInfo?.parentName }}</strong>! We have received your tour request for <strong class="text-brand-navy">{{ submittedInfo?.childDetails }}</strong> on <strong class="text-[#00BDE0]">{{ submittedInfo?.preferredDate }}</strong> at <strong class="text-[#00BDE0]">{{ submittedInfo?.preferredTime }}</strong>.
         </p>
         <p class="text-xs text-gray-500">
           Our provider will contact you shortly at <strong>{{ submittedInfo?.phone }}</strong> or <strong>{{ submittedInfo?.email }}</strong> to confirm.
@@ -288,9 +288,9 @@
           <!-- Secondary Action: Email -->
           <a 
             :href="emailUrl"
-            class="w-full py-3 px-6 rounded-2xl font-bold text-sm text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] shadow-sm transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
+            class="w-full py-3 px-6 rounded-2xl font-bold text-sm text-brand-navy bg-[#ECF5FB] hover:bg-[#CCF2F9] border border-[#00BDE0]/30 shadow-sm transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
           >
-            <Mail class="w-4 h-4 text-rose-700 shrink-0" />
+            <Mail class="w-4 h-4 text-[#00BDE0] shrink-0" />
             <span>Email: sunnyskiescare@gmail.com</span>
           </a>
 

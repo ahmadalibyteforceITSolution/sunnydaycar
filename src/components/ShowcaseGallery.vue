@@ -7,9 +7,9 @@
         :key="cat.id"
         @click="activeCategory = cat.id"
         class="px-4 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all duration-200 inline-flex items-center gap-2"
-        :class="activeCategory === cat.id ? 'bg-[#FFE6EA] text-rose-800 border border-[#FFD6DF] shadow-sm font-bold' : 'bg-white text-brand-slate hover:bg-[#FFE6EA]/30 hover:text-rose-700 border border-gray-200'"
+        :class="activeCategory === cat.id ? 'bg-[#CCF2F9] text-[#0A3366] border border-[#00BDE0]/50 shadow-sm font-bold' : 'bg-white text-brand-slate hover:bg-[#ECF5FB] hover:text-[#00BDE0] border border-gray-200'"
       >
-        <component :is="cat.icon" class="w-4 h-4 text-rose-700 shrink-0" />
+        <component :is="cat.icon" class="w-4 h-4 text-[#00BDE0] shrink-0" />
         <span>{{ cat.label }}</span>
       </button>
     </div>
@@ -31,7 +31,7 @@
           />
           <div class="absolute inset-0 bg-gradient-to-t from-brand-navy/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
             <span class="text-white text-xs font-semibold flex items-center gap-1.5 bg-black/60 px-2.5 py-1 rounded-full backdrop-blur-sm">
-              <ZoomIn class="w-3.5 h-3.5 text-[#FFE6EA]" />
+              <ZoomIn class="w-3.5 h-3.5 text-[#00BDE0]" />
               <span>Click to Zoom</span>
             </span>
           </div>
@@ -122,6 +122,54 @@ const activeLightboxItem = ref(null)
 
 const items = [
   {
+    image: '/images/gallery/sunny-skies-official-flyer.jpg',
+    title: 'Sunny Skies Daycare Official Program Flyer',
+    description: 'Ages Newborn – 15 Yrs, CDA Certified, Virginia State Licensed & Insured, CACFP / WIC approved meals, and Military Child Care (MCCYN) partner.',
+    category: 'learning',
+    tag: 'Official Flyer',
+    tagClass: 'text-brand-navy bg-[#CCF2F9] font-bold border border-[#00BDE0]/30'
+  },
+  {
+    image: '/images/gallery/classroom-reading-group.jpg',
+    title: 'Small Group Reading & Writing Circle',
+    description: 'Children seated together at our round table practicing handwriting worksheets, early phonics, and reading under the Sunny Skies Art wall.',
+    category: 'learning',
+    tag: 'Small Group Care',
+    tagClass: 'text-blue-700 bg-blue-100'
+  },
+  {
+    image: '/images/gallery/sensory-balloon-counting.jpg',
+    title: 'Sensory Balloon Color & Number Sorting',
+    description: 'Tactile color identification, counting practice, and fine motor grip development with wipe-clean Numbers 1-2-3 workbooks.',
+    category: 'play',
+    tag: 'Sensory Math',
+    tagClass: 'text-amber-700 bg-amber-100'
+  },
+  {
+    image: '/images/gallery/numbers-puzzle-math.jpg',
+    title: 'Interactive Math Clock & Phonics Puzzles',
+    description: 'Hands-on educational clock puzzles, wooden alphabet blocks, and guided coloring sessions building school-readiness confidence.',
+    category: 'learning',
+    tag: 'Early Literacy',
+    tagClass: 'text-brand-navy bg-brand-cyan-light'
+  },
+  {
+    image: '/images/gallery/bead-sorting-fine-motor.jpg',
+    title: 'Fine Motor Bead & Color Sorting Activity',
+    description: 'Egg carton and ice tray bead sorting exercises strengthening hand-eye coordination, concentration, and patience.',
+    category: 'art',
+    tag: 'Fine Motor Skills',
+    tagClass: 'text-brand-navy bg-[#CCF2F9]'
+  },
+  {
+    image: '/images/gallery/multilevel-circle-learning.jpg',
+    title: 'Multilevel Daily Circle Time & Story Hour',
+    description: 'Infants, toddlers, and school-age children learning cooperatively, exploring interactive picture books, and sharing.',
+    category: 'learning',
+    tag: 'Ages Newborn - 15',
+    tagClass: 'text-purple-700 bg-purple-100'
+  },
+  {
     image: '/images/gallery/classroom-playroom.jpg',
     title: 'Spacious Daycare Learning Room',
     description: 'Alphabet & numbers learning wall, interactive circle-time carpet, homework desks, and child-safe toy centers.',
@@ -159,7 +207,7 @@ const items = [
     description: 'Exploring colors, fine motor brush control, and creative expression at dedicated low toddler craft tables.',
     category: 'art',
     tag: 'Creative Arts',
-    tagClass: 'text-rose-700 bg-rose-100'
+    tagClass: 'text-brand-navy bg-[#CCF2F9]'
   },
   {
     image: '/images/gallery/nature-flower-sensory.jpg',
@@ -167,7 +215,7 @@ const items = [
     description: 'Connecting with nature through petal sorting, tactile textures, and botanical creative collages.',
     category: 'art',
     tag: 'Sensory Craft',
-    tagClass: 'text-rose-700 bg-rose-100'
+    tagClass: 'text-brand-navy bg-[#CCF2F9]'
   },
   {
     image: '/images/gallery/shape-puzzle.jpg',
@@ -207,7 +255,7 @@ const items = [
     description: 'Promoting focus, color blending, sharing crayons, and hydration breaks in a relaxed home setting.',
     category: 'art',
     tag: 'Fine Motor Skills',
-    tagClass: 'text-rose-700 bg-rose-100'
+    tagClass: 'text-brand-navy bg-[#CCF2F9]'
   },
   {
     image: '/images/gallery/number-writing.jpg',

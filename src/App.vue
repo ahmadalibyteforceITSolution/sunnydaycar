@@ -1,8 +1,8 @@
 <template>
-  <div class="min-h-screen flex flex-col bg-[#FCFDFF] selection:bg-brand-cyan-light selection:text-brand-navy">
+  <div class="min-h-screen flex flex-col bg-[#FCFDFF] selection:bg-brand-cyan-light selection:text-brand-navy overflow-x-hidden w-full max-w-full">
     <HeaderNav />
     
-    <main class="flex-grow">
+    <main class="flex-grow w-full overflow-x-hidden">
       <router-view v-slot="{ Component }">
         <transition name="page-fade" mode="out-in">
           <component :is="Component" />

@@ -2,10 +2,10 @@
   <div class="py-12 bg-[#FCFDFF]">
     <!-- Header Banner -->
     <div class="max-w-7xl mx-auto px-4 sm:px-8 mb-16">
-      <div class="bg-gradient-to-r from-brand-navy-dark via-brand-navy to-brand-navy rounded-3xl p-8 sm:p-14 text-white relative overflow-hidden shadow-xl">
-        <div class="absolute -right-10 -bottom-10 w-80 h-80 bg-[#FFE6EA]/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="bg-gradient-to-r from-[#031B4E] via-[#0A3366] to-[#0A3366] rounded-3xl p-8 sm:p-14 text-white relative overflow-hidden shadow-xl">
+        <div class="absolute -right-10 -bottom-10 w-80 h-80 bg-[#00BDE0]/20 rounded-full blur-3xl pointer-events-none"></div>
         <div class="relative z-10 max-w-3xl space-y-4">
-          <div class="inline-flex items-center gap-2 bg-[#FFE6EA]/20 border border-[#FFE6EA]/40 px-3.5 py-1 rounded-full text-xs font-semibold text-[#FFE6EA]">
+          <div class="inline-flex items-center gap-2 bg-[#00BDE0]/20 border border-[#00BDE0]/40 px-3.5 py-1 rounded-full text-xs font-semibold text-[#00BDE0]">
             <MapPin class="w-3.5 h-3.5 inline text-amber-400" />
             <span>Get in Touch • Lorton, VA</span>
           </div>
@@ -27,21 +27,21 @@
         <!-- Phone Card -->
         <a 
           href="tel:+17036061557"
-          class="bg-white p-7 rounded-2xl border border-gray-100 shadow-sm hover:shadow-card hover:border-[#FFE6EA] transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between group"
+          class="bg-white p-7 rounded-2xl border border-gray-100 shadow-sm hover:shadow-card hover:border-[#00BDE0]/40 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between group"
         >
           <div>
-            <div class="w-12 h-12 rounded-xl bg-[#FFE6EA] text-rose-700 group-hover:bg-[#FFD6DF] group-hover:text-brand-navy transition-colors flex items-center justify-center mb-4">
+            <div class="w-12 h-12 rounded-xl bg-[#CCF2F9] text-[#0A3366] group-hover:bg-[#00BDE0] group-hover:text-white transition-colors flex items-center justify-center mb-4">
               <Phone class="w-6 h-6" />
             </div>
-            <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Call or Text</span>
-            <h3 class="text-lg font-bold font-heading text-brand-navy group-hover:text-rose-700 transition-colors mt-0.5">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#566593]">Call or Text</span>
+            <h3 class="text-lg font-bold font-heading text-[#0A3366] group-hover:text-[#00BDE0] transition-colors mt-0.5">
               +1 (703) 606-1557
             </h3>
-            <p class="text-xs text-brand-slate mt-2 leading-relaxed">
+            <p class="text-xs text-[#566593] mt-2 leading-relaxed">
               Available 6:00 AM – 6:00 PM for enrollment inquiries, infant care questions, and quick updates.
             </p>
           </div>
-          <span class="mt-4 text-xs font-bold text-rose-700 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+          <span class="mt-4 text-xs font-bold text-[#00BDE0] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
             <span>Tap to Call</span>
             <ArrowRight class="w-3.5 h-3.5" />
           </span>
@@ -50,21 +50,21 @@
         <!-- Email Card -->
         <a 
           href="mailto:sunnyskiescare@gmail.com"
-          class="bg-white p-7 rounded-2xl border border-gray-100 shadow-sm hover:shadow-card hover:border-amber-200 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between group"
+          class="bg-white p-7 rounded-2xl border border-gray-100 shadow-sm hover:shadow-card hover:border-[#00BDE0]/40 transition-all duration-300 transform hover:-translate-y-1 flex flex-col justify-between group"
         >
           <div>
-            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 group-hover:bg-amber-100 group-hover:text-amber-800 transition-colors flex items-center justify-center mb-4">
+            <div class="w-12 h-12 rounded-xl bg-[#ECF5FB] text-[#00BDE0] group-hover:bg-[#00BDE0] group-hover:text-white transition-colors flex items-center justify-center mb-4">
               <Mail class="w-6 h-6" />
             </div>
-            <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Email Inquiries</span>
-            <h3 class="text-base font-bold font-heading text-brand-navy group-hover:text-amber-700 transition-colors mt-0.5 break-all">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#566593]">Email Inquiries</span>
+            <h3 class="text-base font-bold font-heading text-[#0A3366] group-hover:text-[#00BDE0] transition-colors mt-0.5 break-all">
               sunnyskiescare@gmail.com
             </h3>
-            <p class="text-xs text-brand-slate mt-2 leading-relaxed">
+            <p class="text-xs text-[#566593] mt-2 leading-relaxed">
               Send registration questions, registration documents, or schedule notes anytime.
             </p>
           </div>
-          <span class="mt-4 text-xs font-bold text-amber-600 flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+          <span class="mt-4 text-xs font-bold text-[#00BDE0] flex items-center gap-1 group-hover:translate-x-1 transition-transform">
             <span>Send Email</span>
             <ArrowRight class="w-3.5 h-3.5" />
           </span>
@@ -73,18 +73,18 @@
         <!-- Location Card -->
         <div class="bg-white p-7 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-[#FFE6EA] text-rose-700 flex items-center justify-center mb-4">
-              <MapPin class="w-6 h-6" />
+            <div class="w-12 h-12 rounded-xl bg-[#CCF2F9] text-[#0A3366] flex items-center justify-center mb-4">
+              <MapPin class="w-6 h-6 text-[#00BDE0]" />
             </div>
-            <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Location</span>
-            <h3 class="text-lg font-bold font-heading text-brand-navy mt-0.5">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#566593]">Location</span>
+            <h3 class="text-lg font-bold font-heading text-[#0A3366] mt-0.5">
               Lorton, VA
             </h3>
-            <p class="text-xs text-brand-slate mt-2 leading-relaxed">
+            <p class="text-xs text-[#566593] mt-2 leading-relaxed">
               Convenient Northern Virginia location near I-95 & Route 1 with quiet residential surroundings and fenced play yard.
             </p>
           </div>
-          <span class="mt-4 text-xs font-semibold text-gray-500 flex items-center gap-1">
+          <span class="mt-4 text-xs font-semibold text-[#566593] flex items-center gap-1">
             <Check class="w-3.5 h-3.5 text-emerald-600" />
             <span>Fairfax County, Virginia</span>
           </span>
@@ -93,14 +93,14 @@
         <!-- Hours Card -->
         <div class="bg-white p-7 rounded-2xl border border-gray-100 shadow-sm flex flex-col justify-between">
           <div>
-            <div class="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center mb-4">
-              <Clock class="w-6 h-6" />
+            <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-4">
+              <Clock class="w-6 h-6 text-amber-500" />
             </div>
-            <span class="text-xs font-bold uppercase tracking-wider text-gray-400">Operating Hours</span>
-            <h3 class="text-lg font-bold font-heading text-brand-navy mt-0.5">
+            <span class="text-xs font-bold uppercase tracking-wider text-[#566593]">Operating Hours</span>
+            <h3 class="text-lg font-bold font-heading text-[#0A3366] mt-0.5">
               6:00 AM – 6:00 PM
             </h3>
-            <p class="text-xs text-brand-slate mt-2 leading-relaxed">
+            <p class="text-xs text-[#566593] mt-2 leading-relaxed">
               Monday through Friday.<br />Evening & weekend tour appointments available upon request.
             </p>
           </div>
@@ -118,77 +118,77 @@
         <!-- Contact Form Column -->
         <div class="lg:col-span-7">
           <div class="bg-white rounded-3xl p-8 sm:p-10 border border-gray-100 shadow-sm">
-            <span class="text-xs font-bold text-rose-700 uppercase tracking-wider">Send a Message</span>
-            <h2 class="text-2xl sm:text-3xl font-bold font-heading text-brand-navy mt-1 mb-2">
+            <span class="text-xs font-bold text-[#00BDE0] uppercase tracking-wider">Send a Message</span>
+            <h2 class="text-2xl sm:text-3xl font-bold font-heading text-[#0A3366] mt-1 mb-2">
               How Can We Help You?
             </h2>
-            <p class="text-xs sm:text-sm text-brand-slate mb-8">
+            <p class="text-xs sm:text-sm text-[#566593] mb-8">
               Fill out the form below and we will get back to you promptly within 24 hours.
             </p>
 
             <form @submit.prevent="sendMessage" class="space-y-4">
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-xs font-bold text-brand-navy uppercase mb-1.5">Your Name *</label>
+                  <label class="block text-xs font-bold text-[#0A3366] uppercase mb-1.5">Your Name *</label>
                   <input 
                     type="text" 
                     required 
                     v-model="contactForm.name"
                     placeholder="Full name"
-                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm"
+                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/30 focus:border-[#00BDE0] text-sm text-[#0A3366]"
                   />
                 </div>
 
                 <div>
-                  <label class="block text-xs font-bold text-brand-navy uppercase mb-1.5">Phone Number *</label>
+                  <label class="block text-xs font-bold text-[#0A3366] uppercase mb-1.5">Phone Number *</label>
                   <input 
                     type="tel" 
                     required 
                     v-model="contactForm.phone"
                     placeholder="Phone number"
-                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm"
+                    class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/30 focus:border-[#00BDE0] text-sm text-[#0A3366]"
                   />
                 </div>
               </div>
 
               <div>
-                <label class="block text-xs font-bold text-brand-navy uppercase mb-1.5">Email Address *</label>
+                <label class="block text-xs font-bold text-[#0A3366] uppercase mb-1.5">Email Address *</label>
                 <input 
                   type="email" 
                   required 
                   v-model="contactForm.email"
                   placeholder="name@example.com"
-                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/30 focus:border-[#00BDE0] text-sm text-[#0A3366]"
                 />
               </div>
 
               <div>
-                <label class="block text-xs font-bold text-brand-navy uppercase mb-1.5">Subject</label>
+                <label class="block text-xs font-bold text-[#0A3366] uppercase mb-1.5">Subject</label>
                 <input 
                   type="text" 
                   v-model="contactForm.subject"
                   placeholder="e.g. Infant enrollment availability (6am - 6pm)"
-                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm"
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/30 focus:border-[#00BDE0] text-sm text-[#0A3366]"
                 />
               </div>
 
               <div>
-                <label class="block text-xs font-bold text-brand-navy uppercase mb-1.5">Message *</label>
+                <label class="block text-xs font-bold text-[#0A3366] uppercase mb-1.5">Message *</label>
                 <textarea 
                   rows="4" 
                   required 
                   v-model="contactForm.message"
-                  placeholder="Write your questions, your child's age (up to 14 years), or schedule preferences..."
-                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#FFE6EA] focus:border-[#C94E6B] text-sm"
+                  placeholder="Write your questions, your child's age (up to 15 years), or schedule preferences..."
+                  class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/30 focus:border-[#00BDE0] text-sm text-[#0A3366]"
                 ></textarea>
               </div>
 
               <button 
                 type="submit"
-                class="w-full py-3.5 rounded-full text-sm font-bold text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] transition-all shadow-sm flex items-center justify-center gap-2 cursor-pointer"
+                class="w-full py-3.5 rounded-full text-sm font-bold text-white bg-[#00BDE0] hover:bg-[#00A1BE] shadow-md shadow-[#00BDE0]/25 transition-all flex items-center justify-center gap-2 cursor-pointer transform hover:-translate-y-0.5"
               >
                 <span>Send Message</span>
-                <Send class="w-4 h-4 text-brand-navy" />
+                <Send class="w-4 h-4 text-white" />
               </button>
 
               <!-- Success Alert & Direct Action Card -->
@@ -202,8 +202,8 @@
                     <Check class="w-5 h-5 text-emerald-600 shrink-0" />
                     <span>Message Sent! Opening WhatsApp & Forwarding to Email.</span>
                   </div>
-                  <p class="text-xs text-brand-slate leading-relaxed">
-                    Thank you <strong class="text-brand-navy">{{ lastSentInfo?.name }}</strong>! Your inquiry is being sent to <strong class="text-brand-navy">sunnyskiescare@gmail.com</strong> and WhatsApp (<strong class="text-brand-navy">+1 703 606-1557</strong>). Form fields have been cleared.
+                  <p class="text-xs text-[#566593] leading-relaxed">
+                    Thank you <strong class="text-[#0A3366]">{{ lastSentInfo?.name }}</strong>! Your inquiry is being sent to <strong class="text-[#0A3366]">sunnyskiescare@gmail.com</strong> and WhatsApp (<strong class="text-[#0A3366]">+1 703 606-1557</strong>). Form fields have been cleared.
                   </p>
                   
                   <div class="pt-2 space-y-2.5">
@@ -218,9 +218,9 @@
                     </a>
                     <a 
                       :href="mailtoUrl"
-                      class="w-full py-3 px-6 rounded-2xl font-bold text-sm text-brand-navy bg-[#FFE6EA] hover:bg-[#FFD6DF] border border-[#FFD6DF] shadow-sm transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
+                      class="w-full py-3 px-6 rounded-2xl font-bold text-sm text-[#0A3366] bg-[#ECF5FB] hover:bg-[#CCF2F9] border border-[#00BDE0]/30 shadow-sm transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
                     >
-                      <Mail class="w-4 h-4 text-rose-700 shrink-0" />
+                      <Mail class="w-4 h-4 text-[#00BDE0] shrink-0" />
                       <span>Email: sunnyskiescare@gmail.com</span>
                     </a>
                   </div>
@@ -237,11 +237,11 @@
           <div class="bg-white rounded-3xl p-5 border border-gray-100 shadow-sm space-y-3">
             <div class="flex items-center justify-between">
               <div>
-                <h3 class="font-bold font-heading text-base text-brand-navy">Location: Lorton, VA</h3>
-                <p class="text-xs text-brand-slate">Fairfax County, Northern Virginia</p>
+                <h3 class="font-bold font-heading text-base text-[#0A3366]">Location: Lorton, VA</h3>
+                <p class="text-xs text-[#566593]">Fairfax County, Northern Virginia</p>
               </div>
-              <span class="text-xs bg-[#FFE6EA] text-rose-800 font-bold px-2.5 py-1 rounded-full border border-[#FFD6DF] flex items-center gap-1">
-                <MapPin class="w-3 h-3 text-rose-700" />
+              <span class="text-xs bg-[#CCF2F9] text-[#0A3366] font-bold px-2.5 py-1 rounded-full border border-[#00BDE0]/30 flex items-center gap-1">
+                <MapPin class="w-3 h-3 text-[#00BDE0]" />
                 <span>Open in Maps</span>
               </span>
             </div>
@@ -262,7 +262,7 @@
           </div>
 
           <!-- Social Media Connect Box -->
-          <div class="bg-gradient-to-br from-brand-navy-dark via-brand-navy to-brand-navy rounded-3xl p-7 text-white space-y-4">
+          <div class="bg-gradient-to-br from-[#031B4E] via-[#0A3366] to-[#0A3366] rounded-3xl p-7 text-white space-y-4">
             <h3 class="text-xl font-bold font-heading">
               Follow Our Daily Fun on Social Media
             </h3>
@@ -276,13 +276,13 @@
                 href="https://www.instagram.com/sunnyskiesdaycare_/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-[#FFE6EA] hover:text-brand-navy transition-all text-xs font-semibold group"
+                class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-[#00BDE0] hover:text-[#0A3366] transition-all text-xs font-semibold group"
               >
                 <div class="flex items-center gap-2.5">
-                  <Instagram class="w-4 h-4 text-rose-300 group-hover:text-rose-700" />
+                  <Instagram class="w-4 h-4 text-[#00BDE0] group-hover:text-white" />
                   <span>Instagram: @sunnyskiesdaycare_</span>
                 </div>
-                <ArrowRight class="w-4 h-4 text-gray-400 group-hover:text-brand-navy group-hover:translate-x-1 transition-transform" />
+                <ArrowRight class="w-4 h-4 text-gray-400 group-hover:text-white group-hover:translate-x-1 transition-transform" />
               </a>
 
               <!-- TikTok -->
@@ -290,13 +290,13 @@
                 href="https://www.tiktok.com/@sunnyskiesdaycare?_r=1&_t=ZP-9BCknDf7uPv"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-[#FFE6EA] hover:text-brand-navy transition-all text-xs font-semibold group"
+                class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-[#00BDE0] hover:text-[#0A3366] transition-all text-xs font-semibold group"
               >
                 <div class="flex items-center gap-2.5">
-                  <IconTikTok class="w-4 h-4 fill-current text-white group-hover:text-brand-navy" />
+                  <IconTikTok class="w-4 h-4 fill-current text-white group-hover:text-[#0A3366]" />
                   <span>TikTok: @sunnyskiesdaycare</span>
                 </div>
-                <ArrowRight class="w-4 h-4 text-gray-400 group-hover:text-brand-navy group-hover:translate-x-1 transition-transform" />
+                <ArrowRight class="w-4 h-4 text-gray-400 group-hover:text-white group-hover:translate-x-1 transition-transform" />
               </a>
 
               <!-- Facebook -->
@@ -322,11 +322,11 @@
       <!-- FAQ Section -->
       <div class="bg-white rounded-3xl p-8 sm:p-12 border border-gray-100 shadow-sm space-y-8">
         <div class="text-center max-w-2xl mx-auto">
-          <span class="text-xs font-bold text-rose-700 uppercase tracking-wider">Common Questions</span>
-          <h2 class="text-3xl font-bold font-heading text-brand-navy mt-1">
+          <span class="text-xs font-bold text-[#00BDE0] uppercase tracking-wider">Common Questions</span>
+          <h2 class="text-3xl font-bold font-heading text-[#0A3366] mt-1">
             Frequently Asked Questions
           </h2>
-          <p class="text-xs sm:text-sm text-brand-slate mt-2">
+          <p class="text-xs sm:text-sm text-[#566593] mt-2">
             Got questions before enrolling? Here are answers to what parents ask most.
           </p>
         </div>
@@ -336,16 +336,16 @@
             v-for="(faq, idx) in faqs" 
             :key="idx"
             class="border rounded-2xl overflow-hidden transition-colors"
-            :class="openFaq === idx ? 'bg-[#FFE6EA]/30 border-[#FFD6DF]' : 'bg-[#FCFDFF] border-gray-100'"
+            :class="openFaq === idx ? 'bg-[#ECF5FB] border-[#00BDE0]/40' : 'bg-[#FCFDFF] border-gray-100'"
           >
             <button 
               @click="openFaq = openFaq === idx ? null : idx"
-              class="w-full text-left p-5 flex items-center justify-between font-bold font-heading text-sm sm:text-base text-brand-navy focus:outline-none"
+              class="w-full text-left p-5 flex items-center justify-between font-bold font-heading text-sm sm:text-base text-[#0A3366] focus:outline-none cursor-pointer"
             >
               <span>{{ faq.q }}</span>
-              <span class="text-rose-700 text-lg ml-4 font-extrabold">{{ openFaq === idx ? '−' : '+' }}</span>
+              <span class="text-[#00BDE0] text-lg ml-4 font-extrabold">{{ openFaq === idx ? '−' : '+' }}</span>
             </button>
-            <div v-show="openFaq === idx" class="px-5 pb-5 text-xs sm:text-sm text-brand-slate leading-relaxed border-t border-[#FFD6DF]/60 pt-3">
+            <div v-show="openFaq === idx" class="px-5 pb-5 text-xs sm:text-sm text-[#566593] leading-relaxed border-t border-[#00BDE0]/20 pt-3">
               {{ faq.a }}
             </div>
           </div>
@@ -358,8 +358,9 @@
 
 <script setup>
 import { ref } from 'vue'
-import { Phone, Mail, MapPin, Clock, Send, ArrowRight, Check } from 'lucide-vue-next'
+import { Phone, Mail, MapPin, Clock, Send, ArrowRight, Check, Instagram, Facebook } from 'lucide-vue-next'
 import IconWhatsApp from '../components/icons/IconWhatsApp.vue'
+import IconTikTok from '../components/icons/IconTikTok.vue'
 
 const sentSuccess = ref(false)
 const openFaq = ref(0)
