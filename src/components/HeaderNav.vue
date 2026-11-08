@@ -59,8 +59,8 @@
     </div>
 
     <!-- 2. Clean Top Contact & Social Bar in One Crisp Line (Midnight Dark Navy #031B4E) -->
-    <div class="bg-[#031B4E] text-white text-xs py-2 px-4 sm:px-8 border-b border-[#0A3366] w-full overflow-hidden">
-      <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+    <div class="bg-[#031B4E] text-white text-xs py-1.5 sm:py-2 px-3 sm:px-8 border-b border-[#0A3366] w-full overflow-hidden">
+      <div class="max-w-7xl mx-auto flex items-center justify-between gap-2 sm:gap-4">
         
         <!-- Left Contact Items -->
         <div class="flex items-center gap-4 sm:gap-6 text-gray-200 text-[11px] sm:text-xs whitespace-nowrap shrink-0">
@@ -103,20 +103,20 @@
     </div>
 
     <!-- 3. Main Navigation Bar (Clean single-line layout) -->
-    <nav class="max-w-7xl mx-auto px-4 sm:px-8">
-      <div class="flex items-center justify-between h-20 gap-4">
+    <nav class="max-w-7xl mx-auto px-3 sm:px-8">
+      <div class="flex items-center justify-between h-16 sm:h-20 gap-2 sm:gap-4">
         
         <!-- Left: Logo & Title (Strict Single-Line) -->
-        <router-link to="/" class="flex items-center gap-3 shrink-0 group">
-          <div class="relative w-11 h-11 rounded-full overflow-hidden shadow border-2 border-brand-yellow group-hover:scale-105 transition-transform duration-300 shrink-0">
+        <router-link to="/" class="flex items-center gap-2 sm:gap-3 shrink-0 group min-w-0">
+          <div class="relative w-9 h-9 sm:w-11 sm:h-11 rounded-full overflow-hidden shadow border-2 border-brand-yellow group-hover:scale-105 transition-transform duration-300 shrink-0">
             <img src="/logo.png" alt="Sunny Skies Daycare" class="w-full h-full object-cover" />
           </div>
-          <div class="flex flex-col whitespace-nowrap">
-            <div class="flex items-center gap-2">
-              <span class="text-xl sm:text-2xl font-bold font-heading text-[#0A3366] tracking-tight group-hover:text-[#00BDE0] transition-colors">
+          <div class="flex flex-col whitespace-nowrap min-w-0">
+            <div class="flex items-center gap-1.5 sm:gap-2">
+              <span class="text-lg sm:text-2xl font-bold font-heading text-[#0A3366] tracking-tight group-hover:text-[#00BDE0] transition-colors">
                 Sunny Skies
               </span>
-              <span class="text-[11px] bg-[#CCF2F9] text-[#0A3366] font-bold px-2 py-0.5 rounded-full border border-[#00BDE0]/30">
+              <span class="text-[10px] sm:text-[11px] bg-[#CCF2F9] text-[#0A3366] font-bold px-1.5 sm:px-2 py-0.5 rounded-full border border-[#00BDE0]/30 hidden min-[360px]:inline-block">
                 Daycare
               </span>
             </div>
@@ -199,26 +199,28 @@
           </button>
         </div>
 
-        <!-- Mobile Quick Call & Toggle Button -->
+        <!-- Mobile Quick Call & Prominent High-Contrast Toggle Button -->
         <div class="lg:hidden flex items-center gap-2 shrink-0">
           <a 
             href="tel:+17036061557"
-            class="flex items-center gap-1.5 bg-[#0A3366] hover:bg-[#031B4E] text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-md border border-[#00BDE0]/50 active:scale-95 transition-all"
+            class="flex items-center gap-1.5 bg-[#0A3366] hover:bg-[#031B4E] text-white p-2 min-[420px]:px-3 min-[420px]:py-1.5 rounded-full text-xs font-bold shadow-md border border-[#00BDE0]/50 active:scale-95 transition-all shrink-0"
             title="Call Sunny Skies Daycare: +1 (703) 606-1557"
+            aria-label="Call Sunny Skies Daycare"
           >
             <span class="w-5 h-5 rounded-full bg-[#00BDE0] text-white flex items-center justify-center shrink-0">
               <Phone class="w-3 h-3 animate-pulse" />
             </span>
-            <span class="text-[11px] sm:text-xs">Call Us</span>
+            <span class="hidden min-[420px]:inline text-[11px] sm:text-xs">Call Us</span>
           </a>
 
           <button 
             @click="mobileMenuOpen = !mobileMenuOpen" 
-            class="p-2 rounded-xl text-[#0A3366] hover:bg-gray-100 transition-colors focus:outline-none"
-            aria-label="Toggle menu"
+            class="w-10 h-10 rounded-xl bg-[#ECF5FB] hover:bg-[#CCF2F9] active:bg-[#CCF2F9] text-[#0A3366] border-2 border-[#00BDE0]/40 flex items-center justify-center shrink-0 shadow-sm active:scale-95 transition-all focus:outline-none cursor-pointer"
+            aria-label="Toggle navigation menu"
+            :aria-expanded="mobileMenuOpen"
           >
-            <Menu v-if="!mobileMenuOpen" class="w-6 h-6" />
-            <X v-else class="w-6 h-6" />
+            <Menu v-if="!mobileMenuOpen" class="w-5 h-5 text-[#0A3366]" />
+            <X v-else class="w-5 h-5 text-[#0A3366]" />
           </button>
         </div>
 
