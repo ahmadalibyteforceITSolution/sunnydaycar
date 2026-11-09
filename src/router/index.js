@@ -6,6 +6,7 @@ import AppointmentView from '../views/AppointmentView.vue'
 import ContactView from '../views/ContactView.vue'
 import BlogView from '../views/BlogView.vue'
 import BlogPostDetailView from '../views/BlogPostDetailView.vue'
+import PrivacyPolicyView from '../views/PrivacyPolicyView.vue'
 
 const routes = [
   {
@@ -66,6 +67,19 @@ const routes = [
     path: '/blog/:slug',
     name: 'BlogPostDetail',
     component: BlogPostDetailView
+  },
+  {
+    path: '/privacy-policy',
+    name: 'PrivacyPolicy',
+    component: PrivacyPolicyView,
+    meta: {
+      title: 'Privacy Policy - Sunny Skies Daycare | Lorton, VA',
+      description: 'Review our official Privacy Policy. Learn how Sunny Skies Daycare in Lorton, VA protects parent, family, and child privacy, cookies, and digital security.'
+    }
+  },
+  {
+    path: '/privacy',
+    redirect: '/privacy-policy'
   },
   {
     path: '/:pathMatch(.*)*',

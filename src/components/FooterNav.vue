@@ -111,6 +111,12 @@
                 <span>Contact Information</span>
               </router-link>
             </li>
+            <li>
+              <router-link to="/privacy-policy" class="hover:text-[#00BDE0] transition-colors flex items-center gap-2 group">
+                <ChevronRight class="w-3.5 h-3.5 text-[#00BDE0] group-hover:translate-x-0.5 transition-transform" />
+                <span>Privacy Policy</span>
+              </router-link>
+            </li>
           </ul>
         </div>
 
@@ -200,7 +206,7 @@
           <span>•</span>
           <span>CPR & First Aid Certified</span>
           <span>•</span>
-          <router-link to="/contact" class="hover:text-brand-yellow transition-colors">Privacy & Policies</router-link>
+          <router-link to="/privacy-policy" class="hover:text-brand-yellow transition-colors underline decoration-[#00BDE0]/40">Privacy Policy</router-link>
         </div>
       </div>
     </div>
