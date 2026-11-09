@@ -43,9 +43,9 @@
 
         <div class="p-4 flex-grow flex flex-col justify-between">
           <div>
-            <h4 class="font-bold font-heading text-sm text-brand-navy group-hover:text-brand-cyan transition-colors">
+            <h3 class="font-bold font-heading text-sm text-brand-navy group-hover:text-brand-cyan transition-colors">
               {{ item.title }}
-            </h4>
+            </h3>
             <p class="text-xs text-brand-slate mt-1 leading-relaxed">
               {{ item.description }}
             </p>

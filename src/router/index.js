@@ -13,8 +13,8 @@ const routes = [
     name: 'Home',
     component: HomeView,
     meta: {
-      title: 'Sunny Skies Daycare | Loving Home Daycare in Lorton, VA (Newborn – 15 Yrs)',
-      description: 'Accredited home-based daycare in Lorton, VA. CDA Certified, Virginia State licensed, active USDA CACFP / WIC approved meals, 100% screen-free curriculum, hours 6 AM – 6 PM.'
+      title: 'Sunny Skies Daycare | CDA Certified Daycare Lorton VA',
+      description: 'Sunny Skies Daycare is a CDA certified provider in Lorton, VA with active CACFP / WIC approved meals, loving care, and learning for newborns to 15 years.'
     }
   },
   {
