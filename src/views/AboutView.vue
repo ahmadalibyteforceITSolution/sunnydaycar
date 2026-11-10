@@ -222,6 +222,11 @@
       </div>
 
     </div>
+
+    <!-- Citations & Accreditations Showcase -->
+    <div class="mt-16">
+      <CitationsAccreditationSection />
+    </div>
   </div>
 </template>
 
@@ -230,6 +235,7 @@ import { onMounted } from 'vue'
 import gsap from 'gsap'
 import { MapPin, Award, ShieldCheck, Users, Clock, Apple, Check, Sparkles, ArrowRight, Calendar, Phone } from 'lucide-vue-next'
 import ShowcaseGallery from '../components/ShowcaseGallery.vue'
+import CitationsAccreditationSection from '../components/CitationsAccreditationSection.vue'
 
 onMounted(() => {
   gsap.from('.about-hero-card', {

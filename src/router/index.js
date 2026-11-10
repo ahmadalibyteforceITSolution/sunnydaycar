@@ -7,6 +7,8 @@ import ContactView from '../views/ContactView.vue'
 import BlogView from '../views/BlogView.vue'
 import BlogPostDetailView from '../views/BlogPostDetailView.vue'
 import PrivacyPolicyView from '../views/PrivacyPolicyView.vue'
+import CitationsView from '../views/CitationsView.vue'
+import TermsView from '../views/TermsView.vue'
 
 const routes = [
   {
@@ -76,6 +78,32 @@ const routes = [
       title: 'Privacy Policy - Sunny Skies Daycare | Lorton, VA',
       description: 'Review our official Privacy Policy. Learn how Sunny Skies Daycare in Lorton, VA protects parent, family, and child privacy, cookies, and digital security.'
     }
+  },
+  {
+    path: '/citations',
+    name: 'Citations',
+    component: CitationsView,
+    meta: {
+      title: 'Citations, Standards & Accreditations | Sunny Skies Daycare',
+      description: 'Official statutory citations, USDA CACFP nutrition standards, CDA credentials, AAP safe sleep guidelines, and Virginia daycare licensing compliance.'
+    }
+  },
+  {
+    path: '/accreditations',
+    redirect: '/citations'
+  },
+  {
+    path: '/terms-of-service',
+    name: 'TermsOfService',
+    component: TermsView,
+    meta: {
+      title: 'Terms of Service & Editorial Policy | Sunny Skies Daycare Lorton VA',
+      description: 'Review our Terms of Service, Google AdSense disclosures, and editorial citation standards for Sunny Skies Daycare in Lorton, VA.'
+    }
+  },
+  {
+    path: '/terms',
+    redirect: '/terms-of-service'
   },
   {
     path: '/privacy',

@@ -112,9 +112,21 @@
               </router-link>
             </li>
             <li>
+              <router-link to="/citations" class="hover:text-[#00BDE0] transition-colors flex items-center gap-2 group">
+                <ChevronRight class="w-3.5 h-3.5 text-[#00BDE0] group-hover:translate-x-0.5 transition-transform" />
+                <span>Citations & Accreditations</span>
+              </router-link>
+            </li>
+            <li>
               <router-link to="/privacy-policy" class="hover:text-[#00BDE0] transition-colors flex items-center gap-2 group">
                 <ChevronRight class="w-3.5 h-3.5 text-[#00BDE0] group-hover:translate-x-0.5 transition-transform" />
                 <span>Privacy Policy</span>
+              </router-link>
+            </li>
+            <li>
+              <router-link to="/terms-of-service" class="hover:text-[#00BDE0] transition-colors flex items-center gap-2 group">
+                <ChevronRight class="w-3.5 h-3.5 text-[#00BDE0] group-hover:translate-x-0.5 transition-transform" />
+                <span>Terms of Service</span>
               </router-link>
             </li>
           </ul>
@@ -199,14 +211,16 @@
       <!-- Bottom Copyright & Compliance -->
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
         <p>© {{ new Date().getFullYear() }} Sunny Skies Daycare. All Rights Reserved. Lorton, VA.</p>
-        <div class="flex flex-wrap items-center gap-3 sm:gap-5 text-gray-300">
-          <span class="text-brand-yellow font-bold">CACFP / WIC Active Food Program</span>
+        <div class="flex flex-wrap items-center gap-3 sm:gap-4 text-gray-300">
+          <span class="text-brand-yellow font-bold">CACFP / WIC Active</span>
           <span>•</span>
-          <span>CDA Certified Provider</span>
+          <span>CDA Certified</span>
           <span>•</span>
-          <span>CPR & First Aid Certified</span>
+          <router-link to="/citations" class="hover:text-brand-yellow transition-colors underline decoration-[#00BDE0]/40">Citations & Accreditations</router-link>
           <span>•</span>
           <router-link to="/privacy-policy" class="hover:text-brand-yellow transition-colors underline decoration-[#00BDE0]/40">Privacy Policy</router-link>
+          <span>•</span>
+          <router-link to="/terms-of-service" class="hover:text-brand-yellow transition-colors underline decoration-[#00BDE0]/40">Terms of Service</router-link>
         </div>
       </div>
     </div>

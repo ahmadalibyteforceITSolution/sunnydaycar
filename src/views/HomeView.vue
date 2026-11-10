@@ -696,6 +696,9 @@
       </div>
     </section>
 
+    <!-- Evidence-Based Citations & Accreditations Showcase (Google AdSense E-E-A-T & Authority) -->
+    <CitationsAccreditationSection />
+
     <!-- Bottom Booking CTA Banner (Midnight Dark Navy #031B4E & Sky Cyan #00BDE0) -->
     <section class="py-16 sm:py-20 bg-gradient-to-r from-[#031B4E] via-[#0A3366] to-[#031B4E] text-white relative shadow-2xl border-t border-[#0A3366] overflow-hidden">
       <div class="absolute -right-10 -bottom-10 w-96 h-96 bg-[#00BDE0]/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -762,6 +765,7 @@ import {
 } from 'lucide-vue-next'
 import SocialIcons from '../components/SocialIcons.vue'
 import ShowcaseGallery from '../components/ShowcaseGallery.vue'
+import CitationsAccreditationSection from '../components/CitationsAccreditationSection.vue'
 import { blogs } from '../data/blogs.js'
 
 const activeHeroTab = ref('flyer')

@@ -153,6 +153,14 @@
           </router-link>
 
           <router-link 
+            to="/citations" 
+            class="px-3 py-2 rounded-xl text-sm font-semibold transition-all duration-200 whitespace-nowrap"
+            :class="$route.path === '/citations' ? 'text-[#00BDE0] bg-[#ECF5FB] font-bold border border-[#00BDE0]/30 shadow-sm' : 'text-[#0A3366] hover:text-[#00BDE0] hover:bg-[#ECF5FB]'"
+          >
+            Accreditations
+          </router-link>
+
+          <router-link 
             to="/blog" 
             class="px-3 py-2 rounded-xl text-sm font-semibold transition-all duration-200 whitespace-nowrap"
             :class="$route.path.startsWith('/blog') ? 'text-[#00BDE0] bg-[#ECF5FB] font-bold border border-[#00BDE0]/30 shadow-sm' : 'text-[#0A3366] hover:text-[#00BDE0] hover:bg-[#ECF5FB]'"
@@ -259,6 +267,14 @@
             :class="$route.path === '/services' ? 'text-[#00BDE0] bg-[#ECF5FB] font-bold' : 'text-[#0A3366] hover:bg-gray-50'"
           >
             Services & Programs
+          </router-link>
+          <router-link 
+            @click="mobileMenuOpen = false"
+            to="/citations" 
+            class="block px-4 py-2.5 rounded-lg text-sm font-semibold"
+            :class="$route.path === '/citations' ? 'text-[#00BDE0] bg-[#ECF5FB] font-bold' : 'text-[#0A3366] hover:bg-gray-50'"
+          >
+            Accreditations & Standards
           </router-link>
           <router-link 
             @click="mobileMenuOpen = false"

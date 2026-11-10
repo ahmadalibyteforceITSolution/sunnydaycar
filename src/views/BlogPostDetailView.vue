@@ -86,6 +86,53 @@
             </div>
           </div>
 
+          <!-- Authoritative Sources & Citations Box (For Google AdSense E-E-A-T & Academic Rigor) -->
+          <div class="bg-[#FCFDFF] border border-[#00BDE0]/30 rounded-2xl p-5 space-y-3 shadow-xs">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <BookmarkCheck class="w-4 h-4 text-[#00BDE0]" />
+                <h4 class="text-xs font-bold uppercase tracking-wider text-[#0A3366]">Verified Sources & Regulatory Citations</h4>
+              </div>
+              <router-link to="/citations" class="text-[11px] font-bold text-[#00BDE0] hover:underline flex items-center gap-1">
+                <span>View Full Citations</span>
+                <ArrowRight class="w-3 h-3" />
+              </router-link>
+            </div>
+            <p class="text-xs text-[#566593] leading-relaxed">
+              Our guides, curriculum, and daily care practices strictly adhere to evidence-based pediatric health standards, USDA federal nutrition rules, and Virginia child care regulations:
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1 text-[11px]">
+              <div class="p-2.5 bg-white rounded-xl border border-gray-100 flex items-start gap-2 shadow-2xs">
+                <Utensils class="w-3.5 h-3.5 text-amber-500 shrink-0 mt-0.5" />
+                <div>
+                  <strong class="text-[#0A3366] block">USDA CACFP (7 CFR § 226)</strong>
+                  <span class="text-[#566593]">Federal meal patterns for whole grains, dairy, and low sodium.</span>
+                </div>
+              </div>
+              <div class="p-2.5 bg-white rounded-xl border border-gray-100 flex items-start gap-2 shadow-2xs">
+                <Award class="w-3.5 h-3.5 text-blue-600 shrink-0 mt-0.5" />
+                <div>
+                  <strong class="text-[#0A3366] block">CDA Competency Goals</strong>
+                  <span class="text-[#566593]">Council for Professional Recognition national early educator benchmarks.</span>
+                </div>
+              </div>
+              <div class="p-2.5 bg-white rounded-xl border border-gray-100 flex items-start gap-2 shadow-2xs">
+                <ShieldCheck class="w-3.5 h-3.5 text-emerald-600 shrink-0 mt-0.5" />
+                <div>
+                  <strong class="text-[#0A3366] block">AAP Safe Sleep (Pediatrics 2022)</strong>
+                  <span class="text-[#566593]">American Academy of Pediatrics clinical safe sleep & pediatric health.</span>
+                </div>
+              </div>
+              <div class="p-2.5 bg-white rounded-xl border border-gray-100 flex items-start gap-2 shadow-2xs">
+                <Building class="w-3.5 h-3.5 text-purple-600 shrink-0 mt-0.5" />
+                <div>
+                  <strong class="text-[#0A3366] block">Virginia Code 8VAC20-790</strong>
+                  <span class="text-[#566593]">VDOE/VDSS child day care ratios, sanitation, and safety inspections.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Author Bio Card -->
           <div class="bg-gradient-to-r from-[#ECF5FB] to-white rounded-2xl p-6 border border-[#00BDE0]/20 flex items-start gap-4">
             <div class="w-12 h-12 rounded-full bg-[#031B4E] text-[#00BDE0] flex items-center justify-center shrink-0 shadow-sm mt-1">
@@ -235,7 +282,23 @@
 import { computed, watch, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { getBlogBySlug, getRelatedBlogs } from '../data/blogs.js'
-import { Home, ChevronRight, Clock, Calendar, ArrowRight, ArrowLeft, Award, Sparkles, Phone, Check, BookOpen } from 'lucide-vue-next'
+import { 
+  Home, 
+  ChevronRight, 
+  Clock, 
+  Calendar, 
+  ArrowRight, 
+  ArrowLeft, 
+  Award, 
+  Sparkles, 
+  Phone, 
+  Check, 
+  BookOpen,
+  BookmarkCheck,
+  Utensils,
+  Building,
+  ShieldCheck
+} from 'lucide-vue-next'
 
 const route = useRoute()
 const blog = computed(() => getBlogBySlug(route.params.slug))
@@ -265,7 +328,7 @@ function updateMetadata() {
   }
   canonicalLink.setAttribute('href', `https://www.sunnyskiesydaycarecenter.com/blog/${blog.value.slug}`)
 
-  // 4. JSON-LD BlogPosting Structured Data
+  // 4. JSON-LD BlogPosting Structured Data with E-E-A-T Citations
   let scriptTag = document.querySelector('#blog-jsonld')
   if (!scriptTag) {
     scriptTag = document.createElement('script')
@@ -281,9 +344,36 @@ function updateMetadata() {
     'image': `https://www.sunnyskiesydaycarecenter.com${blog.value.image}`,
     'datePublished': blog.value.date,
     'dateModified': blog.value.date,
+    'inLanguage': 'en-US',
+    'isAccessibleForFree': 'true',
+    'keywords': (blog.value.tags || []).concat([
+      'Daycare Lorton VA',
+      'Childcare Lorton VA',
+      'CDA Certified Daycare',
+      'USDA CACFP Meals',
+      'Early Childhood Education',
+      'Infant Milestones',
+      'Kindergarten Readiness'
+    ]).join(', '),
+    'citation': [
+      'https://www.fns.usda.gov/cacfp',
+      'https://www.cdacouncil.org',
+      'https://www.aap.org',
+      'https://www.cdc.gov/ncbddd/actearly/milestones/index.html',
+      'https://www.doe.virginia.gov/early-childhood'
+    ],
     'author': {
       '@type': 'Person',
-      'name': 'CDA Certified Provider',
+      'name': 'CDA Certified Early Childhood Provider',
+      'jobTitle': 'Daycare Director & CDA Certified Educator',
+      'hasCredential': {
+        '@type': 'EducationalOccupationalCredential',
+        'name': 'Child Development Associate (CDA) Credential',
+        'recognizedBy': {
+          '@type': 'Organization',
+          'name': 'Council for Professional Recognition'
+        }
+      },
       'affiliation': {
         '@type': 'Daycare',
         'name': 'Sunny Skies Daycare',
@@ -292,6 +382,7 @@ function updateMetadata() {
           '@type': 'PostalAddress',
           'addressLocality': 'Lorton',
           'addressRegion': 'VA',
+          'postalCode': '22079',
           'addressCountry': 'US'
         }
       }
@@ -299,6 +390,7 @@ function updateMetadata() {
     'publisher': {
       '@type': 'Organization',
       'name': 'Sunny Skies Daycare',
+      'url': 'https://www.sunnyskiesydaycarecenter.com/',
       'logo': {
         '@type': 'ImageObject',
         'url': 'https://www.sunnyskiesydaycarecenter.com/logo.png'
