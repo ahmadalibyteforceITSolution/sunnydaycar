@@ -24,13 +24,13 @@
 
             <!-- Main Headline -->
             <h1 class="hero-title text-4xl sm:text-5xl lg:text-6xl font-extrabold font-heading text-[#0A3366] tracking-tight leading-tight">
-              A Warm, Nurturing <br class="hidden sm:inline" />
-              <span class="gradient-text-brand">Home-Based Daycare!</span>
+              Sunny Skies Daycare <br class="hidden sm:inline" />
+              <span class="gradient-text-brand">CDA Certified Provider</span>
             </h1>
 
             <!-- Subtitle -->
             <p class="hero-subtitle text-base sm:text-lg text-[#566593] max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              At <strong class="text-[#0A3366] font-semibold">Sunny Skies Daycare</strong>, where little learners grow bright every day! We provide a calm, sanitized, loving environment with active <strong class="text-[#00BDE0] font-bold">CACFP / WIC approved nutritious meals</strong>, pediatric CPR-certified care, early alphabet learning, and active outdoor play for <strong class="text-[#0A3366]">Newborns up to 15 Years</strong>.
+              Welcome to <strong class="text-[#0A3366] font-semibold">Sunny Skies Daycare</strong> in Lorton, VA! Our <strong class="text-[#0A3366]">CDA certified provider</strong> provides infant care and early learning standards with an <strong class="text-[#00BDE0] font-bold">active CACFP WIC food program</strong>, daily fresh fruits, and loving care for newborns up to 15 years.
             </p>
 
             <!-- Key Spec Highlights Grid (Single line on larger screens) -->
@@ -134,18 +134,29 @@
                     v-if="activeHeroTab === 'flyer'"
                     src="/flyer.png" 
                     alt="Sunny Skies Daycare Program Flyer" 
+                    width="400"
+                    height="500"
+                    fetchpriority="high"
                     class="w-full h-full object-cover transition-opacity duration-300"
                   />
                   <img 
                     v-else-if="activeHeroTab === 'classroom'"
                     src="/images/gallery/wall-chart-learning.jpg" 
                     alt="Sunny Skies Daycare Learning Wall and Phonics" 
+                    width="400"
+                    height="500"
+                    loading="lazy"
+                    decoding="async"
                     class="w-full h-full object-cover transition-opacity duration-300"
                   />
                   <img 
                     v-else
                     src="/images/gallery/outdoor-play-yard.jpg" 
                     alt="Sunny Skies Daycare Outdoor Play Yard" 
+                    width="400"
+                    height="500"
+                    loading="lazy"
+                    decoding="async"
                     class="w-full h-full object-cover transition-opacity duration-300"
                   />
 
@@ -254,7 +265,7 @@
             <span>What Sets Sunny Skies Daycare Apart</span>
           </div>
           <h2 class="text-3xl sm:text-4xl font-bold font-heading text-[#0A3366] tracking-tight">
-            Designed for Your Child's Happiness, Growth & Safety
+            CDA Certified Provider Standards for Your Child's Growth & Safety
           </h2>
           <p class="text-[#566593] text-sm sm:text-base mt-3">
             Every day is thoughtfully planned around four core pillars of home-based excellence.
@@ -372,7 +383,7 @@
             Official Program Features
           </span>
           <h2 class="text-3xl sm:text-4xl font-bold font-heading text-[#0A3366] mt-3 tracking-tight">
-            What We Offer at Sunny Skies Daycare
+            Active CACFP WIC Food Program, Fresh Fruits & Infant Care
           </h2>
           <p class="text-[#566593] text-sm sm:text-base mt-2">
             Where little learners grow bright every day through play, structured routines, and loving home-based attention.
@@ -685,8 +696,10 @@
               <router-link 
                 :to="`/blog/${post.slug}`" 
                 class="text-xs font-bold text-[#00BDE0] group-hover:text-[#0A3366] flex items-center gap-1 transition-colors"
+                :title="'Read childcare guide: ' + post.title"
+                :aria-label="'Read guide: ' + post.title"
               >
-                <span>Read More</span>
+                <span>Read Childcare Guide</span>
                 <ArrowRight class="w-3.5 h-3.5 text-[#00BDE0]" />
               </router-link>
             </div>
