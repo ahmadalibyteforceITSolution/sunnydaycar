@@ -14,6 +14,16 @@
             <span>NOW ACCEPTING SUMMER & FALL ENROLLMENT!</span>
           </span>
           <span class="text-[#00BDE0] font-bold">•</span>
+          <span class="bg-emerald-600 text-white font-extrabold px-2.5 py-0.5 rounded-full inline-flex items-center gap-1 shadow-sm">
+            <Check class="w-3.5 h-3.5" />
+            <span>Child Care Subsidy Programs Accepted!</span>
+          </span>
+          <span class="text-[#00BDE0] font-bold">•</span>
+          <span class="bg-indigo-700 text-white font-extrabold px-2.5 py-0.5 rounded-full inline-flex items-center gap-1 shadow-sm">
+            <ShieldCheck class="w-3.5 h-3.5" />
+            <span>Military Child Care in Your Neighborhood (MCCYN) Approved Provider!</span>
+          </span>
+          <span class="text-[#00BDE0] font-bold">•</span>
           <span class="bg-[#CCF2F9] text-[#0A3366] border border-[#00BDE0]/30 font-bold px-2.5 py-0.5 rounded-full inline-flex items-center gap-1">
             <Baby class="w-3.5 h-3.5 text-[#0A3366]" />
             <span>Ages: Newborn – 15 Years Welcomed</span>
@@ -59,7 +69,6 @@
     </div>
 
     <!-- 2. Clean Top Contact & Social Bar in One Crisp Line (Midnight Dark Navy #031B4E) -->
-    <!-- 2. Clean Top Contact & Social Bar in One Crisp Line (Midnight Dark Navy #031B4E) -->
     <div class="bg-[#031B4E] text-white text-xs py-1.5 sm:py-2 px-3 sm:px-6 lg:px-8 border-b border-[#0A3366] w-full overflow-hidden">
       <div class="max-w-7xl mx-auto flex items-center justify-between gap-2 sm:gap-4">
         
@@ -86,13 +95,21 @@
           </span>
         </div>
 
-        <!-- Right Social Icons, CACFP Badge & CDA Badge -->
-        <div class="flex items-center gap-2 sm:gap-3 shrink-0">
-          <span class="hidden xl:inline-flex items-center gap-1 bg-[#00BDE0]/20 text-[#00BDE0] border border-[#00BDE0]/40 px-2.5 py-0.5 rounded text-[10px] font-bold tracking-wide shrink-0">
+        <!-- Right Social Icons, CACFP Badge, CDA Badge, Subsidies & Military MCCYN Badges -->
+        <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
+          <span class="hidden 2xl:inline-flex items-center gap-1 bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 px-2 py-0.5 rounded text-[10px] font-bold tracking-wide shrink-0">
+            <Check class="w-3 h-3 text-emerald-400" />
+            <span>Subsidies Accepted</span>
+          </span>
+          <span class="hidden xl:inline-flex items-center gap-1 bg-indigo-500/25 text-indigo-300 border border-indigo-400/40 px-2 py-0.5 rounded text-[10px] font-bold tracking-wide shrink-0">
+            <ShieldCheck class="w-3 h-3 text-indigo-300" />
+            <span>MCCYN Military</span>
+          </span>
+          <span class="hidden lg:inline-flex items-center gap-1 bg-[#00BDE0]/20 text-[#00BDE0] border border-[#00BDE0]/40 px-2 py-0.5 rounded text-[10px] font-bold tracking-wide shrink-0">
             <Utensils class="w-3 h-3 text-[#00BDE0]" />
             <span>CACFP / WIC Active</span>
           </span>
-          <span class="hidden lg:inline-flex items-center gap-1 bg-brand-yellow/15 text-brand-yellow border border-brand-yellow/40 px-2.5 py-0.5 rounded text-[10px] font-bold tracking-wide shrink-0">
+          <span class="hidden md:inline-flex items-center gap-1 bg-brand-yellow/15 text-brand-yellow border border-brand-yellow/40 px-2 py-0.5 rounded text-[10px] font-bold tracking-wide shrink-0">
             <Award class="w-3 h-3 text-brand-yellow" />
             <span>CDA Certified</span>
           </span>
@@ -122,12 +139,11 @@
               </span>
             </div>
             <span class="text-[11px] text-[#566593] font-medium hidden 2xl:block whitespace-nowrap">
-              A Warm, Nurturing Home-Based Daycare in Lorton, VA
+              Lorton, VA • Subsidies Accepted • Military MCCYN Approved
             </span>
           </div>
         </router-link>
 
-        <!-- Center: Desktop Nav Menu -->
         <!-- Center: Desktop Nav Menu (Responsive font & spacing) -->
         <div class="hidden lg:flex items-center gap-0.5 xl:gap-1.5 shrink-0">
           <router-link 
@@ -238,7 +254,23 @@
         leave-from-class="opacity-100 translate-y-0"
         leave-to-class="opacity-0 -translate-y-2"
       >
-        <div v-if="mobileMenuOpen" class="lg:hidden border-t border-gray-100 py-4 space-y-2 bg-white">
+        <div v-if="mobileMenuOpen" class="lg:hidden border-t border-gray-100 py-3 space-y-1.5 bg-white">
+          <!-- Prominent Mobile Subsidies & Military MCCYN Badge Strip -->
+          <div class="mx-3 mb-2 p-2.5 rounded-2xl bg-gradient-to-r from-emerald-50 via-[#ECF5FB] to-indigo-50 border border-emerald-200/70 space-y-1.5 shadow-2xs">
+            <div class="flex items-center gap-2 text-xs font-bold text-emerald-800">
+              <span class="w-4 h-4 rounded-full bg-emerald-600 text-white flex items-center justify-center shrink-0">
+                <Check class="w-2.5 h-2.5" />
+              </span>
+              <span>Child Care Subsidy Programs Accepted</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-bold text-indigo-950">
+              <span class="w-4 h-4 rounded-full bg-indigo-700 text-white flex items-center justify-center shrink-0">
+                <ShieldCheck class="w-2.5 h-2.5" />
+              </span>
+              <span>Military Child Care in Your Neighborhood (MCCYN)</span>
+            </div>
+          </div>
+
           <router-link 
             @click="mobileMenuOpen = false"
             to="/" 
@@ -323,7 +355,9 @@
 
 <script setup>
 import { ref } from 'vue'
-import { Phone, Mail, MapPin, Clock, Calendar, Menu, X, Award, Sun, Baby, Utensils, Apple, Trees, Camera } from 'lucide-vue-next'
+import { 
+  Phone, Mail, MapPin, Clock, Calendar, Menu, X, Award, Sun, Baby, Utensils, Apple, Trees, Camera, Check, ShieldCheck 
+} from 'lucide-vue-next'
 import SocialIcons from './SocialIcons.vue'
 import AppointmentModal from './AppointmentModal.vue'
 

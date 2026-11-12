@@ -18,7 +18,7 @@
               <span class="flex h-2.5 w-2.5 rounded-full bg-[#00BDE0] animate-ping"></span>
               <span class="text-xs font-bold text-[#0A3366] flex items-center gap-1.5">
                 <Sun class="w-3.5 h-3.5 text-amber-500 shrink-0" />
-                <span>Based in Lorton, VA • CDA Certified • Active CACFP / WIC Food Program</span>
+                <span>Based in Lorton, VA • CDA Certified • Subsidies Accepted • Military MCCYN Approved</span>
               </span>
             </div>
 
