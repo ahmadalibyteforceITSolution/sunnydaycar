@@ -56,28 +56,43 @@
                 Sent to <strong class="text-[#0A3366]">sunnyskiescare@gmail.com</strong> and WhatsApp (<strong class="text-[#0A3366]">+1 703 606-1557</strong>). Form fields have been cleared.
               </p>
 
+              <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold border border-emerald-200">
+                <Check class="w-3.5 h-3.5 text-emerald-600" />
+                <span>Notification copy sent to sunnyskiescare@gmail.com</span>
+              </div>
+
               <div class="pt-4 space-y-3 max-w-md mx-auto">
-                <!-- Primary Action: WhatsApp -->
+                <!-- Primary Action: Open in Gmail -->
+                <a 
+                  :href="gmailUrl" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  class="w-full py-3.5 px-6 rounded-2xl font-bold text-sm text-white bg-[#EA4335] hover:bg-[#d93025] shadow-lg shadow-red-500/20 transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
+                >
+                  <Mail class="w-5 h-5 text-white shrink-0" />
+                  <span>Open in Gmail (sunnyskiescare@gmail.com)</span>
+                </a>
+
+                <!-- Secondary Action: WhatsApp -->
                 <a 
                   :href="whatsappUrl" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  class="w-full py-3.5 px-6 rounded-2xl font-bold text-sm text-white bg-[#25D366] hover:bg-[#20ba5a] shadow-lg shadow-emerald-500/20 transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
+                  class="w-full py-3 px-6 rounded-2xl font-bold text-sm text-white bg-[#25D366] hover:bg-[#20ba5a] shadow-md shadow-emerald-500/20 transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
                 >
-                  <IconWhatsApp class="w-5 h-5 fill-current shrink-0" />
+                  <IconWhatsApp class="w-4 h-4 fill-current shrink-0" />
                   <span>Chat on WhatsApp (+1 703 606-1557)</span>
                 </a>
 
-                <!-- Secondary Action: Email -->
+                <!-- Tertiary Action: Default Email -->
                 <a 
                   :href="emailUrl"
-                  class="w-full py-3 px-6 rounded-2xl font-bold text-sm text-[#0A3366] bg-[#ECF5FB] hover:bg-[#CCF2F9] border border-[#00BDE0]/30 shadow-sm transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
+                  class="w-full py-2.5 px-6 rounded-2xl font-semibold text-xs text-[#0A3366] bg-[#ECF5FB] hover:bg-[#CCF2F9] border border-[#00BDE0]/30 shadow-sm transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer"
                 >
-                  <Mail class="w-4 h-4 text-[#00BDE0] shrink-0" />
-                  <span>Email: sunnyskiescare@gmail.com</span>
+                  <span>Other Email App (mailto)</span>
                 </a>
 
-                <!-- Tertiary: Close Button -->
+                <!-- Close Button -->
                 <button 
                   @click="closeModal"
                   class="w-full py-2.5 px-6 rounded-xl font-semibold text-xs text-[#566593] hover:text-[#0A3366] hover:bg-gray-100 transition-colors cursor-pointer"
@@ -241,7 +256,7 @@
 
 <script setup>
 import { ref, computed } from 'vue'
-import { Calendar, Phone, Mail, ArrowRight, Sun, X } from 'lucide-vue-next'
+import { Calendar, Phone, Mail, ArrowRight, Sun, X, Check } from 'lucide-vue-next'
 import IconWhatsApp from './icons/IconWhatsApp.vue'
 
 const props = defineProps({
@@ -257,6 +272,7 @@ const isSubmitted = ref(false)
 const submittedInfo = ref(null)
 const whatsappUrl = ref('')
 const emailUrl = ref('')
+const gmailUrl = ref('')
 
 const form = ref({
   parentName: '',
@@ -313,16 +329,35 @@ const submitAppointment = () => {
   const mailSubject = `Tour Booking: ${form.value.childDetails} (${form.value.preferredDate} at ${form.value.preferredTime})`
   const mailBody = `Parent Name: ${form.value.parentName}\nPhone: ${form.value.phone}\nEmail: ${form.value.email}\nChild Details: ${form.value.childDetails}\nProgram: ${form.value.program}\nPreferred Date: ${form.value.preferredDate}\nPreferred Time: ${form.value.preferredTime}\nNotes: ${form.value.notes}\n\nSent via Sunny Skies Daycare Website`
   emailUrl.value = `mailto:sunnyskiescare@gmail.com?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`
+  gmailUrl.value = `https://mail.google.com/mail/?view=cm&fs=1&to=sunnyskiescare@gmail.com&su=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`
 
-  // Reset form fields immediately ("after send messgae filed is empty")
+  // Background dispatch directly to sunnyskiescare@gmail.com inbox
+  try {
+    fetch('https://formsubmit.co/ajax/sunnyskiescare@gmail.com', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        _subject: `New Daycare Tour Request: ${submittedInfo.value.childDetails} (${submittedInfo.value.preferredDate})`,
+        "Parent Name": submittedInfo.value.parentName,
+        "Phone": submittedInfo.value.phone,
+        "Email": submittedInfo.value.email,
+        "Child Details": submittedInfo.value.childDetails,
+        "Program": submittedInfo.value.program || 'General Tour',
+        "Preferred Date": submittedInfo.value.preferredDate,
+        "Preferred Time": submittedInfo.value.preferredTime,
+        "Notes": submittedInfo.value.notes || 'None',
+        _template: 'table'
+      })
+    }).catch(() => {})
+  } catch (err) {}
+
+  // Reset form fields immediately
   resetForm()
 
   // Show submitted screen
   isSubmitted.value = true
-
-  // Redirect / open WhatsApp in a new tab
-  if (typeof window !== 'undefined') {
-    window.open(whatsappUrl.value, '_blank')
-  }
 }
 </script>

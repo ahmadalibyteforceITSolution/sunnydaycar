@@ -197,31 +197,44 @@
                 enter-from-class="opacity-0 translate-y-2"
                 enter-to-class="opacity-100 translate-y-0"
               >
-                <div v-if="sentSuccess" class="p-5 bg-[#FCFDFF] border-2 border-emerald-500/40 rounded-2xl shadow-md space-y-3">
+                <div v-if="sentSuccess" class="p-6 bg-[#FCFDFF] border-2 border-emerald-500/40 rounded-2xl shadow-md space-y-4">
                   <div class="flex items-center gap-2 text-emerald-700 font-bold text-sm">
                     <Check class="w-5 h-5 text-emerald-600 shrink-0" />
-                    <span>Message Sent! Opening WhatsApp & Forwarding to Email.</span>
+                    <span>Inquiry Sent & Forwarded to Gmail!</span>
                   </div>
                   <p class="text-xs text-[#566593] leading-relaxed">
-                    Thank you <strong class="text-[#0A3366]">{{ lastSentInfo?.name }}</strong>! Your inquiry is being sent to <strong class="text-[#0A3366]">sunnyskiescare@gmail.com</strong> and WhatsApp (<strong class="text-[#0A3366]">+1 703 606-1557</strong>). Form fields have been cleared.
+                    Thank you <strong class="text-[#0A3366]">{{ lastSentInfo?.name }}</strong>! Your inquiry has been forwarded to <strong class="text-[#0A3366]">sunnyskiescare@gmail.com</strong>. You can also open Gmail directly below or chat with us on WhatsApp.
                   </p>
                   
                   <div class="pt-2 space-y-2.5">
+                    <!-- Primary: Open Directly in Gmail -->
+                    <a 
+                      :href="gmailUrl" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      class="w-full py-3.5 px-6 rounded-2xl font-bold text-sm text-white bg-[#EA4335] hover:bg-[#d93025] shadow-lg shadow-red-500/20 transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
+                    >
+                      <Mail class="w-5 h-5 text-white shrink-0" />
+                      <span>Open in Gmail (sunnyskiescare@gmail.com)</span>
+                    </a>
+
+                    <!-- Secondary: WhatsApp -->
                     <a 
                       :href="whatsappUrl" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      class="w-full py-3.5 px-6 rounded-2xl font-bold text-sm text-white bg-[#25D366] hover:bg-[#20ba5a] shadow-md shadow-emerald-500/20 transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
+                      class="w-full py-3 px-6 rounded-2xl font-bold text-sm text-white bg-[#25D366] hover:bg-[#20ba5a] shadow-md shadow-emerald-500/20 transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
                     >
-                      <IconWhatsApp class="w-5 h-5 fill-current shrink-0" />
+                      <IconWhatsApp class="w-4 h-4 fill-current shrink-0" />
                       <span>Chat on WhatsApp (+1 703 606-1557)</span>
                     </a>
+
+                    <!-- Tertiary: Default Mail App -->
                     <a 
                       :href="mailtoUrl"
-                      class="w-full py-3 px-6 rounded-2xl font-bold text-sm text-[#0A3366] bg-[#ECF5FB] hover:bg-[#CCF2F9] border border-[#00BDE0]/30 shadow-sm transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
+                      class="w-full py-2.5 px-6 rounded-2xl font-semibold text-xs text-[#0A3366] bg-[#ECF5FB] hover:bg-[#CCF2F9] border border-[#00BDE0]/30 shadow-sm transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer"
                     >
-                      <Mail class="w-4 h-4 text-[#00BDE0] shrink-0" />
-                      <span>Email: sunnyskiescare@gmail.com</span>
+                      <span>Other Email App (mailto)</span>
                     </a>
                   </div>
                 </div>
@@ -381,6 +394,7 @@ const openFaq = ref(0)
 const lastSentInfo = ref(null)
 const whatsappUrl = ref('')
 const mailtoUrl = ref('')
+const gmailUrl = ref('')
 
 const contactForm = ref({
   name: '',
@@ -408,14 +422,33 @@ const sendMessage = () => {
     `📋 *Subject:* ${subject}\n\n` +
     `💬 *Message:*\n${message}`
 
-  const waLink = `https://wa.me/17036061557?text=${encodeURIComponent(waText)}`
-  whatsappUrl.value = waLink
+  whatsappUrl.value = `https://wa.me/17036061557?text=${encodeURIComponent(waText)}`
 
-  // Build mailto link to sunnyskiescare@gmail.com
+  // Build email links to sunnyskiescare@gmail.com
   const emailSubject = `Daycare Inquiry from ${name}: ${subject}`
   const emailBody = `Parent Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}\n\n---\nSent via Sunny Skies Daycare Website`
-  const mailLink = `mailto:sunnyskiescare@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`
-  mailtoUrl.value = mailLink
+  mailtoUrl.value = `mailto:sunnyskiescare@gmail.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`
+  gmailUrl.value = `https://mail.google.com/mail/?view=cm&fs=1&to=sunnyskiescare@gmail.com&su=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`
+
+  // Dispatch background notification directly to sunnyskiescare@gmail.com inbox
+  try {
+    fetch('https://formsubmit.co/ajax/sunnyskiescare@gmail.com', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        _subject: `Daycare Inquiry from ${name}: ${subject}`,
+        "Parent Name": name,
+        "Phone": phone,
+        "Email": email,
+        "Subject": subject,
+        "Message": message,
+        _template: 'table'
+      })
+    }).catch(() => {})
+  } catch (err) {}
 
   // Set sent success flag
   sentSuccess.value = true
@@ -427,11 +460,6 @@ const sendMessage = () => {
     email: '',
     subject: '',
     message: ''
-  }
-
-  // Redirect / open WhatsApp in a new tab
-  if (typeof window !== 'undefined') {
-    window.open(waLink, '_blank')
   }
 }
 
