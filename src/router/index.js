@@ -7,8 +7,8 @@ const routes = [
     name: 'Home',
     component: HomeView,
     meta: {
-      title: 'Sunny Skies Daycare | CDA Certified Provider Lorton VA | Active CACFP WIC',
-      description: 'Sunny Skies Daycare is a CDA certified provider in Lorton VA with an active CACFP WIC food program, fresh fruits, infant care, and early learning standards.',
+      title: 'Sunny Skies Daycare | CDA Certified Childcare Lorton VA',
+      description: 'Licensed CDA certified home daycare in Lorton, VA. Infant care, active USDA CACFP meals, and low ratios. Call +1 (703) 606-1557.',
       keywords: 'Sunny Skies Daycare, CDA certified provider, Daycare Lorton VA, Childcare Lorton VA, active cacfp wic, active cacfp wic food program, infant care, fresh fruits, standards, CDA certified childcare provider, infant developmental milestones, AAP safe sleep standards, toddler STEM sensory learning, kindergarten readiness phonics, licensed home daycare Virginia, Fairfax County childcare, MCCYN military childcare fee assistance, Virginia childcare subsidies accepted, pediatric CPR certified'
     }
   },
@@ -17,14 +17,14 @@ const routes = [
     name: 'About',
     component: () => import('../views/AboutView.vue'),
     meta: {
-      title: 'About Us - Sunny Skies Daycare | Loving CDA Certified Childcare Lorton VA',
-      description: 'Learn about our CDA Certified provider, Virginia licensing, low caregiver ratios, and home-based nurturing philosophy in Lorton, Virginia.',
+      title: 'About Us | Loving CDA Certified Childcare in Lorton VA',
+      description: 'Meet our CDA Certified provider in Lorton, VA. Over 15 years experience, Virginia licensing, CPR certified, and loving home care.',
       keywords: 'About Sunny Skies Daycare, CDA certified provider Lorton VA, licensed home daycare Virginia, Fairfax County childcare provider, low caregiver ratios, early childhood education philosophy, pediatric CPR first aid certified, Fort Belvoir childcare provider, family childcare Lorton VA',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'AboutPage',
         'url': 'https://www.sunnyskiesydaycarecenter.com/about',
-        'name': 'About Us - Sunny Skies Daycare | Loving CDA Certified Childcare Lorton VA'
+        'name': 'About Us | Loving CDA Certified Childcare in Lorton VA'
       }
     }
   },
@@ -33,14 +33,14 @@ const routes = [
     name: 'Services',
     component: () => import('../views/ServicesView.vue'),
     meta: {
-      title: 'Childcare Programs & Services - Sunny Skies Daycare | Newborn to 15 Years',
-      description: 'Explore programs from Infant Care, Toddler Discovery, Pre-K Readiness, and School-Age Homework Club with CACFP nutritious meals and fenced outdoor yard.',
+      title: 'Programs & Services | Sunny Skies Daycare Lorton VA',
+      description: 'Programs for newborns to 15 years in Lorton, VA. Infant nursery, toddler play, CACFP meals, and after-school tutoring club.',
       keywords: 'childcare programs Lorton VA, infant care 0-12 months, toddler discovery 1-3 years, preschool pre-k readiness, before after school care Lorton VA, CACFP nutritious daycare meals, fenced outdoor yard daycare, peanut-free daycare, screen-free learning',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'ItemPage',
         'url': 'https://www.sunnyskiesydaycarecenter.com/services',
-        'name': 'Childcare Programs & Services - Sunny Skies Daycare | Newborn to 15 Years'
+        'name': 'Programs & Services | Sunny Skies Daycare Lorton VA'
       }
     }
   },
@@ -49,14 +49,14 @@ const routes = [
     name: 'Appointment',
     component: () => import('../views/AppointmentView.vue'),
     meta: {
-      title: 'Book a Tour / Appointment - Sunny Skies Daycare | Lorton, VA',
-      description: 'Schedule an in-person tour of our cozy, sanitized daycare learning rooms in Lorton, VA. Meet our CDA Certified provider and view our USDA CACFP menus.',
+      title: 'Book a Daycare Tour | Sunny Skies Daycare Lorton VA',
+      description: 'Schedule an in-person tour of our cozy, sanitized daycare in Lorton, VA. Meet our CDA Certified provider and view our learning rooms.',
       keywords: 'book daycare tour Lorton VA, schedule daycare visit, childcare enrollment Lorton VA, tour licensed home daycare, infant childcare openings Lorton VA, visit daycare 22079',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'ContactPage',
         'url': 'https://www.sunnyskiesydaycarecenter.com/appointment',
-        'name': 'Book a Tour / Appointment - Sunny Skies Daycare | Lorton, VA'
+        'name': 'Book a Daycare Tour | Sunny Skies Daycare Lorton VA'
       }
     }
   },
@@ -65,14 +65,14 @@ const routes = [
     name: 'Contact',
     component: () => import('../views/ContactView.vue'),
     meta: {
-      title: 'Contact Us - Sunny Skies Daycare | Call (703) 606-1557 | Lorton, VA',
-      description: 'Contact Sunny Skies Daycare in Lorton, VA. Call or text +1 (703) 606-1557 or message via WhatsApp for immediate tour availability and enrollment.',
+      title: 'Contact Us | Sunny Skies Daycare Lorton VA | Call Today',
+      description: 'Contact Sunny Skies Daycare in Lorton, VA. Call or message +1 (703) 606-1557 for immediate enrollment availability and tour bookings.',
       keywords: 'contact Sunny Skies Daycare, daycare phone number Lorton VA, daycare address Lorton 22079, childcare inquiries Fairfax County, WhatsApp daycare contact Lorton',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'ContactPage',
         'url': 'https://www.sunnyskiesydaycarecenter.com/contact',
-        'name': 'Contact Us - Sunny Skies Daycare | Call (703) 606-1557 | Lorton, VA'
+        'name': 'Contact Us | Sunny Skies Daycare Lorton VA | Call Today'
       }
     }
   },
@@ -81,14 +81,14 @@ const routes = [
     name: 'Blog',
     component: () => import('../views/BlogView.vue'),
     meta: {
-      title: 'Childcare Guides & Parenting Resources | Sunny Skies Daycare Lorton VA',
-      description: 'Browse 30 in-depth childcare guides covering infant milestones, USDA CACFP nutrition, gentle potty training, Virginia licensing, and kindergarten readiness.',
+      title: 'Childcare Guides & Resources | Sunny Skies Daycare Lorton',
+      description: 'Browse 40 expert childcare guides on infant milestones, CACFP nutrition, safe sleep, and preschool readiness in Lorton, VA.',
       keywords: 'childcare guides, parenting resources Lorton VA, infant milestones guide, toddler sensory activities, CACFP childcare meal plans, gentle potty training daycare, Virginia childcare licensing checklist',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'Blog',
         'url': 'https://www.sunnyskiesydaycarecenter.com/blog',
-        'name': 'Childcare Guides & Parenting Resources | Sunny Skies Daycare Lorton VA'
+        'name': 'Childcare Guides & Resources | Sunny Skies Daycare Lorton'
       }
     }
   },
@@ -102,14 +102,14 @@ const routes = [
     name: 'PrivacyPolicy',
     component: () => import('../views/PrivacyPolicyView.vue'),
     meta: {
-      title: 'Privacy Policy - Sunny Skies Daycare | Lorton, VA',
-      description: 'Review our official Privacy Policy. Learn how Sunny Skies Daycare in Lorton, VA protects parent, family, and child privacy, cookies, and digital security.',
+      title: 'Privacy Policy | Sunny Skies Daycare Lorton VA',
+      description: 'Review our official Privacy Policy. How Sunny Skies Daycare in Lorton, VA protects parent, family, and child data and security.',
       keywords: 'daycare privacy policy, child privacy COPPA compliance, family data protection, cookie policy Sunny Skies Daycare',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'WebPage',
         'url': 'https://www.sunnyskiesydaycarecenter.com/privacy-policy',
-        'name': 'Privacy Policy - Sunny Skies Daycare | Lorton, VA'
+        'name': 'Privacy Policy | Sunny Skies Daycare Lorton VA'
       }
     }
   },
@@ -118,14 +118,14 @@ const routes = [
     name: 'Citations',
     component: () => import('../views/CitationsView.vue'),
     meta: {
-      title: 'Citations, Standards & Accreditations | Sunny Skies Daycare',
-      description: 'Official statutory citations, USDA CACFP nutrition standards, CDA credentials, AAP safe sleep guidelines, and Virginia daycare licensing compliance.',
+      title: 'Accreditations & Licensing | Sunny Skies Daycare Lorton',
+      description: 'View our Virginia state license, CDA credential, USDA CACFP nutrition active status, and Military MCCYN approvals in Lorton, VA.',
       keywords: 'statutory citations childcare, CDA Council for Professional Recognition, USDA CACFP regulations 7 CFR 226, AAP safe sleep guidelines, Virginia Department of Education licensing, pediatric CPR guidelines',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'AboutPage',
         'url': 'https://www.sunnyskiesydaycarecenter.com/citations',
-        'name': 'Citations, Standards & Accreditations | Sunny Skies Daycare'
+        'name': 'Accreditations & Licensing | Sunny Skies Daycare Lorton'
       }
     }
   },
