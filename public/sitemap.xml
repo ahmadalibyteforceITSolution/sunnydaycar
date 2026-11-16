@@ -1,46 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/flyer.png</image:loc>
+      <image:title>Sunny Skies Daycare &amp; Early Learning Center Lorton VA</image:title>
+      <image:caption>Official program flyer for Sunny Skies Daycare in Lorton VA - Ages Newborn to 15 Years</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/services</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/classroom-playroom.jpg</image:loc>
+      <image:title>Daycare Programs &amp; Playrooms in Lorton VA</image:title>
+      <image:caption>Sunny learning stations, reading nooks, and playrooms for infants, toddlers, and preschoolers</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/appointment</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/sunny-skies-official-flyer.jpg</image:loc>
+      <image:title>Book a Daycare Tour at Sunny Skies Daycare</image:title>
+      <image:caption>Schedule an in-person tour of our cozy, sanitized home daycare in Lorton, Virginia</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/healthy-snack-fruit-art.jpg</image:loc>
+      <image:title>Childcare &amp; Parenting Guides - Sunny Skies Daycare</image:title>
+      <image:caption>Over 40 comprehensive early childhood guides covering CACFP nutrition, safe sleep, and preschool readiness</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/about</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/sensory-crafts-highchairs.jpg</image:loc>
+      <image:title>CDA Certified Childcare Provider Sunny Skies</image:title>
+      <image:caption>Meet our CDA-credentialed, pediatric CPR and First Aid certified childcare provider in Lorton</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/contact</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/outdoor-play-yard.jpg</image:loc>
+      <image:title>Contact Sunny Skies Daycare Lorton VA</image:title>
+      <image:caption>Get in touch for enrollment, phone consultations, and directions to our Lorton daycare</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/citations</loc>
     <lastmod>2026-11-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/wall-chart-learning.jpg</image:loc>
+      <image:title>Accreditations &amp; Licensing Citations - Sunny Skies</image:title>
+      <image:caption>Virginia State License, Child Development Associate (CDA) Credential, CACFP and Military MCCYN approvals</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/privacy-policy</loc>
@@ -59,239 +95,439 @@
     <lastmod>2026-03-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/classroom-playroom.jpg</image:loc>
+      <image:title>How to Choose the Right Daycare in Lorton, VA: A Parent's Comprehensive Checklist</image:title>
+      <image:caption>Looking for a licensed home daycare in Lorton, VA? Use our essential parent checklist covering CDA certification, safety ratios, CACFP meals, and tour questions.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/cacfp-usda-food-program-benefits</loc>
     <lastmod>2026-03-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/healthy-snack-fruit-art.jpg</image:loc>
+      <image:title>Understanding the CACFP: Why Active USDA Food Programs Matter for Your Child's Health</image:title>
+      <image:caption>Learn why the USDA CACFP food program makes a huge difference in childcare. Healthy breakfasts, hot lunches, and fresh fruit plates included for your child.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/infant-milestones-first-year-guide</loc>
     <lastmod>2026-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/sensory-crafts-highchairs.jpg</image:loc>
+      <image:title>Infant Developmental Milestones: What to Expect from Newborn to 12 Months</image:title>
+      <image:caption>A comprehensive developmental guide for infants from 0 to 12 months. Tummy time, social smiles, sensory tracking, and gentle nursery care in Lorton, VA.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/gentle-potty-training-strategies-daycare</loc>
     <lastmod>2026-03-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/shape-puzzle.jpg</image:loc>
+      <image:title>Gentle Potty Training: How Daycare and Home Routines Work Together</image:title>
+      <image:caption>Discover our stress-free potty training partnership between parents and daycare. Consistent timing, positive reinforcement, and accident-friendly guidance.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/benefits-of-screen-free-daycare-environment</loc>
     <lastmod>2026-03-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/classroom-reading-group.jpg</image:loc>
+      <image:title>The Brain Benefits of a 100% Screen-Free Daycare Environment</image:title>
+      <image:caption>Why Sunny Skies Daycare is 100% screen-free. Hands-on puzzles, books, and outdoor active play foster deep focus and lifelong creativity.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/what-is-cda-credential-childcare-quality</loc>
     <lastmod>2026-03-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/sunny-skies-official-flyer.jpg</image:loc>
+      <image:title>What Does CDA Certified Mean? Why It Sets the Gold Standard in Childcare</image:title>
+      <image:caption>Learn why the national CDA credential represents elite early childhood education standards. Professional qualifications at Sunny Skies Daycare Lorton, VA.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/virginia-childcare-licensing-safety-standards</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/wall-chart-learning.jpg</image:loc>
+      <image:title>Virginia Childcare Licensing: Behind-the-Scenes Safety, Background Checks &amp; Ratios</image:title>
+      <image:caption>Understand Virginia Department of Education licensing standards for home daycares. Background checks, child ratios, fire safety, and CPR in Lorton, VA.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/military-childcare-subsidies-mccyn-northern-va</loc>
     <lastmod>2026-03-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/outdoor-play-yard.jpg</image:loc>
+      <image:title>Military Child Care in Your Neighborhood (MCCYN): Fee Assistance for Northern VA Families</image:title>
+      <image:caption>Serving military families near Fort Belvoir &amp; Quantico. Learn how MCCYN childcare subsidies help pay for quality daycare at Sunny Skies in Lorton, VA.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/kindergarten-readiness-skills-fairfax-county</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/number-writing-desk.jpg</image:loc>
+      <image:title>Kindergarten Readiness: Essential Pre-K Skills for Fairfax County Public Schools</image:title>
+      <image:caption>Prepare your 4 and 5-year-old for FCPS kindergarten. Essential phonics, number counting, pencil grip, and social regulation skills taught at Sunny Skies.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/predictable-daily-schedules-reduce-toddler-anxiety</loc>
     <lastmod>2026-03-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/carpet-uno-puzzles.jpg</image:loc>
+      <image:title>Why Consistent Daily Routines Calm Toddler Tantrums and Build Confidence</image:title>
+      <image:caption>Learn why predictable routines reduce toddler meltdowns and encourage peaceful transitions. Inside the 6:00 AM - 6:00 PM routine at Sunny Skies Daycare.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/sensory-play-fine-motor-development</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/bead-sorting-fine-motor.jpg</image:loc>
+      <image:title>Sensory Play &amp; Fine Motor Mastery: Paper Tearing, Sorting &amp; Tangram Puzzles</image:title>
+      <image:caption>Discover how bead sorting, paper tearing, and shape puzzles develop fine motor hand strength, pincer grasp, and focus in early childhood.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/healthy-toddler-finger-foods-fresh-fruits</loc>
     <lastmod>2026-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/healthy-snack-fruit-art.jpg</image:loc>
+      <image:title>Wholesome Finger Foods &amp; Fruit Art: Teaching Kids to Love Real Nutrition</image:title>
+      <image:caption>Fun and healthy toddler finger food ideas. How fresh bananas, apples, and CACFP approved snacks encourage picky eaters to love nutritious food.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/before-and-after-school-care-benefits-older-kids</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/afterschool-group-learning.jpg</image:loc>
+      <image:title>The Power of Before &amp; After-School Care for Kids Up to 15 Years</image:title>
+      <image:caption>Safe, supervised before and after-school care in Lorton, VA for school-age children up to 15 years. Homework support, nutritious snacks, and outdoor sports.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/circle-time-routines-early-language-growth</loc>
     <lastmod>2026-04-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/multilevel-circle-learning.jpg</image:loc>
+      <image:title>Morning Circle Time Magic: How Group Songs &amp; Calendars Accelerate Speech</image:title>
+      <image:caption>Discover why morning circle time accelerates speech, social bonding, and kindergarten readiness. Daily weather charts and songs at Sunny Skies Daycare.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/managing-first-week-daycare-separation-anxiety</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/sensory-blocks.jpg</image:loc>
+      <image:title>Managing Separation Anxiety: A Compassionate Guide for First-Time Parents</image:title>
+      <image:caption>Expert tips for handling daycare drop-off tears and separation anxiety. How loving routines and quick goodbyes foster secure attachment and confidence.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/peanut-safe-and-allergy-conscious-childcare</loc>
     <lastmod>2026-04-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/preschool-math-table.jpg</image:loc>
+      <image:title>Allergy Safety in Childcare: Protecting Children with Food Sensitivities</image:title>
+      <image:caption>How Sunny Skies Daycare keeps children with food allergies safe. Peanut-safe facility, separated preparation areas, and CACFP compliant allergen substitutes.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/outdoor-nature-play-gross-motor-skills</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/outdoor-nature-walk.jpg</image:loc>
+      <image:title>Why Daily Outdoor Play &amp; Nature Walks Are Vital for Gross Motor Health</image:title>
+      <image:caption>Explore the health benefits of daily outdoor active play and nature walks in Lorton, VA. Fenced yard, gross motor basketball, and fresh air for children.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/tangram-puzzles-spatial-reasoning-toddlers</loc>
     <lastmod>2026-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/numbers-puzzle-math.jpg</image:loc>
+      <image:title>Geometric Tangrams &amp; Wooden Puzzles: Laying Early Math Foundations</image:title>
+      <image:caption>How wooden tangrams and geometric shape puzzles build spatial reasoning, early STEM logic, and problem-solving skills in toddlers and preschoolers.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/safe-sleep-guidelines-infants-daycare</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/sensory-crafts-highchairs.jpg</image:loc>
+      <image:title>Safe Sleep Protocols for Infants: Back to Sleep &amp; Crib Hygiene Standards</image:title>
+      <image:caption>Our strict adherence to American Academy of Pediatrics (AAP) safe sleep guidelines. Separate cribs, bare mattresses, and visual monitoring in Lorton, VA.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/animal-alphabet-phonics-early-reading</loc>
     <lastmod>2026-04-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/coloring-flashcards.jpg</image:loc>
+      <image:title>Animal Alphabet Adventures: Transforming Phonics into a Joyful Game</image:title>
+      <image:caption>How our Animal Alphabet Adventures phonics system turns letters into fun characters. Learn how preschool phonemic awareness prepares kids for reading.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/naptime-transitions-one-nap-routine</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/circle-table-books.jpg</image:loc>
+      <image:title>The Great Nap Transition: Moving from Two Naps to One Restful Afternoon Sleep</image:title>
+      <image:caption>Recognize when your toddler is ready to drop their morning nap. Expert sleep guidance and how our 12:30 PM nap routine helps toddlers rest deeply.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/mixed-age-daycare-benefits-empathy-learning</loc>
     <lastmod>2026-04-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/multilevel-circle-learning.jpg</image:loc>
+      <image:title>The Multi-Age Advantage: Why Children Thrive in Mixed-Age Family Daycare</image:title>
+      <image:caption>Discover the unique benefits of mixed-age family childcare. Older kids learn mentorship and toddlers accelerate speech in a natural sibling-like environment.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/social-emotional-learning-sharing-kindness</loc>
     <lastmod>2026-04-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/lego-play.jpg</image:loc>
+      <image:title>Social-Emotional Learning: Teaching Sharing, Empathy, and Turn-Taking</image:title>
+      <image:caption>How we guide young children to share, take turns, and resolve conflicts peacefully at Sunny Skies Daycare. Positive discipline and emotional labeling in Lorton, VA.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/family-home-daycare-vs-large-commercial-centers</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/classroom-playroom.jpg</image:loc>
+      <image:title>Home-Based Family Daycare vs. Large Commercial Centers: Which Fits Your Family?</image:title>
+      <image:caption>Compare home-based family daycares with commercial childcare centers in Lorton, VA. Ratios, illness rates, home-cooked food, and personal attention evaluated.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/preparing-for-in-person-daycare-tour</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/sunny-skies-official-flyer.jpg</image:loc>
+      <image:title>How to Prepare for Your Daycare Tour: 10 Questions Smart Parents Ask</image:title>
+      <image:caption>Make the most of your in-person daycare visit. 10 essential questions regarding credentials, CACFP meals, sanitization, and discipline to ask providers in Lorton, VA.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/cold-flu-prevention-daycare-sanitization</loc>
     <lastmod>2026-05-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/sensory-balloon-counting.jpg</image:loc>
+      <image:title>Keeping Kids Healthy: Daily Sanitization &amp; Cold Prevention in Daycare</image:title>
+      <image:caption>How Sunny Skies Daycare keeps seasonal illness at bay. Hospital-grade toy sanitization, air filtration, and handwashing habits in Lorton, VA.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/handwriting-readiness-pencil-grip-exercises</loc>
     <lastmod>2026-05-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/number-writing.jpg</image:loc>
+      <image:title>Pencil Grip Readiness: Fun Fine Motor Activities Before Kindergarten</image:title>
+      <image:caption>Prepare little hands for writing! Discover fun fine motor activities that build the pincer grasp and hand muscles naturally before kindergarten.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/extended-hours-care-supporting-commuters</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/school-age-study-table.jpg</image:loc>
+      <image:title>Extended Hours Childcare (6 AM – 6 PM): Supporting Northern Virginia Commuters</image:title>
+      <image:caption>Childcare from 6:00 AM to 6:00 PM for Northern Virginia &amp; D.C. commuters. Early drop-off, calm routines, and reliable care in Lorton, VA.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/speech-milestones-toddler-language-boost</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/alphabet-bag-coloring.jpg</image:loc>
+      <image:title>Speech Milestones from 12 Months to 4 Years: When to Encourage and Celebrate</image:title>
+      <image:caption>A guide to early speech and language milestones from 12 months to 4 years. How rich conversation, reading aloud, and songs accelerate speech in daycare.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/balanced-warm-lunches-afternoon-energy</loc>
     <lastmod>2026-05-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/painting-preschool-art.jpg</image:loc>
+      <image:title>Why a Balanced Warm Lunch Prevents the 3 PM Toddler Energy Crash</image:title>
+      <image:caption>The nutritional science behind balanced warm lunches. How protein, complex carbs, and fresh fruits sustain afternoon focus and happy nap wake-ups.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/fairfax-county-child-care-subsidy-application-guide</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/classroom-playroom.jpg</image:loc>
+      <image:title>How to Apply for Fairfax County Child Care Subsidies: Complete Virginia Parent Guide</image:title>
+      <image:caption>Step-by-step guide to applying for Virginia Child Care Subsidy Program in Fairfax County. Income limits, required documents, and approved providers in Lorton VA.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/military-childcare-fort-belvoir-mccyn-provider-lorton</loc>
     <lastmod>2026-05-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/sensory-crafts-highchairs.jpg</image:loc>
+      <image:title>Finding Approved Military Childcare Near Fort Belvoir: MCCYN &amp; Fee Assistance Guide</image:title>
+      <image:caption>Complete guide for military families seeking off-base childcare near Fort Belvoir. Learn how MCCYN fee assistance pays your daycare tuition at Sunny Skies Daycare.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/cda-credential-vs-unlicensed-daycare-what-parents-must-know</loc>
     <lastmod>2026-05-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/shape-puzzle.jpg</image:loc>
+      <image:title>CDA Credential vs. Unlicensed Care: Why Early Childhood Qualifications Matter</image:title>
+      <image:caption>Understand what the Child Development Associate (CDA) credential means for your child. Training standards, safety observations, and licensing in Virginia.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/outdoor-nature-play-vs-screen-time-early-childhood</loc>
     <lastmod>2026-05-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/outdoor-play-yard.jpg</image:loc>
+      <image:title>Outdoor Nature Play vs. Screen Time: Cognitive &amp; Physical Benefits for Under-5s</image:title>
+      <image:caption>Why 100% screen-free childcare and active outdoor yard play build stronger neural pathways, motor coordination, and emotional resilience in early childhood.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/infant-sleep-regression-solutions-consistent-daycare-naps</loc>
     <lastmod>2026-05-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/sensory-crafts-highchairs.jpg</image:loc>
+      <image:title>Navigating the 4-Month &amp; 8-Month Infant Sleep Regressions with Daycare Routines</image:title>
+      <image:caption>Overcoming 4-month and 8-month infant sleep regressions. How consistent daycare nap schedules and AAP safe sleep standards restore peaceful nights.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/stem-and-sensory-math-for-preschoolers-tangrams-counting</loc>
     <lastmod>2026-06-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/shape-puzzle.jpg</image:loc>
+      <image:title>Hands-On STEAM &amp; Math for Preschoolers: How Tangram Puzzles Build Spatial IQ</image:title>
+      <image:caption>Discover how tangram puzzles, counting bears, and sensory patterns accelerate spatial reasoning, early geometry, and kindergarten math readiness in Fairfax County.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/healthy-peanut-free-daycare-snacks-cacfp-approved</loc>
     <lastmod>2026-06-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/healthy-snack-fruit-art.jpg</image:loc>
+      <image:title>15 Nut-Free, CACFP-Approved Daycare Snacks That Kids Actually Love</image:title>
+      <image:caption>Discover 15 wholesome, nut-free, USDA CACFP approved snack ideas served daily at Sunny Skies Daycare. Whole grains, fresh fruit art, and allergy-safe nutrition.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/homework-club-benefits-for-working-parents-school-age-care</loc>
     <lastmod>2026-06-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/wall-chart-learning.jpg</image:loc>
+      <image:title>Why After-School Homework Clubs Transform Evenings for Working Parents</image:title>
+      <image:caption>Eliminate evening homework battles. Discover how our after-school tutoring program in Lorton VA for ages 5-15 supports school success and family harmony.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/bilingual-language-exposure-in-early-childhood-daycare</loc>
     <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/painting-preschool-art.jpg</image:loc>
+      <image:title>The Cognitive Power of Bilingual Language Exposure in Toddlers &amp; Preschoolers</image:title>
+      <image:caption>How bilingual language exposure, songs, and dual-language vocabulary build executive function, neuroplasticity, and empathy in young minds in Northern Virginia.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://www.sunnyskiesydaycarecenter.com/blog/daycare-illness-prevention-sanitization-protocols-fairfax-va</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.sunnyskiesydaycarecenter.com/images/gallery/sensory-crafts-highchairs.jpg</image:loc>
+      <image:title>Daycare Illness Prevention: Hospital-Grade Sanitization &amp; Health Protocols That Protect Kids</image:title>
+      <image:caption>How Sunny Skies Daycare in Lorton VA keeps children healthy year-round. Medical-grade sanitization, HEPA filtration, handwashing rhymes, and illness exclusion rules.</image:caption>
+    </image:image>
   </url>
 </urlset>

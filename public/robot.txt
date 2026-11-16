@@ -1,8 +1,11 @@
-User-agent: *
-Allow: /
+# ========================================================
+# Robots.txt for Sunny Skies Daycare & Early Learning Center
+# Location: Lorton, VA 22079 | CDA Certified | Active CACFP
+# Official Website: https://www.sunnyskiesydaycarecenter.com/
+# ========================================================
 
-# Google AdSense Crawler
-User-agent: Mediapartners-Google
+# Default rule for all web crawlers
+User-agent: *
 Allow: /
 
 # Google Search Crawlers
@@ -11,6 +14,32 @@ Allow: /
 
 User-agent: Googlebot-Image
 Allow: /
+
+# Google AdSense Crawler (Unrestricted for Ad Approval & Monetization)
+User-agent: Mediapartners-Google
+Allow: /
+
+# Bing & MSN Crawlers
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+# Yahoo Crawler
+User-agent: Slurp
+Allow: /
+
+# DuckDuckGo Crawler
+User-agent: DuckDuckBot
+Allow: /
+
+# Apple Search Crawler (Spotlight & Siri Suggestions)
+User-agent: Applebot
+Allow: /
+
+# Host Directive
+Host: https://www.sunnyskiesydaycarecenter.com
 
 # Canonical XML Sitemap
 Sitemap: https://www.sunnyskiesydaycarecenter.com/sitemap.xml
