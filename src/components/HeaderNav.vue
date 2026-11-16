@@ -61,7 +61,7 @@
           <span class="text-[#00BDE0] font-bold">•</span>
           <span class="text-[#566593] font-semibold inline-flex items-center gap-1">
             <Camera class="w-3.5 h-3.5 text-[#00BDE0] inline" />
-            <span>Follow us on Instagram @sunnyskiesdaycare_ & TikTok!</span>
+            <span>Follow us on YouTube @sunnyskiescare, Instagram & TikTok!</span>
           </span>
           <span class="text-[#00BDE0] font-bold">•</span>
         </div>

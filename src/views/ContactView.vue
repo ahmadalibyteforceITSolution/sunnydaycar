@@ -312,6 +312,20 @@
                 </div>
                 <ArrowRight class="w-4 h-4 text-gray-400 group-hover:text-white group-hover:translate-x-1 transition-transform" />
               </a>
+
+              <!-- YouTube -->
+              <a 
+                href="https://youtube.com/@sunnyskiescare?si=gKRAEntPgRAQ1Yoq"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex items-center justify-between p-3 rounded-xl bg-white/10 hover:bg-[#FF0000] hover:text-white transition-all text-xs font-semibold group"
+              >
+                <div class="flex items-center gap-2.5">
+                  <Youtube class="w-4 h-4 text-red-400 group-hover:text-white" />
+                  <span>YouTube: @sunnyskiescare</span>
+                </div>
+                <ArrowRight class="w-4 h-4 text-gray-400 group-hover:text-white group-hover:translate-x-1 transition-transform" />
+              </a>
             </div>
           </div>
 
@@ -358,7 +372,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import { Phone, Mail, MapPin, Clock, Send, ArrowRight, Check, Instagram, Facebook } from 'lucide-vue-next'
+import { Phone, Mail, MapPin, Clock, Send, ArrowRight, Check, Instagram, Facebook, Youtube } from 'lucide-vue-next'
 import IconWhatsApp from '../components/icons/IconWhatsApp.vue'
 import IconTikTok from '../components/icons/IconTikTok.vue'
 

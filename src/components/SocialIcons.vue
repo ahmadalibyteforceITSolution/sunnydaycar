@@ -45,6 +45,21 @@
       <Facebook class="w-4 h-4" />
     </a>
 
+    <!-- Official YouTube Channel -->
+    <a 
+      href="https://youtube.com/@sunnyskiescare?si=gKRAEntPgRAQ1Yoq" 
+      target="_blank" 
+      rel="noopener noreferrer" 
+      title="Subscribe to Sunny Skies Daycare on YouTube"
+      :class="variant === 'dark' 
+        ? 'w-8 h-8 rounded-full bg-white/10 text-white hover:bg-[#FF0000] border border-white/10' 
+        : 'w-8 h-8 rounded-full bg-white text-[#FF0000] border border-gray-200 shadow-sm hover:bg-[#FF0000] hover:text-white hover:border-transparent'"
+      class="flex items-center justify-center transition-all duration-300 transform hover:scale-110"
+      aria-label="YouTube"
+    >
+      <Youtube class="w-4 h-4" />
+    </a>
+
     <!-- Official WhatsApp Icon Vue Component -->
     <a 
       href="https://wa.me/17036061557" 
@@ -63,7 +78,7 @@
 </template>
 
 <script setup>
-import { Instagram, Facebook } from 'lucide-vue-next'
+import { Instagram, Facebook, Youtube } from 'lucide-vue-next'
 import IconTikTok from './icons/IconTikTok.vue'
 import IconWhatsApp from './icons/IconWhatsApp.vue'
 

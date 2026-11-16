@@ -22,7 +22,8 @@ const staticRoutes = [
     path: '/',
     title: 'Sunny Skies Daycare | CDA Certified Provider Lorton VA | Active CACFP WIC',
     description: 'Sunny Skies Daycare is a CDA certified provider in Lorton VA with an active CACFP WIC food program, fresh fruits, infant care, and early learning standards.',
-    h1: 'Loving Home Daycare in Lorton, VA with Active CACFP WIC Food Program',
+    keywords: 'Sunny Skies Daycare, CDA certified provider, Daycare Lorton VA, Childcare Lorton VA, active cacfp wic, active cacfp wic food program, infant care, fresh fruits, standards, CDA certified childcare provider, infant developmental milestones, AAP safe sleep standards, toddler STEM sensory learning, kindergarten readiness phonics, licensed home daycare Virginia, Fairfax County childcare, MCCYN military childcare fee assistance, Virginia childcare subsidies accepted, pediatric CPR certified',
+    schema: null, // Root already has main LocalBusiness schema in template
     body: `
       <section class="max-w-6xl mx-auto px-4 py-12">
         <h1 class="text-3xl font-extrabold text-[#031B4E] mb-4">Sunny Skies Daycare - CDA Certified Provider in Lorton, VA</h1>
@@ -55,7 +56,23 @@ const staticRoutes = [
     path: '/about',
     title: 'About Us - Sunny Skies Daycare | Loving CDA Certified Childcare Lorton VA',
     description: 'Learn about our CDA Certified provider, Virginia licensing, low caregiver ratios, and home-based nurturing philosophy in Lorton, Virginia.',
-    h1: 'About Sunny Skies Daycare in Lorton, VA',
+    keywords: 'About Sunny Skies Daycare, CDA certified provider Lorton VA, licensed home daycare Virginia, Fairfax County childcare provider, low caregiver ratios, early childhood education philosophy, pediatric CPR first aid certified, Fort Belvoir childcare provider, family childcare Lorton VA',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "@id": `${siteUrl}/about#webpage`,
+      "url": `${siteUrl}/about`,
+      "name": "About Us - Sunny Skies Daycare | Loving CDA Certified Childcare Lorton VA",
+      "description": "Learn about our CDA Certified provider, Virginia licensing, low caregiver ratios, and home-based nurturing philosophy in Lorton, Virginia.",
+      "mainEntity": {
+        "@type": "ChildCare",
+        "name": "Sunny Skies Daycare",
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "name": "Child Development Associate (CDA) Credential"
+        }
+      }
+    },
     body: `
       <section class="max-w-4xl mx-auto px-4 py-12">
         <h1 class="text-3xl font-extrabold text-[#031B4E] mb-4">About Sunny Skies Daycare</h1>
@@ -79,7 +96,44 @@ const staticRoutes = [
     path: '/services',
     title: 'Childcare Programs & Services - Sunny Skies Daycare | Newborn to 15 Years',
     description: 'Explore programs from Infant Care, Toddler Discovery, Pre-K Readiness, and School-Age Homework Club with CACFP nutritious meals and fenced outdoor yard.',
-    h1: 'Childcare Programs & Educational Services in Lorton, VA',
+    keywords: 'childcare programs Lorton VA, infant care 0-12 months, toddler discovery 1-3 years, preschool pre-k readiness, before after school care Lorton VA, CACFP nutritious daycare meals, fenced outdoor yard daycare, peanut-free daycare, screen-free learning',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "ItemPage",
+      "@id": `${siteUrl}/services#webpage`,
+      "url": `${siteUrl}/services`,
+      "name": "Childcare Programs & Services - Sunny Skies Daycare",
+      "description": "Explore programs from Infant Care, Toddler Discovery, Pre-K Readiness, and School-Age Homework Club with CACFP nutritious meals.",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "Service",
+            "position": 1,
+            "name": "Infant Care (0 - 12 Months)",
+            "description": "AAP safe sleep compliant infant nursery with responsive caregiving."
+          },
+          {
+            "@type": "Service",
+            "position": 2,
+            "name": "Toddler Discovery (1 - 3 Years)",
+            "description": "Sensory discovery, early words, and gentle potty training."
+          },
+          {
+            "@type": "Service",
+            "position": 3,
+            "name": "Pre-K & Kindergarten Readiness (3 - 5 Years)",
+            "description": "Phonics, early math, social-emotional development."
+          },
+          {
+            "@type": "Service",
+            "position": 4,
+            "name": "School-Age & Homework Support (5 - 15 Years)",
+            "description": "Before and after school care with homework support."
+          }
+        ]
+      }
+    },
     body: `
       <section class="max-w-4xl mx-auto px-4 py-12">
         <h1 class="text-3xl font-extrabold text-[#031B4E] mb-4">Childcare Programs & Educational Services</h1>
@@ -111,7 +165,22 @@ const staticRoutes = [
     path: '/appointment',
     title: 'Book a Tour / Appointment - Sunny Skies Daycare | Lorton, VA',
     description: 'Schedule an in-person tour of our cozy, sanitized daycare learning rooms in Lorton, VA. Meet our CDA Certified provider and view our USDA CACFP menus.',
-    h1: 'Book an In-Person Tour of Sunny Skies Daycare',
+    keywords: 'book daycare tour Lorton VA, schedule daycare visit, childcare enrollment Lorton VA, tour licensed home daycare, infant childcare openings Lorton VA, visit daycare 22079',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "@id": `${siteUrl}/appointment#webpage`,
+      "url": `${siteUrl}/appointment`,
+      "name": "Book a Tour / Appointment - Sunny Skies Daycare | Lorton, VA",
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": `${siteUrl}/appointment`,
+        "result": {
+          "@type": "Reservation",
+          "name": "Daycare Tour Booking"
+        }
+      }
+    },
     body: `
       <section class="max-w-3xl mx-auto px-4 py-12">
         <h1 class="text-3xl font-extrabold text-[#031B4E] mb-4">Schedule a Daycare Tour</h1>
@@ -129,7 +198,20 @@ const staticRoutes = [
     path: '/contact',
     title: 'Contact Us - Sunny Skies Daycare | Call (703) 606-1557 | Lorton, VA',
     description: 'Contact Sunny Skies Daycare in Lorton, VA. Call or text +1 (703) 606-1557 or message via WhatsApp for immediate tour availability and enrollment.',
-    h1: 'Contact Sunny Skies Daycare in Lorton, VA',
+    keywords: 'contact Sunny Skies Daycare, daycare phone number Lorton VA, daycare address Lorton 22079, childcare inquiries Fairfax County, WhatsApp daycare contact Lorton',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "ContactPage",
+      "@id": `${siteUrl}/contact#webpage`,
+      "url": `${siteUrl}/contact`,
+      "name": "Contact Us - Sunny Skies Daycare | Call (703) 606-1557 | Lorton, VA",
+      "mainEntity": {
+        "@type": "ChildCare",
+        "name": "Sunny Skies Daycare",
+        "telephone": "+1-703-606-1557",
+        "email": "sunnyskiescare@gmail.com"
+      }
+    },
     body: `
       <section class="max-w-3xl mx-auto px-4 py-12">
         <h1 class="text-3xl font-extrabold text-[#031B4E] mb-4">Contact Sunny Skies Daycare</h1>
@@ -148,7 +230,15 @@ const staticRoutes = [
     path: '/blog',
     title: 'Childcare Guides & Parenting Resources | Sunny Skies Daycare Lorton VA',
     description: 'Browse 30 in-depth childcare guides covering infant milestones, USDA CACFP nutrition, gentle potty training, Virginia licensing, and kindergarten readiness.',
-    h1: 'Childcare Guides, Parenting Advice & Early Learning Articles',
+    keywords: 'childcare guides, parenting resources Lorton VA, infant milestones guide, toddler sensory activities, CACFP childcare meal plans, gentle potty training daycare, Virginia childcare licensing checklist',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "@id": `${siteUrl}/blog#webpage`,
+      "url": `${siteUrl}/blog`,
+      "name": "Childcare Guides & Parenting Resources | Sunny Skies Daycare Lorton VA",
+      "description": "Browse 30 in-depth childcare guides covering infant milestones, USDA CACFP nutrition, gentle potty training, Virginia licensing, and kindergarten readiness."
+    },
     body: `
       <section class="max-w-5xl mx-auto px-4 py-12">
         <h1 class="text-3xl font-extrabold text-[#031B4E] mb-4">Childcare Guides & Parenting Resources</h1>
@@ -174,7 +264,21 @@ const staticRoutes = [
     path: '/citations',
     title: 'Citations, Standards & Accreditations | Sunny Skies Daycare',
     description: 'Official statutory citations, USDA CACFP nutrition standards, CDA credentials, AAP safe sleep guidelines, and Virginia daycare licensing compliance.',
-    h1: 'Citations, Statutory Standards & Accreditations',
+    keywords: 'statutory citations childcare, CDA Council for Professional Recognition, USDA CACFP regulations 7 CFR 226, AAP safe sleep guidelines, Virginia Department of Education licensing, pediatric CPR guidelines',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "@id": `${siteUrl}/citations#webpage`,
+      "url": `${siteUrl}/citations`,
+      "name": "Citations, Standards & Accreditations | Sunny Skies Daycare",
+      "citation": [
+        "https://www.fns.usda.gov/cacfp",
+        "https://www.cdacouncil.org",
+        "https://www.aap.org",
+        "https://www.cdc.gov/ncbddd/actearly/milestones/index.html",
+        "https://www.doe.virginia.gov/early-childhood"
+      ]
+    },
     body: `
       <section class="max-w-4xl mx-auto px-4 py-12">
         <h1 class="text-3xl font-extrabold text-[#031B4E] mb-4">Citations, Statutory References & Professional Accreditations</h1>
@@ -202,7 +306,14 @@ const staticRoutes = [
     path: '/terms-of-service',
     title: 'Terms of Service & Editorial Policy | Sunny Skies Daycare Lorton VA',
     description: 'Review our Terms of Service, Google AdSense disclosures, and editorial citation standards for Sunny Skies Daycare in Lorton, VA.',
-    h1: 'Terms of Service & Editorial Policy',
+    keywords: 'terms of service, editorial policy, Google AdSense publisher disclosures, childcare service agreement Lorton VA',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": `${siteUrl}/terms-of-service#webpage`,
+      "url": `${siteUrl}/terms-of-service`,
+      "name": "Terms of Service & Editorial Policy | Sunny Skies Daycare Lorton VA"
+    },
     body: `
       <section class="max-w-4xl mx-auto px-4 py-12">
         <h1 class="text-3xl font-extrabold text-[#031B4E] mb-4">Terms of Service & Editorial Policy</h1>
@@ -216,7 +327,14 @@ const staticRoutes = [
     path: '/privacy-policy',
     title: 'Privacy Policy - Sunny Skies Daycare | Lorton, VA',
     description: 'Review our official Privacy Policy. Learn how Sunny Skies Daycare in Lorton, VA protects parent, family, and child privacy, cookies, and digital security.',
-    h1: 'Privacy Policy',
+    keywords: 'daycare privacy policy, child privacy COPPA compliance, family data protection, cookie policy Sunny Skies Daycare',
+    schema: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": `${siteUrl}/privacy-policy#webpage`,
+      "url": `${siteUrl}/privacy-policy`,
+      "name": "Privacy Policy - Sunny Skies Daycare | Lorton, VA"
+    },
     body: `
       <section class="max-w-4xl mx-auto px-4 py-12">
         <h1 class="text-3xl font-extrabold text-[#031B4E] mb-4">Privacy Policy</h1>
@@ -230,14 +348,24 @@ const staticRoutes = [
 
 // Add 30 blog post routes
 blogs.forEach(blog => {
+  const blogKeywords = (blog.tags || []).concat([
+    'Daycare Lorton VA',
+    'Childcare Lorton VA',
+    'CDA Certified Daycare',
+    'Active CACFP Food Program',
+    'Early Childhood Education',
+    'Infant Milestones',
+    'Kindergarten Readiness'
+  ]).join(', ')
+
   staticRoutes.push({
     path: `/blog/${blog.slug}`,
     title: `${blog.metaTitle} | Sunny Skies Daycare`,
     description: blog.metaDescription,
+    keywords: blogKeywords,
     image: `${siteUrl}${blog.image}`,
     isBlog: true,
     blogData: blog,
-    h1: blog.title,
     body: `
       <article class="max-w-4xl mx-auto px-4 py-12">
         <nav class="text-xs text-gray-500 mb-4">
@@ -284,21 +412,26 @@ for (const route of staticRoutes) {
   // 2. Replace Meta Description
   html = html.replace(/<meta name="description" content=".*?" \/>/is, `<meta name="description" content="${route.description}" />`)
 
-  // 3. Replace Canonical Link
+  // 3. Replace Meta Keywords
+  if (route.keywords) {
+    html = html.replace(/<meta name="keywords" content=".*?" \/>/is, `<meta name="keywords" content="${route.keywords}" />`)
+  }
+
+  // 4. Replace Canonical Link
   html = html.replace(/<link rel="canonical" href=".*?" \/>/is, `<link rel="canonical" href="${canonicalUrl}" />`)
 
-  // 4. Replace Open Graph Tags
+  // 5. Replace Open Graph Tags
   html = html.replace(/<meta property="og:url" content=".*?" \/>/is, `<meta property="og:url" content="${canonicalUrl}" />`)
   html = html.replace(/<meta property="og:title" content=".*?" \/>/is, `<meta property="og:title" content="${route.title}" />`)
   html = html.replace(/<meta property="og:description" content=".*?" \/>/is, `<meta property="og:description" content="${route.description}" />`)
   html = html.replace(/<meta property="og:image" content=".*?" \/>/is, `<meta property="og:image" content="${pageImage}" />`)
 
-  // 5. Replace Twitter Tags
+  // 6. Replace Twitter Tags
   html = html.replace(/<meta property="twitter:title" content=".*?" \/>/is, `<meta property="twitter:title" content="${route.title}" />`)
   html = html.replace(/<meta property="twitter:description" content=".*?" \/>/is, `<meta property="twitter:description" content="${route.description}" />`)
   html = html.replace(/<meta property="twitter:image" content=".*?" \/>/is, `<meta property="twitter:image" content="${pageImage}" />`)
 
-  // 6. Inject JSON-LD Schema for BlogPosting if it is a blog
+  // 7. Inject JSON-LD Schema
   if (route.isBlog && route.blogData) {
     const blog = route.blogData
     const blogSchema = {
@@ -338,18 +471,20 @@ for (const route of staticRoutes) {
       "datePublished": blog.date,
       "dateModified": blog.date,
       "articleSection": blog.category,
-      "keywords": blog.tags ? blog.tags.join(', ') : ''
+      "keywords": route.keywords
     }
 
-    const schemaTag = `\n    <script type="application/ld+json" id="blog-jsonld">\n${JSON.stringify(blogSchema, null, 2)}\n    </script>\n`
+    const schemaTag = `\n    <script type="application/ld+json" id="route-schema">\n${JSON.stringify(blogSchema, null, 2)}\n    </script>\n`
+    html = html.replace('</head>', `${schemaTag}</head>`)
+  } else if (route.schema) {
+    const schemaTag = `\n    <script type="application/ld+json" id="route-schema">\n${JSON.stringify(route.schema, null, 2)}\n    </script>\n`
     html = html.replace('</head>', `${schemaTag}</head>`)
   }
 
-  // 7. Inject Pre-rendered Body into #app
-  // This provides immediate indexable static DOM content to Googlebot while letting Vue smoothly hydrate or take over
+  // 8. Inject Pre-rendered Body into #app
   html = html.replace(/<div id="app"[^>]*>.*?<\/div>/s, `<div id="app" class="min-h-screen flex flex-col">${route.body}</div>`)
 
-  // 8. Determine target file locations
+  // 9. Determine target file locations
   if (route.path === '/') {
     fs.writeFileSync(templatePath, html, 'utf8')
   } else {
@@ -360,7 +495,6 @@ for (const route of staticRoutes) {
 
     // Also write dist/<path>.html for maximum static server fallback
     const targetHtmlFile = path.join(distDir, `${cleanPath.replace(/^\//, '')}.html`)
-    // ensure parent dir exists for nested files
     fs.mkdirSync(path.dirname(targetHtmlFile), { recursive: true })
     fs.writeFileSync(targetHtmlFile, html, 'utf8')
   }
@@ -368,4 +502,4 @@ for (const route of staticRoutes) {
   generatedCount++
 }
 
-console.log(`Successfully generated ${generatedCount} pre-rendered HTML files with unique self-canonical tags!`)
+console.log(`Successfully generated ${generatedCount} pre-rendered HTML files with unique self-canonical tags, meta descriptions, titles, schemas, and keywords!`)

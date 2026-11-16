@@ -10,6 +10,7 @@
       </router-view>
     </main>
 
+    <TopSeoKeywords />
     <FooterNav />
     <QuickContactFloating />
   </div>
@@ -17,6 +18,7 @@
 
 <script setup>
 import HeaderNav from './components/HeaderNav.vue'
+import TopSeoKeywords from './components/TopSeoKeywords.vue'
 import FooterNav from './components/FooterNav.vue'
 import QuickContactFloating from './components/QuickContactFloating.vue'
 </script>

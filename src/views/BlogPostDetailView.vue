@@ -328,6 +328,24 @@ function updateMetadata() {
   }
   canonicalLink.setAttribute('href', `https://www.sunnyskiesydaycarecenter.com/blog/${blog.value.slug}`)
 
+  // 3b. Dynamic Meta Keywords for blog post
+  let kwMeta = document.querySelector('meta[name="keywords"]')
+  if (!kwMeta) {
+    kwMeta = document.createElement('meta')
+    kwMeta.setAttribute('name', 'keywords')
+    document.head.appendChild(kwMeta)
+  }
+  const postKeywords = (blog.value.tags || []).concat([
+    'Daycare Lorton VA',
+    'Childcare Lorton VA',
+    'CDA Certified Daycare',
+    'Active CACFP Food Program',
+    'Early Childhood Education',
+    'Infant Milestones',
+    'Kindergarten Readiness'
+  ]).join(', ')
+  kwMeta.setAttribute('content', postKeywords)
+
   // 4. JSON-LD BlogPosting Structured Data with E-E-A-T Citations
   let scriptTag = document.querySelector('#blog-jsonld')
   if (!scriptTag) {

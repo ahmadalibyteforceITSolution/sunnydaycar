@@ -283,7 +283,7 @@
 
           <div class="p-4 bg-[#FCFDFF] border border-gray-200 rounded-2xl space-y-1.5">
             <span class="text-xs font-bold text-[#0A3366]">Social Profiles</span>
-            <p class="text-[11px] text-[#566593]">Instagram (@sunnyskiesdaycare_), TikTok (@sunnyskiesdaycare), and Facebook community page.</p>
+            <p class="text-[11px] text-[#566593]">YouTube (@sunnyskiescare), Instagram (@sunnyskiesdaycare_), TikTok (@sunnyskiesdaycare), and Facebook community page.</p>
             <span class="text-[10px] text-emerald-600 font-bold block pt-1">Status: Active & Updated</span>
           </div>
 

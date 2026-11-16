@@ -251,7 +251,7 @@
             <h2 class="text-xl sm:text-2xl font-bold font-heading text-[#0A3366]">Third-Party Links & Social Media</h2>
           </div>
           <p class="text-sm sm:text-base leading-relaxed pl-11">
-            Our site features links to our official social media pages (Instagram, TikTok, Facebook), WhatsApp messaging, and Google Maps for directions. When clicking these links, you will be redirected to external platforms governed by their own privacy policies. We encourage you to review their terms.
+            Our site features links to our official social media pages (YouTube, Instagram, TikTok, Facebook), WhatsApp messaging, and Google Maps for directions. When clicking these links, you will be redirected to external platforms governed by their own privacy policies. We encourage you to review their terms.
           </p>
         </section>
 
