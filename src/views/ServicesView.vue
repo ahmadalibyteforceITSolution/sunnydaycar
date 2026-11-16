@@ -201,6 +201,9 @@
 
       </div>
 
+      <!-- Interactive Program & Ratio Estimator (Backlink Magnet) -->
+      <ProgramEstimator />
+
       <!-- Daily Routine Schedule Table -->
       <div class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
         <div>
@@ -278,6 +281,9 @@
         </div>
       </div>
 
+      <!-- Weekly CACFP Nutrition & Meal Planner (Backlink Magnet) -->
+      <WeeklyMenuExplorer />
+
       <!-- Quick CTA -->
       <div class="text-center bg-white p-10 rounded-3xl border border-gray-100 shadow-sm max-w-3xl mx-auto space-y-4">
         <h3 class="text-2xl font-bold font-heading text-brand-navy">
@@ -310,4 +316,6 @@
 
 <script setup>
 import { Check, Sparkles, Calendar, Phone, Baby, BookOpen, School, Utensils, Trees } from 'lucide-vue-next'
+import ProgramEstimator from '../components/ProgramEstimator.vue'
+import WeeklyMenuExplorer from '../components/WeeklyMenuExplorer.vue'
 </script>
