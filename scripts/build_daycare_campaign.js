@@ -16,8 +16,17 @@ const targetUrls = [
   { url: 'https://www.sunnyskiesydaycarecenter.com/blog/cacfp-usda-food-program-benefits', anchor: 'USDA CACFP Childcare Nutrition Benefits', focus: 'Why Nutritious Meals Support Early Cognitive Brain Growth' },
   { url: 'https://www.sunnyskiesydaycarecenter.com/blog/choosing-licensed-daycare-lorton-va', anchor: 'Choosing Licensed Daycare in Lorton VA', focus: 'Parent Checklist for Quality, Safety & Cleanliness' },
   { url: 'https://www.sunnyskiesydaycarecenter.com/blog/infant-sensory-milestones-first-year', anchor: 'Infant Sensory & Motor Development Milestones', focus: 'Tummy Time, Tactile Play & Gentle Caregiving' },
-  { url: 'https://www.sunnyskiesydaycarecenter.com/blog/military-childcare-assistance-mccyn-guide', anchor: 'Military Childcare MCCYN Fee Assistance Lorton', focus: 'DoD & Child Care Aware Military Subsidies Near Fort Belvoir' },
-  { url: 'https://www.sunnyskiesydaycarecenter.com/blog/preschool-kindergarten-readiness-checklist', anchor: 'Preschool & Kindergarten Readiness Lorton', focus: 'Animal Phonics, 1-2-3 Counting & Social Confidence' }
+  { url: 'https://www.sunnyskiesydaycarecenter.com/blog/preschool-kindergarten-readiness-checklist', anchor: 'Preschool & Kindergarten Readiness Lorton', focus: 'Animal Phonics, 1-2-3 Counting & Social Confidence' },
+  { url: 'https://www.sunnyskiesydaycarecenter.com/blog/fairfax-county-child-care-subsidy-application-guide', anchor: 'Fairfax County Child Care Subsidy Guide', focus: 'Virginia VDSS Child Care Subsidy Vouchers & Income Limits' },
+  { url: 'https://www.sunnyskiesydaycarecenter.com/blog/military-childcare-fort-belvoir-mccyn-provider-lorton', anchor: 'Fort Belvoir Military Childcare MCCYN Provider', focus: 'Child Care Aware Military Fee Assistance Near Fort Belvoir' },
+  { url: 'https://www.sunnyskiesydaycarecenter.com/blog/cda-credential-vs-unlicensed-daycare-what-parents-must-know', anchor: 'CDA Credentialed Childcare Standards', focus: 'Council for Professional Recognition Early Childhood Credentials' },
+  { url: 'https://www.sunnyskiesydaycarecenter.com/blog/outdoor-nature-play-vs-screen-time-early-childhood', anchor: 'Screen-Free Outdoor Childcare Lorton', focus: 'AAP Screen-Free Standards & Fenced Yard Nature Exploration' },
+  { url: 'https://www.sunnyskiesydaycarecenter.com/blog/infant-sleep-regression-solutions-consistent-daycare-naps', anchor: 'Infant Sleep Regression Solutions & Daycare Naps', focus: 'AAP Safe Sleep Guidelines & Consistent Infant Nursery Routine' },
+  { url: 'https://www.sunnyskiesydaycarecenter.com/blog/stem-and-sensory-math-for-preschoolers-tangrams-counting', anchor: 'Preschool STEAM & Tangram Math Reasoning', focus: 'Hands-On Early Math, Counting & Spatial Tangram Puzzles' },
+  { url: 'https://www.sunnyskiesydaycarecenter.com/blog/healthy-peanut-free-daycare-snacks-cacfp-approved', anchor: '15 Nut-Free CACFP Daycare Snacks', focus: 'USDA CACFP Approved Nut-Free Whole Food Snacks' },
+  { url: 'https://www.sunnyskiesydaycarecenter.com/blog/homework-club-benefits-for-working-parents-school-age-care', anchor: 'After-School Homework Tutoring Club Lorton', focus: 'School-Age Homework Assistance & After-School Program' },
+  { url: 'https://www.sunnyskiesydaycarecenter.com/blog/bilingual-language-exposure-in-early-childhood-daycare', anchor: 'Bilingual Language Development in Childcare', focus: 'Early Childhood Neuroplasticity, Dual-Language Songs & Vocabulary' },
+  { url: 'https://www.sunnyskiesydaycarecenter.com/blog/daycare-illness-prevention-sanitization-protocols-fairfax-va', anchor: 'Daycare Sanitization & Illness Prevention Protocols', focus: 'Hospital-Grade Sanitization, HEPA Filtration & Health Rules' }
 ];
 
 // Daycare article templates & descriptions
