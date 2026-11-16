@@ -143,7 +143,7 @@ router.afterEach((to) => {
     document.head.appendChild(canonicalLink)
   }
   if (!to.params.slug) {
-    const cleanPath = to.path === '/' ? '' : to.path
+    const cleanPath = to.path === '/' ? '/' : to.path
     canonicalLink.setAttribute('href', `https://www.sunnyskiesydaycarecenter.com${cleanPath}`)
   }
 })
