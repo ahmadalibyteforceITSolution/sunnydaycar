@@ -242,7 +242,7 @@
 
           <!-- Real Daycare Classroom Preview -->
           <div class="rounded-3xl overflow-hidden shadow-md border border-gray-100">
-            <img src="/images/gallery/classroom-playroom.jpg" alt="Sunny Skies Daycare Learning Room" class="w-full h-56 object-cover" />
+            <img src="/images/gallery/classroom-playroom.jpg" alt="Sunny Skies Daycare Learning Room" title="Sunny Skies Daycare Learning Room in Lorton VA" class="w-full h-56 object-cover" />
             <div class="p-4 bg-white text-xs font-semibold text-brand-navy flex items-center justify-between">
               <span>Sunny Skies Daycare Learning Room</span>
               <span class="text-[#00BDE0] font-bold">Lorton, VA</span>

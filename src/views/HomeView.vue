@@ -134,6 +134,7 @@
                     v-if="activeHeroTab === 'flyer'"
                     src="/flyer.png" 
                     alt="Sunny Skies Daycare Program Flyer" 
+                    title="Sunny Skies Daycare Program Flyer - Ages Newborn to 15 Years"
                     width="400"
                     height="500"
                     fetchpriority="high"
@@ -143,6 +144,7 @@
                     v-else-if="activeHeroTab === 'classroom'"
                     src="/images/gallery/wall-chart-learning.jpg" 
                     alt="Sunny Skies Daycare Learning Wall and Phonics" 
+                    title="Sunny Skies Daycare Interactive Phonics Learning Wall"
                     width="400"
                     height="500"
                     loading="lazy"
@@ -153,6 +155,7 @@
                     v-else
                     src="/images/gallery/outdoor-play-yard.jpg" 
                     alt="Sunny Skies Daycare Outdoor Play Yard" 
+                    title="Sunny Skies Daycare Fenced Outdoor Play Yard in Lorton VA"
                     width="400"
                     height="500"
                     loading="lazy"
@@ -664,6 +667,7 @@
                 <img 
                   :src="post.image" 
                   :alt="post.title"
+                  :title="post.title"
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />

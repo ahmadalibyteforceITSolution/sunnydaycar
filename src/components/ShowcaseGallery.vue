@@ -26,6 +26,7 @@
           <img 
             :src="item.image" 
             :alt="item.title" 
+            :title="item.title"
             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             loading="lazy"
           />
@@ -81,6 +82,7 @@
             <img 
               :src="activeLightboxItem.image" 
               :alt="activeLightboxItem.title" 
+              :title="activeLightboxItem.title" 
               class="max-h-[70vh] w-auto object-contain mx-auto"
             />
           </div>

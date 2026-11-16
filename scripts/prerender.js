@@ -379,7 +379,7 @@ blogs.forEach(blog => {
           By <strong>${blog.author}</strong> • Published ${blog.date} • ${blog.readTime}
         </div>
         <div class="rounded-2xl overflow-hidden aspect-[16/9] mb-8 bg-gray-100">
-          <img src="${blog.image}" alt="${blog.title}" class="w-full h-full object-cover" />
+          <img src="${blog.image}" alt="${blog.title}" title="${blog.title.replace(/"/g, '&quot;')}" class="w-full h-full object-cover" />
         </div>
         <div class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
           ${blog.content}

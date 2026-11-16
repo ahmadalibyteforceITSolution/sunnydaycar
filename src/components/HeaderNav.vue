@@ -127,7 +127,7 @@
         <!-- Left: Logo & Title (Strict Single-Line) -->
         <router-link to="/" class="flex items-center gap-2 sm:gap-3 shrink-0 group min-w-0">
           <div class="relative w-9 h-9 sm:w-11 sm:h-11 rounded-full overflow-hidden shadow border-2 border-brand-yellow group-hover:scale-105 transition-transform duration-300 shrink-0">
-            <img src="/logo.png" alt="Sunny Skies Daycare" class="w-full h-full object-cover" />
+            <img src="/logo.png" alt="Sunny Skies Daycare" title="Sunny Skies Daycare Official Logo Lorton VA" class="w-full h-full object-cover" />
           </div>
           <div class="flex flex-col whitespace-nowrap min-w-0">
             <div class="flex items-center gap-1.5 sm:gap-2">

@@ -30,7 +30,7 @@
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-5 order-2 lg:order-1">
               <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-gray-100 border border-gray-200 shadow-sm">
-                <img src="/images/gallery/sensory-crafts-highchairs.jpg" alt="Infant and Toddler Highchair Care" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <img src="/images/gallery/sensory-crafts-highchairs.jpg" alt="Infant and Toddler Highchair Care" title="Infant and Toddler Highchair Care in Lorton VA" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
             <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
@@ -77,7 +77,7 @@
             </div>
             <div class="lg:col-span-5">
               <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-gray-100 border border-amber-200 shadow-sm">
-                <img src="/images/gallery/shape-puzzle.jpg" alt="Toddler shape puzzles and fine motor play" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <img src="/images/gallery/shape-puzzle.jpg" alt="Toddler shape puzzles and fine motor play" title="Toddler Tangram Shape Puzzles and Fine Motor Play" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
           </div>
@@ -88,7 +88,7 @@
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-5 order-2 lg:order-1">
               <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-gray-100 border border-gray-200 shadow-sm">
-                <img src="/images/gallery/wall-chart-learning.jpg" alt="Interactive alphabet and calendar chart learning" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <img src="/images/gallery/wall-chart-learning.jpg" alt="Interactive alphabet and calendar chart learning" title="Interactive Alphabet and Calendar Learning Wall" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
             <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
@@ -135,7 +135,7 @@
             </div>
             <div class="lg:col-span-5">
               <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-gray-100 border border-purple-200 shadow-sm">
-                <img src="/images/gallery/afterschool-group-learning.jpg" alt="After-school study table and homework help" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <img src="/images/gallery/afterschool-group-learning.jpg" alt="After-school study table and homework help" title="After-School Study Table and Homework Tutoring Club" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
           </div>
@@ -146,7 +146,7 @@
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             <div class="lg:col-span-5 order-2 lg:order-1">
               <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-gray-100 border border-amber-200 shadow-sm">
-                <img src="/images/gallery/healthy-snack-fruit-art.jpg" alt="Fresh fruits, apples, bananas and healthy nutrition" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <img src="/images/gallery/healthy-snack-fruit-art.jpg" alt="Fresh fruits, apples, bananas and healthy nutrition" title="Fresh Fruits and USDA CACFP Nutritious Daycare Meals" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
             <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
@@ -193,7 +193,7 @@
             </div>
             <div class="lg:col-span-5">
               <div class="rounded-2xl overflow-hidden aspect-[4/3] bg-gray-100 border border-emerald-200 shadow-sm">
-                <img src="/images/gallery/outdoor-play-yard.jpg" alt="Sunny outdoor fenced play yard in Lorton" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <img src="/images/gallery/outdoor-play-yard.jpg" alt="Sunny outdoor fenced play yard in Lorton" title="Sunny Outdoor Fenced Play Yard in Lorton VA" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
             </div>
           </div>

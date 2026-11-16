@@ -44,7 +44,7 @@
         <div class="space-y-4">
           <div class="flex items-center gap-3">
             <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-brand-yellow shadow shrink-0">
-              <img src="/logo.png" alt="Sunny Skies Daycare" class="w-full h-full object-cover" />
+              <img src="/logo.png" alt="Sunny Skies Daycare" title="Sunny Skies Daycare Logo Lorton VA" class="w-full h-full object-cover" />
             </div>
             <div>
               <span class="text-xl font-bold font-heading text-white tracking-tight">Sunny Skies</span>

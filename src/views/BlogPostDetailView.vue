@@ -57,6 +57,7 @@
         <img 
           :src="blog.image" 
           :alt="blog.title" 
+          :title="blog.title" 
           class="w-full h-full object-cover"
         />
       </div>

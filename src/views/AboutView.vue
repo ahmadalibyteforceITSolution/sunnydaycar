@@ -67,6 +67,7 @@
                 <img 
                   src="/images/gallery/classroom-playroom.jpg" 
                   alt="Sunny Skies Daycare Classroom and Learning Room in Lorton, VA" 
+                  title="Sunny Skies Daycare Classroom and Playroom in Lorton, VA"
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 
@@ -80,7 +81,7 @@
 
               <!-- Floating Circular Brand Logo Seal -->
               <div class="absolute -top-4 -right-4 w-16 h-16 sm:w-20 sm:h-20 rounded-full overflow-hidden border-4 border-white shadow-xl bg-white animate-float">
-                <img src="/logo.png" alt="Sunny Skies Daycare Official Seal" class="w-full h-full object-cover" />
+                <img src="/logo.png" alt="Sunny Skies Daycare Official Seal" title="Sunny Skies Daycare Official Seal Lorton VA" class="w-full h-full object-cover" />
               </div>
 
               <!-- Bottom Info Strip -->
