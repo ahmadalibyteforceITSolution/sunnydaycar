@@ -397,8 +397,16 @@ function updateMetadata() {
     'keywords': (blog.value.tags || []).concat([
       'Daycare Lorton VA',
       'Childcare Lorton VA',
+      'Best Daycare in Lorton VA',
+      'Home Daycare Lorton VA',
+      'Infant Care Lorton VA',
+      'Toddler Daycare Lorton VA',
+      'Preschool Lorton VA',
       'CDA Certified Daycare',
-      'USDA CACFP Meals',
+      'Active CACFP Food Program',
+      'Fairfax County Childcare',
+      'Daycare near Fort Belvoir VA',
+      'Daycare 22079',
       'Early Childhood Education',
       'Infant Milestones',
       'Kindergarten Readiness'
