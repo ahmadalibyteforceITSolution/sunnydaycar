@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col bg-[#FCFDFF] selection:bg-brand-cyan-light selection:text-brand-navy overflow-x-hidden w-full max-w-full">
+  <div class="min-h-screen flex flex-col bg-[#FCFDFF] selection:bg-brand-cyan-light selection:text-brand-navy overflow-x-hidden w-full max-w-full pb-16 sm:pb-0">
     <HeaderNav />
     
     <main class="flex-grow w-full overflow-x-hidden">
@@ -10,7 +10,6 @@
       </router-view>
     </main>
 
-    <TopSeoKeywords />
     <FooterNav />
     <QuickContactFloating />
   </div>
@@ -18,7 +17,6 @@
 
 <script setup>
 import HeaderNav from './components/HeaderNav.vue'
-import TopSeoKeywords from './components/TopSeoKeywords.vue'
 import FooterNav from './components/FooterNav.vue'
 import QuickContactFloating from './components/QuickContactFloating.vue'
 </script>

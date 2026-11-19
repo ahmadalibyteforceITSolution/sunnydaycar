@@ -30,7 +30,7 @@
 
             <!-- Subtitle -->
             <p class="hero-subtitle text-base sm:text-lg text-[#566593] max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              Welcome to <strong class="text-[#0A3366] font-semibold">Sunny Skies Daycare</strong> in Lorton, VA! Our <strong class="text-[#0A3366]">CDA certified provider</strong> provides infant care and early learning standards with an <strong class="text-[#00BDE0] font-bold">active CACFP WIC food program</strong>, daily fresh fruits, and loving care for newborns up to 15 years.
+              Welcome to <router-link to="/" class="font-bold text-[#0A3366] hover:text-[#00BDE0] transition-colors underline decoration-[#00BDE0]/30 hover:decoration-[#00BDE0]">Sunny Skies Daycare</router-link> in Lorton, VA! Our experienced <router-link to="/about" class="font-bold text-[#0A3366] hover:text-[#00BDE0] transition-colors underline decoration-[#00BDE0]/30 hover:decoration-[#00BDE0]">CDA certified provider</router-link> provides specialized <router-link to="/services" class="text-[#0A3366] font-semibold hover:text-[#00BDE0] transition-colors underline decoration-[#00BDE0]/30 hover:decoration-[#00BDE0]">infant care and early learning</router-link> with an <router-link to="/blog/cacfp-usda-food-program-benefits" class="font-bold text-[#00BDE0] hover:text-[#0A3366] transition-colors underline decoration-[#00BDE0]/40">active CACFP WIC food program</router-link>, daily fresh fruits, and loving care for <router-link to="/services" class="text-[#566593] font-medium hover:text-[#00BDE0] transition-colors underline decoration-[#00BDE0]/30">newborns up to 15 years</router-link>.
             </p>
 
             <!-- Key Spec Highlights Grid (Single line on larger screens) -->
@@ -78,10 +78,12 @@
 
               <a 
                 href="tel:+17036061557"
-                class="px-6 py-3.5 rounded-full text-sm sm:text-base font-bold text-[#0A3366] bg-white hover:bg-[#ECF5FB] border border-[#0A3366]/20 hover:border-[#00BDE0] shadow-sm transition-all duration-300 flex items-center gap-2 group"
+                class="px-6 py-3.5 rounded-full text-sm sm:text-base font-extrabold text-[#0A3366] bg-white hover:bg-[#ECF5FB] border-2 border-emerald-500/40 hover:border-emerald-500 shadow-md transition-all duration-300 flex items-center gap-2.5 group transform hover:-translate-y-0.5"
+                title="Call our Lorton daycare director directly"
               >
-                <Phone class="w-4 h-4 text-[#00BDE0] group-hover:scale-110 transition-transform" />
-                <span>+1 (703) 606-1557</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+                <Phone class="w-4 h-4 text-emerald-600 group-hover:scale-110 transition-transform" />
+                <span>Call Now: (703) 606-1557</span>
               </a>
             </div>
 
@@ -271,7 +273,7 @@
             CDA Certified Provider Standards for Your Child's Growth & Safety
           </h2>
           <p class="text-[#566593] text-sm sm:text-base mt-3">
-            Every day is thoughtfully planned around four core pillars of home-based excellence.
+            Every day is thoughtfully planned around four core pillars of home-based excellence, combining accredited <router-link to="/citations" class="font-semibold text-[#0A3366] hover:text-[#00BDE0] transition-colors underline decoration-[#00BDE0]/30">Virginia licensing standards</router-link> with personalized <router-link to="/services" class="font-semibold text-[#00BDE0] hover:underline">early childhood programs</router-link>.
           </p>
         </div>
 
@@ -292,7 +294,7 @@
                 Engaging Activities & Learning
               </h3>
               <p class="text-xs sm:text-sm text-[#566593] mt-2.5 leading-relaxed flex-1">
-                Hands-on alphabet adventures, number counting, tangram shape puzzles, sensory crafts, and phonics tailored to developmental milestones.
+                Hands-on <router-link to="/services" class="font-semibold text-[#0A3366] hover:text-[#00BDE0] transition-colors underline decoration-[#00BDE0]/30">alphabet adventures</router-link>, number counting, <router-link to="/blog/tangram-puzzles-spatial-reasoning-toddlers" class="text-[#00BDE0] hover:underline font-medium">tangram shape puzzles</router-link>, sensory crafts, and phonics tailored to milestones in our <router-link to="/blog/benefits-of-screen-free-daycare-environment" class="text-[#00BDE0] hover:underline font-medium">screen-free learning space</router-link>.
               </p>
             </div>
             <router-link to="/services" class="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-[#0A3366] group-hover:text-[#00BDE0] transition-colors">
@@ -316,7 +318,7 @@
                 CPR-Certified, Loving Care
               </h3>
               <p class="text-xs sm:text-sm text-[#566593] mt-2.5 leading-relaxed flex-1">
-                Licensed CDA Certified provider thoroughly certified in Pediatric CPR, AED, and First Aid. Calm supervision and individualized loving attention.
+                Licensed <router-link to="/about" class="font-semibold text-[#0A3366] hover:text-[#00BDE0] transition-colors underline decoration-[#00BDE0]/30">CDA Certified provider</router-link> thoroughly certified in <router-link to="/citations#aap-safe-sleep" class="text-[#00BDE0] hover:underline font-medium">Pediatric CPR, AED, and First Aid</router-link>. Calm supervision and individualized loving attention backed by proven <router-link to="/about" class="font-semibold text-[#0A3366] hover:text-[#00BDE0] transition-colors underline decoration-[#00BDE0]/30">family childcare experience</router-link>.
               </p>
             </div>
             <router-link to="/about" class="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-[#0A3366] group-hover:text-[#00BDE0] transition-colors">
@@ -340,7 +342,7 @@
                 Wholesome Food Program & Fresh Fruit
               </h3>
               <p class="text-xs sm:text-sm text-[#566593] mt-2.5 leading-relaxed flex-1">
-                Active USDA CACFP / WIC participant providing balanced hot lunches, wholesome breakfasts, and fresh daily fruit plates (apples, bananas, grapes) at zero extra fee to parents.
+                Active participant in the <router-link to="/blog/cacfp-usda-food-program-benefits" class="font-semibold text-amber-700 hover:text-[#0A3366] transition-colors underline decoration-amber-400">USDA CACFP / WIC program</router-link> providing balanced hot lunches, wholesome breakfasts, and fresh daily fruit plates featured in our <router-link to="/services" class="text-[#00BDE0] hover:underline font-medium">childcare nutrition plans</router-link> at zero extra fee to parents.
               </p>
             </div>
             <router-link to="/services" class="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-[#0A3366] group-hover:text-amber-700 transition-colors">
@@ -364,7 +366,7 @@
                 Outdoor Play & Story Time
               </h3>
               <p class="text-xs sm:text-sm text-[#566593] mt-2.5 leading-relaxed flex-1">
-                Safe, fenced outdoor play yard with basketball and balloon games, community nature walks, followed by cozy circle story sessions.
+                Safe, fenced outdoor play yard with basketball and balloon games, <router-link to="/blog/outdoor-nature-play-gross-motor-skills" class="text-emerald-700 hover:text-[#0A3366] transition-colors underline decoration-emerald-400 font-medium">neighborhood nature walks</router-link>, and cozy circle story sessions as part of our <router-link to="/services" class="text-[#00BDE0] hover:underline font-medium">daily gross motor routine</router-link>.
               </p>
             </div>
             <router-link to="/services" class="mt-6 pt-4 border-t border-gray-100 flex items-center justify-between text-xs font-bold text-[#0A3366] group-hover:text-emerald-700 transition-colors">
@@ -389,7 +391,7 @@
             Active CACFP WIC Food Program, Fresh Fruits & Infant Care
           </h2>
           <p class="text-[#566593] text-sm sm:text-base mt-2">
-            Where little learners grow bright every day through play, structured routines, and loving home-based attention.
+            Where little learners grow bright every day through play, structured routines, and loving home-based attention. Explore our full range of <router-link to="/services" class="font-semibold text-[#00BDE0] hover:underline">childcare services</router-link> and review our <router-link to="/citations" class="font-semibold text-[#0A3366] hover:text-[#00BDE0] transition-colors underline decoration-[#00BDE0]/30">licensed quality standards</router-link>.
           </p>
         </div>
 
@@ -401,7 +403,7 @@
             </div>
             <h3 class="font-bold text-base text-[#0A3366]">Small Group Home-Based Care</h3>
             <p class="text-xs text-[#566593] mt-2 leading-relaxed">
-              Personalized attention in a safe, loving environment with low child-to-caregiver ratios.
+              Personalized attention in a safe, loving environment with low child-to-caregiver ratios at our <router-link to="/about" class="text-[#00BDE0] font-semibold hover:underline">Lorton home daycare</router-link>.
             </p>
           </div>
 
@@ -411,7 +413,7 @@
             </div>
             <h3 class="font-bold text-base text-[#0A3366]">Daily Learning Activities</h3>
             <p class="text-xs text-[#566593] mt-2 leading-relaxed">
-              Fun, educational activities, alphabet tracing, and number puzzles that build confidence and creativity.
+              Fun, educational activities, alphabet tracing, and number puzzles that build confidence, detailed in our <router-link to="/services" class="text-[#00BDE0] font-semibold hover:underline">preschool curriculum</router-link>.
             </p>
           </div>
 
@@ -421,7 +423,7 @@
             </div>
             <h3 class="font-bold text-base text-[#0A3366]">Healthy Meals & Snacks Included</h3>
             <p class="text-xs text-[#566593] mt-2 leading-relaxed">
-              Active CACFP / WIC participant providing balanced hot lunches, breakfasts, and fresh fruit daily.
+              Active CACFP / WIC participant providing balanced hot lunches, breakfasts, and fresh fruit daily under our <router-link to="/blog/cacfp-usda-food-program-benefits" class="text-[#00BDE0] font-semibold hover:underline">CACFP nutrition program</router-link>.
             </p>
           </div>
 
@@ -431,7 +433,7 @@
             </div>
             <h3 class="font-bold text-base text-[#0A3366]">CPR & First Aid Certified</h3>
             <p class="text-xs text-[#566593] mt-2 leading-relaxed">
-              CDA Certified safety credentials ensuring your child's wellness, health, and comfort come first.
+              <router-link to="/about" class="text-[#00BDE0] font-semibold hover:underline">CDA Certified safety credentials</router-link> and <router-link to="/citations" class="text-[#00BDE0] font-semibold hover:underline">verified licensing</router-link> ensuring your child's wellness, health, and comfort come first.
             </p>
           </div>
 
@@ -441,7 +443,7 @@
             </div>
             <h3 class="font-bold text-base text-[#0A3366]">Potty Training Assistance</h3>
             <p class="text-xs text-[#566593] mt-2 leading-relaxed">
-              Patient, encouraging, and consistent potty training support tailored to your toddler's pace.
+              Patient, encouraging, and consistent potty training support outlined in our <router-link to="/blog/gentle-potty-training-strategies-daycare" class="text-[#00BDE0] font-semibold hover:underline">gentle potty training guide</router-link>.
             </p>
           </div>
 
@@ -451,7 +453,7 @@
             </div>
             <h3 class="font-bold text-base text-[#0A3366]">Structured Daily Routine</h3>
             <p class="text-xs text-[#566593] mt-2 leading-relaxed">
-              A balanced schedule for early circle time learning, active indoor & outdoor play, meals, and rest.
+              A balanced schedule for early circle time learning, active indoor & outdoor play, meals, and rest shown in our <router-link to="/services" class="text-[#00BDE0] font-semibold hover:underline">daily timetable</router-link>.
             </p>
           </div>
 
@@ -461,7 +463,7 @@
             </div>
             <h3 class="font-bold text-base text-[#0A3366]">Before & After School Care</h3>
             <p class="text-xs text-[#566593] mt-2 leading-relaxed">
-              Convenient care for busy families with homework tutoring and constructive leisure (Ages 5–15).
+              Convenient care for busy families with homework tutoring and constructive leisure for <router-link to="/services" class="text-[#00BDE0] font-semibold hover:underline">school-age children (Ages 5–15)</router-link>.
             </p>
           </div>
 
@@ -471,7 +473,7 @@
             </div>
             <h3 class="font-bold text-base text-[#0A3366]">Safe, Nurturing Environment</h3>
             <p class="text-xs text-[#566593] mt-2 leading-relaxed">
-              A true home away from home where every child thrives socially, emotionally, and cognitively.
+              A true home away from home where every child thrives socially, emotionally, and cognitively—<router-link to="/appointment" class="text-[#00BDE0] font-semibold hover:underline">book a visit to see our space</router-link>.
             </p>
           </div>
         </div>
@@ -486,7 +488,7 @@
               The Gold Standard in Home-Based Childcare
             </h3>
             <p class="text-xs sm:text-sm text-gray-200 leading-relaxed">
-              Located in Lorton, VA. Serving Northern Virginia families with full state licensing, military MCCYN support, and active CACFP nutrition.
+              Located in Lorton, VA. Serving Northern Virginia families with full <router-link to="/citations" class="text-[#00BDE0] font-semibold hover:underline">Virginia state licensing</router-link>, military <router-link to="/blog/military-childcare-subsidies-mccyn-northern-va" class="text-[#00BDE0] font-semibold hover:underline">MCCYN fee assistance</router-link>, and certified <router-link to="/blog/cacfp-usda-food-program-benefits" class="text-amber-300 font-semibold hover:underline">CACFP nutrition</router-link>.
             </p>
             <div class="pt-2 flex flex-wrap gap-4 justify-center lg:justify-start">
               <router-link 
@@ -510,15 +512,15 @@
             <h4 class="font-bold text-sm text-brand-yellow uppercase tracking-wider mb-2">Our Quality Guarantee:</h4>
             <div class="flex items-center gap-3 text-xs sm:text-sm">
               <Check class="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>Experienced & Caring CDA Certified Provider</span>
+              <span>Experienced & Caring <router-link to="/about" class="text-white hover:text-amber-300 transition-colors underline decoration-white/40">CDA Certified Provider</router-link></span>
             </div>
             <div class="flex items-center gap-3 text-xs sm:text-sm">
               <Check class="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>Clean, Safe, Sanitized & Secure Home</span>
+              <span>Clean, Safe, Sanitized & Secure Home (<router-link to="/appointment" class="text-white hover:text-amber-300 transition-colors underline decoration-white/40">Book In-Person Tour</router-link>)</span>
             </div>
             <div class="flex items-center gap-3 text-xs sm:text-sm">
               <Check class="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>Fun, Purposeful & Engaging Early Learning</span>
+              <span>Fun, Purposeful & Engaging <router-link to="/services" class="text-white hover:text-amber-300 transition-colors underline decoration-white/40">Early Learning Curriculum</router-link></span>
             </div>
             <div class="flex items-center gap-3 text-xs sm:text-sm">
               <Check class="w-4 h-4 text-emerald-400 shrink-0" />
@@ -526,7 +528,7 @@
             </div>
             <div class="flex items-center gap-3 text-xs sm:text-sm">
               <Check class="w-4 h-4 text-emerald-400 shrink-0" />
-              <span>Affordable & Reliable (Subsidy & MCCYN Accepted)</span>
+              <span>Affordable & Reliable (<router-link to="/contact" class="text-white hover:text-amber-300 transition-colors underline decoration-white/40">Subsidy & MCCYN Accepted</router-link>)</span>
             </div>
           </div>
         </div>
@@ -544,7 +546,7 @@
             Real Activities & Learning in Action
           </h2>
           <p class="text-xs sm:text-sm text-brand-slate mt-2">
-            Click on any photo below to inspect our real learning materials, sensory crafts, math desks, and play areas.
+            Click on any photo below to inspect our real learning materials, sensory crafts, math desks, and play areas across our <router-link to="/services" class="text-[#00BDE0] font-semibold hover:underline">learning classrooms</router-link>, or <router-link to="/appointment" class="text-[#00BDE0] font-semibold hover:underline">book an in-person tour</router-link>.
           </p>
         </div>
 
@@ -574,7 +576,7 @@
                 <Star v-for="i in 5" :key="i" class="w-4 h-4 fill-amber-400 text-amber-400" />
               </div>
               <p class="text-xs sm:text-sm text-brand-slate italic leading-relaxed">
-                "Finding Sunny Skies Daycare was the biggest blessing for our family. Our daughter has blossomed socially and loves reading Animal Alphabet Adventures. The provider is so loving, attentive, and CPR certified."
+                "Finding Sunny Skies Daycare was the biggest blessing for our family. Our daughter has blossomed socially and loves reading Animal Alphabet Adventures. The provider is so loving, attentive, and CPR certified. Read more <router-link to="/about" class="text-[#00BDE0] hover:underline font-semibold not-italic">about our provider</router-link>."
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-gray-100 flex items-center gap-3">
@@ -594,7 +596,7 @@
                 <Star v-for="i in 5" :key="i" class="w-4 h-4 fill-amber-400 text-amber-400" />
               </div>
               <p class="text-xs sm:text-sm text-brand-slate italic leading-relaxed">
-                "The 6:00 AM hours are a lifesaver for my commute into DC. Plus, knowing my son gets active CACFP / WIC approved nutritious meals and safe outdoor playtime gives me complete peace of mind while at work."
+                "The 6:00 AM hours are a lifesaver for my commute into DC. Plus, knowing my son gets <router-link to="/blog/cacfp-usda-food-program-benefits" class="text-[#00BDE0] hover:underline font-semibold not-italic">active CACFP / WIC approved nutritious meals</router-link> and safe outdoor playtime gives me complete peace of mind while at work."
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-gray-100 flex items-center gap-3">
@@ -614,7 +616,7 @@
                 <Star v-for="i in 5" :key="i" class="w-4 h-4 fill-amber-400 text-amber-400" />
               </div>
               <p class="text-xs sm:text-sm text-brand-slate italic leading-relaxed">
-                "A true home away from home. Clean, cheerful, organized, and genuinely caring. The CDA credentials show in how each activity is purposeful and fun. We couldn't ask for better childcare!"
+                "A true home away from home. Clean, cheerful, organized, and genuinely caring. The CDA credentials show in how each activity is purposeful and fun. Review our <router-link to="/services" class="text-[#00BDE0] hover:underline font-semibold not-italic">programs for all ages</router-link>!"
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-gray-100 flex items-center gap-3">
@@ -642,7 +644,7 @@
               Latest Childcare Guides & Parenting Tips
             </h2>
             <p class="text-xs sm:text-sm text-[#566593] mt-2 leading-relaxed">
-              Explore evidence-based articles written by our CDA-certified educators in Lorton, VA—covering nutrition, early literacy, toddler milestones, and Pre-K readiness.
+              Explore evidence-based articles written by our <router-link to="/about" class="text-[#00BDE0] font-semibold hover:underline">CDA-certified educators</router-link> in Lorton, VA—covering <router-link to="/blog/cacfp-usda-food-program-benefits" class="text-[#00BDE0] font-semibold hover:underline">CACFP nutrition</router-link>, early literacy, <router-link to="/blog/infant-milestones-first-year-guide" class="text-[#00BDE0] font-semibold hover:underline">toddler milestones</router-link>, and <router-link to="/services" class="text-[#00BDE0] font-semibold hover:underline">Pre-K readiness</router-link>.
             </p>
           </div>
 
@@ -728,7 +730,7 @@
           Ready to Give Your Child a Sunny, Caring Future?
         </h2>
         <p class="text-sm sm:text-base text-gray-200 max-w-2xl mx-auto font-normal">
-          We invite you and your child to visit our warm home daycare in Lorton, VA. Meet our CDA Certified provider and experience our welcoming environment firsthand.
+          We invite you and your child to visit our warm home daycare in Lorton, VA. Meet our <router-link to="/about" class="text-[#00BDE0] font-bold hover:underline">CDA Certified provider</router-link>, explore our <router-link to="/services" class="text-[#00BDE0] font-bold hover:underline">daycare programs</router-link>, or <router-link to="/contact" class="text-[#00BDE0] font-bold hover:underline">contact us</router-link> to experience our welcoming environment firsthand.
         </p>
 
         <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
@@ -742,10 +744,10 @@
 
           <a 
             href="tel:+17036061557"
-            class="px-7 py-4 rounded-full text-sm sm:text-base font-bold text-white border border-[#00BDE0]/50 hover:bg-[#00BDE0]/20 transition-all flex items-center gap-2"
+            class="px-8 py-4 rounded-full text-sm sm:text-base font-extrabold text-[#031B4E] bg-gradient-to-r from-amber-400 to-amber-300 hover:from-amber-300 hover:to-amber-400 shadow-xl shadow-amber-400/20 transition-all duration-300 transform hover:-translate-y-1 flex items-center gap-2.5"
           >
-            <Phone class="w-4 h-4 text-[#00BDE0]" />
-            <span>Call: +1 (703) 606-1557</span>
+            <Phone class="w-4 h-4 text-[#031B4E] animate-pulse" />
+            <span>Call for Immediate Spot: (703) 606-1557</span>
           </a>
         </div>
       </div>

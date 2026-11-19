@@ -17,7 +17,7 @@
             About Sunny Skies Daycare
           </h1>
           <p class="text-sm sm:text-base text-gray-200 leading-relaxed font-normal">
-            Where your child's emotional comfort, safety, curiosity, and joyful early learning come first. Providing families in Fairfax County with complete peace of mind since day one.
+            Where your child's emotional comfort, safety, curiosity, and joyful early learning come first. Providing families across Fairfax County with complete peace of mind through <router-link to="/citations" class="text-[#00BDE0] font-semibold hover:underline">Virginia licensed home childcare</router-link> and structured <router-link to="/services" class="text-[#00BDE0] font-semibold hover:underline">developmental programs</router-link> since day one.
           </p>
 
           <!-- Quick trust row with Vue Lucide icons -->
@@ -113,10 +113,10 @@
             Where Every Child is Welcomed with Open Arms & Genuine Family Warmth
           </h2>
           <p class="text-[#566593] text-sm sm:text-base leading-relaxed">
-            At <strong class="text-[#0A3366]">Sunny Skies Daycare</strong>, we believe early childhood is the most crucial foundation for a child's lifelong confidence, happiness, and curiosity. As a <strong class="text-[#0A3366]">CDA (Child Development Associate) Certified Provider</strong> certified in Pediatric CPR & First Aid, our mission is to offer parents in Lorton, VA a loving home away from home.
+            At <router-link to="/" class="text-[#0A3366] font-bold hover:text-[#00BDE0] transition-colors underline decoration-[#00BDE0]/30">Sunny Skies Daycare</router-link>, we believe early childhood is the most crucial foundation for a child's lifelong confidence, happiness, and curiosity. As a <router-link to="/citations#cda-credential" class="text-[#0A3366] font-bold hover:text-[#00BDE0] transition-colors underline decoration-[#00BDE0]/30">CDA (Child Development Associate) Certified Provider</router-link> certified in <router-link to="/citations#aap-safe-sleep" class="text-[#00BDE0] font-semibold hover:underline">Pediatric CPR & First Aid</router-link>, our mission is to offer parents in Lorton, VA a loving home away from home.
           </p>
           <p class="text-[#566593] text-sm sm:text-base leading-relaxed">
-            In our home daycare, children receive the best of both worlds: the comfort, lower stress, and affectionate attention of a family setting, combined with an enriched early learning curriculum: alphabet adventures, number counting, sensory crafts, nutritious homemade dining under CACFP/WIC, and active outdoor games.
+            In our home daycare, children receive the best of both worlds: the comfort, lower stress, and affectionate attention of a family setting, combined with an enriched <router-link to="/services" class="text-[#00BDE0] font-semibold hover:underline">early learning curriculum</router-link>: alphabet adventures, number counting, sensory crafts, nutritious homemade dining under our <router-link to="/blog/cacfp-usda-food-program-benefits" class="text-[#00BDE0] font-semibold hover:underline">CACFP / WIC food program</router-link>, and <router-link to="/blog/benefits-of-screen-free-daycare-environment" class="text-[#00BDE0] font-semibold hover:underline">100% screen-free active play</router-link>.
           </p>
 
           <!-- Core Credentials Checklist with Vue Icons -->
@@ -150,7 +150,7 @@
             Real Moments, Real Smiles at Sunny Skies
           </h2>
           <p class="text-xs sm:text-sm text-[#566593] mt-2">
-            Explore photos of our daily activities, math counting, petal sensory art, and homework sessions in Lorton, VA.
+            Explore photos of our daily activities, math counting, petal sensory art, and homework sessions in Lorton, VA across our <router-link to="/services" class="text-[#00BDE0] font-semibold hover:underline">early learning classrooms</router-link>.
           </p>
         </div>
 
@@ -167,7 +167,7 @@
             Built for Working Parents
           </h3>
           <p class="text-xs sm:text-sm text-[#566593] leading-relaxed mb-6">
-            We understand the commuting needs across Fairfax County and Washington D.C. We open early at <strong>6:00 AM</strong> and close at <strong>6:00 PM</strong>, ensuring parents never feel rushed.
+            We understand the commuting needs across Fairfax County and Washington D.C. We open early at <strong>6:00 AM</strong> and close at <strong>6:00 PM</strong>, ensuring parents never feel rushed. Explore our flexible <router-link to="/services" class="text-[#00BDE0] font-semibold hover:underline">full-day and after-school programs</router-link> or <router-link to="/contact" class="text-[#00BDE0] font-semibold hover:underline">inquire about immediate openings</router-link>.
           </p>
 
           <div class="space-y-3">
@@ -197,7 +197,7 @@
               Come Tour Our Daycare in Person!
             </h3>
             <p class="text-xs sm:text-sm text-[#566593] leading-relaxed mb-6">
-              Nothing compares to experiencing our cheerful rooms, meeting our provider, and seeing our secure fenced yard with your own eyes.
+              Nothing compares to experiencing our cheerful rooms, meeting our provider, and seeing our secure fenced yard with your own eyes. <router-link to="/appointment" class="text-[#00BDE0] font-semibold hover:underline">Schedule an appointment today</router-link> or read our <router-link to="/blog/choosing-licensed-daycare-lorton-va" class="text-[#00BDE0] font-semibold hover:underline">daycare touring checklist</router-link> to prepare your visit.
             </p>
           </div>
 

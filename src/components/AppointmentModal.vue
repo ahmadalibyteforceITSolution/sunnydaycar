@@ -36,6 +36,10 @@
             <p class="text-xs sm:text-sm text-[#566593] mt-1.5 leading-relaxed font-medium">
               Visit Sunny Skies Daycare in Lorton, VA. Mon – Fri 6:00 AM – 6:00 PM • Newborn to 15 Years • Active CACFP / WIC Food Program.
             </p>
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-800 text-[11px] font-extrabold border border-emerald-300 mt-2 shadow-xs">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>🎁 Fast Enrollment Incentive: Claim $50 Tour Tuition Credit upon registration!</span>
+            </div>
           </div>
 
           <!-- Modal Body -->

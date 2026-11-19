@@ -13,7 +13,7 @@
             Contact Sunny Skies Daycare
           </h1>
           <p class="text-base sm:text-lg text-gray-200 leading-relaxed font-normal">
-            Have questions about enrollment, pricing, our active CACFP / WIC food program, or our daily routine? We're here to help every step of the way.
+            Have questions about enrollment, pricing, our <router-link to="/blog/cacfp-usda-food-program-benefits" class="text-[#00BDE0] font-semibold hover:underline">active CACFP / WIC food program</router-link>, or our <router-link to="/services" class="text-[#00BDE0] font-semibold hover:underline">daily routines and programs</router-link>? We're here to help every step of the way. You can also <router-link to="/appointment" class="text-amber-300 font-semibold hover:underline">book an in-person tour</router-link>.
           </p>
         </div>
       </div>
@@ -38,7 +38,7 @@
               +1 (703) 606-1557
             </h3>
             <p class="text-xs text-[#566593] mt-2 leading-relaxed">
-              Available 6:00 AM – 6:00 PM for enrollment inquiries, infant care questions, and quick updates.
+              Available 6:00 AM – 6:00 PM for <router-link to="/services" class="text-[#00BDE0] hover:underline font-semibold">enrollment inquiries</router-link>, infant care questions, and quick updates.
             </p>
           </div>
           <span class="mt-4 text-xs font-bold text-[#00BDE0] flex items-center gap-1 group-hover:translate-x-1 transition-transform">

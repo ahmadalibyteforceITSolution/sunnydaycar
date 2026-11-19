@@ -98,11 +98,14 @@ lines.forEach(line => {
 
 console.log(`Discovered ${platformMap.size} unique backlink platforms from sheet.`);
 
-// Build campaign rows
+// Sort platforms by Domain Authority (DA) descending for highest impact first
+const sortedPlatforms = Array.from(platformMap.values()).sort((a, b) => b.da - a.da);
+
+// Build campaign rows with 50-leads-per-day batching
 const campaign = [];
 let counter = 1;
 
-for (const [host, item] of platformMap) {
+for (const item of sortedPlatforms) {
   const target = targetUrls[(counter - 1) % targetUrls.length];
   const template = daycareTemplates[(counter - 1) % daycareTemplates.length];
   
@@ -110,9 +113,15 @@ for (const [host, item] of platformMap) {
   const description = `${template.description} Learn more at ${target.url} or call +1 (703) 606-1557 for tour enrollment.`;
   const keywords = `daycare, childcare, infant care, preschool, lorton va, fairfax county, cda certified, cacfp food program, child care subsidy, military mccyn`;
 
+  const dayNumber = Math.floor((counter - 1) / 50) + 1;
+  const dayBatchName = dayNumber <= 3 ? `Day ${dayNumber} (Target: 50 Leads Daily)` : `Day 4+ (Ongoing Leads & Follow-ups)`;
+
   campaign.push({
     id: counter,
-    platformDomain: host,
+    dailyBatch: dayBatchName,
+    dayNumber: dayNumber,
+    dailyTarget: '50 Leads Daily',
+    platformDomain: item.host,
     submissionUrl: item.submissionUrl,
     domainAuthority: item.da,
     spamScore: item.spam,
@@ -132,35 +141,55 @@ for (const [host, item] of platformMap) {
   counter++;
 }
 
-// Write JSON file for automation / website download
+// Split into exact Daily 50 Leads Batches
+const day1Leads = campaign.filter(c => c.dayNumber === 1); // 50 leads
+const day2Leads = campaign.filter(c => c.dayNumber === 2); // 50 leads
+const day3Leads = campaign.filter(c => c.dayNumber === 3); // 50 leads
+const day4Leads = campaign.filter(c => c.dayNumber >= 4); // remaining leads
+
+// Ensure directory exists
+if (!fs.existsSync('public')) fs.mkdirSync('public', { recursive: true });
+
+// Write Master JSON & CSV
 fs.writeFileSync('public/daycare_backlinks_campaign.json', JSON.stringify(campaign, null, 2), 'utf-8');
 console.log(`Generated public/daycare_backlinks_campaign.json with ${campaign.length} daycare backlink entries.`);
 
-// Write CSV file for user / Google Sheets import
-const csvHeaders = ['Sr No', 'Platform Domain', 'Submission URL', 'DA', 'Spam Score', 'Category', 'Target Website URL', 'Anchor Text', 'Page Focus', 'Daycare Post Title', 'Daycare Description', 'Keywords', 'Business Email', 'Business Phone', 'City / State', 'Status'];
+const csvHeaders = ['Sr No', 'Daily Batch', 'Daily Target', 'Platform Domain', 'Submission URL', 'DA', 'Spam Score', 'Category', 'Target Website URL', 'Anchor Text', 'Page Focus', 'Daycare Post Title', 'Daycare Description', 'Keywords', 'Business Email', 'Business Phone', 'City / State', 'Status'];
 
-const csvRows = [csvHeaders.join(',')];
-for (const row of campaign) {
-  const line = [
-    row.id,
-    `"${row.platformDomain}"`,
-    `"${row.submissionUrl}"`,
-    row.domainAuthority,
-    `"${row.spamScore}"`,
-    `"${row.category}"`,
-    `"${row.targetUrl}"`,
-    `"${row.anchorText}"`,
-    `"${row.targetPageFocus}"`,
-    `"${row.postTitle.replace(/"/g, '""')}"`,
-    `"${row.postDescription.replace(/"/g, '""')}"`,
-    `"${row.keywords}"`,
-    `"${row.contactEmail}"`,
-    `"${row.contactPhone}"`,
-    `"${row.location}"`,
-    `"${row.status}"`
-  ];
-  csvRows.push(line.join(','));
+function formatCsv(rows) {
+  const lines = [csvHeaders.join(',')];
+  for (const row of rows) {
+    const line = [
+      row.id,
+      `"${row.dailyBatch}"`,
+      `"${row.dailyTarget}"`,
+      `"${row.platformDomain}"`,
+      `"${row.submissionUrl}"`,
+      row.domainAuthority,
+      `"${row.spamScore}"`,
+      `"${row.category}"`,
+      `"${row.targetUrl}"`,
+      `"${row.anchorText}"`,
+      `"${row.targetPageFocus}"`,
+      `"${row.postTitle.replace(/"/g, '""')}"`,
+      `"${row.postDescription.replace(/"/g, '""')}"`,
+      `"${row.keywords}"`,
+      `"${row.contactEmail}"`,
+      `"${row.contactPhone}"`,
+      `"${row.location}"`,
+      `"${row.status}"`
+    ];
+    lines.push(line.join(','));
+  }
+  return lines.join('\n');
 }
 
-fs.writeFileSync('public/daycare_backlinks_campaign.csv', csvRows.join('\n'), 'utf-8');
-console.log(`Generated public/daycare_backlinks_campaign.csv (${csvRows.length} rows).`);
+fs.writeFileSync('public/daycare_backlinks_campaign.csv', formatCsv(campaign), 'utf-8');
+fs.writeFileSync('public/daycare_leads_day1_50.csv', formatCsv(day1Leads), 'utf-8');
+fs.writeFileSync('public/daycare_leads_day2_50.csv', formatCsv(day2Leads), 'utf-8');
+fs.writeFileSync('public/daycare_leads_day3_50.csv', formatCsv(day3Leads), 'utf-8');
+
+console.log(`Generated Daily 50 Leads CSVs:`);
+console.log(`- Day 1: public/daycare_leads_day1_50.csv (${day1Leads.length} leads)`);
+console.log(`- Day 2: public/daycare_leads_day2_50.csv (${day2Leads.length} leads)`);
+console.log(`- Day 3: public/daycare_leads_day3_50.csv (${day3Leads.length} leads)`);

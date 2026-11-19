@@ -14,7 +14,7 @@
             Our Daycare Programs & Services
           </h1>
           <p class="text-base sm:text-lg text-gray-200 leading-relaxed font-normal">
-            Individualized attention, CDA certified early curriculum, active CACFP / WIC nutritious meals, homework support, and active outdoor play in Lorton, VA.
+            Individualized attention, <router-link to="/about" class="text-[#00BDE0] font-semibold hover:underline">CDA certified early curriculum</router-link>, <router-link to="/blog/cacfp-usda-food-program-benefits" class="text-[#00BDE0] font-semibold hover:underline">active CACFP / WIC nutritious meals</router-link>, homework support, and active outdoor play in Lorton, VA. Ready to visit? <router-link to="/appointment" class="text-amber-300 font-semibold hover:underline">Book an in-person tour</router-link>.
           </p>
         </div>
       </div>
@@ -42,7 +42,7 @@
                 Tender Infant & Newborn Care
               </h2>
               <p class="text-sm text-brand-slate leading-relaxed">
-                For our youngest little rays of sunshine, we provide a calm, peaceful, sanitized nursery space with constant cuddles, personalized feeding, bottle warming, and nap schedules that follow each infant's unique biological clock.
+                For our youngest little rays of sunshine, we provide a calm, peaceful, sanitized nursery space with constant cuddles, personalized feeding, bottle warming, and nap schedules following <router-link to="/citations#aap-safe-sleep" class="text-[#00BDE0] font-semibold hover:underline">AAP safe sleep standards</router-link>. Learn more about infant developmental stages in our <router-link to="/blog/infant-milestones-first-year-guide" class="text-[#00BDE0] font-semibold hover:underline">first-year infant milestones guide</router-link>.
               </p>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 text-xs text-brand-navy font-semibold">
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-emerald-600 shrink-0" /> <span>Individualized sleep & feeding log</span></div>
@@ -66,7 +66,7 @@
                 Toddler Discovery, Puzzles & Sensory Play
               </h2>
               <p class="text-sm text-brand-slate leading-relaxed">
-                Toddlers learn by doing! Through shape sorting tangrams, building blocks, playdough, finger painting, and sensory exploration, children develop fine motor skills and learn to communicate their feelings with guidance.
+                Toddlers learn by doing! Through shape sorting tangrams, building blocks, playdough, finger painting, and sensory exploration in a <router-link to="/blog/benefits-of-screen-free-daycare-environment" class="text-amber-700 font-semibold hover:underline">screen-free environment</router-link>, children develop fine motor skills and learn to communicate their feelings with guidance, supported by our <router-link to="/blog/gentle-potty-training-strategies-daycare" class="text-amber-700 font-semibold hover:underline">gentle potty-training routine</router-link>.
               </p>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 text-xs text-brand-navy font-semibold">
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-amber-500 shrink-0" /> <span>Tangram shape puzzles & block construction</span></div>
@@ -100,7 +100,7 @@
                 Preschool & Kindergarten Readiness
               </h2>
               <p class="text-sm text-brand-slate leading-relaxed">
-                Our CDA certified curriculum introduces phonics, handwriting, early math concepts, weather observation, and calendar time. Children build the focus, self-regulation, and love of reading needed to enter kindergarten with flying colors.
+                Our CDA certified curriculum introduces phonics, handwriting, early math concepts, weather observation, and calendar time. Children build the focus, self-regulation, and love of reading needed to enter kindergarten with flying colors. Discover our <router-link to="/blog/kindergarten-readiness-skills-fairfax-county" class="text-[#00BDE0] font-semibold hover:underline">kindergarten readiness guide</router-link> or <router-link to="/appointment" class="text-[#00BDE0] font-semibold hover:underline">schedule a tour to see our learning wall</router-link>.
               </p>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 text-xs text-brand-navy font-semibold">
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-emerald-600 shrink-0" /> <span>Animal Alphabet Adventures phonics</span></div>
@@ -124,7 +124,7 @@
                 Before & After-School Care & Homework Club
               </h2>
               <p class="text-sm text-brand-slate leading-relaxed">
-                A safe, supervised haven for older children and youth up to 15 years. We provide quiet study tables, dedicated homework guidance, wholesome afternoon snacks, educational board games like UNO, and outdoor sports.
+                A safe, supervised haven for older children and youth up to 15 years. We provide quiet study tables, dedicated homework guidance, wholesome afternoon snacks, educational board games like UNO, and outdoor sports. Need after-school care? <router-link to="/contact" class="text-purple-700 font-semibold hover:underline">Contact us for school pickup and slot availability</router-link>.
               </p>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 text-xs text-brand-navy font-semibold">
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-purple-600 shrink-0" /> <span>Dedicated homework help & reading time</span></div>
@@ -158,7 +158,7 @@
                 Active CACFP / WIC Food Program & Healthy Homemade Meals
               </h2>
               <p class="text-sm text-brand-slate leading-relaxed">
-                Good nutrition fuels growing minds and bodies! As an active participant in the USDA CACFP / WIC food program, we provide wholesome balanced breakfasts, hot lunches, fresh fruit (bananas, apples, grapes, berries), whole milk, and nutritious afternoon snacks to all enrolled children at zero extra charge to parents.
+                Good nutrition fuels growing minds and bodies! As an active participant in the <router-link to="/blog/cacfp-usda-food-program-benefits" class="text-amber-700 font-semibold hover:underline">USDA CACFP / WIC food program</router-link>, we provide wholesome balanced breakfasts, hot lunches, fresh fruit (bananas, apples, grapes, berries), whole milk, and nutritious afternoon snacks to all enrolled children at zero extra charge to parents. Read our <router-link to="/citations#federal-nutrition" class="text-amber-700 font-semibold hover:underline">CACFP statutory compliance details</router-link>.
               </p>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 text-xs text-brand-navy font-semibold">
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-emerald-600 shrink-0" /> <span>USDA CACFP / WIC compliant meals</span></div>
@@ -182,7 +182,7 @@
                 Outdoor Play Yard & Neighborhood Nature Walks
               </h2>
               <p class="text-sm text-brand-slate leading-relaxed">
-                Weather permitting, children enjoy outdoor playtime every single day in our safe, fenced yard and guided community walks. From basketball hoops and balloon games to autumn leaf collection, kids develop healthy active habits.
+                Weather permitting, children enjoy outdoor playtime every single day in our safe, fenced yard and guided community walks. From basketball hoops and balloon games to autumn leaf collection, kids develop healthy active habits under the watchful care of our <router-link to="/about" class="text-emerald-700 font-semibold hover:underline">CPR-certified provider</router-link>. Feel free to <router-link to="/appointment" class="text-emerald-700 font-semibold hover:underline">tour our outdoor play yard</router-link>.
               </p>
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 text-xs text-brand-navy font-semibold">
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-emerald-600 shrink-0" /> <span>Fenced, private outdoor play yard</span></div>
@@ -212,7 +212,7 @@
             Our Typical Daily Schedule (6:00 AM – 6:00 PM)
           </h3>
           <p class="text-xs sm:text-sm text-brand-slate mt-1">
-            Children flourish when they know what to expect. Below is our balanced routine of learning, meals, outdoor play, and peaceful rest.
+            Children flourish when they know what to expect. Below is our balanced routine of learning, meals, outdoor play, and peaceful rest. Pair this with our <router-link to="/blog/gentle-potty-training-strategies-daycare" class="text-[#00BDE0] font-semibold hover:underline">home-and-daycare consistency tips</router-link> or <router-link to="/appointment" class="text-[#00BDE0] font-semibold hover:underline">book a morning tour</router-link> to observe circle time.
           </p>
         </div>
 

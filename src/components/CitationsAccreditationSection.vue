@@ -18,7 +18,7 @@
         </h2>
         
         <p class="text-sm sm:text-base text-[#566593] leading-relaxed">
-          At Sunny Skies Daycare, our curriculum, nutrition plans, safe sleep nursery, and care standards strictly adhere to recognized federal, state, and pediatric medical authorities.
+          At <router-link to="/" class="font-bold text-[#0A3366] hover:text-[#00BDE0] transition-colors underline decoration-[#00BDE0]/30">Sunny Skies Daycare</router-link>, our <router-link to="/services" class="font-semibold text-[#00BDE0] hover:underline">early learning curriculum</router-link>, <router-link to="/blog/cacfp-usda-food-program-benefits" class="font-semibold text-amber-700 hover:text-[#0A3366] transition-colors underline decoration-amber-400">CACFP nutrition plans</router-link>, <router-link to="/blog/infant-milestones-first-year-guide" class="font-semibold text-[#0A3366] hover:text-[#00BDE0] transition-colors underline decoration-[#00BDE0]/30">safe sleep nursery</router-link>, and <router-link to="/about" class="font-semibold text-[#00BDE0] hover:underline">CDA care standards</router-link> strictly adhere to recognized federal, state, and pediatric medical authorities.
         </p>
       </div>
 
@@ -40,7 +40,7 @@
             </div>
 
             <p class="text-xs sm:text-sm text-[#566593] leading-relaxed">
-              Serving whole grains, lean proteins, calcium-rich dairy, and fresh fruits daily. 100% compliant with USDA Child and Adult Care Food Program standards with zero artificial trans fats.
+              Serving whole grains, lean proteins, calcium-rich dairy, and fresh fruits daily. 100% compliant with <router-link to="/blog/cacfp-usda-food-program-benefits" class="text-amber-700 font-semibold hover:underline">USDA Child and Adult Care Food Program standards</router-link> with zero artificial trans fats.
             </p>
 
             <div class="p-3 bg-amber-50/70 rounded-xl border border-amber-200/60 text-[11px] text-amber-900 leading-snug">
@@ -75,7 +75,7 @@
             </div>
 
             <p class="text-xs sm:text-sm text-[#566593] leading-relaxed">
-              Certified by the national Council for Professional Recognition. Proven mastery in early childhood cognitive progression, social-emotional development, and safe learning spaces.
+              Certified by the national Council for Professional Recognition. Proven mastery in early childhood cognitive progression, social-emotional development, and safe learning spaces, detailed in our <router-link to="/about" class="text-[#00BDE0] font-semibold hover:underline">caregiver credentials</router-link>.
             </p>
 
             <div class="p-3 bg-blue-50/70 rounded-xl border border-blue-200/60 text-[11px] text-[#0A3366] leading-snug">
@@ -110,7 +110,7 @@
             </div>
 
             <p class="text-xs sm:text-sm text-[#566593] leading-relaxed">
-              Strict adherence to the American Academy of Pediatrics ABCs of safe infant sleep (Alone, on Back, in safety-approved Crib) to protect newborns and infants at all times.
+              Strict adherence to the American Academy of Pediatrics ABCs of safe infant sleep (Alone, on Back, in safety-approved Crib) to protect newborns and infants at all times in our <router-link to="/services" class="text-emerald-700 font-semibold hover:underline">infant nursery</router-link>.
             </p>
 
             <div class="p-3 bg-emerald-50/70 rounded-xl border border-emerald-200/60 text-[11px] text-emerald-900 leading-snug">
@@ -145,7 +145,7 @@
             </div>
 
             <p class="text-xs sm:text-sm text-[#566593] leading-relaxed">
-              Monitoring speech, motor skills, social interaction, and cognitive growth against evidence-based developmental checklists from 2 months through kindergarten readiness.
+              Monitoring speech, motor skills, social interaction, and cognitive growth against evidence-based developmental checklists from 2 months through <router-link to="/blog/kindergarten-readiness-skills-fairfax-county" class="text-[#00BDE0] font-semibold hover:underline">kindergarten readiness</router-link>.
             </p>
 
             <div class="p-3 bg-cyan-50/70 rounded-xl border border-cyan-200/60 text-[11px] text-[#0A3366] leading-snug">
@@ -180,7 +180,7 @@
             </div>
 
             <p class="text-xs sm:text-sm text-[#566593] leading-relaxed">
-              Operating under strict background screening, CPR/First Aid certification, fire department inspection, square footage safety, and sanitary facility standards in Lorton, VA.
+              Operating under strict background screening, CPR/First Aid certification, fire department inspection, square footage safety, and sanitary facility standards in Lorton, VA under <router-link to="/citations#virginia-licensing" class="text-purple-700 font-semibold hover:underline">Virginia day home licensing</router-link>.
             </p>
 
             <div class="p-3 bg-purple-50/70 rounded-xl border border-purple-200/60 text-[11px] text-purple-950 leading-snug">
@@ -215,7 +215,7 @@
             </div>
 
             <p class="text-xs sm:text-sm text-[#566593] leading-relaxed">
-              Proudly qualified to serve military families stationed at Fort Belvoir, Quantico, and Pentagon corridors with Department of Defense childcare fee assistance subsidies.
+              Proudly qualified to serve military families stationed at Fort Belvoir, Quantico, and Pentagon corridors with Department of Defense childcare fee assistance subsidies—see our <router-link to="/blog/military-childcare-subsidies-mccyn-northern-va" class="text-indigo-700 font-semibold hover:underline">MCCYN fee assistance guide</router-link>.
             </p>
 
             <div class="p-3 bg-indigo-50/70 rounded-xl border border-indigo-200/60 text-[11px] text-indigo-950 leading-snug">

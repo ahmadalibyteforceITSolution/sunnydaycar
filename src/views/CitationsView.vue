@@ -18,7 +18,7 @@
           </h1>
 
           <p class="text-sm sm:text-base text-gray-200 leading-relaxed font-normal max-w-3xl">
-            Sunny Skies Daycare operates under strict compliance with federal nutritional frameworks, Commonwealth child safety statutes, national educator credentials, and pediatric medical literature. Below is our canonical directory of governing citations, statutory references, clinical guidelines, and public proof of licensing.
+            Sunny Skies Daycare operates under strict compliance with <router-link to="/blog/cacfp-usda-food-program-benefits" class="text-[#00BDE0] font-semibold hover:underline">federal nutritional frameworks</router-link>, Commonwealth child safety statutes, national educator credentials from the <router-link to="/about" class="text-[#00BDE0] font-semibold hover:underline">CDA Council</router-link>, and pediatric medical literature. Below is our canonical directory of governing citations, statutory references, clinical guidelines, and public proof of licensing. To see these standards in person, parents are welcome to <router-link to="/appointment" class="text-amber-300 font-semibold hover:underline">schedule an in-person tour</router-link>.
           </p>
 
           <div class="pt-2 text-xs text-gray-300 flex flex-wrap items-center gap-3">
@@ -70,7 +70,7 @@
         </div>
 
         <p class="text-sm sm:text-base text-[#566593] leading-relaxed">
-          Sunny Skies Daycare is an active participant in the federal USDA CACFP meal reimbursement program. All meals—including morning breakfast, hot lunch, and afternoon snacks—meet or exceed United States Department of Agriculture child nutrition requirements for whole grains, lean proteins, vitamin-rich produce, and whole dairy milk.
+          Sunny Skies Daycare is an active participant in the federal USDA CACFP meal reimbursement program. All meals—including morning breakfast, hot lunch, and afternoon snacks—meet or exceed United States Department of Agriculture child nutrition requirements for whole grains, lean proteins, vitamin-rich produce, and whole dairy milk. Explore our detailed guide on <router-link to="/blog/cacfp-usda-food-program-benefits" class="text-[#00BDE0] font-semibold hover:underline">CACFP nutrition benefits</router-link> and review our <router-link to="/services" class="text-[#00BDE0] font-semibold hover:underline">daily meal schedule</router-link>.
         </p>
 
         <!-- Official Statutory Reference Box -->
@@ -105,7 +105,7 @@
         </div>
 
         <p class="text-sm sm:text-base text-[#566593] leading-relaxed">
-          Our provider has completed the nationally recognized Child Development Associate (CDA) credentialing process administered by the Council for Professional Recognition. The CDA evaluates an early educator's mastery across 6 Core Competency Goals and 13 Functional Areas in child development.
+          Our provider has completed the nationally recognized Child Development Associate (CDA) credentialing process administered by the Council for Professional Recognition. The CDA evaluates an early educator's mastery across 6 Core Competency Goals and 13 Functional Areas in child development, as detailed on our <router-link to="/about" class="text-[#00BDE0] font-semibold hover:underline">about caregiver page</router-link> and our <router-link to="/blog/what-is-cda-credential-childcare-quality" class="text-[#00BDE0] font-semibold hover:underline">CDA quality guide</router-link>.
         </p>
 
         <!-- Professional Accreditation Box -->
@@ -140,7 +140,7 @@
         </div>
 
         <p class="text-sm sm:text-base text-[#566593] leading-relaxed">
-          Sunny Skies Daycare operates in full compliance with Virginia laws governing licensed and registered Family Day Homes. We strictly maintain state-mandated caregiver-to-child ratios, FBI fingerprint background checks, central registry child abuse clearances, annual tuberculosis screenings, and local fire marshal inspections.
+          Sunny Skies Daycare operates in full compliance with Virginia laws governing licensed and registered Family Day Homes. We strictly maintain state-mandated caregiver-to-child ratios, FBI fingerprint background checks, central registry child abuse clearances, annual tuberculosis screenings, and local fire marshal inspections. For more on our regulatory standards, read our <router-link to="/blog/virginia-childcare-licensing-safety-standards" class="text-[#00BDE0] font-semibold hover:underline">Virginia daycare licensing overview</router-link> or <router-link to="/contact" class="text-[#00BDE0] font-semibold hover:underline">contact us with any licensing questions</router-link>.
         </p>
 
         <!-- Administrative Code Box -->
@@ -175,7 +175,7 @@
         </div>
 
         <p class="text-sm sm:text-base text-[#566593] leading-relaxed">
-          The safety of infants in our nursery is founded upon peer-reviewed pediatric clinical guidelines. We implement the American Academy of Pediatrics "ABCs of Safe Sleep" — every infant sleeps <strong>Alone</strong>, on their <strong>Back</strong>, in a Consumer Product Safety Commission (CPSC) approved <strong>Crib</strong> with a firm, fitted mattress and zero loose blankets, pillows, or bumpers.
+          The safety of infants in our nursery is founded upon peer-reviewed pediatric clinical guidelines. We implement the American Academy of Pediatrics "ABCs of Safe Sleep" — every infant sleeps <strong>Alone</strong>, on their <strong>Back</strong>, in a Consumer Product Safety Commission (CPSC) approved <strong>Crib</strong> with a firm, fitted mattress and zero loose blankets, pillows, or bumpers in our <router-link to="/services" class="text-[#00BDE0] font-semibold hover:underline">dedicated infant nursery</router-link>. Learn more in our <router-link to="/blog/safe-sleep-guidelines-infants-daycare" class="text-[#00BDE0] font-semibold hover:underline">infant safe sleep parent guide</router-link>.
         </p>
 
         <!-- Clinical Literature Box -->
@@ -210,7 +210,7 @@
         </div>
 
         <p class="text-sm sm:text-base text-[#566593] leading-relaxed">
-          Early childhood growth requires structured observation. Sunny Skies Daycare integrates evidence-based developmental milestone checklists published by the CDC alongside Developmentally Appropriate Practice (DAP) defined by the National Association for the Education of Young Children (NAEYC).
+          Early childhood growth requires structured observation. Sunny Skies Daycare integrates evidence-based developmental milestone checklists published by the CDC alongside Developmentally Appropriate Practice (DAP) defined by the National Association for the Education of Young Children (NAEYC). Explore our guides on <router-link to="/blog/infant-milestones-first-year-guide" class="text-[#00BDE0] font-semibold hover:underline">first-year infant milestones</router-link> and <router-link to="/blog/kindergarten-readiness-skills-fairfax-county" class="text-[#00BDE0] font-semibold hover:underline">kindergarten readiness</router-link>.
         </p>
 
         <!-- Scientific Benchmark Box -->
@@ -245,7 +245,7 @@
         </div>
 
         <p class="text-sm sm:text-base text-[#566593] leading-relaxed">
-          Search engine crawlers and Google AdSense reviewers require consistent Name, Address, and Phone (NAP) business attributions across local directories to confirm operational authenticity. Sunny Skies Daycare maintains identical NAP listings across major directories:
+          Search engine crawlers and Google AdSense reviewers require consistent Name, Address, and Phone (NAP) business attributions across local directories to confirm operational authenticity. Sunny Skies Daycare maintains identical NAP listings across major directories for easy <router-link to="/appointment" class="text-[#00BDE0] font-semibold hover:underline">tour booking</router-link> and <router-link to="/contact" class="text-[#00BDE0] font-semibold hover:underline">direct parent communication</router-link>:
         </p>
 
         <!-- Directory Grid -->
@@ -306,7 +306,7 @@
           Our Editorial Integrity, Provenance & E-E-A-T Commitment
         </h3>
         <p class="text-xs sm:text-sm text-gray-200 leading-relaxed">
-          Every guide, milestone checklist, and nutritional advice published on the Sunny Skies Daycare website is written and reviewed by our Child Development Associate (CDA) certified early educator. We do not publish automated, unverified health or safety claims. All childcare advice is grounded in published literature from the American Academy of Pediatrics, the CDC, the USDA Food and Nutrition Service, and Virginia early childhood regulations.
+          Every guide, milestone checklist, and nutritional advice published on the Sunny Skies Daycare website is written and reviewed by our Child Development Associate (CDA) certified early educator. We do not publish automated, unverified health or safety claims. All childcare advice is grounded in published literature from the American Academy of Pediatrics, the CDC, the USDA Food and Nutrition Service, and Virginia early childhood regulations. Browse all articles in our <router-link to="/blog" class="text-[#00BDE0] font-semibold hover:underline">childcare guide directory</router-link>.
         </p>
         <div class="pt-2 flex flex-wrap items-center gap-4">
           <router-link to="/about" class="text-xs font-bold text-[#00BDE0] hover:underline flex items-center gap-1">

@@ -71,7 +71,11 @@
         <main class="lg:col-span-8 bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-8">
           
           <!-- Article Content -->
-          <div class="prose prose-slate max-w-none text-brand-slate leading-relaxed font-normal" v-html="blog.content"></div>
+          <div 
+            class="prose prose-slate max-w-none text-brand-slate leading-relaxed font-normal" 
+            v-html="blog.content"
+            @click="handleContentClick"
+          ></div>
 
           <!-- Tags -->
           <div class="pt-6 border-t border-gray-100">
@@ -201,10 +205,10 @@
                 </router-link>
                 <a 
                   href="tel:+17036061557"
-                  class="w-full py-3 px-4 rounded-full font-bold text-xs sm:text-sm text-white border border-white/20 hover:bg-white/10 transition-colors flex items-center justify-center gap-2"
+                  class="w-full py-3.5 px-4 rounded-full font-extrabold text-xs sm:text-sm text-[#031B4E] bg-amber-400 hover:bg-amber-300 shadow-md transition-all flex items-center justify-center gap-2"
                 >
-                  <Phone class="w-4 h-4 text-[#00BDE0]" />
-                  <span>Call +1 (703) 606-1557</span>
+                  <Phone class="w-4 h-4 text-[#031B4E] animate-pulse" />
+                  <span>Call Now: (703) 606-1557</span>
                 </a>
               </div>
 
@@ -281,7 +285,7 @@
 
 <script setup>
 import { computed, watch, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
+import { useRoute, useRouter } from 'vue-router'
 import { getBlogBySlug, getRelatedBlogs } from '../data/blogs.js'
 import { 
   Home, 
@@ -302,8 +306,20 @@ import {
 } from 'lucide-vue-next'
 
 const route = useRoute()
+const router = useRouter()
 const blog = computed(() => getBlogBySlug(route.params.slug))
 const relatedBlogs = computed(() => getRelatedBlogs(route.params.slug, 3))
+
+function handleContentClick(event) {
+  const target = event.target.closest('a')
+  if (target) {
+    const href = target.getAttribute('href')
+    if (href && href.startsWith('/') && !href.startsWith('//')) {
+      event.preventDefault()
+      router.push(href)
+    }
+  }
+}
 
 function updateMetadata() {
   if (!blog.value) return
