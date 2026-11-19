@@ -172,9 +172,6 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
-# Host Directive
-Host: https://www.sunnyskiesydaycarecenter.com
-
 # Canonical XML Sitemap
 Sitemap: https://www.sunnyskiesydaycarecenter.com/sitemap.xml
 `;
