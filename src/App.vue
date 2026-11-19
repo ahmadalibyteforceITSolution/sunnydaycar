@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col bg-[#FCFDFF] selection:bg-brand-cyan-light selection:text-brand-navy overflow-x-hidden w-full max-w-full pb-16 sm:pb-0">
+  <div class="min-h-screen flex flex-col bg-[#FCFDFF] selection:bg-brand-cyan-light selection:text-brand-navy overflow-x-hidden w-full max-w-full pb-20 sm:pb-0">
     <HeaderNav />
     
     <main class="flex-grow w-full overflow-x-hidden">

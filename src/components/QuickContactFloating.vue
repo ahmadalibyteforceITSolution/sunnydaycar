@@ -48,38 +48,46 @@
       </a>
     </div>
 
-    <!-- MOBILE PERSISTENT CALL & CHAT BAR (Clean, non-intrusive) -->
-    <div class="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-gray-200 px-3 py-2 shadow-xl flex items-center gap-2">
-      <!-- Direct Call Button -->
-      <a 
-        href="tel:+17036061557"
-        class="flex-1 bg-[#0A3366] active:bg-[#031B4E] text-white py-2.5 px-3 rounded-xl font-bold text-xs shadow flex items-center justify-center gap-2 border border-[#00BDE0]/30"
-      >
-        <Phone class="w-3.5 h-3.5 text-amber-400 animate-pulse" />
-        <span class="truncate">Call (703) 606-1557</span>
-      </a>
+    <!-- MOBILE PERSISTENT CALL, WHATSAPP & TOUR BAR (100% Fully Responsive on All Phones) -->
+    <div 
+      class="sm:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/98 backdrop-blur-md border-t border-gray-200 px-2.5 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] shadow-[0_-4px_20px_rgba(0,0,0,0.08)]"
+    >
+      <div class="grid grid-cols-3 gap-2 w-full max-w-md mx-auto">
+        <!-- 1. Direct Phone Call (One-Touch) -->
+        <a 
+          href="tel:+17036061557"
+          class="min-w-0 flex items-center justify-center gap-1.5 bg-[#0A3366] active:bg-[#031B4E] text-white py-2.5 px-1 rounded-xl font-bold text-xs shadow-sm border border-[#00BDE0]/30 transition-transform active:scale-95"
+          title="Call Sunny Skies Daycare: (703) 606-1557"
+          aria-label="Direct Call to Daycare Provider"
+        >
+          <Phone class="w-3.5 h-3.5 text-amber-400 animate-pulse shrink-0" />
+          <span class="truncate">Call Now</span>
+        </a>
 
-      <!-- WhatsApp Button -->
-      <a 
-        href="https://wa.me/17036061557?text=Hello%20Sunny%20Skies%20Daycare!%20I%20would%20like%20to%20inquire%20about%20childcare%20enrollment."
-        target="_blank"
-        rel="noopener noreferrer"
-        class="bg-[#25D366] active:bg-[#20ba5a] text-white py-2.5 px-3 rounded-xl font-bold text-xs shadow flex items-center justify-center gap-1.5 shrink-0"
-        aria-label="WhatsApp"
-      >
-        <IconWhatsApp class="w-4 h-4 fill-current shrink-0" />
-        <span>WhatsApp</span>
-      </a>
+        <!-- 2. WhatsApp Instant Chat -->
+        <a 
+          href="https://wa.me/17036061557?text=Hello%20Sunny%20Skies%20Daycare!%20I%20would%20like%20to%20inquire%20about%20childcare%20enrollment."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="min-w-0 flex items-center justify-center gap-1.5 bg-[#25D366] active:bg-[#20ba5a] text-white py-2.5 px-1 rounded-xl font-bold text-xs shadow-sm transition-transform active:scale-95"
+          title="Chat with us on WhatsApp"
+          aria-label="WhatsApp"
+        >
+          <IconWhatsApp class="w-3.5 h-3.5 fill-current shrink-0" />
+          <span class="truncate">WhatsApp</span>
+        </a>
 
-      <!-- Tour Button -->
-      <button 
-        @click="isModalOpen = true"
-        class="bg-[#ECF5FB] text-[#0A3366] active:bg-[#CCF2F9] py-2.5 px-3 rounded-xl font-bold text-xs shadow-xs flex items-center justify-center gap-1 shrink-0 border border-[#00BDE0]/30 cursor-pointer"
-        aria-label="Book a Tour"
-      >
-        <Calendar class="w-3.5 h-3.5 text-[#00BDE0]" />
-        <span>Tour</span>
-      </button>
+        <!-- 3. Book In-Person Tour -->
+        <button 
+          @click="isModalOpen = true"
+          class="min-w-0 flex items-center justify-center gap-1.5 bg-[#ECF5FB] active:bg-[#CCF2F9] text-[#0A3366] py-2.5 px-1 rounded-xl font-bold text-xs shadow-2xs border border-[#00BDE0]/40 cursor-pointer transition-transform active:scale-95"
+          title="Book an In-Person Daycare Tour"
+          aria-label="Book a Tour"
+        >
+          <Calendar class="w-3.5 h-3.5 text-[#00BDE0] shrink-0" />
+          <span class="truncate">Book Tour</span>
+        </button>
+      </div>
     </div>
 
     <!-- Integrated Lead Capture Modal -->
