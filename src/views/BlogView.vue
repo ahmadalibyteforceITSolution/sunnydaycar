@@ -57,6 +57,12 @@
         </div>
       </div>
 
+      <!-- Google AdSense Banner Unit -->
+      <AdSenseUnit 
+        format="auto" 
+        container-class="bg-white rounded-3xl p-4 sm:p-5 border border-gray-100 shadow-sm" 
+      />
+
       <!-- Results stats -->
       <div class="flex items-center justify-between text-xs sm:text-sm text-brand-slate px-2">
         <span>Showing <strong>{{ filteredBlogs.length }}</strong> guides <span v-if="selectedCategory !== 'All Guides'">in <strong>{{ selectedCategory }}</strong></span><span v-if="searchQuery"> matching "<strong>{{ searchQuery }}</strong>"</span></span>
@@ -218,6 +224,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { blogs, getAllCategories } from '../data/blogs.js'
+import AdSenseUnit from '../components/AdSenseUnit.vue'
 import { BookOpen, Search, Clock, Calendar, ArrowRight, ChevronLeft, ChevronRight, Phone } from 'lucide-vue-next'
 
 const searchQuery = ref('')

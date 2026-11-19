@@ -300,6 +300,12 @@
         </div>
       </section>
 
+      <!-- Google AdSense Transparency Unit -->
+      <AdSenseUnit 
+        format="auto" 
+        container-class="bg-white rounded-3xl p-4 sm:p-5 border border-gray-100 shadow-sm" 
+      />
+
       <!-- Editorial & E-E-A-T Quality Statement -->
       <section class="bg-gradient-to-br from-[#031B4E] to-[#0A3366] rounded-3xl p-8 sm:p-10 text-white space-y-4 shadow-xl border border-blue-900/40">
         <h3 class="text-xl sm:text-2xl font-bold font-heading text-white">
@@ -330,6 +336,7 @@
 
 <script setup>
 import { onMounted } from 'vue'
+import AdSenseUnit from '../components/AdSenseUnit.vue'
 import { 
   Award, 
   Utensils, 

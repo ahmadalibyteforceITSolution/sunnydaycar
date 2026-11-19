@@ -637,6 +637,12 @@
     <section class="py-16 sm:py-20 bg-[#F6FAFC] border-t border-gray-100">
       <div class="max-w-7xl mx-auto px-4 sm:px-8 space-y-12">
         
+        <!-- Google AdSense Contextual Content Unit -->
+        <AdSenseUnit 
+          format="auto" 
+          container-class="bg-white rounded-3xl p-4 sm:p-5 border border-gray-100 shadow-sm" 
+        />
+
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div class="max-w-2xl">
             <span class="text-xs font-bold text-[#00BDE0] uppercase tracking-wider">Expert Parenting & Early Learning</span>
@@ -785,6 +791,7 @@ import {
 import SocialIcons from '../components/SocialIcons.vue'
 import ShowcaseGallery from '../components/ShowcaseGallery.vue'
 import CitationsAccreditationSection from '../components/CitationsAccreditationSection.vue'
+import AdSenseUnit from '../components/AdSenseUnit.vue'
 import { blogs } from '../data/blogs.js'
 
 const activeHeroTab = ref('flyer')

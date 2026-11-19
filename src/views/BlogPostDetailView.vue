@@ -77,6 +77,12 @@
             @click="handleContentClick"
           ></div>
 
+          <!-- In-Article Content AdSense Unit -->
+          <AdSenseUnit 
+            format="auto" 
+            container-class="my-8 bg-[#F8FBFE] border border-[#00BDE0]/20 rounded-2xl p-3 sm:p-5 shadow-xs" 
+          />
+
           <!-- Tags -->
           <div class="pt-6 border-t border-gray-100">
             <h4 class="text-xs font-bold uppercase tracking-wider text-brand-navy mb-3">Topic Tags</h4>
@@ -257,6 +263,12 @@
               </div>
             </div>
 
+            <!-- Sidebar AdSense Responsive Display Unit -->
+            <AdSenseUnit 
+              format="rectangle" 
+              container-class="bg-white rounded-3xl p-4 border border-gray-100 shadow-sm" 
+            />
+
           </div>
         </aside>
 
@@ -287,6 +299,7 @@
 import { computed, watch, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { getBlogBySlug, getRelatedBlogs } from '../data/blogs.js'
+import AdSenseUnit from '../components/AdSenseUnit.vue'
 import { 
   Home, 
   ChevronRight, 
