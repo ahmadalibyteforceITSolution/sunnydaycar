@@ -233,6 +233,16 @@ router.afterEach((to) => {
   } else if (!to.params.slug) {
     schemaScript.textContent = ''
   }
+
+  // 6. Push Virtual Page View to Google Analytics & GTM
+  if (typeof window !== 'undefined' && window.dataLayer) {
+    window.dataLayer.push({
+      event: 'page_view',
+      page_path: to.fullPath,
+      page_title: document.title,
+      page_location: window.location.href
+    })
+  }
 })
 
 export default router
