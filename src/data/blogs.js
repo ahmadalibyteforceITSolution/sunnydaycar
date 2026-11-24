@@ -836,3 +836,91 @@ export function getAllTags() {
   });
   return Array.from(tags);
 }
+
+export const topicPillars = [
+  {
+    id: 'infant-care',
+    title: 'Infant Care & Safe Sleep',
+    badge: 'Infants & Toddlers',
+    iconName: 'Baby',
+    description: 'Evidence-based infant developmental milestones, AAP safe sleep guidelines, individualized nursery care, and speech milestones.',
+    featuredSlug: 'safe-sleep-guidelines-infants-daycare',
+    guides: [
+      { slug: 'safe-sleep-guidelines-infants-daycare', title: 'Safe Sleep Protocols for Infants: Back to Sleep & Crib Hygiene Standards' },
+      { slug: 'infant-milestones-first-year-guide', title: 'Infant Developmental Milestones: What to Expect from Newborn to 12 Months' },
+      { slug: 'infant-sleep-regression-solutions-consistent-daycare-naps', title: 'Navigating the 4-Month & 8-Month Infant Sleep Regressions' },
+      { slug: 'speech-milestones-toddler-language-boost', title: 'Speech Milestones from 12 Months to 4 Years: Early Language Boost' },
+      { slug: 'sensory-play-fine-motor-development', title: 'Sensory Play & Fine Motor Mastery: Tactile Exploration' }
+    ]
+  },
+  {
+    id: 'cacfp-nutrition',
+    title: 'USDA CACFP Nutritious Food Program',
+    badge: 'Nutrition & Meals',
+    iconName: 'Apple',
+    description: 'Active USDA food program participation, allergy-safe kitchens, wholesome warm lunches, and nut-free snacks at zero extra cost to parents.',
+    featuredSlug: 'cacfp-usda-food-program-benefits',
+    guides: [
+      { slug: 'cacfp-usda-food-program-benefits', title: 'Understanding the CACFP: Why Active USDA Food Programs Matter for Health' },
+      { slug: 'healthy-peanut-free-daycare-snacks-cacfp-approved', title: '15 Nut-Free, CACFP-Approved Daycare Snacks That Kids Actually Love' },
+      { slug: 'healthy-toddler-finger-foods-fresh-fruits', title: 'Wholesome Finger Foods & Fruit Art: Teaching Kids to Love Real Nutrition' },
+      { slug: 'balanced-warm-lunches-afternoon-energy', title: 'Why a Balanced Warm Lunch Prevents the 3 PM Toddler Energy Crash' },
+      { slug: 'peanut-safe-and-allergy-conscious-childcare', title: 'Allergy Safety in Childcare: Protecting Children with Food Sensitivities' }
+    ]
+  },
+  {
+    id: 'preschool-steam',
+    title: 'Preschool, STEAM & FCPS Readiness',
+    badge: 'Early Learning & Pre-K',
+    iconName: 'Palette',
+    description: 'Fairfax County Public Schools kindergarten readiness, phonics adventures, tangram math, handwriting readiness, and screen-free discovery.',
+    featuredSlug: 'kindergarten-readiness-skills-fairfax-county',
+    guides: [
+      { slug: 'kindergarten-readiness-skills-fairfax-county', title: 'Kindergarten Readiness: Essential Pre-K Skills for Fairfax County Public Schools' },
+      { slug: 'animal-alphabet-phonics-early-reading', title: 'Animal Alphabet Adventures: Transforming Phonics into a Joyful Game' },
+      { slug: 'stem-and-sensory-math-for-preschoolers-tangrams-counting', title: 'Hands-On STEAM & Math for Preschoolers: How Tangram Puzzles Build Spatial IQ' },
+      { slug: 'handwriting-readiness-pencil-grip-exercises', title: 'Pencil Grip Readiness: Fun Fine Motor Activities Before Kindergarten' },
+      { slug: 'tangram-puzzles-spatial-reasoning-toddlers', title: 'Geometric Tangrams & Wooden Puzzles: Laying Early Math Foundations' },
+      { slug: 'benefits-of-screen-free-daycare-environment', title: 'The Brain Benefits of a 100% Screen-Free Daycare Environment' },
+      { slug: 'bilingual-language-exposure-in-early-childhood-daycare', title: 'The Cognitive Power of Bilingual Language Exposure in Toddlers' }
+    ]
+  },
+  {
+    id: 'licensing-subsidies',
+    title: 'Virginia Licensing, CDA & Subsidies',
+    badge: 'Licensing & Financial Assistance',
+    iconName: 'Shield',
+    description: 'CDA certified national credentials, Virginia Department of Education licensing inspections, Military MCCYN, and Fairfax County subsidy guides.',
+    featuredSlug: 'cda-credential-vs-unlicensed-daycare-what-parents-must-know',
+    guides: [
+      { slug: 'cda-credential-vs-unlicensed-daycare-what-parents-must-know', title: 'CDA Credential vs. Unlicensed Care: Why Early Childhood Qualifications Matter' },
+      { slug: 'what-is-cda-credential-childcare-quality', title: 'What Does CDA Certified Mean? Why It Sets the Gold Standard in Childcare' },
+      { slug: 'virginia-childcare-licensing-safety-standards', title: 'Virginia Childcare Licensing: Behind-the-Scenes Safety, Background Checks & Ratios' },
+      { slug: 'military-childcare-fort-belvoir-mccyn-provider-lorton', title: 'Finding Approved Military Childcare Near Fort Belvoir: MCCYN Provider Guide' },
+      { slug: 'military-childcare-subsidies-mccyn-northern-va', title: 'Military Child Care in Your Neighborhood (MCCYN): Fee Assistance for Northern VA' },
+      { slug: 'fairfax-county-child-care-subsidy-application-guide', title: 'How to Apply for Fairfax County Child Care Subsidies: Complete Guide' },
+      { slug: 'family-home-daycare-vs-large-commercial-centers', title: 'Home-Based Family Daycare vs. Large Commercial Centers: Which Fits Your Family?' },
+      { slug: 'choosing-licensed-daycare-lorton-va', title: 'How to Choose the Right Daycare in Lorton, VA: Comprehensive Parent Checklist' }
+    ]
+  },
+  {
+    id: 'routines-health',
+    title: 'Daycare Routines, Sanitization & Family Life',
+    badge: 'Routines & Wellbeing',
+    iconName: 'Heart',
+    description: 'Gentle potty training, separation anxiety management, hospital-grade daily sanitization, predictable nap transitions, and homework clubs.',
+    featuredSlug: 'gentle-potty-training-strategies-daycare',
+    guides: [
+      { slug: 'gentle-potty-training-strategies-daycare', title: 'Gentle Potty Training: How Daycare and Home Routines Work Together' },
+      { slug: 'managing-first-week-daycare-separation-anxiety', title: 'Managing Separation Anxiety: A Compassionate Guide for First-Time Parents' },
+      { slug: 'predictable-daily-schedules-reduce-toddler-anxiety', title: 'Why Consistent Daily Routines Calm Toddler Tantrums and Build Confidence' },
+      { slug: 'naptime-transitions-one-nap-routine', title: 'The Great Nap Transition: Moving from Two Naps to One Restful Afternoon Sleep' },
+      { slug: 'daycare-illness-prevention-sanitization-protocols-fairfax-va', title: 'Daycare Illness Prevention: Hospital-Grade Sanitization & Health Protocols' },
+      { slug: 'cold-flu-prevention-daycare-sanitization', title: 'Keeping Kids Healthy: Daily Sanitization & Cold Prevention in Daycare' },
+      { slug: 'outdoor-nature-play-vs-screen-time-early-childhood', title: 'Outdoor Nature Play vs. Screen Time: Cognitive & Physical Benefits' },
+      { slug: 'preparing-for-in-person-daycare-tour', title: 'How to Prepare for Your Daycare Tour: 10 Questions Smart Parents Ask' },
+      { slug: 'extended-hours-care-supporting-commuters', title: 'Extended Hours Childcare (6 AM – 6 PM): Supporting Northern Virginia Commuters' },
+      { slug: 'homework-club-benefits-for-working-parents-school-age-care', title: 'Why After-School Homework Clubs Transform Evenings for Working Parents' }
+    ]
+  }
+];

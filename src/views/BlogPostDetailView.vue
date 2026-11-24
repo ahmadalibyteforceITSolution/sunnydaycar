@@ -70,9 +70,42 @@
         <!-- Left: Rich Article Body -->
         <main class="lg:col-span-8 bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-8">
           
+          <!-- Key Takeaways & Quick Navigation Box (Google Sitelinks & High Authority) -->
+          <div class="bg-gradient-to-br from-[#ECF5FB] via-white to-[#F0F9FF] border border-[#00BDE0]/30 rounded-2xl p-5 sm:p-6 space-y-4 shadow-sm">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <div class="flex items-center gap-2">
+                <Lightbulb class="w-5 h-5 text-amber-500" />
+                <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#0A3366]">Parent Summary & Quick Navigation</h3>
+              </div>
+              <span class="text-[11px] font-semibold text-[#00BDE0] bg-[#CCF2F9] px-2.5 py-0.5 rounded-full">CDA Certified Guide</span>
+            </div>
+            <p class="text-xs sm:text-sm text-[#566593] leading-relaxed">
+              {{ blog.excerpt || blog.metaDescription }}
+            </p>
+            <div class="pt-2 border-t border-gray-100 flex flex-wrap gap-2 text-xs">
+              <a href="#article-body" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-gray-200 text-[#0A3366] hover:border-[#00BDE0] font-semibold transition-colors">
+                <span>Read Full Analysis</span>
+                <ChevronRight class="w-3.5 h-3.5 text-[#00BDE0]" />
+              </a>
+              <router-link to="/services" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-gray-200 text-[#0A3366] hover:border-[#00BDE0] font-semibold transition-colors">
+                <span>Daycare Programs</span>
+                <ChevronRight class="w-3.5 h-3.5 text-[#00BDE0]" />
+              </router-link>
+              <router-link to="/appointment" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-[#00BDE0] text-white hover:bg-[#00A1BE] font-semibold transition-colors shadow-xs">
+                <span>Book In-Person Tour</span>
+                <ChevronRight class="w-3.5 h-3.5" />
+              </router-link>
+              <router-link to="/citations" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white border border-gray-200 text-[#0A3366] hover:border-[#00BDE0] font-semibold transition-colors">
+                <span>Regulatory Citations</span>
+                <ChevronRight class="w-3.5 h-3.5 text-[#00BDE0]" />
+              </router-link>
+            </div>
+          </div>
+
           <!-- Article Content -->
           <div 
-            class="prose prose-slate max-w-none text-brand-slate leading-relaxed font-normal" 
+            id="article-body"
+            class="prose prose-slate max-w-none text-brand-slate leading-relaxed font-normal scroll-mt-28" 
             v-html="blog.content"
             @click="handleContentClick"
           ></div>
@@ -159,6 +192,77 @@
                   <span>Learn more about our background & qualifications</span>
                   <ArrowRight class="w-3.5 h-3.5" />
                 </router-link>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thematic Topic Cluster: Explore 4 Related Childcare Deep-Dives -->
+          <div class="pt-6 border-t border-gray-100 space-y-4">
+            <div class="flex items-center justify-between flex-wrap gap-2">
+              <div>
+                <span class="text-[11px] font-bold uppercase tracking-wider text-[#00BDE0] block">Recommended Reading</span>
+                <h3 class="text-lg sm:text-xl font-bold font-heading text-[#0A3366]">Related Childcare Guides & Resources</h3>
+              </div>
+              <router-link to="/blog" class="text-xs font-bold text-[#00BDE0] hover:underline flex items-center gap-1">
+                <span>Explore All 40 Guides</span>
+                <ArrowRight class="w-3.5 h-3.5" />
+              </router-link>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <router-link
+                v-for="rel in relatedGuidesFour"
+                :key="rel.id"
+                :to="'/blog/' + rel.slug"
+                class="p-4 rounded-2xl bg-[#F8FBFE] hover:bg-[#ECF5FB] border border-gray-100 hover:border-[#00BDE0]/40 transition-all flex flex-col justify-between group shadow-2xs hover:shadow-sm"
+              >
+                <div>
+                  <span class="text-[10px] font-bold uppercase tracking-wider text-[#00BDE0] block mb-1">{{ rel.category }}</span>
+                  <h4 class="text-xs sm:text-sm font-bold text-[#0A3366] group-hover:text-[#00BDE0] transition-colors line-clamp-2 leading-snug">
+                    {{ rel.title }}
+                  </h4>
+                </div>
+                <div class="pt-3 mt-3 border-t border-gray-200/60 flex items-center justify-between text-[11px] text-[#566593]">
+                  <span class="flex items-center gap-1">
+                    <Clock class="w-3 h-3 text-[#00BDE0]" />
+                    <span>{{ rel.readTime }}</span>
+                  </span>
+                  <span class="font-bold text-[#00BDE0] group-hover:translate-x-0.5 transition-transform inline-flex items-center gap-1">
+                    <span>Read Guide</span>
+                    <ArrowRight class="w-3 h-3" />
+                  </span>
+                </div>
+              </router-link>
+            </div>
+          </div>
+
+          <!-- Comprehensive Childcare Resource Directory Hub (5 Core Pillars) -->
+          <div class="bg-gradient-to-br from-[#031B4E] via-[#0A3366] to-[#031B4E] text-white rounded-3xl p-6 sm:p-8 space-y-6 shadow-xl">
+            <div class="space-y-1">
+              <span class="text-[11px] font-bold text-amber-400 uppercase tracking-wider block">Parent Knowledge Hub</span>
+              <h3 class="text-xl sm:text-2xl font-bold font-heading text-white">Browse Childcare Guides by Category</h3>
+              <p class="text-xs text-gray-300">Evidence-based early childhood articles authored by our CDA-certified educators in Lorton, VA.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+              <div v-for="pillar in topicPillars" :key="pillar.id" class="p-4 rounded-2xl bg-white/10 hover:bg-white/15 border border-white/15 transition-all flex flex-col justify-between">
+                <div>
+                  <span class="text-[10px] font-extrabold text-amber-300 uppercase block mb-1">{{ pillar.badge }}</span>
+                  <h4 class="text-sm font-bold text-white mb-2 leading-snug">{{ pillar.title }}</h4>
+                  <ul class="space-y-1.5 text-xs text-gray-200">
+                    <li v-for="guide in pillar.guides.slice(0, 3)" :key="guide.slug">
+                      <router-link :to="'/blog/' + guide.slug" class="hover:text-amber-300 hover:underline line-clamp-1 flex items-center gap-1.5">
+                        <ChevronRight class="w-3 h-3 text-amber-400 shrink-0" />
+                        <span>{{ guide.title }}</span>
+                      </router-link>
+                    </li>
+                  </ul>
+                </div>
+                <div class="pt-3 mt-3 border-t border-white/10">
+                  <router-link :to="'/blog/' + pillar.featuredSlug" class="text-xs font-bold text-[#CCF2F9] hover:text-white inline-flex items-center gap-1">
+                    <span>Explore {{ pillar.title }}</span>
+                    <ArrowRight class="w-3 h-3" />
+                  </router-link>
+                </div>
               </div>
             </div>
           </div>
@@ -298,7 +402,7 @@
 <script setup>
 import { computed, watch, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
-import { getBlogBySlug, getRelatedBlogs } from '../data/blogs.js'
+import { getBlogBySlug, getRelatedBlogs, topicPillars } from '../data/blogs.js'
 import AdSenseUnit from '../components/AdSenseUnit.vue'
 import { 
   Home, 
@@ -315,13 +419,15 @@ import {
   BookmarkCheck,
   Utensils,
   Building,
-  ShieldCheck
+  ShieldCheck,
+  Lightbulb
 } from 'lucide-vue-next'
 
 const route = useRoute()
 const router = useRouter()
 const blog = computed(() => getBlogBySlug(route.params.slug))
 const relatedBlogs = computed(() => getRelatedBlogs(route.params.slug, 3))
+const relatedGuidesFour = computed(() => getRelatedBlogs(route.params.slug, 4))
 
 function handleContentClick(event) {
   const target = event.target.closest('a')
@@ -458,6 +564,39 @@ function updateMetadata() {
     }
   }
   scriptTag.textContent = JSON.stringify(structuredData)
+
+  // 5. BreadcrumbList Structured Data for Google SERP Rich Snippets
+  let breadcrumbScript = document.querySelector('#breadcrumb-jsonld')
+  if (!breadcrumbScript) {
+    breadcrumbScript = document.createElement('script')
+    breadcrumbScript.id = 'breadcrumb-jsonld'
+    breadcrumbScript.type = 'application/ld+json'
+    document.head.appendChild(breadcrumbScript)
+  }
+  breadcrumbScript.textContent = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': [
+      {
+        '@type': 'ListItem',
+        'position': 1,
+        'name': 'Home',
+        'item': 'https://www.sunnyskiesydaycarecenter.com/'
+      },
+      {
+        '@type': 'ListItem',
+        'position': 2,
+        'name': 'Childcare Guides',
+        'item': 'https://www.sunnyskiesydaycarecenter.com/blog'
+      },
+      {
+        '@type': 'ListItem',
+        'position': 3,
+        'name': blog.value.title,
+        'item': `https://www.sunnyskiesydaycarecenter.com/blog/${blog.value.slug}`
+      }
+    ]
+  })
 }
 
 onMounted(() => {

@@ -658,8 +658,37 @@
             to="/blog"
             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-[#ECF5FB] text-[#0A3366] font-bold text-xs sm:text-sm border-2 border-[#00BDE0]/40 hover:border-[#00BDE0] shadow-sm hover:shadow transition-all shrink-0 self-start md:self-auto group"
           >
-            <span>Explore All 30 Guides</span>
+            <span>Explore All 40 Guides</span>
             <ArrowRight class="w-4 h-4 text-[#00BDE0] group-hover:translate-x-1 transition-transform" />
+          </router-link>
+        </div>
+
+        <!-- 5 Childcare Topic Pillars Directory Bar (High Authority SEO Clustered Links) -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 pt-2">
+          <router-link to="/blog/safe-sleep-guidelines-infants-daycare" class="p-3.5 bg-white rounded-2xl border border-gray-100 hover:border-[#00BDE0]/40 shadow-2xs hover:shadow-sm transition-all text-center group">
+            <span class="text-xl block mb-1">🍼</span>
+            <span class="text-xs font-bold text-[#0A3366] group-hover:text-[#00BDE0] block truncate">Infant & Safe Sleep</span>
+            <span class="text-[10px] text-[#566593] block mt-0.5">5 Expert Guides</span>
+          </router-link>
+          <router-link to="/blog/cacfp-usda-food-program-benefits" class="p-3.5 bg-white rounded-2xl border border-gray-100 hover:border-[#00BDE0]/40 shadow-2xs hover:shadow-sm transition-all text-center group">
+            <span class="text-xl block mb-1">🍎</span>
+            <span class="text-xs font-bold text-[#0A3366] group-hover:text-[#00BDE0] block truncate">CACFP Nutrition</span>
+            <span class="text-[10px] text-[#566593] block mt-0.5">5 Healthy Guides</span>
+          </router-link>
+          <router-link to="/blog/kindergarten-readiness-skills-fairfax-county" class="p-3.5 bg-white rounded-2xl border border-gray-100 hover:border-[#00BDE0]/40 shadow-2xs hover:shadow-sm transition-all text-center group">
+            <span class="text-xl block mb-1">🎨</span>
+            <span class="text-xs font-bold text-[#0A3366] group-hover:text-[#00BDE0] block truncate">Pre-K & Phonics</span>
+            <span class="text-[10px] text-[#566593] block mt-0.5">7 Learning Guides</span>
+          </router-link>
+          <router-link to="/blog/cda-credential-vs-unlicensed-daycare-what-parents-must-know" class="p-3.5 bg-white rounded-2xl border border-gray-100 hover:border-[#00BDE0]/40 shadow-2xs hover:shadow-sm transition-all text-center group">
+            <span class="text-xl block mb-1">🛡️</span>
+            <span class="text-xs font-bold text-[#0A3366] group-hover:text-[#00BDE0] block truncate">Licensing & Subsidies</span>
+            <span class="text-[10px] text-[#566593] block mt-0.5">8 Policy Guides</span>
+          </router-link>
+          <router-link to="/blog/gentle-potty-training-strategies-daycare" class="p-3.5 bg-white rounded-2xl border border-gray-100 hover:border-[#00BDE0]/40 shadow-2xs hover:shadow-sm transition-all text-center group col-span-2 sm:col-span-1">
+            <span class="text-xl block mb-1">🏡</span>
+            <span class="text-xs font-bold text-[#0A3366] group-hover:text-[#00BDE0] block truncate">Routines & Care</span>
+            <span class="text-[10px] text-[#566593] block mt-0.5">10 Care Guides</span>
           </router-link>
         </div>
 

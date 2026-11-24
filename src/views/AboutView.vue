@@ -222,6 +222,105 @@
 
       </div>
 
+      <!-- Authoritative Research & Childcare Publications (High-Authority Internal Linking Hub) -->
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm space-y-6">
+        <div class="flex items-center justify-between flex-wrap gap-2">
+          <div>
+            <span class="text-xs font-bold text-[#00BDE0] uppercase tracking-wider">Educational Leadership</span>
+            <h3 class="text-2xl sm:text-3xl font-bold font-heading text-[#0A3366] mt-1">
+              Authoritative Publications & Parenting Guides
+            </h3>
+            <p class="text-xs sm:text-sm text-[#566593] mt-1">
+              Explore in-depth research and state regulatory guides authored by our licensed CDA-credentialed director.
+            </p>
+          </div>
+          <router-link to="/blog" class="text-xs font-bold text-[#00BDE0] hover:underline flex items-center gap-1">
+            <span>View All 40 Childcare Guides</span>
+            <ArrowRight class="w-3.5 h-3.5" />
+          </router-link>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-2">
+          <router-link to="/blog/cda-credential-vs-unlicensed-daycare-what-parents-must-know" class="p-4 rounded-2xl bg-[#F8FBFE] hover:bg-[#ECF5FB] border border-gray-100 hover:border-[#00BDE0]/30 transition-all flex flex-col justify-between group">
+            <div>
+              <span class="text-[10px] font-bold text-[#00BDE0] uppercase block mb-1">Licensing Standards</span>
+              <h4 class="text-xs sm:text-sm font-bold text-[#0A3366] group-hover:text-[#00BDE0] transition-colors leading-snug">
+                CDA Credential vs. Unlicensed Care: Why Qualifications Matter
+              </h4>
+            </div>
+            <span class="text-xs text-[#00BDE0] font-semibold mt-3 inline-flex items-center gap-1">
+              <span>Read Analysis</span>
+              <ArrowRight class="w-3 h-3" />
+            </span>
+          </router-link>
+
+          <router-link to="/blog/virginia-childcare-licensing-safety-standards" class="p-4 rounded-2xl bg-[#F8FBFE] hover:bg-[#ECF5FB] border border-gray-100 hover:border-[#00BDE0]/30 transition-all flex flex-col justify-between group">
+            <div>
+              <span class="text-[10px] font-bold text-[#00BDE0] uppercase block mb-1">State Regulations</span>
+              <h4 class="text-xs sm:text-sm font-bold text-[#0A3366] group-hover:text-[#00BDE0] transition-colors leading-snug">
+                Virginia Childcare Licensing: Safety, Background Checks & Ratios
+              </h4>
+            </div>
+            <span class="text-xs text-[#00BDE0] font-semibold mt-3 inline-flex items-center gap-1">
+              <span>Read Analysis</span>
+              <ArrowRight class="w-3 h-3" />
+            </span>
+          </router-link>
+
+          <router-link to="/blog/family-home-daycare-vs-large-commercial-centers" class="p-4 rounded-2xl bg-[#F8FBFE] hover:bg-[#ECF5FB] border border-gray-100 hover:border-[#00BDE0]/30 transition-all flex flex-col justify-between group">
+            <div>
+              <span class="text-[10px] font-bold text-[#00BDE0] uppercase block mb-1">Care Comparison</span>
+              <h4 class="text-xs sm:text-sm font-bold text-[#0A3366] group-hover:text-[#00BDE0] transition-colors leading-snug">
+                Home-Based Family Daycare vs. Large Commercial Centers
+              </h4>
+            </div>
+            <span class="text-xs text-[#00BDE0] font-semibold mt-3 inline-flex items-center gap-1">
+              <span>Read Analysis</span>
+              <ArrowRight class="w-3 h-3" />
+            </span>
+          </router-link>
+
+          <router-link to="/blog/safe-sleep-guidelines-infants-daycare" class="p-4 rounded-2xl bg-[#F8FBFE] hover:bg-[#ECF5FB] border border-gray-100 hover:border-[#00BDE0]/30 transition-all flex flex-col justify-between group">
+            <div>
+              <span class="text-[10px] font-bold text-[#00BDE0] uppercase block mb-1">Infant Safety</span>
+              <h4 class="text-xs sm:text-sm font-bold text-[#0A3366] group-hover:text-[#00BDE0] transition-colors leading-snug">
+                Safe Sleep Protocols for Infants: AAP Back to Sleep Guidelines
+              </h4>
+            </div>
+            <span class="text-xs text-[#00BDE0] font-semibold mt-3 inline-flex items-center gap-1">
+              <span>Read Analysis</span>
+              <ArrowRight class="w-3 h-3" />
+            </span>
+          </router-link>
+
+          <router-link to="/blog/cacfp-usda-food-program-benefits" class="p-4 rounded-2xl bg-[#F8FBFE] hover:bg-[#ECF5FB] border border-gray-100 hover:border-[#00BDE0]/30 transition-all flex flex-col justify-between group">
+            <div>
+              <span class="text-[10px] font-bold text-[#00BDE0] uppercase block mb-1">Nutrition Standards</span>
+              <h4 class="text-xs sm:text-sm font-bold text-[#0A3366] group-hover:text-[#00BDE0] transition-colors leading-snug">
+                Understanding CACFP: Why Active USDA Food Programs Matter
+              </h4>
+            </div>
+            <span class="text-xs text-[#00BDE0] font-semibold mt-3 inline-flex items-center gap-1">
+              <span>Read Analysis</span>
+              <ArrowRight class="w-3 h-3" />
+            </span>
+          </router-link>
+
+          <router-link to="/blog/preparing-for-in-person-daycare-tour" class="p-4 rounded-2xl bg-[#F8FBFE] hover:bg-[#ECF5FB] border border-gray-100 hover:border-[#00BDE0]/30 transition-all flex flex-col justify-between group">
+            <div>
+              <span class="text-[10px] font-bold text-[#00BDE0] uppercase block mb-1">Parent Preparation</span>
+              <h4 class="text-xs sm:text-sm font-bold text-[#0A3366] group-hover:text-[#00BDE0] transition-colors leading-snug">
+                How to Prepare for Your Daycare Tour: 10 Questions Smart Parents Ask
+              </h4>
+            </div>
+            <span class="text-xs text-[#00BDE0] font-semibold mt-3 inline-flex items-center gap-1">
+              <span>Read Analysis</span>
+              <ArrowRight class="w-3 h-3" />
+            </span>
+          </router-link>
+        </div>
+      </div>
+
     </div>
 
     <!-- Citations & Accreditations Showcase -->

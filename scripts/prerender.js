@@ -1,7 +1,7 @@
 import fs from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import { blogs } from '../src/data/blogs.js'
+import { blogs, getRelatedBlogs, topicPillars } from '../src/data/blogs.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
@@ -82,13 +82,28 @@ const staticRoutes = [
         </p>
         <h2 class="text-2xl font-bold text-[#0A3366] mt-8 mb-3">Our Core Commitments</h2>
         <ul class="list-disc list-inside space-y-2 text-gray-700">
-          <li><strong>Child Development Associate (CDA) Credentialed:</strong> Professional early childhood education expertise.</li>
-          <li><strong>Active USDA CACFP Nutrition:</strong> Free wholesome breakfasts, warm lunches, and afternoon snacks.</li>
-          <li><strong>Subsidy & Military Assistance:</strong> We accept Virginia Child Care Subsidy Programs and MCCYN Military Child Care in Your Neighborhood fee assistance.</li>
-          <li><strong>Sanitized & Safe Environment:</strong> Monitored sleep areas, child-proofed rooms, and a fenced outdoor play yard.</li>
+          <li><strong>Child Development Associate (CDA) Credentialed:</strong> Professional early childhood education expertise. Learn more in our <a href="/blog/cda-credential-vs-unlicensed-daycare-what-parents-must-know" class="text-[#00BDE0] underline font-semibold">CDA credential guide</a>.</li>
+          <li><strong>Active USDA CACFP Nutrition:</strong> Free wholesome breakfasts, warm lunches, and afternoon snacks. Read our <a href="/blog/cacfp-usda-food-program-benefits" class="text-[#00BDE0] underline font-semibold">CACFP nutrition benefits article</a>.</li>
+          <li><strong>Subsidy & Military Assistance:</strong> We accept Virginia Child Care Subsidy Programs and <a href="/blog/military-childcare-subsidies-mccyn-northern-va" class="text-[#00BDE0] underline font-semibold">MCCYN Military Child Care Assistance</a>.</li>
+          <li><strong>Sanitized & Safe Environment:</strong> Monitored sleep areas following <a href="/blog/safe-sleep-guidelines-infants-daycare" class="text-[#00BDE0] underline font-semibold">AAP safe sleep standards</a>, child-proofed rooms, and a fenced outdoor play yard.</li>
         </ul>
-        <div class="mt-8">
+
+        <div class="mt-10 p-6 bg-[#F8FBFE] border border-[#00BDE0]/30 rounded-2xl">
+          <h3 class="text-xl font-bold text-[#0A3366] mb-3">Authoritative Childcare Guides & Research Publications</h3>
+          <p class="text-sm text-gray-600 mb-4">Explore our licensed provider's in-depth guides for Northern Virginia families:</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+            <a href="/blog/cda-credential-vs-unlicensed-daycare-what-parents-must-know" class="text-[#00BDE0] hover:underline font-semibold">&bull; CDA Credential vs. Unlicensed Care Guide</a>
+            <a href="/blog/virginia-childcare-licensing-safety-standards" class="text-[#00BDE0] hover:underline font-semibold">&bull; Virginia Licensing & Safety Checklist</a>
+            <a href="/blog/family-home-daycare-vs-large-commercial-centers" class="text-[#00BDE0] hover:underline font-semibold">&bull; Home Daycare vs. Commercial Centers</a>
+            <a href="/blog/preparing-for-in-person-daycare-tour" class="text-[#00BDE0] hover:underline font-semibold">&bull; 10 Questions to Ask on a Daycare Tour</a>
+            <a href="/citations" class="text-[#00BDE0] hover:underline font-semibold">&bull; Official Regulatory & Pediatric Citations Hub</a>
+            <a href="/blog" class="text-[#00BDE0] hover:underline font-semibold">&bull; Browse All 40 Expert Childcare Guides</a>
+          </div>
+        </div>
+
+        <div class="mt-8 flex flex-wrap gap-4">
           <a href="/appointment" class="bg-[#00BDE0] text-white font-bold px-6 py-3 rounded-full inline-block">Book a Private Tour</a>
+          <a href="/services" class="bg-[#031B4E] text-white font-bold px-6 py-3 rounded-full inline-block">Explore Programs & Services</a>
         </div>
       </section>
     `
@@ -146,19 +161,58 @@ const staticRoutes = [
           <div class="p-6 bg-white rounded-2xl border border-gray-100">
             <h2 class="text-xl font-bold text-[#0A3366]">1. Infant Care (0 - 12 Months)</h2>
             <p class="text-sm text-gray-600 mt-2">Safe crib sleep following AAP guidelines, dedicated tummy-time mats, sensory stimulation, and feeding tracking.</p>
+            <div class="mt-3 pt-3 border-t border-gray-100 flex flex-wrap gap-2 text-xs">
+              <span class="text-gray-500 font-bold">Related Guides:</span>
+              <a href="/blog/safe-sleep-guidelines-infants-daycare" class="text-[#00BDE0] underline font-semibold">Safe Sleep Protocols</a> |
+              <a href="/blog/infant-milestones-first-year-guide" class="text-[#00BDE0] underline font-semibold">Infant Milestones (0-12 Mo)</a> |
+              <a href="/blog/infant-sleep-regression-solutions-consistent-daycare-naps" class="text-[#00BDE0] underline font-semibold">Sleep Regression Solutions</a>
+            </div>
           </div>
           <div class="p-6 bg-white rounded-2xl border border-gray-100">
             <h2 class="text-xl font-bold text-[#0A3366]">2. Toddler Discovery (1 - 3 Years)</h2>
             <p class="text-sm text-gray-600 mt-2">Language development, gentle potty training, music & movement, building blocks, and fine motor art activities.</p>
+            <div class="mt-3 pt-3 border-t border-gray-100 flex flex-wrap gap-2 text-xs">
+              <span class="text-gray-500 font-bold">Related Guides:</span>
+              <a href="/blog/gentle-potty-training-strategies-daycare" class="text-[#00BDE0] underline font-semibold">Gentle Potty Training</a> |
+              <a href="/blog/sensory-play-fine-motor-development" class="text-[#00BDE0] underline font-semibold">Sensory Motor Play</a> |
+              <a href="/blog/speech-milestones-toddler-language-boost" class="text-[#00BDE0] underline font-semibold">Toddler Speech Milestones</a>
+            </div>
           </div>
           <div class="p-6 bg-white rounded-2xl border border-gray-100">
             <h2 class="text-xl font-bold text-[#0A3366]">3. Pre-K & Kindergarten Readiness (3 - 5 Years)</h2>
             <p class="text-sm text-gray-600 mt-2">Early phonics, letter recognition, counting, social-emotional skills, science discovery, and outdoor playground play.</p>
+            <div class="mt-3 pt-3 border-t border-gray-100 flex flex-wrap gap-2 text-xs">
+              <span class="text-gray-500 font-bold">Related Guides:</span>
+              <a href="/blog/kindergarten-readiness-skills-fairfax-county" class="text-[#00BDE0] underline font-semibold">Fairfax Pre-K Readiness</a> |
+              <a href="/blog/animal-alphabet-phonics-early-reading" class="text-[#00BDE0] underline font-semibold">Phonics & Early Reading</a> |
+              <a href="/blog/stem-and-sensory-math-for-preschoolers-tangrams-counting" class="text-[#00BDE0] underline font-semibold">STEAM & Tangram Math</a> |
+              <a href="/blog/handwriting-readiness-pencil-grip-exercises" class="text-[#00BDE0] underline font-semibold">Pencil Grip Exercises</a>
+            </div>
           </div>
           <div class="p-6 bg-white rounded-2xl border border-gray-100">
             <h2 class="text-xl font-bold text-[#0A3366]">4. School-Age & Homework Support (5 - 15 Years)</h2>
             <p class="text-sm text-gray-600 mt-2">Before and after school care, homework assistance, reading lounge, and wholesome afternoon snacks.</p>
+            <div class="mt-3 pt-3 border-t border-gray-100 flex flex-wrap gap-2 text-xs">
+              <span class="text-gray-500 font-bold">Related Guides:</span>
+              <a href="/blog/homework-club-benefits-for-working-parents-school-age-care" class="text-[#00BDE0] underline font-semibold">After-School Homework Club</a> |
+              <a href="/blog/before-and-after-school-care-benefits-older-kids" class="text-[#00BDE0] underline font-semibold">School-Age Enrichment</a> |
+              <a href="/blog/extended-hours-care-supporting-commuters" class="text-[#00BDE0] underline font-semibold">6 AM – 6 PM Commuter Hours</a>
+            </div>
           </div>
+          <div class="p-6 bg-white rounded-2xl border border-gray-100">
+            <h2 class="text-xl font-bold text-[#0A3366]">5. Active CACFP Nutritious Food Program</h2>
+            <p class="text-sm text-gray-600 mt-2">Complimentary USDA-approved balanced breakfasts, warm lunches, and fresh fruit afternoon snacks.</p>
+            <div class="mt-3 pt-3 border-t border-gray-100 flex flex-wrap gap-2 text-xs">
+              <span class="text-gray-500 font-bold">Related Nutrition Guides:</span>
+              <a href="/blog/cacfp-usda-food-program-benefits" class="text-[#00BDE0] underline font-semibold">CACFP Federal Nutrition</a> |
+              <a href="/blog/healthy-peanut-free-daycare-snacks-cacfp-approved" class="text-[#00BDE0] underline font-semibold">15 Nut-Free Daycare Snacks</a> |
+              <a href="/blog/balanced-warm-lunches-afternoon-energy" class="text-[#00BDE0] underline font-semibold">Warm Lunches & Afternoon Energy</a>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="/appointment" class="bg-[#00BDE0] text-white font-bold px-6 py-3 rounded-full inline-block">Book an In-Person Tour</a>
+          <a href="/blog" class="bg-[#031B4E] text-white font-bold px-6 py-3 rounded-full inline-block">Explore All 40 Childcare Guides</a>
         </div>
       </section>
     `
@@ -372,6 +426,30 @@ blogs.forEach(blog => {
     'Kindergarten Readiness'
   ]).join(', ')
 
+  const relatedForPrerender = getRelatedBlogs(blog.slug, 4)
+  const relatedHtml = relatedForPrerender.map(r => `
+    <a href="/blog/${r.slug}" class="p-4 rounded-2xl bg-[#F8FBFE] border border-gray-100 hover:border-[#00BDE0]/40 flex flex-col justify-between">
+      <div>
+        <span class="text-[10px] font-bold uppercase tracking-wider text-[#00BDE0] block mb-1">${r.category}</span>
+        <h4 class="text-xs font-bold text-[#0A3366] leading-snug line-clamp-2">${r.title}</h4>
+      </div>
+      <span class="text-[11px] font-bold text-[#00BDE0] mt-3 block">Read Guide &rarr;</span>
+    </a>
+  `).join('')
+
+  const pillarsHtml = topicPillars.map(p => `
+    <div class="p-4 rounded-2xl bg-white/10 border border-white/15">
+      <span class="text-[10px] font-extrabold text-amber-300 uppercase block mb-1">${p.badge}</span>
+      <h4 class="text-sm font-bold text-white mb-2">${p.title}</h4>
+      <ul class="space-y-1.5 text-xs text-gray-200 mb-3">
+        ${p.guides.slice(0, 3).map(g => `
+          <li><a href="/blog/${g.slug}" class="hover:underline hover:text-amber-300 line-clamp-1">&bull; ${g.title}</a></li>
+        `).join('')}
+      </ul>
+      <a href="/blog/${p.featuredSlug}" class="text-xs font-bold text-[#CCF2F9] hover:underline">Explore ${p.title} &rarr;</a>
+    </div>
+  `).join('')
+
   staticRoutes.push({
     path: `/blog/${blog.slug}`,
     title: `${blog.metaTitle} | Sunny Skies Daycare`,
@@ -392,12 +470,44 @@ blogs.forEach(blog => {
         <div class="text-xs text-gray-500 mb-6">
           By <strong>${blog.author}</strong> • Published ${blog.date} • ${blog.readTime}
         </div>
+
+        <!-- Parent Summary & Quick Links (Internal Link Sitelinks) -->
+        <div class="bg-gradient-to-br from-[#ECF5FB] to-white border border-[#00BDE0]/30 rounded-2xl p-5 mb-8 space-y-3">
+          <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#0A3366]">Parent Summary & Quick Links</h3>
+          <p class="text-xs sm:text-sm text-[#566593] leading-relaxed">${blog.excerpt || blog.metaDescription}</p>
+          <div class="flex flex-wrap gap-2 pt-2 text-xs">
+            <a href="/services" class="px-3 py-1.5 rounded-lg bg-white border border-gray-200 text-[#0A3366] font-semibold">Daycare Programs</a>
+            <a href="/appointment" class="px-3 py-1.5 rounded-lg bg-[#00BDE0] text-white font-semibold">Book Tour</a>
+            <a href="/citations" class="px-3 py-1.5 rounded-lg bg-white border border-gray-200 text-[#0A3366] font-semibold">Regulatory Citations</a>
+          </div>
+        </div>
+
         <div class="rounded-2xl overflow-hidden aspect-[16/9] mb-8 bg-gray-100">
           <img src="${blog.image}" alt="${blog.title}" title="${blog.title.replace(/"/g, '&quot;')}" class="w-full h-full object-cover" />
         </div>
         <div class="prose max-w-none text-gray-800 leading-relaxed space-y-4">
           ${blog.content}
         </div>
+
+        <!-- Related Guides Grid (Internal Linking) -->
+        <div class="mt-12 pt-8 border-t border-gray-200">
+          <h3 class="text-xl font-bold text-[#0A3366] mb-4">Related Childcare Guides & Resources</h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            ${relatedHtml}
+          </div>
+        </div>
+
+        <!-- 5-Pillar Topic Directory (Internal Linking Hub) -->
+        <div class="mt-12 bg-[#031B4E] text-white rounded-3xl p-6 sm:p-8 space-y-6">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-1">Browse Childcare Guides by Category</h3>
+            <p class="text-xs text-gray-300">CDA-credentialed child care articles for Northern Virginia families.</p>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            ${pillarsHtml}
+          </div>
+        </div>
+
         <div class="mt-12 p-6 bg-[#ECF5FB] rounded-2xl border border-[#00BDE0]/30 text-center">
           <h2 class="text-xl font-bold text-[#0A3366] mb-2">Schedule a Tour at Sunny Skies Daycare</h2>
           <p class="text-sm text-gray-700 mb-4">Visit our CDA-certified family childcare in Lorton, VA. Fresh CACFP meals, low ratios, and loving educators.</p>
@@ -488,7 +598,32 @@ for (const route of staticRoutes) {
       "keywords": route.keywords
     }
 
-    const schemaTag = `\n    <script type="application/ld+json" id="route-schema">\n${JSON.stringify(blogSchema, null, 2)}\n    </script>\n`
+    const breadcrumbSchema = {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": `${siteUrl}/`
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Childcare Guides",
+          "item": `${siteUrl}/blog`
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": blog.title,
+          "item": canonicalUrl
+        }
+      ]
+    }
+
+    const schemaTag = `\n    <script type="application/ld+json" id="route-schema">\n${JSON.stringify(blogSchema, null, 2)}\n    </script>\n    <script type="application/ld+json" id="breadcrumb-schema">\n${JSON.stringify(breadcrumbSchema, null, 2)}\n    </script>\n`
     html = html.replace('</head>', `${schemaTag}</head>`)
   } else if (route.schema) {
     const schemaTag = `\n    <script type="application/ld+json" id="route-schema">\n${JSON.stringify(route.schema, null, 2)}\n    </script>\n`

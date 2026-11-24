@@ -50,6 +50,14 @@
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-emerald-600 shrink-0" /> <span>Sensory visual & tactile tracking</span></div>
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-emerald-600 shrink-0" /> <span>Strict diapering & hygiene protocols</span></div>
               </div>
+
+              <!-- Deep-Dive Parent Guides (Internal Linking) -->
+              <div class="pt-3 border-t border-gray-100 flex flex-wrap items-center gap-2 text-xs">
+                <span class="text-[11px] font-bold text-brand-slate uppercase">Helpful Guides:</span>
+                <router-link to="/blog/safe-sleep-guidelines-infants-daycare" class="text-[#00BDE0] font-semibold hover:underline bg-[#ECF5FB] px-2.5 py-1 rounded-full">Safe Sleep Standards</router-link>
+                <router-link to="/blog/infant-milestones-first-year-guide" class="text-[#00BDE0] font-semibold hover:underline bg-[#ECF5FB] px-2.5 py-1 rounded-full">Infant Milestones (0-12 Mo)</router-link>
+                <router-link to="/blog/infant-sleep-regression-solutions-consistent-daycare-naps" class="text-[#00BDE0] font-semibold hover:underline bg-[#ECF5FB] px-2.5 py-1 rounded-full">Sleep Regression Solutions</router-link>
+              </div>
             </div>
           </div>
         </div>
@@ -73,6 +81,14 @@
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-amber-500 shrink-0" /> <span>Sensory paper tearing & petal crafts</span></div>
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-amber-500 shrink-0" /> <span>Language expansion & speech confidence</span></div>
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-amber-500 shrink-0" /> <span>Gentle potty-training assistance</span></div>
+              </div>
+
+              <!-- Deep-Dive Parent Guides (Internal Linking) -->
+              <div class="pt-3 border-t border-gray-100 flex flex-wrap items-center gap-2 text-xs">
+                <span class="text-[11px] font-bold text-brand-slate uppercase">Helpful Guides:</span>
+                <router-link to="/blog/gentle-potty-training-strategies-daycare" class="text-amber-800 font-semibold hover:underline bg-amber-50 px-2.5 py-1 rounded-full">Gentle Potty Training</router-link>
+                <router-link to="/blog/sensory-play-fine-motor-development" class="text-amber-800 font-semibold hover:underline bg-amber-50 px-2.5 py-1 rounded-full">Sensory Motor Play</router-link>
+                <router-link to="/blog/speech-milestones-toddler-language-boost" class="text-amber-800 font-semibold hover:underline bg-amber-50 px-2.5 py-1 rounded-full">Toddler Speech Milestones</router-link>
               </div>
             </div>
             <div class="lg:col-span-5">
@@ -108,6 +124,15 @@
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-emerald-600 shrink-0" /> <span>Daily weather chart, shapes & calendar reading</span></div>
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-emerald-600 shrink-0" /> <span>Scissor cutting, coloring & creative painting</span></div>
               </div>
+
+              <!-- Deep-Dive Parent Guides (Internal Linking) -->
+              <div class="pt-3 border-t border-gray-100 flex flex-wrap items-center gap-2 text-xs">
+                <span class="text-[11px] font-bold text-brand-slate uppercase">Helpful Guides:</span>
+                <router-link to="/blog/kindergarten-readiness-skills-fairfax-county" class="text-[#00BDE0] font-semibold hover:underline bg-[#CCF2F9]/50 px-2.5 py-1 rounded-full">Fairfax Pre-K Readiness</router-link>
+                <router-link to="/blog/animal-alphabet-phonics-early-reading" class="text-[#00BDE0] font-semibold hover:underline bg-[#CCF2F9]/50 px-2.5 py-1 rounded-full">Phonics & Early Reading</router-link>
+                <router-link to="/blog/stem-and-sensory-math-for-preschoolers-tangrams-counting" class="text-[#00BDE0] font-semibold hover:underline bg-[#CCF2F9]/50 px-2.5 py-1 rounded-full">STEAM & Tangram Math</router-link>
+                <router-link to="/blog/handwriting-readiness-pencil-grip-exercises" class="text-[#00BDE0] font-semibold hover:underline bg-[#CCF2F9]/50 px-2.5 py-1 rounded-full">Pencil Grip Exercises</router-link>
+              </div>
             </div>
           </div>
         </div>
@@ -131,6 +156,14 @@
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-purple-600 shrink-0" /> <span>Brain games, chess, UNO & constructive toys</span></div>
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-amber-500 shrink-0" /> <span class="font-bold text-amber-700">CACFP / WIC nutritious after-school snacks</span></div>
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-purple-600 shrink-0" /> <span>Extended drop-off & pick-up (6:00 AM – 6:00 PM)</span></div>
+              </div>
+
+              <!-- Deep-Dive Parent Guides (Internal Linking) -->
+              <div class="pt-3 border-t border-gray-100 flex flex-wrap items-center gap-2 text-xs">
+                <span class="text-[11px] font-bold text-brand-slate uppercase">Helpful Guides:</span>
+                <router-link to="/blog/homework-club-benefits-for-working-parents-school-age-care" class="text-purple-800 font-semibold hover:underline bg-purple-50 px-2.5 py-1 rounded-full">After-School Homework Club</router-link>
+                <router-link to="/blog/before-and-after-school-care-benefits-older-kids" class="text-purple-800 font-semibold hover:underline bg-purple-50 px-2.5 py-1 rounded-full">School-Age Enrichment</router-link>
+                <router-link to="/blog/extended-hours-care-supporting-commuters" class="text-purple-800 font-semibold hover:underline bg-purple-50 px-2.5 py-1 rounded-full">6 AM – 6 PM Commuter Hours</router-link>
               </div>
             </div>
             <div class="lg:col-span-5">
@@ -166,6 +199,15 @@
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-amber-500 shrink-0" /> <span>Fresh daily fruits & raw veggies</span></div>
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-emerald-600 shrink-0" /> <span>100% peanut-safe / allergy conscious</span></div>
               </div>
+
+              <!-- Deep-Dive Parent Guides (Internal Linking) -->
+              <div class="pt-3 border-t border-gray-100 flex flex-wrap items-center gap-2 text-xs">
+                <span class="text-[11px] font-bold text-brand-slate uppercase">Helpful Guides:</span>
+                <router-link to="/blog/cacfp-usda-food-program-benefits" class="text-amber-900 font-semibold hover:underline bg-amber-50 px-2.5 py-1 rounded-full">CACFP Federal Nutrition</router-link>
+                <router-link to="/blog/healthy-peanut-free-daycare-snacks-cacfp-approved" class="text-amber-900 font-semibold hover:underline bg-amber-50 px-2.5 py-1 rounded-full">15 Nut-Free Daycare Snacks</router-link>
+                <router-link to="/blog/balanced-warm-lunches-afternoon-energy" class="text-amber-900 font-semibold hover:underline bg-amber-50 px-2.5 py-1 rounded-full">Warm Lunches & Energy</router-link>
+                <router-link to="/blog/peanut-safe-and-allergy-conscious-childcare" class="text-amber-900 font-semibold hover:underline bg-amber-50 px-2.5 py-1 rounded-full">Allergy Protocols</router-link>
+              </div>
             </div>
           </div>
         </div>
@@ -189,6 +231,14 @@
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-emerald-600 shrink-0" /> <span>Basketball hoops & balloon sensory games</span></div>
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-emerald-600 shrink-0" /> <span>Quiet residential Lorton, VA neighborhood</span></div>
                 <div class="flex items-center gap-2"><Check class="w-4 h-4 text-emerald-600 shrink-0" /> <span>Constant licensed teacher supervision</span></div>
+              </div>
+
+              <!-- Deep-Dive Parent Guides (Internal Linking) -->
+              <div class="pt-3 border-t border-gray-100 flex flex-wrap items-center gap-2 text-xs">
+                <span class="text-[11px] font-bold text-brand-slate uppercase">Helpful Guides:</span>
+                <router-link to="/blog/outdoor-nature-play-vs-screen-time-early-childhood" class="text-emerald-900 font-semibold hover:underline bg-emerald-50 px-2.5 py-1 rounded-full">Nature Play vs Screen Time</router-link>
+                <router-link to="/blog/outdoor-nature-play-gross-motor-skills" class="text-emerald-900 font-semibold hover:underline bg-emerald-50 px-2.5 py-1 rounded-full">Gross Motor Health</router-link>
+                <router-link to="/blog/benefits-of-screen-free-daycare-environment" class="text-emerald-900 font-semibold hover:underline bg-emerald-50 px-2.5 py-1 rounded-full">Screen-Free Benefits</router-link>
               </div>
             </div>
             <div class="lg:col-span-5">
