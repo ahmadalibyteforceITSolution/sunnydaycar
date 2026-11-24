@@ -47,7 +47,17 @@ const staticRoutes = [
         <div class="flex flex-wrap gap-4 mt-8">
           <a href="/appointment" class="bg-[#00BDE0] text-white font-bold px-6 py-3 rounded-full">Schedule a Tour</a>
           <a href="/contact" class="bg-[#031B4E] text-white font-bold px-6 py-3 rounded-full">Contact Provider</a>
-          <a href="/blog" class="text-[#00BDE0] font-semibold underline py-3">Explore Childcare Guides</a>
+          <a href="/blog" class="text-[#00BDE0] font-semibold underline py-3">Explore All 40 Childcare Guides</a>
+        </div>
+        <div class="mt-10 p-6 bg-[#F8FBFE] border border-gray-100 rounded-2xl">
+          <h2 class="text-xl font-bold text-[#0A3366] mb-3">Explore Childcare Knowledge by Category</h2>
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 text-xs">
+            <a href="/blog/safe-sleep-guidelines-infants-daycare" class="p-3 bg-white rounded-xl border border-gray-200 text-[#0A3366] font-bold block hover:border-[#00BDE0]">🍼 Infant & Safe Sleep</a>
+            <a href="/blog/cacfp-usda-food-program-benefits" class="p-3 bg-white rounded-xl border border-gray-200 text-[#0A3366] font-bold block hover:border-[#00BDE0]">🍎 CACFP Nutrition</a>
+            <a href="/blog/kindergarten-readiness-skills-fairfax-county" class="p-3 bg-white rounded-xl border border-gray-200 text-[#0A3366] font-bold block hover:border-[#00BDE0]">🎨 Pre-K & Phonics</a>
+            <a href="/blog/cda-credential-vs-unlicensed-daycare-what-parents-must-know" class="p-3 bg-white rounded-xl border border-gray-200 text-[#0A3366] font-bold block hover:border-[#00BDE0]">🛡️ Licensing & Subsidies</a>
+            <a href="/blog/gentle-potty-training-strategies-daycare" class="p-3 bg-white rounded-xl border border-gray-200 text-[#0A3366] font-bold block hover:border-[#00BDE0]">🏡 Routines & Care</a>
+          </div>
         </div>
       </section>
     `
