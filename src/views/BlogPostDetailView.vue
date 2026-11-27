@@ -74,7 +74,9 @@
           <div class="bg-gradient-to-br from-[#ECF5FB] via-white to-[#F0F9FF] border border-[#00BDE0]/30 rounded-2xl p-5 sm:p-6 space-y-4 shadow-sm">
             <div class="flex items-center justify-between flex-wrap gap-2">
               <div class="flex items-center gap-2">
-                <Lightbulb class="w-5 h-5 text-amber-500" />
+                <Lightbulb,
+  Sun,
+  Sun class="w-5 h-5 text-amber-500" />
                 <h3 class="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#0A3366]">Parent Summary & Quick Navigation</h3>
               </div>
               <span class="text-[11px] font-semibold text-[#00BDE0] bg-[#CCF2F9] px-2.5 py-0.5 rounded-full">CDA Certified Guide</span>
@@ -428,10 +430,8 @@
           </div>
         </aside>
 
-      </div>
+            </div>
     </div>
-  </div>
-
 
     <!-- Booking Confirmation Modal for Blog Queries -->
     <div 
@@ -480,9 +480,10 @@
           >
             Done & Close
           </button>
-        </div>
+                </div>
       </div>
     </div>
+  </div>
 
   <!-- 404 Not Found State -->
   <div v-else class="py-20 text-center max-w-lg mx-auto px-4 space-y-4">
@@ -491,23 +492,24 @@
     </div>
     <h2 class="text-2xl font-bold font-heading text-brand-navy">Article Not Found</h2>
     <p class="text-sm text-brand-slate">
-      The guide you are looking for may have moved or been updated. Browse our library of 30 parenting guides.
+      The guide you are looking for may have moved or been updated. Browse our library of 50 parenting guides.
     </p>
     <router-link 
       to="/blog"
       class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#00BDE0] hover:bg-[#00A1BE] text-white font-bold text-xs transition-colors shadow-sm"
     >
       <ArrowLeft class="w-4 h-4" />
-      <span>Browse All 30 Childcare Guides</span>
+      <span>Browse All 50 Childcare Guides</span>
     </router-link>
   </div>
 </template>
 
 <script setup>
-import { computed, watch, onMounted } from 'vue'
+import { ref, computed, watch, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { getBlogBySlug, getRelatedBlogs, topicPillars } from '../data/blogs.js'
 import AdSenseUnit from '../components/AdSenseUnit.vue'
+import IconWhatsApp from '../components/icons/IconWhatsApp.vue'
 import { 
   Home, 
   ChevronRight, 
