@@ -20,9 +20,9 @@ const siteUrl = 'https://www.sunnyskiesydaycarecenter.com'
 const staticRoutes = [
   {
     path: '/',
-    title: 'Sunny Skies Daycare | CDA Certified Childcare Lorton VA',
-    description: 'Licensed CDA certified home daycare in Lorton, VA. Infant care, active USDA CACFP meals, and low ratios. Call +1 (703) 606-1557.',
-    keywords: 'Sunny Skies Daycare, Daycare Lorton VA, Childcare Lorton VA, Best Daycare in Lorton VA, Home Daycare Lorton VA, Licensed Daycare Lorton VA, Infant Care Lorton VA, Infant Daycare Near Me, Toddler Daycare Lorton VA, Preschool Lorton VA, CDA Certified Childcare Provider, CDA Certified Daycare, Active CACFP WIC Food Program, Daycare Fairfax County VA, Daycare near Fort Belvoir VA, Early Childhood Education Lorton VA, Kindergarten Readiness Childcare, Daycare 22079, Virginia Child Care Subsidy Provider, Military MCCYN Childcare Provider, Safe Sleep Infant Daycare, Affordable Daycare Lorton VA, Full Time Daycare Lorton, Part Time Daycare Lorton, Pediatric CPR Certified Daycare, Before and After School Care Lorton VA',
+    title: 'Sunny Skies Daycare Center',
+    description: 'Sunny Skies Daycare Center in Lorton, VA. Licensed CDA certified home daycare with infant care, active USDA CACFP meals, and low ratios. Call +1 (703) 606-1557.',
+    keywords: 'Sunny Skies Daycare Center, Sunny Skies Day care, Sunny Skies Daycare, Suuny Skies Day care, Daycare Lorton VA, Childcare Lorton VA, Best Daycare in Lorton VA, Home Daycare Lorton VA, Licensed Daycare Lorton VA, Infant Care Lorton VA, Infant Daycare Near Me, Toddler Daycare Lorton VA, Preschool Lorton VA, CDA Certified Childcare Provider, CDA Certified Daycare, Active CACFP WIC Food Program, Daycare Fairfax County VA, Daycare near Fort Belvoir VA, Early Childhood Education Lorton VA, Kindergarten Readiness Childcare, Daycare 22079, Virginia Child Care Subsidy Provider, Military MCCYN Childcare Provider, Safe Sleep Infant Daycare, Affordable Daycare Lorton VA, Full Time Daycare Lorton, Part Time Daycare Lorton, Pediatric CPR Certified Daycare, Before and After School Care Lorton VA',
     schema: null, // Root already has main LocalBusiness schema in template
     body: `
       <section class="max-w-6xl mx-auto px-4 py-12">
