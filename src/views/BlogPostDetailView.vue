@@ -204,7 +204,7 @@
                 <h3 class="text-lg sm:text-xl font-bold font-heading text-[#0A3366]">Related Childcare Guides & Resources</h3>
               </div>
               <router-link to="/blog" class="text-xs font-bold text-[#00BDE0] hover:underline flex items-center gap-1">
-                <span>Explore All 40 Guides</span>
+                <span>Explore All 50 Guides</span>
                 <ArrowRight class="w-3.5 h-3.5" />
               </router-link>
             </div>
@@ -267,14 +267,14 @@
             </div>
           </div>
 
-          <!-- Back to All Guides Button -->
+          <!-- Back to All 50 Guides Button -->
           <div class="pt-4 flex items-center justify-between">
             <router-link 
               to="/blog"
               class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-gray-300 hover:bg-[#ECF5FB] text-brand-navy font-bold text-xs transition-colors"
             >
               <ArrowLeft class="w-4 h-4" />
-              <span>Back to All Guides</span>
+              <span>Back to All 50 Guides</span>
             </router-link>
             <router-link 
               to="/appointment"
@@ -305,6 +305,58 @@
                 Experience our cozy, sanitized classrooms, interactive alphabet wall, safe infant nursery, and fenced outdoor yard.
               </p>
               
+              
+              <!-- Fast Sidebar Lead Form -->
+              <form @submit.prevent="submitSidebarForm" class="space-y-3 pt-1">
+                <div>
+                  <input 
+                    type="text" 
+                    required 
+                    v-model="sidebarForm.parentName"
+                    placeholder="Parent Full Name *"
+                    class="w-full px-3.5 py-2.5 rounded-xl bg-white text-brand-navy placeholder:text-gray-400 text-xs focus:outline-none focus:ring-2 focus:ring-[#00BDE0]"
+                  />
+                </div>
+                <div>
+                  <input 
+                    type="tel" 
+                    required 
+                    v-model="sidebarForm.phone"
+                    placeholder="Phone Number *"
+                    class="w-full px-3.5 py-2.5 rounded-xl bg-white text-brand-navy placeholder:text-gray-400 text-xs focus:outline-none focus:ring-2 focus:ring-[#00BDE0]"
+                  />
+                </div>
+                <div>
+                  <input 
+                    type="text" 
+                    required 
+                    v-model="sidebarForm.childDetails"
+                    placeholder="Child's Age (e.g. 1 year old) *"
+                    class="w-full px-3.5 py-2.5 rounded-xl bg-white text-brand-navy placeholder:text-gray-400 text-xs focus:outline-none focus:ring-2 focus:ring-[#00BDE0]"
+                  />
+                </div>
+                <div>
+                  <select 
+                    v-model="sidebarForm.program"
+                    class="w-full px-3.5 py-2.5 rounded-xl bg-white text-brand-navy text-xs focus:outline-none focus:ring-2 focus:ring-[#00BDE0]"
+                  >
+                    <option value="">Select Program of Interest</option>
+                    <option value="Infant Care (0-16 Mo)">Infant Care (0 – 16 Months)</option>
+                    <option value="Toddler Discovery (16 Mo - 3 Yrs)">Toddler Discovery (16 Mo – 3 Yrs)</option>
+                    <option value="Pre-K Readiness (3 - 5 Yrs)">Pre-K Readiness (3 – 5 Yrs)</option>
+                    <option value="Before & After School (Up to 15 Yrs)">Before & After School Club</option>
+                  </select>
+                </div>
+
+                <button 
+                  type="submit"
+                  class="w-full py-3 px-4 rounded-full font-bold text-xs sm:text-sm text-white bg-[#00BDE0] hover:bg-[#00A1BE] transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer mt-1"
+                >
+                  <Calendar class="w-4 h-4" />
+                  <span>Check Openings & Book Tour</span>
+                </button>
+              </form>
+
               <div class="space-y-2.5 pt-2">
                 <router-link 
                   to="/appointment"
@@ -380,6 +432,58 @@
     </div>
   </div>
 
+
+    <!-- Booking Confirmation Modal for Blog Queries -->
+    <div 
+      v-if="isSubmitted"
+      class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm"
+    >
+      <div class="bg-white rounded-3xl max-w-lg w-full p-8 text-center shadow-2xl border border-gray-100 space-y-5 animate-scale-up">
+        <div class="w-16 h-16 rounded-full bg-[#CCF2F9] text-[#00BDE0] flex items-center justify-center mx-auto shadow-inner">
+          <Sun class="w-8 h-8 text-[#00BDE0]" />
+        </div>
+        <h3 class="text-2xl font-bold font-heading text-brand-navy">
+          Tour Inquiry Received!
+        </h3>
+        <p class="text-sm text-brand-slate leading-relaxed">
+          Thank you, <strong class="text-brand-navy">{{ submittedInfo?.parentName }}</strong>! We have received your inquiry for <strong class="text-brand-navy">{{ submittedInfo?.childDetails }}</strong>.
+        </p>
+        <p class="text-xs text-gray-500">
+          Our CDA Certified provider will contact you shortly at <strong>{{ submittedInfo?.phone }}</strong> to confirm tour availability.
+        </p>
+
+        <div class="pt-4 space-y-3 max-w-md mx-auto">
+          <!-- Primary: WhatsApp Confirmation -->
+          <a 
+            :href="whatsappUrl" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="w-full py-3.5 px-6 rounded-2xl font-bold text-sm text-white bg-[#25D366] hover:bg-[#20ba5a] shadow-lg shadow-emerald-500/20 transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center gap-3 cursor-pointer"
+          >
+            <IconWhatsApp class="w-5 h-5 fill-current shrink-0" />
+            <span>Confirm on WhatsApp (+1 703 606-1557)</span>
+          </a>
+
+          <!-- Direct Call -->
+          <a 
+            href="tel:+17036061557"
+            class="w-full py-3 px-6 rounded-2xl font-bold text-sm text-brand-navy bg-[#ECF5FB] hover:bg-[#CCF2F9] border border-[#00BDE0]/30 shadow-sm transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer"
+          >
+            <Phone class="w-4 h-4 text-[#00BDE0] shrink-0" />
+            <span>Call Miss Ali: +1 (703) 606-1557</span>
+          </a>
+
+          <!-- Close Button -->
+          <button 
+            @click="isSubmitted = false"
+            class="w-full py-2.5 px-6 rounded-xl font-semibold text-xs text-slate-500 hover:text-brand-navy hover:bg-gray-100 transition-colors cursor-pointer"
+          >
+            Done & Close
+          </button>
+        </div>
+      </div>
+    </div>
+
   <!-- 404 Not Found State -->
   <div v-else class="py-20 text-center max-w-lg mx-auto px-4 space-y-4">
     <div class="w-16 h-16 rounded-full bg-[#ECF5FB] text-[#00BDE0] flex items-center justify-center mx-auto">
@@ -427,6 +531,78 @@ const route = useRoute()
 const router = useRouter()
 const blog = computed(() => getBlogBySlug(route.params.slug))
 const relatedBlogs = computed(() => getRelatedBlogs(route.params.slug, 3))
+
+// Form State
+const isSubmitted = ref(false)
+const submittedInfo = ref(null)
+const whatsappUrl = ref('')
+
+const minDate = computed(() => {
+  const today = new Date()
+  return today.toISOString().split('T')[0]
+})
+
+// Sidebar Fast Form
+const sidebarForm = ref({
+  parentName: '',
+  phone: '',
+  childDetails: '',
+  program: ''
+})
+
+// In-Article Form
+const quickForm = ref({
+  parentName: '',
+  phone: '',
+  childDetails: '',
+  preferredDate: ''
+})
+
+function getDirectWhatsAppLink() {
+  const text = `Hi Sunny Skies Daycare! I am reading "${blog.value?.title || 'your blog'}" and would like to inquire about enrolling my child or booking an in-person tour.`
+  return `https://wa.me/17036061557?text=${encodeURIComponent(text)}`
+}
+
+function submitSidebarForm() {
+  submittedInfo.value = { ...sidebarForm.value }
+  
+  const waText = `*Sunny Skies Daycare Tour Inquiry from Blog*\n\n` +
+    `👤 *Parent Name:* ${sidebarForm.value.parentName}\n` +
+    `📞 *Phone:* ${sidebarForm.value.phone}\n` +
+    `👶 *Child Age:* ${sidebarForm.value.childDetails}\n` +
+    `🎒 *Program:* ${sidebarForm.value.program || 'General Daycare Inquiry'}\n` +
+    `📄 *Source Article:* ${blog.value?.title || 'Childcare Guide'}`
+
+  whatsappUrl.value = `https://wa.me/17036061557?text=${encodeURIComponent(waText)}`
+  
+  sidebarForm.value = { parentName: '', phone: '', childDetails: '', program: '' }
+  isSubmitted.value = true
+
+  if (typeof window !== 'undefined') {
+    window.open(whatsappUrl.value, '_blank')
+  }
+}
+
+function submitInArticleForm() {
+  submittedInfo.value = { ...quickForm.value }
+
+  const waText = `*Sunny Skies Daycare Tour Request from Blog*\n\n` +
+    `👤 *Parent Name:* ${quickForm.value.parentName}\n` +
+    `📞 *Phone:* ${quickForm.value.phone}\n` +
+    `👶 *Child Details:* ${quickForm.value.childDetails}\n` +
+    `📅 *Preferred Date:* ${quickForm.value.preferredDate || 'Flexible'}\n` +
+    `📄 *Source Article:* ${blog.value?.title || 'Childcare Guide'}`
+
+  whatsappUrl.value = `https://wa.me/17036061557?text=${encodeURIComponent(waText)}`
+
+  quickForm.value = { parentName: '', phone: '', childDetails: '', preferredDate: '' }
+  isSubmitted.value = true
+
+  if (typeof window !== 'undefined') {
+    window.open(whatsappUrl.value, '_blank')
+  }
+}
+
 const relatedGuidesFour = computed(() => getRelatedBlogs(route.params.slug, 4))
 
 function handleContentClick(event) {

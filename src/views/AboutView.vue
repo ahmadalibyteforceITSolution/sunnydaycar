@@ -235,7 +235,7 @@
             </p>
           </div>
           <router-link to="/blog" class="text-xs font-bold text-[#00BDE0] hover:underline flex items-center gap-1">
-            <span>View All 40 Childcare Guides</span>
+            <span>View All 50 Childcare Guides</span>
             <ArrowRight class="w-3.5 h-3.5" />
           </router-link>
         </div>

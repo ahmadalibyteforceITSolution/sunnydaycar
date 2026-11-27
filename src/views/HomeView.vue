@@ -658,7 +658,7 @@
             to="/blog"
             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-[#ECF5FB] text-[#0A3366] font-bold text-xs sm:text-sm border-2 border-[#00BDE0]/40 hover:border-[#00BDE0] shadow-sm hover:shadow transition-all shrink-0 self-start md:self-auto group"
           >
-            <span>Explore All 40 Guides</span>
+            <span>Explore All 50 Guides</span>
             <ArrowRight class="w-4 h-4 text-[#00BDE0] group-hover:translate-x-1 transition-transform" />
           </router-link>
         </div>

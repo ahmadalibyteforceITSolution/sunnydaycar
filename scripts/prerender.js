@@ -47,7 +47,7 @@ const staticRoutes = [
         <div class="flex flex-wrap gap-4 mt-8">
           <a href="/appointment" class="bg-[#00BDE0] text-white font-bold px-6 py-3 rounded-full">Schedule a Tour</a>
           <a href="/contact" class="bg-[#031B4E] text-white font-bold px-6 py-3 rounded-full">Contact Provider</a>
-          <a href="/blog" class="text-[#00BDE0] font-semibold underline py-3">Explore All 40 Childcare Guides</a>
+          <a href="/blog" class="text-[#00BDE0] font-semibold underline py-3">Explore All 50 Childcare Guides</a>
         </div>
         <div class="mt-10 p-6 bg-[#F8FBFE] border border-gray-100 rounded-2xl">
           <h2 class="text-xl font-bold text-[#0A3366] mb-3">Explore Childcare Knowledge by Category</h2>
@@ -222,7 +222,7 @@ const staticRoutes = [
         </div>
         <div class="mt-8 flex flex-wrap gap-4">
           <a href="/appointment" class="bg-[#00BDE0] text-white font-bold px-6 py-3 rounded-full inline-block">Book an In-Person Tour</a>
-          <a href="/blog" class="bg-[#031B4E] text-white font-bold px-6 py-3 rounded-full inline-block">Explore All 40 Childcare Guides</a>
+          <a href="/blog" class="bg-[#031B4E] text-white font-bold px-6 py-3 rounded-full inline-block">Explore All 50 Childcare Guides</a>
         </div>
       </section>
     `

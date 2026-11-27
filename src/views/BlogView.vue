@@ -8,7 +8,7 @@
         <div class="relative z-10 max-w-3xl space-y-4">
           <div class="inline-flex items-center gap-2 bg-[#CCF2F9]/20 border border-[#00BDE0]/40 px-3.5 py-1 rounded-full text-xs font-bold text-[#CCF2F9]">
             <BookOpen class="w-3.5 h-3.5 text-[#00BDE0]" />
-            <span>Childcare Knowledge Hub • 30 Comprehensive Guides</span>
+            <span>Childcare Knowledge Hub • {{ blogs.length }} Comprehensive Guides</span>
           </div>
           <h1 class="text-3xl sm:text-5xl font-extrabold font-heading tracking-tight leading-tight text-white">
             Childcare Articles & Parenting Resources

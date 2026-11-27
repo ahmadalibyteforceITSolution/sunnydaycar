@@ -86,7 +86,7 @@ const routes = [
     component: () => import('../views/BlogView.vue'),
     meta: {
       title: 'Childcare Guides & Resources | Sunny Skies Daycare Lorton',
-      description: 'Browse 40 expert childcare guides on infant milestones, CACFP nutrition, safe sleep, and preschool readiness in Lorton, VA.',
+      description: 'Browse 50 expert childcare guides on infant milestones, CACFP nutrition, safe sleep, and preschool readiness in Lorton, VA.',
       keywords: 'childcare guides, parenting resources Lorton VA, infant milestones guide, toddler sensory activities, CACFP childcare meal plans, gentle potty training daycare, Virginia childcare licensing checklist, Daycare Lorton VA, Best Daycare Lorton VA',
       schema: {
         '@context': 'https://schema.org',
