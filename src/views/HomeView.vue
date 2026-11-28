@@ -95,8 +95,8 @@
 
           </div>
 
-          <!-- Advanced Hero Visual (Interactive Showcase Slider & Floating Badges) -->
-          <div class="lg:col-span-5 hero-visual relative">
+          <!-- Advanced Hero Visual (Interactive Showcase Slider & Floating Badges) - DESKTOP ONLY -->
+          <div class="hidden lg:block lg:col-span-5 hero-visual relative">
             <div class="relative mx-auto max-w-md lg:max-w-none">
               
               <!-- Ambient Glow -->
@@ -190,6 +190,253 @@
 
               </div>
 
+            </div>
+          </div>
+
+          <!-- Hero Lead & Tour Booking Form - MOBILE VIEW ONLY (Right side part changed to easy-to-fill form on mobile) -->
+          <div class="block lg:hidden w-full relative pt-2 hero-mobile-form">
+            <div class="relative mx-auto max-w-lg">
+              
+              <!-- Ambient Glow -->
+              <div class="absolute inset-0 bg-gradient-to-tr from-[#00BDE0]/20 to-brand-yellow/20 rounded-3xl blur-xl"></div>
+
+              <!-- Main Mobile Card -->
+              <div class="relative bg-white rounded-3xl p-5 sm:p-6 shadow-2xl border-2 border-[#00BDE0]/30 ring-1 ring-black/5">
+                
+                <!-- Floating CDA & Location Badges on Mobile -->
+                <div class="flex items-center justify-between gap-2 mb-3">
+                  <div class="inline-flex items-center gap-1 bg-[#CCF2F9] px-2.5 py-1 rounded-full text-[11px] font-bold text-[#0A3366] border border-[#00BDE0]/30">
+                    <MapPin class="w-3.5 h-3.5 text-[#00BDE0]" />
+                    <span>Lorton, VA</span>
+                  </div>
+                  <div class="inline-flex items-center gap-1 bg-amber-50 px-2.5 py-1 rounded-full text-[11px] font-bold text-amber-800 border border-amber-200">
+                    <Award class="w-3.5 h-3.5 text-amber-500" />
+                    <span>CDA Certified</span>
+                  </div>
+                </div>
+
+                <!-- Form Header -->
+                <div class="mb-4 text-left">
+                  <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#CCF2F9] text-[#0A3366] text-xs font-bold border border-[#00BDE0]/30 mb-2">
+                    <Calendar class="w-3.5 h-3.5 text-[#00BDE0]" />
+                    <span>Schedule In-Person Daycare Visit</span>
+                  </div>
+                  <h2 class="text-xl sm:text-2xl font-extrabold font-heading text-[#0A3366] leading-snug">
+                    Book Your Free Tour Now
+                  </h2>
+                  <p class="text-xs text-[#566593] mt-1 leading-relaxed">
+                    Ages Newborn – 15 Yrs • Mon – Fri 6:00 AM – 6:00 PM • Active CACFP / WIC Meals.
+                  </p>
+                  <div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-emerald-50 text-emerald-800 text-[11px] font-bold border border-emerald-200 mt-2">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                    <span>🎁 Limited Spots: Claim $50 Tour Tuition Credit!</span>
+                  </div>
+                </div>
+
+                <!-- Submitted Success Screen -->
+                <div v-if="isMobileSubmitted" class="py-4 text-center space-y-4">
+                  <div class="w-14 h-14 rounded-full bg-[#CCF2F9] text-[#00BDE0] flex items-center justify-center mx-auto shadow-inner border border-[#00BDE0]/30">
+                    <Check class="w-7 h-7 text-[#00BDE0]" />
+                  </div>
+                  <h3 class="text-xl font-bold font-heading text-[#0A3366]">
+                    Tour Request Received!
+                  </h3>
+                  <p class="text-xs text-[#566593] leading-relaxed px-2">
+                    Thank you, <strong class="text-[#0A3366]">{{ mobileSubmittedInfo?.parentName }}</strong>! Your tour request for <strong class="text-[#0A3366]">{{ mobileSubmittedInfo?.childDetails }}</strong> on <strong class="text-[#00BDE0]">{{ mobileSubmittedInfo?.preferredDate || 'Upcoming date' }}</strong> ({{ mobileSubmittedInfo?.preferredTime || 'Preferred time' }}) has been dispatched to our director.
+                  </p>
+
+                  <div class="space-y-2.5 pt-2">
+                    <!-- WhatsApp Direct Confirm -->
+                    <a 
+                      :href="mobileWhatsappUrl"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="w-full py-3.5 px-5 rounded-2xl font-bold text-xs sm:text-sm text-white bg-[#25D366] hover:bg-[#20ba5a] shadow-md flex items-center justify-center gap-2.5 transition-all"
+                    >
+                      <IconWhatsApp class="w-4 h-4 fill-current shrink-0" />
+                      <span>Chat on WhatsApp (+1 703 606-1557)</span>
+                    </a>
+
+                    <!-- Gmail Direct Confirm -->
+                    <a 
+                      :href="mobileGmailUrl"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="w-full py-3 px-5 rounded-2xl font-bold text-xs sm:text-sm text-white bg-[#EA4335] hover:bg-[#d93025] shadow-md flex items-center justify-center gap-2.5 transition-all"
+                    >
+                      <Mail class="w-4 h-4 text-white shrink-0" />
+                      <span>Open in Gmail (sunnyskiescare@gmail.com)</span>
+                    </a>
+
+                    <!-- Direct Call -->
+                    <a 
+                      href="tel:+17036061557"
+                      class="w-full py-3 px-5 rounded-2xl font-bold text-xs text-[#0A3366] bg-[#ECF5FB] hover:bg-[#CCF2F9] border border-[#00BDE0]/30 flex items-center justify-center gap-2 transition-all"
+                    >
+                      <Phone class="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+                      <span>Call Director: (703) 606-1557</span>
+                    </a>
+
+                    <button 
+                      type="button" 
+                      @click="isMobileSubmitted = false"
+                      class="text-xs text-gray-500 hover:text-brand-navy underline pt-2 cursor-pointer"
+                    >
+                      Book Another Tour or Edit Details
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Easy Touch-Optimized Form -->
+                <form v-else @submit.prevent="submitMobileForm" class="space-y-3.5 text-left">
+                  
+                  <!-- Parent Name -->
+                  <div>
+                    <label class="block text-[11px] font-bold text-[#0A3366] uppercase tracking-wider mb-1">
+                      Parent / Guardian Name <span class="text-[#00BDE0]">*</span>
+                    </label>
+                    <input 
+                      type="text" 
+                      required 
+                      v-model="mobileForm.parentName"
+                      autocomplete="name"
+                      placeholder="e.g. Sarah Johnson"
+                      class="w-full px-3.5 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/40 focus:border-[#00BDE0] text-sm text-[#0A3366] bg-gray-50/50 focus:bg-white transition-all"
+                    />
+                  </div>
+
+                  <!-- Phone Number & Email -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                      <label class="block text-[11px] font-bold text-[#0A3366] uppercase tracking-wider mb-1">
+                        Phone Number <span class="text-[#00BDE0]">*</span>
+                      </label>
+                      <input 
+                        type="tel" 
+                        required 
+                        v-model="mobileForm.phone"
+                        inputmode="tel"
+                        autocomplete="tel"
+                        placeholder="e.g. (703) 606-1557"
+                        class="w-full px-3.5 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/40 focus:border-[#00BDE0] text-sm text-[#0A3366] bg-gray-50/50 focus:bg-white transition-all"
+                      />
+                    </div>
+
+                    <div>
+                      <label class="block text-[11px] font-bold text-[#0A3366] uppercase tracking-wider mb-1">
+                        Email Address <span class="text-gray-400 font-normal">(optional)</span>
+                      </label>
+                      <input 
+                        type="email" 
+                        v-model="mobileForm.email"
+                        inputmode="email"
+                        autocomplete="email"
+                        placeholder="e.g. sarah@example.com"
+                        class="w-full px-3.5 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/40 focus:border-[#00BDE0] text-sm text-[#0A3366] bg-gray-50/50 focus:bg-white transition-all"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Child Age & Program of Interest -->
+                  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <div>
+                      <label class="block text-[11px] font-bold text-[#0A3366] uppercase tracking-wider mb-1">
+                        Child's Age & Name <span class="text-[#00BDE0]">*</span>
+                      </label>
+                      <input 
+                        type="text" 
+                        required 
+                        v-model="mobileForm.childDetails"
+                        placeholder="e.g. Liam (18 months)"
+                        class="w-full px-3.5 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/40 focus:border-[#00BDE0] text-sm text-[#0A3366] bg-gray-50/50 focus:bg-white transition-all"
+                      />
+                    </div>
+
+                    <div>
+                      <label class="block text-[11px] font-bold text-[#0A3366] uppercase tracking-wider mb-1">
+                        Program of Interest <span class="text-[#00BDE0]">*</span>
+                      </label>
+                      <select 
+                        required 
+                        v-model="mobileForm.program"
+                        class="w-full px-3 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/40 focus:border-[#00BDE0] text-xs sm:text-sm text-[#0A3366] bg-gray-50/50 focus:bg-white transition-all"
+                      >
+                        <option value="" disabled>Select Daycare Program</option>
+                        <option value="Infants Care in Lorton VA (Newborn - 16 Mo)">Infants Care (Newborn – 16 Months)</option>
+                        <option value="Toddlers Care in Lorton VA (16 Mo - 3 Yrs)">Toddlers Care (16 Mo – 3 Years)</option>
+                        <option value="Pre-K & Preschool in Lorton VA (3 - 5 Yrs)">Pre-K & Preschool (3 – 5 Years)</option>
+                        <option value="Before & After School in Lorton VA (Up to 15 Yrs)">Before & After School Care</option>
+                        <option value="Drop In Daycare Care in Lorton VA">Drop In & Flexible Care</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Tour Date & Time -->
+                  <div class="grid grid-cols-2 gap-2.5">
+                    <div>
+                      <label class="block text-[11px] font-bold text-[#0A3366] uppercase tracking-wider mb-1">
+                        Preferred Date
+                      </label>
+                      <input 
+                        type="date" 
+                        :min="minDate"
+                        v-model="mobileForm.preferredDate"
+                        class="w-full px-3 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/40 focus:border-[#00BDE0] text-xs text-[#0A3366] bg-gray-50/50 focus:bg-white transition-all"
+                      />
+                    </div>
+
+                    <div>
+                      <label class="block text-[11px] font-bold text-[#0A3366] uppercase tracking-wider mb-1">
+                        Preferred Time
+                      </label>
+                      <select 
+                        v-model="mobileForm.preferredTime"
+                        class="w-full px-2.5 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#00BDE0]/40 focus:border-[#00BDE0] text-xs text-[#0A3366] bg-gray-50/50 focus:bg-white transition-all"
+                      >
+                        <option value="">Any Time (6 AM - 6 PM)</option>
+                        <option value="Morning (9:00 AM - 11:00 AM)">Morning (9 AM - 11 AM)</option>
+                        <option value="Midday (11:00 AM - 1:00 PM)">Midday (11 AM - 1 PM)</option>
+                        <option value="Afternoon (2:00 PM - 4:00 PM)">Afternoon (2 PM - 4 PM)</option>
+                        <option value="Late Afternoon (4:00 PM - 5:30 PM)">Late (4 PM - 5:30 PM)</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <!-- Submit CTA Button -->
+                  <div class="pt-1.5">
+                    <button 
+                      type="submit"
+                      class="w-full py-3.5 px-6 rounded-2xl font-bold text-sm text-white bg-[#00BDE0] hover:bg-[#00A1BE] shadow-lg shadow-[#00BDE0]/25 transition-all duration-200 flex items-center justify-center gap-2 cursor-pointer transform active:scale-95"
+                    >
+                      <Calendar class="w-4 h-4 text-white" />
+                      <span>Confirm & Request Daycare Tour</span>
+                      <ArrowRight class="w-4 h-4 text-white" />
+                    </button>
+                  </div>
+
+                  <!-- Quick One-Tap Contact Pills -->
+                  <div class="grid grid-cols-2 gap-2 pt-1 text-center">
+                    <a 
+                      href="https://wa.me/17036061557?text=Hi%20Sunny%20Skies%20Daycare%2C%20I%20would%20like%20to%20inquire%20about%20daycare%20enrollment."
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="py-2.5 px-3 rounded-xl bg-emerald-50 text-emerald-700 text-xs font-bold border border-emerald-200 flex items-center justify-center gap-1.5 hover:bg-emerald-100 transition-colors"
+                    >
+                      <IconWhatsApp class="w-3.5 h-3.5 fill-current shrink-0" />
+                      <span>WhatsApp Chat</span>
+                    </a>
+                    <a 
+                      href="tel:+17036061557"
+                      class="py-2.5 px-3 rounded-xl bg-blue-50 text-[#0A3366] text-xs font-bold border border-blue-200 flex items-center justify-center gap-1.5 hover:bg-blue-100 transition-colors"
+                    >
+                      <Phone class="w-3.5 h-3.5 text-[#00BDE0] shrink-0" />
+                      <span>Call (703) 606-1557</span>
+                    </a>
+                  </div>
+
+                </form>
+
+              </div>
             </div>
           </div>
 
@@ -815,8 +1062,10 @@ import {
   BookOpen,
   Baby,
   School,
-  Check
+  Check,
+  Mail
 } from 'lucide-vue-next'
+import IconWhatsApp from '../components/icons/IconWhatsApp.vue'
 import SocialIcons from '../components/SocialIcons.vue'
 import ShowcaseGallery from '../components/ShowcaseGallery.vue'
 import CitationsAccreditationSection from '../components/CitationsAccreditationSection.vue'
@@ -825,6 +1074,78 @@ import { blogs } from '../data/blogs.js'
 
 const activeHeroTab = ref('flyer')
 const featuredBlogs = blogs.slice(0, 3)
+
+// Mobile Hero Tour Form State
+const mobileForm = ref({
+  parentName: '',
+  phone: '',
+  email: '',
+  childDetails: '',
+  program: '',
+  preferredDate: '',
+  preferredTime: ''
+})
+const isMobileSubmitted = ref(false)
+const mobileSubmittedInfo = ref(null)
+const mobileWhatsappUrl = ref('')
+const mobileEmailUrl = ref('')
+const mobileGmailUrl = ref('')
+
+const todayStr = new Date().toISOString().split('T')[0]
+const minDate = ref(todayStr)
+
+const submitMobileForm = () => {
+  mobileSubmittedInfo.value = { ...mobileForm.value }
+
+  const waText = `*Sunny Skies Daycare Tour Booking Request*\n\n` +
+    `👤 *Parent Name:* ${mobileForm.value.parentName}\n` +
+    `📞 *Phone:* ${mobileForm.value.phone}\n` +
+    (mobileForm.value.email ? `✉️ *Email:* ${mobileForm.value.email}\n` : '') +
+    `👶 *Child:* ${mobileForm.value.childDetails}\n` +
+    `🎒 *Program:* ${mobileForm.value.program || 'Not specified'}\n` +
+    `📅 *Preferred Date:* ${mobileForm.value.preferredDate || 'Flexible'}\n` +
+    `⏰ *Preferred Time:* ${mobileForm.value.preferredTime || 'Flexible'}`
+
+  mobileWhatsappUrl.value = `https://wa.me/17036061557?text=${encodeURIComponent(waText)}`
+
+  const mailSubject = `Mobile Tour Booking: ${mobileForm.value.childDetails} (${mobileForm.value.preferredDate || 'Date TBD'})`
+  const mailBody = `Parent Name: ${mobileForm.value.parentName}\nPhone: ${mobileForm.value.phone}\nEmail: ${mobileForm.value.email || 'N/A'}\nChild Details: ${mobileForm.value.childDetails}\nProgram: ${mobileForm.value.program}\nPreferred Date: ${mobileForm.value.preferredDate}\nPreferred Time: ${mobileForm.value.preferredTime}\n\nSubmitted via Sunny Skies Daycare Mobile Hero Form`
+
+  mobileEmailUrl.value = `mailto:sunnyskiescare@gmail.com?subject=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`
+  mobileGmailUrl.value = `https://mail.google.com/mail/?view=cm&fs=1&to=sunnyskiescare@gmail.com&su=${encodeURIComponent(mailSubject)}&body=${encodeURIComponent(mailBody)}`
+
+  try {
+    fetch('https://formsubmit.co/ajax/sunnyskiescare@gmail.com', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        _subject: `New Daycare Tour Request (Mobile): ${mobileSubmittedInfo.value.childDetails}`,
+        "Parent Name": mobileSubmittedInfo.value.parentName,
+        "Phone": mobileSubmittedInfo.value.phone,
+        "Email": mobileSubmittedInfo.value.email || 'Not provided',
+        "Child Details": mobileSubmittedInfo.value.childDetails,
+        "Program": mobileSubmittedInfo.value.program || 'General Inquiry',
+        "Preferred Date": mobileSubmittedInfo.value.preferredDate || 'Flexible',
+        "Preferred Time": mobileSubmittedInfo.value.preferredTime || 'Flexible',
+        _template: 'table'
+      })
+    }).catch(() => {})
+  } catch (err) {}
+
+  mobileForm.value = {
+    parentName: '',
+    phone: '',
+    email: '',
+    childDetails: '',
+    program: '',
+    preferredDate: '',
+    preferredTime: ''
+  }
+  isMobileSubmitted.value = true
+}
 
 onMounted(() => {
   const tl = gsap.timeline({ defaults: { ease: 'power2.out' } })
