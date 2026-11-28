@@ -678,6 +678,7 @@ export const blogs = [
     "tags": [
       "Screen Free Daycare",
       "Outdoor Play",
+      "screen time vs outdoor time",
       "Gross Motor Skills",
       "Childhood Development"
     ],
@@ -698,6 +699,7 @@ export const blogs = [
     "tags": [
       "Infant Sleep",
       "Sleep Regression",
+      "infant sleep regressions solutions",
       "AAP Safe Sleep",
       "Infant Daycare Lorton"
     ],
@@ -738,6 +740,7 @@ export const blogs = [
     "tags": [
       "CACFP Snacks",
       "Nut Free Daycare",
+      "how to ensure daycare has a healthy snack policy",
       "Healthy Toddler Food",
       "Daycare Nutrition Lorton"
     ],
@@ -777,6 +780,8 @@ export const blogs = [
     "excerpt": "Young brains are uniquely wired to absorb multiple languages effortlessly. Discover how dual-language exposure in our daily circle time enhances cognitive intelligence.",
     "tags": [
       "Bilingual Childcare",
+      "increase language exposure bilingual toddlers",
+      "how does bilingualism affect language development in early childhood",
       "Early Language Development",
       "Toddler Neuroplasticity",
       "Preschool Vocabulary"
@@ -818,6 +823,10 @@ export const blogs = [
     "excerpt": "Searching for licensed daycare in Lorton, VA? Compare caregiver ratios, health standards, tuition rates, and enrollment availability in Fairfax County.",
     "tags": [
       "Daycare in Lorton VA",
+      "daycares in lorton",
+      "daycare lorton va",
+      "home daycare in lorton",
+      "home daycares in lorton",
       "Childcare Lorton VA",
       "Licensed Home Daycare 22079",
       "Fairfax County Childcare",

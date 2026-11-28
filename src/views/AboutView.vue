@@ -323,6 +323,11 @@
 
     </div>
 
+    <!-- Top Childcare Searches & Specialized Programs in Lorton VA -->
+    <div class="mt-16">
+      <TopSeoKeywords />
+    </div>
+
     <!-- Citations & Accreditations Showcase -->
     <div class="mt-16">
       <CitationsAccreditationSection />
@@ -336,6 +341,7 @@ import gsap from 'gsap'
 import { MapPin, Award, ShieldCheck, Users, Clock, Apple, Check, Sparkles, ArrowRight, Calendar, Phone } from 'lucide-vue-next'
 import ShowcaseGallery from '../components/ShowcaseGallery.vue'
 import CitationsAccreditationSection from '../components/CitationsAccreditationSection.vue'
+import TopSeoKeywords from '../components/TopSeoKeywords.vue'
 
 onMounted(() => {
   gsap.from('.about-hero-card', {

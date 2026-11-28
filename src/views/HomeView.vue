@@ -997,6 +997,9 @@
       </div>
     </section>
 
+    <!-- Verified Childcare Searches & Specialized Programs in Lorton VA -->
+    <TopSeoKeywords />
+
     <!-- Evidence-Based Citations & Accreditations Showcase (Google AdSense E-E-A-T & Authority) -->
     <CitationsAccreditationSection />
 
@@ -1069,6 +1072,7 @@ import IconWhatsApp from '../components/icons/IconWhatsApp.vue'
 import SocialIcons from '../components/SocialIcons.vue'
 import ShowcaseGallery from '../components/ShowcaseGallery.vue'
 import CitationsAccreditationSection from '../components/CitationsAccreditationSection.vue'
+import TopSeoKeywords from '../components/TopSeoKeywords.vue'
 import AdSenseUnit from '../components/AdSenseUnit.vue'
 import { blogs } from '../data/blogs.js'
 

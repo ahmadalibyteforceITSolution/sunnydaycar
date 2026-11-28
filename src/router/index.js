@@ -7,9 +7,9 @@ const routes = [
     name: 'Home',
     component: HomeView,
     meta: {
-      title: 'Sunny Skies Daycare Center',
-      description: 'Sunny Skies Daycare Center in Lorton, VA. Licensed CDA certified home daycare with infant care, active USDA CACFP meals, and low ratios. Call +1 (703) 606-1557.',
-      keywords: 'Sunny Skies Daycare Center, Sunny Skies Day care, Sunny Skies Daycare, Suuny Skies Day care, Daycare Lorton VA, Childcare Lorton VA, Best Daycare in Lorton VA, Home Daycare Lorton VA, Licensed Daycare Lorton VA, Infant Care Lorton VA, Infant Daycare Near Me, Toddler Daycare Lorton VA, Preschool Lorton VA, CDA Certified Childcare Provider, CDA Certified Daycare, Active CACFP WIC Food Program, Daycare Fairfax County VA, Daycare near Fort Belvoir VA, Early Childhood Education Lorton VA, Kindergarten Readiness Childcare, Daycare 22079, Virginia Child Care Subsidy Provider, Military MCCYN Childcare Provider, Safe Sleep Infant Daycare, Affordable Daycare Lorton VA, Full Time Daycare Lorton, Part Time Daycare Lorton, Pediatric CPR Certified Daycare, Before and After School Care Lorton VA'
+      title: 'Sunny Skies Daycare Center | Daycare in Lorton VA & Childcare Near Me',
+      description: 'Sunny Skies Daycare Center in Lorton, VA. CDA certified home daycare with infant & toddler care, early preschool, active CACFP meals, and low ratios. Call +1 (703) 606-1557.',
+      keywords: 'sunny skies daycare, daycare in lorton va, day care near me, daycare lorton va, early preschool in lorton va, drop in daycare care in lorton va, daycare near me, preschool in lorton va, toddlers care in lorton va, infants care in lorton va, before and after school in lorton va, day care center, daycares in lorton, daycare in lorton, daycares in lorton va, private kindergarten in lorton va, increase language exposure bilingual toddlers, home daycare in lorton, home daycares in lorton, how to ensure daycare has a healthy snack policy, after school program, pre-k in lorton va, best day care, daycares near me, tiny smiles daycare, sunny skies, fairfax county child care assistance, va daycare assistance, screen time vs outdoor time, junior kindergarten in lorton va, autism programs, childcare near me, day care center near me, daycare, extended hours daycare, full-time daycare, weekend daycare, how does bilingualism affect language development in early childhood, sunny care, daycare for children with autism, sunny skyes, daycares near me hiring, daycare near me now, sunny skye, sunny, prek near me, infant sleep regressions solutions, Sunny Skies Daycare Center, Best Daycare in Lorton VA, Licensed Daycare Lorton VA'
     }
   },
   {
@@ -17,15 +17,15 @@ const routes = [
     name: 'About',
     component: () => import('../views/AboutView.vue'),
     meta: {
-      title: 'About Us | Loving CDA Certified Childcare in Lorton VA',
-      description: 'Meet our CDA Certified provider in Lorton, VA. Over 15 years experience, Virginia licensing, CPR certified, and loving home care.',
-      keywords: 'About Sunny Skies Daycare, CDA certified provider Lorton VA, licensed home daycare Virginia, Fairfax County childcare provider, low caregiver ratios, early childhood education philosophy, pediatric CPR first aid certified, Fort Belvoir childcare provider, family childcare Lorton VA, Best Daycare Lorton VA, Childcare Lorton VA',
+      title: 'About Us | Loving CDA Certified Daycare in Lorton VA',
+      description: 'Meet our CDA Certified provider in Lorton, VA. Over 15 years experience, Virginia licensing, low ratios, and loving home daycare in Lorton.',
+      keywords: 'About Sunny Skies Daycare, sunny skies, sunny care, sunny skye, sunny skyes, CDA certified provider Lorton VA, licensed home daycare in lorton, home daycares in lorton, daycares in lorton va, best day care, daycares near me hiring, fairfax county child care assistance, va daycare assistance, low caregiver ratios, early childhood education philosophy, pediatric CPR first aid certified, Fort Belvoir childcare provider, family childcare Lorton VA, Best Daycare Lorton VA, Childcare Lorton VA',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'AboutPage',
         'url': 'https://www.sunnyskiesydaycarecenter.com/about',
         'name': 'About Us | Loving CDA Certified Childcare in Lorton VA',
-        'keywords': 'About Sunny Skies Daycare, CDA certified provider Lorton VA, licensed home daycare Virginia, Fairfax County childcare provider, low caregiver ratios, early childhood education philosophy, pediatric CPR first aid certified, Fort Belvoir childcare provider, family childcare Lorton VA, Best Daycare Lorton VA, Childcare Lorton VA'
+        'keywords': 'About Sunny Skies Daycare, sunny skies, CDA certified provider Lorton VA, licensed home daycare in lorton, home daycares in lorton, daycares in lorton va, best day care, fairfax county child care assistance, va daycare assistance'
       }
     }
   },
@@ -34,15 +34,15 @@ const routes = [
     name: 'Services',
     component: () => import('../views/ServicesView.vue'),
     meta: {
-      title: 'Programs & Services | Sunny Skies Daycare Lorton VA',
-      description: 'Programs for newborns to 15 years in Lorton, VA. Infant nursery, toddler play, CACFP meals, and after-school tutoring club.',
-      keywords: 'childcare programs Lorton VA, Daycare Lorton VA, Childcare Lorton VA, Best Daycare in Lorton VA, infant care 0-12 months, toddler discovery 1-3 years, preschool pre-k readiness, before after school care Lorton VA, CACFP nutritious daycare meals, fenced outdoor yard daycare, peanut-free daycare, screen-free learning',
+      title: 'Programs & Services | Infant, Toddler, Pre-K Daycare in Lorton VA',
+      description: 'Programs for newborns to 15 years in Lorton, VA: infants care, toddlers care, early preschool, junior kindergarten, before & after school, and CACFP meals.',
+      keywords: 'childcare programs Lorton VA, Daycare Lorton VA, Childcare Lorton VA, Best Daycare in Lorton VA, infants care in lorton va, toddlers care in lorton va, early preschool in lorton va, pre-k in lorton va, junior kindergarten in lorton va, private kindergarten in lorton va, drop in daycare care in lorton va, before and after school in lorton va, after school program, full-time daycare, extended hours daycare, weekend daycare, autism programs, daycare for children with autism, increase language exposure bilingual toddlers, how to ensure daycare has a healthy snack policy, CACFP nutritious daycare meals, fenced outdoor yard daycare, screen-free learning',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'ItemPage',
         'url': 'https://www.sunnyskiesydaycarecenter.com/services',
         'name': 'Programs & Services | Sunny Skies Daycare Lorton VA',
-        'keywords': 'Daycare Lorton VA, Childcare Lorton VA, Best Daycare in Lorton VA, infant care 0-12 months, toddler discovery 1-3 years, preschool pre-k readiness, before after school care Lorton VA, CACFP nutritious daycare meals'
+        'keywords': 'Daycare Lorton VA, Childcare Lorton VA, Best Daycare in Lorton VA, infants care in lorton va, toddlers care in lorton va, early preschool in lorton va, pre-k in lorton va, before and after school in lorton va, after school program, drop in daycare care in lorton va, CACFP nutritious daycare meals'
       }
     }
   },
@@ -52,8 +52,8 @@ const routes = [
     component: () => import('../views/AppointmentView.vue'),
     meta: {
       title: 'Book a Daycare Tour | Sunny Skies Daycare Lorton VA',
-      description: 'Schedule an in-person tour of our cozy, sanitized daycare in Lorton, VA. Meet our CDA Certified provider and view our learning rooms.',
-      keywords: 'book daycare tour Lorton VA, schedule daycare visit, childcare enrollment Lorton VA, tour licensed home daycare, infant childcare openings Lorton VA, visit daycare 22079, best daycare Lorton VA',
+      description: 'Schedule an in-person tour of our cozy, sanitized daycare in Lorton, VA. Meet our CDA Certified provider and view our infant, toddler, and pre-k rooms.',
+      keywords: 'book daycare tour Lorton VA, schedule daycare visit, childcare enrollment Lorton VA, tour licensed home daycare in lorton, infant childcare openings Lorton VA, toddlers care in lorton va, daycare near me now, visit daycare 22079, best daycare Lorton VA',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'ContactPage',
@@ -69,14 +69,14 @@ const routes = [
     component: () => import('../views/ContactView.vue'),
     meta: {
       title: 'Contact Us | Sunny Skies Daycare Lorton VA | Call Today',
-      description: 'Contact Sunny Skies Daycare in Lorton, VA. Call or message +1 (703) 606-1557 for immediate enrollment availability and tour bookings.',
-      keywords: 'contact Sunny Skies Daycare, daycare phone number Lorton VA, daycare address Lorton 22079, childcare inquiries Fairfax County, WhatsApp daycare contact Lorton, best daycare Lorton VA',
+      description: 'Contact Sunny Skies Daycare in Lorton, VA. Call or message +1 (703) 606-1557 for immediate enrollment availability, drop-in care, and tour bookings.',
+      keywords: 'contact Sunny Skies Daycare, daycare phone number Lorton VA, daycare address Lorton 22079, childcare inquiries Fairfax County, drop in daycare care in lorton va, daycare near me now, best daycare Lorton VA',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'ContactPage',
         'url': 'https://www.sunnyskiesydaycarecenter.com/contact',
         'name': 'Contact Us | Sunny Skies Daycare Lorton VA | Call Today',
-        'keywords': 'contact Sunny Skies Daycare, daycare phone number Lorton VA, daycare address Lorton 22079, childcare inquiries Fairfax County, WhatsApp daycare contact Lorton, best daycare in Lorton VA'
+        'keywords': 'contact Sunny Skies Daycare, daycare phone number Lorton VA, daycare address Lorton 22079, childcare inquiries Fairfax County, best daycare in Lorton VA'
       }
     }
   },
@@ -86,14 +86,14 @@ const routes = [
     component: () => import('../views/BlogView.vue'),
     meta: {
       title: 'Childcare Guides & Resources | Sunny Skies Daycare Lorton',
-      description: 'Browse 50 expert childcare guides on infant milestones, CACFP nutrition, safe sleep, and preschool readiness in Lorton, VA.',
-      keywords: 'childcare guides, parenting resources Lorton VA, infant milestones guide, toddler sensory activities, CACFP childcare meal plans, gentle potty training daycare, Virginia childcare licensing checklist, Daycare Lorton VA, Best Daycare Lorton VA',
+      description: 'Expert childcare guides on infant sleep regressions, bilingual language exposure, healthy snack policy, screen time vs outdoor time, and pre-k readiness in Lorton, VA.',
+      keywords: 'childcare guides, parenting resources Lorton VA, how does bilingualism affect language development in early childhood, increase language exposure bilingual toddlers, how to ensure daycare has a healthy snack policy, screen time vs outdoor time, infant sleep regressions solutions, fairfax county child care assistance, va daycare assistance, Daycare Lorton VA, Best Daycare Lorton VA',
       schema: {
         '@context': 'https://schema.org',
         '@type': 'Blog',
         'url': 'https://www.sunnyskiesydaycarecenter.com/blog',
         'name': 'Childcare Guides & Resources | Sunny Skies Daycare Lorton',
-        'keywords': 'childcare guides, parenting resources Lorton VA, infant milestones guide, toddler sensory activities, CACFP childcare meal plans, gentle potty training daycare, Daycare Lorton VA, Best Daycare in Lorton VA'
+        'keywords': 'childcare guides, parenting resources Lorton VA, infant sleep regressions solutions, increase language exposure bilingual toddlers, healthy snack policy, screen time vs outdoor time, fairfax county child care assistance, Daycare Lorton VA'
       }
     }
   },

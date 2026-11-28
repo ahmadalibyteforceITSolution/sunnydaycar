@@ -208,6 +208,40 @@
 
       </div>
 
+      <!-- Top Google Searches & Childcare Specialties in Lorton VA -->
+      <div class="py-6 border-b border-gray-800 text-[11px] text-gray-400">
+        <span class="text-white font-bold block mb-2">Popular Childcare Searches & Programs in Lorton, VA:</span>
+        <div class="flex flex-wrap items-center gap-x-3 gap-y-1.5 leading-relaxed">
+          <router-link to="/" class="hover:text-[#00BDE0] transition-colors">Daycare in Lorton VA</router-link>
+          <span>•</span>
+          <router-link to="/services" class="hover:text-[#00BDE0] transition-colors">Infants Care in Lorton VA</router-link>
+          <span>•</span>
+          <router-link to="/services" class="hover:text-[#00BDE0] transition-colors">Toddlers Care in Lorton VA</router-link>
+          <span>•</span>
+          <router-link to="/services" class="hover:text-[#00BDE0] transition-colors">Early Preschool & Pre-K</router-link>
+          <span>•</span>
+          <router-link to="/blog/before-after-school-care-lorton-elementary" class="hover:text-[#00BDE0] transition-colors">Before and After School in Lorton VA</router-link>
+          <span>•</span>
+          <router-link to="/contact" class="hover:text-[#00BDE0] transition-colors">Drop in Daycare Care in Lorton VA</router-link>
+          <span>•</span>
+          <router-link to="/about" class="hover:text-[#00BDE0] transition-colors">Home Daycare in Lorton</router-link>
+          <span>•</span>
+          <router-link to="/appointment" class="hover:text-[#00BDE0] transition-colors">Daycare Near Me Now</router-link>
+          <span>•</span>
+          <router-link to="/blog/fairfax-county-child-care-subsidy-application-guide" class="hover:text-[#00BDE0] transition-colors">Fairfax County Child Care Assistance</router-link>
+          <span>•</span>
+          <router-link to="/blog/virginia-child-care-subsidy-fairfax-application" class="hover:text-[#00BDE0] transition-colors">VA Daycare Assistance</router-link>
+          <span>•</span>
+          <router-link to="/blog/healthy-peanut-free-daycare-snacks-cacfp-approved" class="hover:text-[#00BDE0] transition-colors">Healthy Snack Policy (CACFP)</router-link>
+          <span>•</span>
+          <router-link to="/blog/outdoor-nature-play-vs-screen-time-early-childhood" class="hover:text-[#00BDE0] transition-colors">Screen Time vs Outdoor Time</router-link>
+          <span>•</span>
+          <router-link to="/blog/bilingual-language-exposure-in-early-childhood-daycare" class="hover:text-[#00BDE0] transition-colors">Bilingual Language Exposure</router-link>
+          <span>•</span>
+          <router-link to="/blog/infant-sleep-regression-solutions-consistent-daycare-naps" class="hover:text-[#00BDE0] transition-colors">Infant Sleep Regressions Solutions</router-link>
+        </div>
+      </div>
+
       <!-- Bottom Copyright & Compliance -->
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-400 gap-4">
         <p>© {{ new Date().getFullYear() }} Sunny Skies Daycare. All Rights Reserved. Lorton, VA.</p>
